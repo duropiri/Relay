@@ -16,6 +16,9 @@ export const GlobalStateProvider = ({ children }) => {
   const [heroContent, setHeroContent] = useState(null);
   const [marqueeContent, setMarqueeContent] = useState(null);
 
+  // Mobile states
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   // Combine all global states and their update functions into a single object
   const globalState = {
     isLoading,
@@ -30,6 +33,8 @@ export const GlobalStateProvider = ({ children }) => {
     setHeroContent,
     marqueeContent,
     setMarqueeContent,
+    mobileMenuOpen,
+    setMobileMenuOpen,
   };
 
   return (

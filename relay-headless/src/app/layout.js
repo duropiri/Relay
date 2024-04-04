@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { GlobalStateProvider } from "@/components/GlobalStateContext";
 import ContentLoader from "@/components/ContentLoader";
+import MobileMenu from "@/components/MobileMenu";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ const RootLayout = ({ children }) => {
         <GlobalStateProvider>
           <ContentLoader />
           <Navbar />
+          <MobileMenu />
           <SmoothScrolling>
             {children}
             <Footer />
