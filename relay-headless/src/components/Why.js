@@ -1,6 +1,37 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/all";
 
 const Why = () => {
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Define a common parent selector that wraps all your images.
+    // Adjust the selector as needed to target your specific layout.
+    const section = document.querySelector("#why");
+
+    // Animate images with 'left' and 'right' classes inside this section
+    gsap.utils.toArray(".left, .right").forEach((image) => {
+      const direction = image.classList.contains("left") ? 1 : -1;
+      gsap.to(image, {
+        x: () => direction * 100, // Adjust the distance as needed
+        ease: "none",
+        scrollTrigger: {
+          trigger: section, // Use the common parent as the trigger
+          start: "top center", // When the top of the parent hits the center
+          end: "bottom center", // When the bottom of the parent hits the center
+          scrub: true,
+        },
+      });
+    });
+
+    // Clean up the ScrollTriggers when the component unmounts
+    return () => {
+      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+    };
+  }, []);
+
   return (
     <>
       <div class="relative flex min-h-[30vh] flex-col items-center justify-center overflow-hidden w-full rounded-md z-0">
@@ -1405,11 +1436,11 @@ const Why = () => {
             <div class="h-2 w-20 mx-auto inset-x-0 absolute bottom-0 bg-gradient-to-t from-neutral-700 to-neutral-800 rounded-tr-3xl rounded-tl-3xl"></div>
             <div class="absolute bottom-4 left-4">
               <a href="https://peerlist.io/manuarora">
-                <p class="sr-only">Sweeny Studio</p>
+                <p class="sr-only">Relay Digital</p>
                 <img
                   src="/_astro/ss-logo-dark.08e32a2d.svg"
                   class="h-16 w-16 -rotate-12 transform rounded-full"
-                  alt="Sweeny Studio Logo"
+                  alt="Relay Digital Logo"
                 />
               </a>
             </div>

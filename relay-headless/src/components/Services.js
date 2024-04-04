@@ -164,7 +164,7 @@ const Services = () => {
           <div class="relative z-20 flex h-full w-1/3 translate-y-2 flex-col items-center justify-center rounded-2xl border border-neutral-700 bg-neutral-950 p-2 shadow-lg shadow-purple-500/20 duration-500 group-hover/bento:translate-y-0 group-hover/bento:shadow-2xl group-hover/bento:shadow-purple-500/40 md:p-4">
             {" "}
             <img
-              src="/img/tom.13214bb9.webp"
+              src="/img/tom.webp"
               alt="avatar"
               class="h-10 w-10 rounded-full"
               width="100"

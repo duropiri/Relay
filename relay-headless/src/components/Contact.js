@@ -69,7 +69,7 @@ const Contact = () => {
         <div class="mx-auto mt-16 grid max-w-screen-xl gap-10 md:grid-cols-2">
           <div>
             <h2 class="font-melodrama text-3xl font-medium text-neutral-50">
-              Contact Sweeny Studio
+              Contact Relay Digital
             </h2>
             <p class="mt-3 text-lg leading-relaxed text-neutral-300">
               Have a question or inquiry? Fill out the form below and we will
@@ -92,7 +92,7 @@ const Contact = () => {
                     clip-rule="evenodd"
                   ></path>
                 </svg>
-                <a href="mailto:mac@sweenystudio.com">mac@sweenystudio.com</a>
+                <a href="mailto:info@relaymedia.agency">info@relaymedia.agency</a>
               </div>
             </div>
           </div>

@@ -1,6 +1,55 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/all";
+import { ScrollSmoother } from "gsap/all";
 
 const Hero = () => {
+  useEffect(() => {
+    // Ensure plugins are registered inside useEffect
+    gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+
+    // Now we can safely create the ScrollSmoother instance
+    // let smoother = ScrollSmoother.create({
+    //   smooth: 2, // seconds it takes to "catch up" to native scroll position
+    //   // effects: true // look for data-speed and data-lag attributes on elements and animate accordingly
+    // });
+
+    // And set up animations
+    let effectElements = gsap.utils.toArray("[data-speed]");
+
+    effectElements.forEach((el) => {
+      let speed = parseFloat(el.getAttribute("data-speed"));
+      gsap.fromTo(
+        el,
+        { y: 0 },
+        {
+          y: 0,
+          ease: "none",
+          scrollTrigger: {
+            trigger: el,
+            start: "top bottom",
+            end: "bottom top",
+            scrub: true,
+            onRefresh: (self) => {
+              let start = Math.max(0, self.start); // ensure no negative values
+              let distance = self.end - start;
+              let end = start + distance / speed;
+              self.setPositions(start, end);
+              self.animation.vars.y = (end - start) * (1 - speed);
+              self.animation.invalidate().progress(1).progress(self.progress);
+            },
+          },
+        }
+      );
+    });
+
+    // Clean up function to kill ScrollSmoother instance and ScrollTriggers
+    return () => {
+      // smoother.kill();
+      ScrollTrigger.getAll().forEach((st) => st.kill());
+    };
+  }, []);
   return (
     <>
       <section class="relative mx-auto overflow-x-clip px-8 sm:px-16 md:px-24 lg:px-32">
@@ -22,7 +71,7 @@ const Hero = () => {
               class="text-center text-base leading-tight text-neutral-300 lg:text-start"
               data-speed="0.7"
             >
-              Sweeny Studio is a modern development studio specialising in high
+              Relay Digital is a modern development studio specialising in high
               converting marketing funnels. We design, develop and deploy high
               performance, lightning-fast landing pages that will sky-rocket
               your conversion rate.

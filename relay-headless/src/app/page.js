@@ -10,10 +10,8 @@ import React from "react";
 const Home = () => {
   return (
     <>
-      <div>
-        <div className="flex flex-col justify-center min-h-lvh -mt-[90px] pt-[90px] pb-10 gap-10">
-          <Hero />
-        </div>
+      <div className="flex flex-col gap-10">
+        <Hero />
         <Marquee speed={1}>
           <img
             src="/img/homezy.webp"
@@ -109,8 +107,10 @@ const Home = () => {
         <Why />
         <CallToAction />
         <Services />
-        <Panel />
-        <Contact />
+        <div className="flex flex-col">
+          <Panel />
+          <Contact />
+        </div>
       </div>
     </>
   );
