@@ -34,7 +34,7 @@ const Footer = () => {
           </div>
         </nav>
         <p class="mt-10 text-center text-xs leading-5 text-neutral-400">
-          © 2024 Relay Digital, Inc. All rights reserved.
+          © 2024 Relay, Inc. All rights reserved.
         </p>
       </div>
     </footer>

@@ -1,8 +1,11 @@
 "use client";
 import React, { useRef, useEffect } from "react";
 import gsap from "gsap";
+import { useGlobalState } from "./GlobalStateContext";
 
 const Marquee = ({ children, speed, paused }) => {
+  const { isLoading } = useGlobalState();
+
   const marqueeRef = useRef();
 
   useEffect(() => {
@@ -18,7 +21,7 @@ const Marquee = ({ children, speed, paused }) => {
     return () => {
       loopTimeline.kill(); // Clean up the timeline when the component unmounts
     };
-  }, [speed, paused, children]);
+  }, [speed, paused, children, isLoading]);
 
   return (
     <div ref={marqueeRef} className="marquee-container">

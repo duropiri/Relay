@@ -1,23 +1,23 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
-import { ScrollSmoother } from "gsap/all";
+import { ScrollSmoother } from "gsap";
+import { useGlobalState } from "./GlobalStateContext";
+import fetchCMS from "./fetchCMS";
+import Marquee from "./Marquee";
 
 const Hero = () => {
+  const [heroContent, setHeroContent] = useState(null);
+  const [marqueeContent, setMarqueeContent] = useState(null);
+  const { isLoading, setIsLoading } = useGlobalState();
+  // const isLoading = useState(true);
+
+  // GSAP Animations
   useEffect(() => {
-    // Ensure plugins are registered inside useEffect
     gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
-    // Now we can safely create the ScrollSmoother instance
-    // let smoother = ScrollSmoother.create({
-    //   smooth: 2, // seconds it takes to "catch up" to native scroll position
-    //   // effects: true // look for data-speed and data-lag attributes on elements and animate accordingly
-    // });
-
-    // And set up animations
     let effectElements = gsap.utils.toArray("[data-speed]");
-
     effectElements.forEach((el) => {
       let speed = parseFloat(el.getAttribute("data-speed"));
       gsap.fromTo(
@@ -44,116 +44,351 @@ const Hero = () => {
       );
     });
 
-    // Clean up function to kill ScrollSmoother instance and ScrollTriggers
     return () => {
-      // smoother.kill();
       ScrollTrigger.getAll().forEach((st) => st.kill());
     };
+  }, [isLoading]); // Re-run when isLoading changes, to ensure animations are correctly initialized once the content is loaded
+
+  // Fetch CMS content
+  useEffect(() => {
+    setIsLoading(true);
+    // Fetch hero content and marquee content concurrently
+    const fetchHeroContent = fetchCMS({ collection: "hero-content" }).then(
+      (data) => {
+        return data.data[0].attributes; // Assuming the first item is what you need
+      }
+    );
+
+    const fetchMarqueeContent = fetchCMS({ collection: "marquee" }).then(
+      (data) => {
+        return data.data[0].attributes; // Assuming the first item is what you need
+      }
+    );
+
+    // Use Promise.all to wait for both promises to resolve
+    Promise.all([fetchHeroContent, fetchMarqueeContent])
+      .then(([heroContent, marqueeContent]) => {
+        setHeroContent(heroContent);
+        setMarqueeContent(marqueeContent);
+      })
+      .catch((error) => {
+        console.error("Error fetching content:", error);
+      })
+      .finally(() => {
+        // Set loading to false only after both requests have completed
+        setIsLoading(false);
+      });
   }, []);
+
+  let mainMessage,
+    highlightedText1,
+    highlightedText2,
+    Description,
+    CTA,
+    Decoration,
+    Statistic,
+    marqueeImages;
+
+  if (!isLoading && heroContent) {
+    ({
+      mainMessage,
+      highlightedText1,
+      highlightedText2,
+      Description,
+      CTA,
+      Decoration,
+      Statistic,
+    } = heroContent);
+  }
+
+  if (!isLoading && marqueeContent) {
+    marqueeImages = marqueeContent.images.data.map(({ id, attributes }) => ({
+      id,
+      ...attributes,
+      url: attributes.url, // adjust according to your actual API's URL structure
+      alt: attributes.alternativeText || "Default Alt Text",
+    }));
+  }
+
+  // Function to replace highlighted texts
+  const renderMainMessageText = (text, highlight1, highlight2) => {
+    return {
+      __html: text
+        .replaceAll(
+          highlight1,
+          `<span class="text-purple-500">${highlight1}</span>`
+        )
+        .replaceAll(
+          highlight2,
+          `<span class="text-purple-500">${highlight2}</span>`
+        ),
+    };
+  };
+
   return (
     <>
       <section class="relative mx-auto overflow-x-clip px-8 sm:px-16 md:px-24 lg:px-32">
         <div class="mb-6 mt-12 flex flex-col items-center text-center lg:mb-24 lg:mt-48 lg:grid lg:grid-cols-3">
-          <div class="col-span-2 lg:mt-6">
-            <div class="-z-10 max-w-4xl text-center font-melodrama text-3xl sm:text-5xl lg:text-start lg:text-7xl">
-              <h1
-                class="bg-gradient-to-br from-neutral-100 from-55% to-neutral-500 bg-clip-text font-medium tracking-tight text-transparent lg:min-h-[20rem] lg:to-neutral-600"
-                data-speed="0.5"
+          {isLoading ? (
+            <div class="col-span-2 lg:mt-6 px-3">
+              <div className="flex flex-col w-full h-full gap-3">
+                <div className="skeleton h-7 lg:h-16 w-full"></div>
+                <div className="skeleton h-7 lg:h-16 w-full"></div>
+                <div className="skeleton h-7 lg:h-16 w-full"></div>
+                <div className="skeleton h-7 lg:h-16 w-1/2"></div>
+              </div>
+            </div>
+          ) : (
+            <div class="col-span-2 lg:mt-6">
+              <div class="-z-10 max-w-4xl text-center font-melodrama text-3xl sm:text-5xl lg:text-start lg:text-7xl">
+                <h1
+                  class="bg-gradient-to-br from-neutral-100 from-55% to-neutral-500 bg-clip-text font-medium tracking-tight text-transparent lg:min-h-[20rem] lg:to-neutral-600"
+                  data-speed="0.5"
+                  dangerouslySetInnerHTML={renderMainMessageText(
+                    mainMessage,
+                    highlightedText1,
+                    highlightedText2
+                  )}
+                ></h1>
+              </div>
+            </div>
+          )}
+          {isLoading ? (
+            <div class="col-span-1 flex flex-col items-start justify-between gap-y-8 py-12 text-start lg:h-full w-[475px]">
+              <div className="flex flex-col gap-1 w-full">
+                <div className="skeleton h-4 w-full"></div>
+                <div className="skeleton h-4 w-full"></div>
+                <div className="skeleton h-4 w-full"></div>
+                <div className="skeleton h-4 w-1/2"></div>
+              </div>
+              <div className="skeleton h-[82px] w-1/2"></div>
+            </div>
+          ) : (
+            <div class="col-span-1 flex flex-col items-start justify-between gap-y-8 py-12 text-start lg:h-full">
+              <div
+                class="text-center text-base leading-tight text-neutral-300 lg:text-start"
+                data-speed="0.7"
               >
-                Get <span class="text-purple-500">1.5x</span> More Out Of Your
-                Ads, with the #1 High Performance{" "}
-                <span class="text-purple-500">Marketing Funnels</span>.
-              </h1>
+                <div>{Description}</div>
+              </div>
+              <div
+                class="block w-full justify-center md:flex md:flex-row lg:justify-start"
+                data-speed="0.8"
+              >
+                <a href="/contact">
+                  <button class="relative rounded-full text-center transition-all duration-500 transform overflow-hidden z-40   w-full px-8 py-6 text-base bg-purple-500 text-neutral-950 border border-purple-500 button hover:text-neutral-50 group text-xl uppercase md:text-2xl">
+                    <div class="flex flex-row group relative z-10 w-full">
+                      <div dangerouslySetInnerHTML={{ __html: CTA }}></div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="32"
+                        fill="currentColor"
+                        viewBox="0 0 256 256"
+                        class="ml-2 inline-block"
+                      >
+                        <path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path>
+                      </svg>
+                    </div>
+                  </button>
+                </a>
+              </div>
             </div>
-          </div>
-          <div class="col-span-1 flex flex-col items-start justify-between gap-y-8 py-12 text-start lg:h-full">
-            <p
-              class="text-center text-base leading-tight text-neutral-300 lg:text-start"
-              data-speed="0.7"
-            >
-              Relay Digital is a modern development studio specialising in high
-              converting marketing funnels. We design, develop and deploy high
-              performance, lightning-fast landing pages that will sky-rocket
-              your conversion rate.
-            </p>
-            <div
-              class="block w-full justify-center md:flex md:flex-row lg:justify-start"
-              data-speed="0.8"
-            >
-              <a href="/contact">
-                <button class="relative rounded-full text-center transition-all duration-500 transform overflow-hidden z-40   w-full px-8 py-6 text-base bg-purple-500 text-neutral-950 border border-purple-500 button hover:text-neutral-50 group text-xl uppercase md:text-2xl">
-                  <div class="group relative z-10 w-full">
-                    Let's Chat
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="32"
-                      height="32"
-                      fill="currentColor"
-                      viewBox="0 0 256 256"
-                      class="ml-2 inline-block"
-                    >
-                      <path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path>
-                    </svg>
-                  </div>
-                </button>
-              </a>
-            </div>
-          </div>
+          )}
         </div>
-        <div
-          class="absolute left-1/2 top-1/2 -z-10 w-full -translate-x-1/2 -translate-y-1/2 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] lg:w-max"
-          data-speed="0.6"
-        >
-          <img
-            src="/svg/hero-circle.svg"
-            alt="circle background "
-            loading="eager"
-            class="h-auto w-[24rem] animate-spinSlow lg:w-[38rem]"
-            width="516"
-            height="516"
-            decoding="async"
-          />
-        </div>
+        {isLoading ? (
+          <div
+            class="absolute left-1/2 top-1/2 -z-10 w-full -translate-x-1/2 -translate-y-1/2 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] lg:w-max"
+            data-speed="0.6"
+          >
+            {/* <div className="skeleton h-full w-full"></div> */}
+          </div>
+        ) : (
+          <div
+            class="absolute left-1/2 top-1/2 -z-10 w-full -translate-x-1/2 -translate-y-1/2 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] lg:w-max"
+            data-speed="0.6"
+          >
+            <img
+              src="/svg/hero-circle.svg"
+              alt="circle background"
+              loading="eager"
+              class="h-auto w-[24rem] animate-spinSlow lg:w-[38rem]"
+              width="516"
+              height="516"
+              decoding="async"
+            />
+          </div>
+        )}
       </section>
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
-        <dl
-          class="relative z-40 mt-6 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-neutral-600 bg-neutral-600 text-center shadow-2xl shadow-purple-500/50 lg:grid-cols-4"
-          data-speed="1.05"
-        >
-          <div class="flex flex-col items-center  justify-center bg-neutral-900 px-2 py-6">
-            <dt class="mt-1 text-sm font-normal leading-tight tracking-tight text-neutral-300">
-              Average Conversion Rate Boost{" "}
-            </dt>
-            <dd class="order-first font-melodrama text-5xl font-semibold tracking-tight text-white lg:text-5xl">
-              22%{" "}
-            </dd>
-          </div>
-          <div class="flex flex-col items-center  justify-center bg-neutral-900 px-2 py-6">
-            <dt class="mt-1 text-sm font-normal leading-tight tracking-tight text-neutral-300">
-              More Time Spent on Page{" "}
-            </dt>
-            <dd class="order-first font-melodrama text-5xl font-semibold tracking-tight text-white lg:text-5xl">
-              60%{" "}
-            </dd>
-          </div>
-          <div class="flex flex-col items-center  justify-center bg-neutral-900 px-2 py-6">
-            <dt class="mt-1 text-sm font-normal leading-tight tracking-tight text-neutral-300">
-              Faster Than Typical Websites{" "}
-            </dt>
-            <dd class="order-first font-melodrama text-5xl font-semibold tracking-tight text-white lg:text-5xl">
-              10x{" "}
-            </dd>
-          </div>
-          <div class="flex flex-col items-center  justify-center bg-neutral-900 px-2 py-6">
-            <dt class="mt-1 text-sm font-normal leading-tight tracking-tight text-neutral-300">
-              Average Ad ROI Increase{" "}
-            </dt>
-            <dd class="order-first font-melodrama text-5xl font-semibold tracking-tight text-white lg:text-5xl">
-              39%{" "}
-            </dd>
-          </div>
-        </dl>
+        {isLoading ? (
+          <div className="skeleton h-[143px] w-[862px]"></div>
+        ) : (
+          <dl
+            class="relative z-40 mt-6 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-neutral-600 bg-neutral-600 text-center shadow-2xl shadow-purple-500/50 lg:grid-cols-4"
+            data-speed="1.05"
+          >
+            <div class="flex flex-col items-center  justify-center bg-neutral-900 px-2 py-6">
+              <dt class="mt-1 text-sm font-normal leading-tight tracking-tight text-neutral-300">
+                {Statistic[0].description}
+              </dt>
+              <dd class="order-first font-melodrama text-5xl font-semibold tracking-tight text-white lg:text-5xl">
+                {Statistic[0].value}
+              </dd>
+            </div>
+            <div class="flex flex-col items-center  justify-center bg-neutral-900 px-2 py-6">
+              <dt class="mt-1 text-sm font-normal leading-tight tracking-tight text-neutral-300">
+                {Statistic[1].description}
+              </dt>
+              <dd class="order-first font-melodrama text-5xl font-semibold tracking-tight text-white lg:text-5xl">
+                {Statistic[1].value}
+              </dd>
+            </div>
+            <div class="flex flex-col items-center  justify-center bg-neutral-900 px-2 py-6">
+              <dt class="mt-1 text-sm font-normal leading-tight tracking-tight text-neutral-300">
+                {Statistic[2].description}
+              </dt>
+              <dd class="order-first font-melodrama text-5xl font-semibold tracking-tight text-white lg:text-5xl">
+                {Statistic[2].value}
+              </dd>
+            </div>
+            <div class="flex flex-col items-center  justify-center bg-neutral-900 px-2 py-6">
+              <dt class="mt-1 text-sm font-normal leading-tight tracking-tight text-neutral-300">
+                {Statistic[3].description}
+              </dt>
+              <dd class="order-first font-melodrama text-5xl font-semibold tracking-tight text-white lg:text-5xl">
+                {Statistic[3].value}
+              </dd>
+            </div>
+          </dl>
+        )}
       </div>
+
+      {isLoading ? (
+        <div className="flex flex-row w-[400%] overflow-x-hidden gap-10">
+          {Array.from({ length: 10 }).map((_, index) => (
+            <div
+              key={index}
+              className="skeleton sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 lg:h-72"
+              style={{ width: "471px", height: "286px" }} // Adjusted for consistent sizing
+            ></div>
+          ))}
+        </div>
+      ) : (
+        <Marquee speed={10}>
+          {marqueeImages.map(({ id, url, alt }, index) => (
+            <img
+              key={id}
+              src={`${
+                process.env.NEXT_PUBLIC_STRAPI_BASE_URL ||
+                "http://localhost:1337"
+              }${url}`}
+              alt={alt}
+              className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
+              style={{
+                animationDuration: "10s", // Example: Ensuring all have the same duration
+                borderColor: index === 4 ? "red" : "transparent", // Highlight the problematic one
+              }}
+              loading="eager"
+              width="1728"
+              height="992"
+              decoding="async"
+            />
+          ))}
+        </Marquee>
+        // <Marquee speed={10}>
+        //   <img
+        //     src="/img/homezy.webp"
+        //     alt="Homezy"
+        //     class="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
+        //     loading="eager"
+        //     width="1728"
+        //     height="992"
+        //     decoding="async"
+        //   />
+        //   <img
+        //     src="/img/thai.webp"
+        //     alt="Thai"
+        //     class="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
+        //     loading="eager"
+        //     width="1728"
+        //     height="992"
+        //     decoding="async"
+        //   />
+        //   <img
+        //     src="/img/wellbeing.webp"
+        //     alt="WellBeing"
+        //     class="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
+        //     loading="eager"
+        //     width="3456"
+        //     height="1984"
+        //     decoding="async"
+        //   />
+        //   <img
+        //     src="/img/agenci.webp"
+        //     alt="Agenci"
+        //     class="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
+        //     loading="eager"
+        //     width="1728"
+        //     height="992"
+        //     decoding="async"
+        //   />
+        //   <img
+        //     src="/img/joyfolio.webp"
+        //     alt="Joyfolio"
+        //     class="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
+        //     loading="eager"
+        //     width="1728"
+        //     height="992"
+        //     decoding="async"
+        //   />
+        //   <img
+        //     src="/img/inspire.webp"
+        //     alt="Inspire"
+        //     class="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
+        //     loading="eager"
+        //     width="1728"
+        //     height="992"
+        //     decoding="async"
+        //   />
+        //   <img
+        //     src="/img/wellbeing.webp"
+        //     alt="WellBeing"
+        //     class="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
+        //     loading="eager"
+        //     width="3456"
+        //     height="1984"
+        //     decoding="async"
+        //   />
+        //   <img
+        //     src="/img/fashion.webp"
+        //     alt="Fashion"
+        //     class="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
+        //     loading="eager"
+        //     width="2456"
+        //     height="1491"
+        //     decoding="async"
+        //   />
+        //   <img
+        //     src="/img/requesto.webp"
+        //     alt="Request"
+        //     class="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
+        //     loading="eager"
+        //     width="1728"
+        //     height="992"
+        //     decoding="async"
+        //   />
+        //   <img
+        //     src="/img/darkstudio.webp"
+        //     alt="Studio"
+        //     class="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
+        //     loading="eager"
+        //     width="1728"
+        //     height="992"
+        //     decoding="async"
+        //   />
+        // </Marquee>
+      )}
     </>
   );
 };

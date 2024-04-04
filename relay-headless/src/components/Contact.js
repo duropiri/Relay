@@ -16,37 +16,21 @@ const Contact = () => {
     }
 
     setIsSubmitting(true);
-    setResult("Sending...");
+    setResult("Processing...");
 
-    const formData = new FormData(form);
-    const object = Object.fromEntries(formData);
-    const json = JSON.stringify(object);
+    // Simulate form submission delay
+    setTimeout(() => {
+      const shouldSimulateSuccess = Math.random() > 0.5; // Randomly decide if it's a success or failure
 
-    fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: json,
-    })
-      .then(async (response) => {
-        const json = await response.json();
-        setIsSubmitting(false);
-
-        if (response.ok) {
-          setResult("We've received your message!");
-          form.reset();
-        } else {
-          console.error("Response:", json);
-          setResult(json.message);
-        }
-      })
-      .catch((error) => {
-        console.error("Error:", error);
+      if (shouldSimulateSuccess) {
+        setResult("We've received your message!");
+        form.reset();
+      } else {
         setResult("An error occurred. Please try again later.");
-        setIsSubmitting(false);
-      });
+      }
+
+      setIsSubmitting(false);
+    }, 1500); // Delay of 1.5 seconds
   };
 
   return (
@@ -69,7 +53,7 @@ const Contact = () => {
         <div class="mx-auto mt-16 grid max-w-screen-xl gap-10 md:grid-cols-2">
           <div>
             <h2 class="font-melodrama text-3xl font-medium text-neutral-50">
-              Contact Relay Digital
+              Contact Relay
             </h2>
             <p class="mt-3 text-lg leading-relaxed text-neutral-300">
               Have a question or inquiry? Fill out the form below and we will
@@ -92,7 +76,9 @@ const Contact = () => {
                     clip-rule="evenodd"
                   ></path>
                 </svg>
-                <a href="mailto:info@relaymedia.agency">info@relaymedia.agency</a>
+                <a href="mailto:info@relaymedia.agency">
+                  info@relaymedia.agency
+                </a>
               </div>
             </div>
           </div>
@@ -109,13 +95,13 @@ const Contact = () => {
             >
               <input
                 type="hidden"
-                name="access_key"
+                name="access_key text-neutral-50"
                 value="c9c9369b-d5a7-49b1-b0f8-184c9c66c266"
                 data-astro-cid-tflpndyl=""
               />
               <input
                 type="checkbox"
-                class="hidden"
+                class="hidden text-neutral-50"
                 bs="display:none"
                 name="botcheck"
                 data-astro-cid-tflpndyl=""
@@ -125,7 +111,7 @@ const Contact = () => {
                   type="text"
                   placeholder="Full Name"
                   required=""
-                  class="w-full rounded-md border border-neutral-700 bg-neutral-900 px-4 py-3 outline-none placeholder:text-neutral-400 focus:border-neutral-400 focus:ring-0"
+                  class="w-full rounded-md border border-neutral-700 bg-neutral-900 px-4 py-3 outline-none placeholder:text-neutral-400 focus:border-neutral-400 focus:ring-0 text-neutral-50"
                   name="name"
                   data-astro-cid-tflpndyl=""
                 />
@@ -143,7 +129,7 @@ const Contact = () => {
                   placeholder="Email Address"
                   name="email"
                   required=""
-                  class="w-full rounded-md border border-neutral-700 bg-neutral-900 px-4 py-3 outline-none placeholder:text-neutral-400 focus:border-neutral-400 focus:ring-0"
+                  class="w-full rounded-md border border-neutral-700 bg-neutral-900 px-4 py-3 outline-none placeholder:text-neutral-400 focus:border-neutral-400 focus:ring-0 text-neutral-50"
                   data-astro-cid-tflpndyl=""
                 />
                 <div
@@ -166,7 +152,7 @@ const Contact = () => {
                   placeholder="Phone"
                   name="phone"
                   required=""
-                  class="w-full rounded-md border border-neutral-700 bg-neutral-900 px-4 py-3 outline-none placeholder:text-neutral-400 focus:border-neutral-400 focus:ring-0"
+                  class="w-full rounded-md border border-neutral-700 bg-neutral-900 px-4 py-3 outline-none placeholder:text-neutral-400 focus:border-neutral-400 focus:ring-0 text-neutral-50"
                   data-astro-cid-tflpndyl=""
                 />
                 <div
@@ -183,7 +169,7 @@ const Contact = () => {
                   placeholder="Website"
                   name="website"
                   required=""
-                  class="w-full rounded-md border border-neutral-700 bg-neutral-900 px-4 py-3 outline-none placeholder:text-neutral-400 focus:border-neutral-400 focus:ring-0"
+                  class="w-full rounded-md border border-neutral-700 bg-neutral-900 px-4 py-3 outline-none placeholder:text-neutral-400 focus:border-neutral-400 focus:ring-0 text-neutral-50"
                   data-astro-cid-tflpndyl=""
                 />
                 <div
@@ -198,7 +184,7 @@ const Contact = () => {
                   name="message"
                   required=""
                   placeholder="Your Message"
-                  class="w-full rounded-md border border-neutral-700 bg-neutral-900 px-4 py-3 outline-none placeholder:text-neutral-400 focus:border-neutral-400 focus:ring-0 h-32 resize-none"
+                  class="w-full rounded-md border border-neutral-700 bg-neutral-900 px-4 py-3 outline-none placeholder:text-neutral-400 focus:border-neutral-400 focus:ring-0 h-32 resize-none text-neutral-50"
                   data-astro-cid-tflpndyl=""
                 ></textarea>
                 <div
@@ -221,7 +207,7 @@ const Contact = () => {
               </button>
               <div
                 id="result"
-                class="mt-3 text-center"
+                class="mt-3 text-center text-neutral-50"
                 data-astro-cid-tflpndyl=""
               >
                 {result}

@@ -2,8 +2,11 @@
 import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
+import { useGlobalState } from "./GlobalStateContext";
 
 const Why = () => {
+  const { isLoading, setIsLoading } = useGlobalState();
+
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
@@ -30,7 +33,7 @@ const Why = () => {
     return () => {
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
-  }, []);
+  }, [isLoading]);
 
   return (
     <>
@@ -1436,11 +1439,11 @@ const Why = () => {
             <div class="h-2 w-20 mx-auto inset-x-0 absolute bottom-0 bg-gradient-to-t from-neutral-700 to-neutral-800 rounded-tr-3xl rounded-tl-3xl"></div>
             <div class="absolute bottom-4 left-4">
               <a href="https://peerlist.io/manuarora">
-                <p class="sr-only">Relay Digital</p>
+                <p class="sr-only">Relay</p>
                 <img
                   src="/_astro/ss-logo-dark.08e32a2d.svg"
                   class="h-16 w-16 -rotate-12 transform rounded-full"
-                  alt="Relay Digital Logo"
+                  alt="Relay Logo"
                 />
               </a>
             </div>

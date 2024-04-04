@@ -2,8 +2,11 @@
 import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
+import { useGlobalState } from "./GlobalStateContext";
 
 const Panel = () => {
+  const { isLoading } = useGlobalState();
+
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
@@ -26,14 +29,14 @@ const Panel = () => {
       if (pinSpacer) {
         pinSpacer.style.height = `${totalWidth}px`;
         // Set bottom margin to 20% of the pinSpacer's height
-      const bottomMargin = totalWidth * 0.2;
-      // pinSpacer.style.marginBottom = `${bottomMargin}px`;
+        const bottomMargin = totalWidth * 0.2;
+        // pinSpacer.style.marginBottom = `${bottomMargin}px`;
       }
 
       // Check if the pin-spacer height is set correctly after content has loaded or layout has changed
       const checkSpacerHeight = () => {
         const actualWidth =
-          (document.querySelector(".panel-grid").offsetWidth) * 2;
+          document.querySelector(".panel-grid").offsetWidth * 2;
         if (pinSpacer && parseInt(pinSpacer.style.height, 10) !== actualWidth) {
           console.error(
             "Spacer height mismatch:",
@@ -53,7 +56,7 @@ const Panel = () => {
         scrollTrigger: {
           trigger: pinSpacer,
           pin: ".panel-container",
-          start: "top top",
+          start: "top-=90px top",
           end: `+=${totalWidth - window.innerWidth}`,
           scrub: 1,
           snap: 1 / (sections.length - 1),
@@ -81,13 +84,13 @@ const Panel = () => {
       animationInstance.kill();
       ScrollTrigger.getAll().forEach((st) => st.kill());
     };
-  }, []);
+  }, [isLoading]);
 
   return (
-    <div class="pin-spacer">
-      <div class="section h-lvh overscroll-none" id="casestudies">
+    <div class="pin-spacer max-w-full">
+      <div class="section overscroll-none overflow-x-hidden" id="casestudies">
         <div class="panel-container flex h-full w-[200%] flex-nowrap overscroll-none">
-          <section class="panel relative flex w-full items-center justify-center overscroll-none">
+          <section class="panel relative flex w-full items-center justify-center overflow-hidden overscroll-none">
             <div class="panel-grid py-2 md:py-12">
               <div class="mx-auto max-w-7xl px-6 lg:px-8">
                 <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
