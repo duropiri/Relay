@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-neutral-950;
+}
+
+.marquee-container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+  min-width: 100%;
+  gap: 2.5rem;
+}
+
+.marquee-container > img {
+  flex-shrink: 0;
+}
