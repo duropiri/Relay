@@ -4,14 +4,58 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { ScrollSmoother } from "gsap";
 import { useGlobalState } from "./GlobalStateContext";
-import fetchCMS from "./fetchCMS";
 import Marquee from "./Marquee";
 
 const Hero = () => {
-  const [heroContent, setHeroContent] = useState(null);
-  const [marqueeContent, setMarqueeContent] = useState(null);
-  const { isLoading, setIsLoading } = useGlobalState();
+  const { heroContent } = useGlobalState();
+  const { marqueeContent } = useGlobalState();
+  const { isLoading } = useGlobalState();
   // const isLoading = useState(true);
+
+  let mainMessage,
+    highlightedText1,
+    highlightedText2,
+    Description,
+    CTA,
+    Decoration,
+    Statistic,
+    marqueeImages;
+
+  if (heroContent) {
+    ({
+      mainMessage,
+      highlightedText1,
+      highlightedText2,
+      Description,
+      CTA,
+      Decoration,
+      Statistic,
+    } = heroContent);
+  }
+
+  if (marqueeContent) {
+    marqueeImages = marqueeContent.images.data.map(({ id, attributes }) => ({
+      id,
+      ...attributes,
+      url: attributes.url, // adjust according to your actual API's URL structure
+      alt: attributes.alternativeText || "Default Alt Text",
+    }));
+  }
+
+  // Function to replace highlighted texts
+  const renderMainMessageText = (text, highlight1, highlight2) => {
+    return {
+      __html: text
+        .replaceAll(
+          highlight1,
+          `<span class="text-purple-500">${highlight1}</span>`
+        )
+        .replaceAll(
+          highlight2,
+          `<span class="text-purple-500">${highlight2}</span>`
+        ),
+    };
+  };
 
   // GSAP Animations
   useEffect(() => {
@@ -48,82 +92,6 @@ const Hero = () => {
       ScrollTrigger.getAll().forEach((st) => st.kill());
     };
   }, [isLoading]); // Re-run when isLoading changes, to ensure animations are correctly initialized once the content is loaded
-
-  // Fetch CMS content
-  useEffect(() => {
-    setIsLoading(true);
-    // Fetch hero content and marquee content concurrently
-    const fetchHeroContent = fetchCMS({ collection: "hero-content" }).then(
-      (data) => {
-        return data.data[0].attributes; // Assuming the first item is what you need
-      }
-    );
-
-    const fetchMarqueeContent = fetchCMS({ collection: "marquee" }).then(
-      (data) => {
-        return data.data[0].attributes; // Assuming the first item is what you need
-      }
-    );
-
-    // Use Promise.all to wait for both promises to resolve
-    Promise.all([fetchHeroContent, fetchMarqueeContent])
-      .then(([heroContent, marqueeContent]) => {
-        setHeroContent(heroContent);
-        setMarqueeContent(marqueeContent);
-      })
-      .catch((error) => {
-        console.error("Error fetching content:", error);
-      })
-      .finally(() => {
-        // Set loading to false only after both requests have completed
-        setIsLoading(false);
-      });
-  }, []);
-
-  let mainMessage,
-    highlightedText1,
-    highlightedText2,
-    Description,
-    CTA,
-    Decoration,
-    Statistic,
-    marqueeImages;
-
-  if (!isLoading && heroContent) {
-    ({
-      mainMessage,
-      highlightedText1,
-      highlightedText2,
-      Description,
-      CTA,
-      Decoration,
-      Statistic,
-    } = heroContent);
-  }
-
-  if (!isLoading && marqueeContent) {
-    marqueeImages = marqueeContent.images.data.map(({ id, attributes }) => ({
-      id,
-      ...attributes,
-      url: attributes.url, // adjust according to your actual API's URL structure
-      alt: attributes.alternativeText || "Default Alt Text",
-    }));
-  }
-
-  // Function to replace highlighted texts
-  const renderMainMessageText = (text, highlight1, highlight2) => {
-    return {
-      __html: text
-        .replaceAll(
-          highlight1,
-          `<span class="text-purple-500">${highlight1}</span>`
-        )
-        .replaceAll(
-          highlight2,
-          `<span class="text-purple-500">${highlight2}</span>`
-        ),
-    };
-  };
 
   return (
     <>
@@ -275,7 +243,7 @@ const Hero = () => {
           ))}
         </div>
       ) : (
-        <Marquee speed={10}>
+        <Marquee speed={1}>
           {marqueeImages.map(({ id, url, alt }, index) => (
             <img
               key={id}
@@ -285,10 +253,6 @@ const Hero = () => {
               }${url}`}
               alt={alt}
               className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
-              style={{
-                animationDuration: "10s", // Example: Ensuring all have the same duration
-                borderColor: index === 4 ? "red" : "transparent", // Highlight the problematic one
-              }}
               loading="eager"
               width="1728"
               height="992"

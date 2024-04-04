@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "why_contents",
+  "info": {
+    "singularName": "why-content",
+    "pluralName": "why-contents",
+    "displayName": "WhyContent",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Header": {
+      "type": "string",
+      "required": true
+    },
+    "Why1": {
+      "type": "string"
+    },
+    "Why2": {
+      "type": "string"
+    },
+    "WhyDescription1": {
+      "type": "text"
+    },
+    "WhyDescription2": {
+      "type": "text"
+    },
+    "CTA": {
+      "type": "string"
+    },
+    "Image1": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Image2": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

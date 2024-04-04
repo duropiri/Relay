@@ -1,12 +1,29 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { useGlobalState } from "./GlobalStateContext";
 
 const Why = () => {
-  const { isLoading, setIsLoading } = useGlobalState();
+  const { whyContent } = useGlobalState();
+  const { isLoading } = useGlobalState();
 
+  let Header, Why1, Why2, WhyDescription1, WhyDescription2, CTA, Image1, Image2;
+
+  if (whyContent) {
+    ({
+      Header,
+      Why1,
+      Why2,
+      WhyDescription1,
+      WhyDescription2,
+      CTA,
+      Image1,
+      Image2,
+    } = whyContent);
+  }
+
+  // GSAP Animations
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
@@ -39,56 +56,82 @@ const Why = () => {
     <>
       <div class="relative flex min-h-[30vh] flex-col items-center justify-center overflow-hidden w-full rounded-md z-0">
         <div class="relative z-50 flex  flex-col items-center px-5">
-          <h2 class="font-melodrama text-4xl sm:text-5xl lg:text-7xl text-center lg:text-start">
-            <span class="bg-gradient-to-br from-neutral-100 from-55% to-neutral-500 bg-clip-text font-medium tracking-tight text-transparent lg:min-h-[50vw] lg:to-neutral-600">
-              Why Should You Use Our Marketing Funnels?
-            </span>
-          </h2>
+          {isLoading ? (
+            <>
+              <div className="skeleton h-4 w-28"></div>
+            </>
+          ) : (
+            <h2 class="font-melodrama text-4xl sm:text-5xl lg:text-7xl text-center lg:text-start">
+              <span class="bg-gradient-to-br from-neutral-100 from-55% to-neutral-500 bg-clip-text font-medium tracking-tight text-transparent lg:min-h-[50vw] lg:to-neutral-600">
+                {Header}
+              </span>
+            </h2>
+          )}
         </div>
       </div>
       <div class="relative overflow-x-hidden" id="why">
         <div class="mx-auto px-6 lg:max-w-7xl lg:px-8">
           <div class="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
             <div class="lg:pr-8 lg:pt-4">
-              <div class="lg:max-w-lg">
-                <h2 class="mt-2 font-melodrama text-3xl font-medium tracking-tight text-white sm:text-6xl">
-                  <span class="bg-gradient-to-b from-neutral-50 from-60% to-neutral-400 bg-clip-text text-transparent lg:to-neutral-600">
-                    Designed to Convert Paid Traffic
-                  </span>
-                </h2>
-                <p class="text-md mt-6 font-light text-neutral-300 md:text-lg">
-                  We design, develop and deploy custom marketing funnels to help
-                  you convert your paid traffic into sales. Our funnels are
-                  completely managed by us, so you don't have to touch a thing.
-                </p>
-                <a href="/contact">
-                  <button class="relative rounded-full text-center transition-all duration-500 transform overflow-hidden z-40   px-6 py-3 text-base bg-purple-500 text-neutral-950 border border-purple-500 button hover:text-neutral-50 group mt-6 text-lg uppercase">
-                    <div class="group relative z-10 w-full">
-                      Get Started
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="32"
-                        height="32"
-                        fill="currentColor"
-                        viewBox="0 0 256 256"
-                        class="ml-2 inline-block"
-                      >
-                        <path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path>
-                      </svg>
-                    </div>
-                  </button>
-                </a>
-              </div>
+              {isLoading ? (
+                <>
+                  <div class="lg:max-w-lg">
+                    <div className="skeleton h-4 w-28"></div>
+                  </div>
+                </>
+              ) : (
+                <div class="lg:max-w-lg">
+                  <h2 class="mt-2 font-melodrama text-3xl font-medium tracking-tight text-white sm:text-6xl">
+                    <span class="bg-gradient-to-b from-neutral-50 from-60% to-neutral-400 bg-clip-text text-transparent lg:to-neutral-600">
+                      {Why1}
+                    </span>
+                  </h2>
+                  <p class="text-md mt-6 font-light text-neutral-300 md:text-lg">
+                    {WhyDescription1}
+                  </p>
+                  <a href="/contact">
+                    <button class="relative rounded-full text-center transition-all duration-500 transform overflow-hidden z-40   px-6 py-3 text-base bg-purple-500 text-neutral-950 border border-purple-500 button hover:text-neutral-50 group mt-6 text-lg uppercase">
+                      <div class="group relative z-10 w-full">
+                        {CTA}
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="32"
+                          height="32"
+                          fill="currentColor"
+                          viewBox="0 0 256 256"
+                          class="ml-2 inline-block"
+                        >
+                          <path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path>
+                        </svg>
+                      </div>
+                    </button>
+                  </a>
+                </div>
+              )}
             </div>
-            <img
-              src="/img/increase-cr.webp"
-              alt="Product screenshot"
-              class="right h-auto w-[24rem] max-w-none rounded-xl shadow-xl sm:w-[36rem] md:-ml-4 lg:-ml-0"
-              loading="lazy"
-              width="1217"
-              height="1227"
-              decoding="async"
-            />
+            {isLoading ? (
+              <div className="right h-auto w-[24rem] max-w-none rounded-xl shadow-xl sm:w-[36rem] md:-ml-4 lg:-ml-0">
+                <div className="skeleton w-full h-full"></div>
+              </div>
+            ) : (
+              Image1 && (
+                <>
+                  <img
+                    key={Image1.data.attributes.id}
+                    src={`${
+                      process.env.NEXT_PUBLIC_STRAPI_BASE_URL ||
+                      "http://localhost:1337"
+                    }${Image1.data.attributes.url}`}
+                    alt={Image1.data.attributes.alt}
+                    className="right h-auto w-[24rem] max-w-none rounded-xl shadow-xl sm:w-[36rem] md:-ml-4 lg:-ml-0"
+                    loading="lazy"
+                    width="1217"
+                    height="1227"
+                    decoding="async"
+                  />
+                </>
+              )
+            )}
           </div>
         </div>
       </div>
@@ -97,48 +140,66 @@ const Why = () => {
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
           <div class="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
             <div class="lg:ml-auto lg:pl-4 lg:pt-4">
-              <div class="lg:max-w-lg">
-                <h3 class="mt-2 font-melodrama text-3xl font-medium tracking-tight text-white sm:text-6xl">
-                  <span class="bg-gradient-to-b from-neutral-50 from-60% to-neutral-400 bg-clip-text text-transparent lg:to-neutral-600">
-                    Using Our Own Custom Technologies
-                  </span>
-                </h3>
-                <p class="text-md mt-6 font-light text-neutral-300 md:text-lg">
-                  We've architected our own custom marketing framework so that
-                  our funnels are up to 10x faster than typical websites and
-                  convert 1.5x better than typical Shopify stores. Allowing us
-                  to deliver a better user experience and increase your
-                  conversion rate.
-                </p>
-                <a href="/contact">
-                  <button class="relative rounded-full text-center transition-all duration-500 transform overflow-hidden z-40   px-6 py-3 text-base bg-purple-500 text-neutral-950 border border-purple-500 button hover:text-neutral-50 group mt-6 uppercase">
-                    <div class="group relative z-10 w-full">
-                      Get Started
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="32"
-                        height="32"
-                        fill="currentColor"
-                        viewBox="0 0 256 256"
-                        class="ml-2 inline-block"
-                      >
-                        <path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path>
-                      </svg>
-                    </div>
-                  </button>
-                </a>
-              </div>
+              {isLoading ? (
+                <>
+                  <div class="lg:max-w-lg">
+                    <div className="skeleton h-4 w-28"></div>
+                  </div>
+                </>
+              ) : (
+                <div class="lg:max-w-lg">
+                  <h3 class="mt-2 font-melodrama text-3xl font-medium tracking-tight text-white sm:text-6xl">
+                    <span class="bg-gradient-to-b from-neutral-50 from-60% to-neutral-400 bg-clip-text text-transparent lg:to-neutral-600">
+                      {Why2}
+                    </span>
+                  </h3>
+                  <p class="text-md mt-6 font-light text-neutral-300 md:text-lg">
+                    {WhyDescription2}
+                  </p>
+                  <a href="/contact">
+                    <button class="relative rounded-full text-center transition-all duration-500 transform overflow-hidden z-40   px-6 py-3 text-base bg-purple-500 text-neutral-950 border border-purple-500 button hover:text-neutral-50 group mt-6 uppercase">
+                      <div class="group relative z-10 w-full">
+                        {CTA}
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="32"
+                          height="32"
+                          fill="currentColor"
+                          viewBox="0 0 256 256"
+                          class="ml-2 inline-block"
+                        >
+                          <path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path>
+                        </svg>
+                      </div>
+                    </button>
+                  </a>
+                </div>
+              )}
             </div>
             <div class="flex items-start justify-end lg:order-first">
-              <img
-                src="/img/design.webp"
-                alt="Product screenshot"
-                class="left h-auto w-[28rem] max-w-none rounded-xl shadow-xl sm:w-[50rem] md:-ml-4 lg:-ml-0"
-                loading="lazy"
-                width="1365"
-                height="832"
-                decoding="async"
-              />
+              {isLoading ? (
+                <div className="right h-auto w-[24rem] max-w-none rounded-xl shadow-xl sm:w-[36rem] md:-ml-4 lg:-ml-0">
+                  <div className="skeleton w-full h-full"></div>
+                </div>
+              ) : (
+                Image2 && (
+                  <>
+                    <img
+                      key={Image2.data.attributes.id}
+                      src={`${
+                        process.env.NEXT_PUBLIC_STRAPI_BASE_URL ||
+                        "http://localhost:1337"
+                      }${Image2.data.attributes.url}`}
+                      alt={Image2.data.attributes.alt}
+                      class="left h-auto w-[28rem] max-w-none rounded-xl shadow-xl sm:w-[50rem] md:-ml-4 lg:-ml-0"
+                      loading="lazy"
+                      width="1365"
+                      height="832"
+                      decoding="async"
+                    />
+                  </>
+                )
+              )}
             </div>
           </div>
         </div>

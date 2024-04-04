@@ -6,27 +6,33 @@ const GlobalStateContext = createContext();
 
 // Step 2: Create a provider component
 export const GlobalStateProvider = ({ children }) => {
-  // Define your global states here
+  // Existing global states
   const [isLoading, setIsLoading] = useState(true);
   const [user, setUser] = useState(null);
-  // Add more global states as needed
 
-  // Define functions to update the global states
-  const updateIsLoading = (value) => setIsLoading(value);
-  const updateUser = (userData) => setUser(userData);
-  // Add more update functions as needed
+  // New global states
+  const [whyContent, setWhyContent] = useState(null);
+  const [ctaBannerContent, setCtaBannerContent] = useState(null);
+  const [heroContent, setHeroContent] = useState(null);
+  const [marqueeContent, setMarqueeContent] = useState(null);
 
-  // Combine all global states and update functions into a single object
+  // Combine all global states and their update functions into a single object
   const globalState = {
     isLoading,
-    setIsLoading: updateIsLoading,
+    setIsLoading, // Directly use the setter functions provided by useState
     user,
-    setUser: updateUser,
-    // Add more global states and update functions as needed
+    setUser, // Directly use the setter functions provided by useState
+    whyContent,
+    setWhyContent,
+    ctaBannerContent,
+    setCtaBannerContent,
+    heroContent,
+    setHeroContent,
+    marqueeContent,
+    setMarqueeContent,
   };
 
   return (
-    // Provide the global state and update functions through context provider
     <GlobalStateContext.Provider value={globalState}>
       {children}
     </GlobalStateContext.Provider>
