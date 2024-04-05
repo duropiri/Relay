@@ -36,8 +36,8 @@ const Why = () => {
     gsap.utils.toArray(".left, .right").forEach((image) => {
       const direction = image.classList.contains("left") ? 1 : -1;
       gsap.to(image, {
-        x: () => direction * 100, // Adjust the distance as needed
-        ease: "none",
+        x: () => direction * 50, // Adjust the distance as needed
+        ease: "expoScale",
         scrollTrigger: {
           trigger: section, // Use the common parent as the trigger
           start: "top center", // When the top of the parent hits the center

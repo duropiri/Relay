@@ -8,85 +8,77 @@ import Image from "next/image";
 const Panel = () => {
   const { isLoading } = useGlobalState();
 
+  // Check if the current viewport width exceeds the mobile width breakpoint (e.g., 768px for tablets)
+  const isDesktop = window.innerWidth > 768;
+
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
+    if (isDesktop) {
+      gsap.registerPlugin(ScrollTrigger);
 
-    const debounce = (func, delay) => {
-      let inDebounce;
-      return function () {
-        const context = this;
-        const args = arguments;
-        clearTimeout(inDebounce);
-        inDebounce = setTimeout(() => func.apply(context, args), delay);
+      const debounce = (func, delay) => {
+        let inDebounce;
+        return function () {
+          const context = this;
+          const args = arguments;
+          clearTimeout(inDebounce);
+          inDebounce = setTimeout(() => func.apply(context, args), delay);
+        };
       };
-    };
 
-    const updateAnimation = () => {
-      // Ensure sections are re-queried to include any dynamic content changes
-      const sections = gsap.utils.toArray(".panel");
-      const totalWidth = sections.length * window.innerWidth;
-      const actualWidth = document.querySelector(".section").offsetWidth * 2;
-      // const totalWidth = sections.height * 2;
+      const updateAnimation = () => {
+        // Ensure sections are re-queried to include any dynamic content changes
+        const sections = gsap.utils.toArray(".panel");
+        const totalWidth = sections.length * window.innerWidth;
+        const actualWidth = document.querySelector(".section").offsetWidth * 2;
+        // const totalWidth = sections.height * 2;
 
-      const pinSpacer = document.querySelector(".pin-spacer");
-      if (pinSpacer) {
-        pinSpacer.style.height = `${actualWidth}px`;
-        // Set bottom margin to 20% of the pinSpacer's height
-        // const bottomMargin = totalWidth * 0.2;
-        // pinSpacer.style.marginBottom = `${bottomMargin}px`;
-      }
-
-      // Check if the pin-spacer height is set correctly after content has loaded or layout has changed
-      const checkSpacerHeight = () => {
-        const actualWidth =
-          document.querySelector(".panel-grid").offsetWidth * 2;
-        if (pinSpacer && parseInt(pinSpacer.style.height, 10) !== actualWidth) {
-          console.error(
-            "Spacer height mismatch:",
-            pinSpacer.style.height,
-            "vs",
-            actualWidth
-          );
+        const pinSpacer = document.querySelector(".pin-spacer");
+        if (pinSpacer) {
           pinSpacer.style.height = `${actualWidth}px`;
-          ScrollTrigger.refresh();
+          // Set bottom margin to 20% of the pinSpacer's height
+          // const bottomMargin = totalWidth * 0.2;
+          // pinSpacer.style.marginBottom = `${bottomMargin}px`;
         }
+
+        // Recreate the ScrollTrigger instance for the horizontal scroll
+        const horizontalScroll = gsap.to(".panel-container", {
+          x: () => `-${actualWidth - window.innerWidth}px`,
+          ease: "none",
+          scrollTrigger: {
+            trigger: pinSpacer,
+            pin: ".panel-container",
+            start: "top-=90px top",
+            end: `+=${actualWidth - window.innerWidth}`,
+            scrub: 1,
+            snap: 1 / (sections.length - 1),
+            invalidateOnRefresh: true,
+            markers: false,
+          },
+        });
+
+        // checkSpacerHeight(); // Call after setting up the ScrollTrigger
+
+        return horizontalScroll;
       };
 
-      // Recreate the ScrollTrigger instance for the horizontal scroll
-      const horizontalScroll = gsap.to(".panel-container", {
-        x: () => `-${actualWidth - window.innerWidth}px`,
-        ease: "none",
-        scrollTrigger: {
-          trigger: pinSpacer,
-          pin: ".panel-container",
-          start: "top-=90px top",
-          end: `+=${actualWidth - window.innerWidth}`,
-          scrub: 1,
-          snap: 1 / (sections.length - 1),
-          invalidateOnRefresh: true,
-          markers: false,
-        },
-      });
+      const debouncedUpdateAnimation = debounce(updateAnimation, 150);
 
-      // checkSpacerHeight(); // Call after setting up the ScrollTrigger
+      // Immediate invocation
+      const animationInstance = updateAnimation();
 
-      return horizontalScroll;
-    };
+      window.addEventListener("resize", debouncedUpdateAnimation);
+      window.addEventListener("orientationchange", debouncedUpdateAnimation);
 
-    const debouncedUpdateAnimation = debounce(updateAnimation, 150);
-
-    // Immediate invocation
-    const animationInstance = updateAnimation();
-
-    window.addEventListener("resize", debouncedUpdateAnimation);
-    window.addEventListener("orientationchange", debouncedUpdateAnimation);
-
-    return () => {
-      window.removeEventListener("resize", debouncedUpdateAnimation);
-      window.removeEventListener("orientationchange", debouncedUpdateAnimation);
-      animationInstance.kill();
-      ScrollTrigger.getAll().forEach((st) => st.kill());
-    };
+      return () => {
+        window.removeEventListener("resize", debouncedUpdateAnimation);
+        window.removeEventListener(
+          "orientationchange",
+          debouncedUpdateAnimation
+        );
+        animationInstance.kill();
+        ScrollTrigger.getAll().forEach((st) => st.kill());
+      };
+    }
   }, [isLoading]);
 
   return (
@@ -96,7 +88,13 @@ const Panel = () => {
         className="section overscroll-none overflow-x-hidden"
         id="casestudies"
       >
-        <div className="panel-container flex h-full w-[200%] flex-nowrap overscroll-none">
+        <div
+          className={`panel-container ${
+            !isDesktop
+              ? "flex flex-col gap-10"
+              : "flex h-full w-[200%] flex-nowrap overscroll-none"
+          }`}
+        >
           <section className="panel relative flex w-full items-center justify-center overflow-auto overscroll-none">
             <div className="py-2 md:py-12">
               <div className="mx-auto max-w-7xl px-6 lg:px-8">
