@@ -10,7 +10,7 @@ const fetchCMS = ({ collection }) => {
     },
   };
 
-  return fetch(`${config.api}/api/${collection}s?populate=*`, reqOptions)
+  return fetch(`${process.env.NEXT_PUBLIC_STRAPI_BASE_URL}/api/${collection}s?populate=*`, reqOptions)
     .then((response) => {
       if (response.ok) {
         return response.json();

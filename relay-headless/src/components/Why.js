@@ -64,7 +64,8 @@ const Why = () => {
           ) : (
             <h2 className="font-melodrama text-4xl sm:text-5xl lg:text-7xl text-center lg:text-start">
               <span className="bg-gradient-to-br from-neutral-100 from-55% to-neutral-500 bg-clip-text font-medium tracking-tight text-transparent lg:min-h-[50vw] lg:to-neutral-600">
-                {Header}
+                {/* {Header} */}
+                Why Should You Use Our Marketing Funnels?
               </span>
             </h2>
           )}
@@ -84,16 +85,21 @@ const Why = () => {
                 <div className="lg:max-w-lg">
                   <h2 className="mt-2 font-melodrama text-3xl font-medium tracking-tight text-white sm:text-6xl">
                     <span className="bg-gradient-to-b from-neutral-50 from-60% to-neutral-400 bg-clip-text text-transparent lg:to-neutral-600">
-                      {Why1}
+                      {/* {Why1} */}
+                      Designed to Convert Paid Traffic
                     </span>
                   </h2>
                   <p className="text-md mt-6 font-light text-neutral-300 md:text-lg">
-                    {WhyDescription1}
+                    {/* {WhyDescription1} */}
+                    We design, develop and deploy custom marketing funnels to help
+                  you convert your paid traffic into sales. Our funnels are
+                  completely managed by us, so you don't have to touch a thing.
                   </p>
                   <a href="/contact">
                     <button className="relative rounded-full text-center transition-all duration-500 transform overflow-hidden z-40   px-6 py-3 text-base bg-purple-500 text-neutral-950 border border-purple-500 button hover:text-neutral-50 group mt-6 text-lg uppercase">
                       <div className="group relative z-10 w-full">
-                        {CTA}
+                        {/* {CTA} */}
+                        Get Started
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="32"
@@ -115,23 +121,32 @@ const Why = () => {
                 <div className="skeleton w-full h-full"></div>
               </div>
             ) : (
-              Image1 && (
-                <>
-                  <img
-                    key={Image1.data.attributes.id}
-                    src={`${
-                      process.env.NEXT_PUBLIC_STRAPI_BASE_URL ||
-                      "http://localhost:1337"
-                    }${Image1.data.attributes.url}`}
-                    alt={Image1.data.attributes.alt}
-                    className="right h-auto w-[24rem] max-w-none rounded-xl shadow-xl sm:w-[36rem] md:-ml-4 lg:-ml-0"
-                    loading="lazy"
-                    width="1217"
-                    height="1227"
-                    decoding="async"
-                  />
-                </>
-              )
+              // Image1 && (
+              //   <>
+              //     <img
+              //       key={Image1.data.attributes.id}
+              //       src={`${
+              //         process.env.NEXT_PUBLIC_STRAPI_BASE_URL ||
+              //         "http://localhost:1337"
+              //       }${Image1.data.attributes.url}`}
+              //       alt={Image1.data.attributes.alt}
+              //       className="right h-auto w-[24rem] max-w-none rounded-xl shadow-xl sm:w-[36rem] md:-ml-4 lg:-ml-0"
+              //       loading="lazy"
+              //       width="1217"
+              //       height="1227"
+              //       decoding="async"
+              //     />
+              //   </>
+              // )
+              <img
+              src="/img/increase-cr.webp"
+              alt="Product screenshot"
+              class="right h-auto w-[24rem] max-w-none rounded-xl shadow-xl sm:w-[36rem] md:-ml-4 lg:-ml-0"
+              loading="lazy"
+              width="1217"
+              height="1227"
+              decoding="async"
+            />
             )}
           </div>
         </div>
@@ -151,16 +166,23 @@ const Why = () => {
                 <div className="lg:max-w-lg">
                   <h3 className="mt-2 font-melodrama text-3xl font-medium tracking-tight text-white sm:text-6xl">
                     <span className="bg-gradient-to-b from-neutral-50 from-60% to-neutral-400 bg-clip-text text-transparent lg:to-neutral-600">
-                      {Why2}
+                      {/* {Why2} */}
+                      Using Our Own Custom Technologies
                     </span>
                   </h3>
                   <p className="text-md mt-6 font-light text-neutral-300 md:text-lg">
-                    {WhyDescription2}
+                    {/* {WhyDescription2} */}
+                    We've architected our own custom marketing framework so that
+                  our funnels are up to 10x faster than typical websites and
+                  convert 1.5x better than typical Shopify stores. Allowing us
+                  to deliver a better user experience and increase your
+                  conversion rate.
                   </p>
                   <a href="/contact">
                     <button className="relative rounded-full text-center transition-all duration-500 transform overflow-hidden z-40   px-6 py-3 text-base bg-purple-500 text-neutral-950 border border-purple-500 button hover:text-neutral-50 group mt-6 uppercase">
                       <div className="group relative z-10 w-full">
-                        {CTA}
+                        {/* {CTA} */}
+                        Get Started
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="32"
@@ -183,23 +205,32 @@ const Why = () => {
                   <div className="skeleton w-full h-full"></div>
                 </div>
               ) : (
-                Image2 && (
-                  <>
-                    <img
-                      key={Image2.data.attributes.id}
-                      src={`${
-                        process.env.NEXT_PUBLIC_STRAPI_BASE_URL ||
-                        "http://localhost:1337"
-                      }${Image2.data.attributes.url}`}
-                      alt={Image2.data.attributes.alt}
-                      className="left h-auto w-[28rem] max-w-none rounded-xl shadow-xl sm:w-[50rem] md:-ml-4 lg:-ml-0"
-                      loading="lazy"
-                      width="1365"
-                      height="832"
-                      decoding="async"
-                    />
-                  </>
-                )
+                // Image2 && (
+                //   <>
+                //     <img
+                //       key={Image2.data.attributes.id}
+                //       src={`${
+                //         process.env.NEXT_PUBLIC_STRAPI_BASE_URL ||
+                //         "http://localhost:1337"
+                //       }${Image2.data.attributes.url}`}
+                //       alt={Image2.data.attributes.alt}
+                //       className="left h-auto w-[28rem] max-w-none rounded-xl shadow-xl sm:w-[50rem] md:-ml-4 lg:-ml-0"
+                //       loading="lazy"
+                //       width="1365"
+                //       height="832"
+                //       decoding="async"
+                //     />
+                //   </>
+                // )
+                <img
+                  src="/img/design.webp"
+                  alt="Product screenshot"
+                  class="left h-auto w-[28rem] max-w-none rounded-xl shadow-xl sm:w-[50rem] md:-ml-4 lg:-ml-0"
+                  loading="lazy"
+                  width="1365"
+                  height="832"
+                  decoding="async"
+                />
               )}
             </div>
           </div>

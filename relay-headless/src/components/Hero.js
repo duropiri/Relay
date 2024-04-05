@@ -116,12 +116,15 @@ const Hero = () => {
                 <h1
                   className="bg-gradient-to-br from-neutral-100 from-55% to-neutral-500 bg-clip-text font-medium tracking-tight text-transparent lg:min-h-[20rem] lg:to-neutral-600"
                   data-speed="0.5"
-                  dangerouslySetInnerHTML={renderMainMessageText(
-                    mainMessage,
-                    highlightedText1,
-                    highlightedText2
-                  )}
-                ></h1>
+                  // dangerouslySetInnerHTML={renderMainMessageText(
+                  //   mainMessage,
+                  //   highlightedText1,
+                  //   highlightedText2
+                  // )}
+                >
+                  Get <span className="text-purple-500">1.5x</span> More Out Of
+                  Your Ads, with the #1 High Performance <span className="text-purple-500">Marketing Funnels</span>.
+                </h1>
               </div>
             </div>
           )}
@@ -141,7 +144,11 @@ const Hero = () => {
                 className="text-center text-base leading-tight text-neutral-300 lg:text-start"
                 data-speed="0.7"
               >
-                <div>{Description}</div>
+                {/* <div>{Description}</div> */}
+                Relay is a modern development studio specialising in high
+                converting marketing funnels. We design, develop and deploy high
+                performance, lightning-fast landing pages that will sky-rocket
+                your conversion rate.
               </div>
               <div
                 className="block w-full justify-center md:flex md:flex-row lg:justify-start"
@@ -150,7 +157,11 @@ const Hero = () => {
                 <a href="/contact">
                   <button className="relative rounded-full text-center transition-all duration-500 transform overflow-hidden z-40   w-full px-8 py-6 text-base bg-purple-500 text-neutral-950 border border-purple-500 button hover:text-neutral-50 group text-xl uppercase md:text-2xl">
                     <div className="flex flex-row group relative z-10 w-full">
-                      <div dangerouslySetInnerHTML={{ __html: CTA }}></div>
+                      <div
+                      // dangerouslySetInnerHTML={{ __html: CTA }}
+                      >
+                        Let's Chat
+                      </div>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="32"
@@ -202,34 +213,42 @@ const Hero = () => {
           >
             <div className="flex flex-col items-center  justify-center bg-neutral-900 px-2 py-6">
               <dt className="mt-1 text-sm font-normal leading-tight tracking-tight text-neutral-300">
-                {Statistic[0].description}
+                {/* {Statistic[0].description} */}
+                Average Conversion Rate Boost
               </dt>
               <dd className="order-first font-melodrama text-5xl font-semibold tracking-tight text-white lg:text-5xl">
-                {Statistic[0].value}
+                {/* {Statistic[0].value} */}
+                22%
               </dd>
             </div>
             <div className="flex flex-col items-center  justify-center bg-neutral-900 px-2 py-6">
               <dt className="mt-1 text-sm font-normal leading-tight tracking-tight text-neutral-300">
-                {Statistic[1].description}
+                {/* {Statistic[1].description} */}
+                More Time Spent on Page
               </dt>
               <dd className="order-first font-melodrama text-5xl font-semibold tracking-tight text-white lg:text-5xl">
-                {Statistic[1].value}
+                {/* {Statistic[1].value} */}
+                60%
               </dd>
             </div>
             <div className="flex flex-col items-center  justify-center bg-neutral-900 px-2 py-6">
               <dt className="mt-1 text-sm font-normal leading-tight tracking-tight text-neutral-300">
-                {Statistic[2].description}
+                {/* {Statistic[2].description} */}
+                Faster Than Typical Websites
               </dt>
               <dd className="order-first font-melodrama text-5xl font-semibold tracking-tight text-white lg:text-5xl">
-                {Statistic[2].value}
+                {/* {Statistic[2].value} */}
+                10x
               </dd>
             </div>
             <div className="flex flex-col items-center  justify-center bg-neutral-900 px-2 py-6">
               <dt className="mt-1 text-sm font-normal leading-tight tracking-tight text-neutral-300">
-                {Statistic[3].description}
+                {/* {Statistic[3].description} */}
+                Average Ad ROI Increase
               </dt>
               <dd className="order-first font-melodrama text-5xl font-semibold tracking-tight text-white lg:text-5xl">
-                {Statistic[3].value}
+                {/* {Statistic[3].value} */}
+                39%
               </dd>
             </div>
           </dl>
@@ -248,17 +267,110 @@ const Hero = () => {
         </div>
       ) : (
         <Marquee speed={1}>
-          {marqueeImages.map(({ id, url, alt }, index) => (
+          {/* {marqueeImages.map(({ id, url, alt }, index) => (
             <img
               key={id}
-              src={`${process.env.NEXT_PUBLIC_STRAPI_BASE_URL || "http://localhost:1337"}${url}`}
+              src={`${
+                process.env.NEXT_PUBLIC_STRAPI_BASE_URL ||
+                "http://localhost:1337"
+              }${url}`}
               alt={alt}
               className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
               width={1728}
               height={992}
               priority={true} // optional, for preloading important images
             />
-          ))}
+          ))} */}
+          <img
+            src="/img/homezy.webp"
+            alt="Homezy"
+            class="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
+            loading="eager"
+            width="1728"
+            height="992"
+            decoding="async"
+          />
+          <img
+            src="/img/thai.webp"
+            alt="Thai"
+            class="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
+            loading="eager"
+            width="1728"
+            height="992"
+            decoding="async"
+          />
+          <img
+            src="/img/wellbeing.webp"
+            alt="WellBeing"
+            class="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
+            loading="eager"
+            width="3456"
+            height="1984"
+            decoding="async"
+          />
+          <img
+            src="/img/agenci.webp"
+            alt="Agenci"
+            class="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
+            loading="eager"
+            width="1728"
+            height="992"
+            decoding="async"
+          />
+          <img
+            src="/img/joyfolio.webp"
+            alt="Joyfolio"
+            class="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
+            loading="eager"
+            width="1728"
+            height="992"
+            decoding="async"
+          />
+          <img
+            src="/img/inspire.webp"
+            alt="Inspire"
+            class="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
+            loading="eager"
+            width="1728"
+            height="992"
+            decoding="async"
+          />
+          <img
+            src="/img/wellbeing.webp"
+            alt="WellBeing"
+            class="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
+            loading="eager"
+            width="3456"
+            height="1984"
+            decoding="async"
+          />
+          <img
+            src="/img/fashion.webp"
+            alt="Fashion"
+            class="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
+            loading="eager"
+            width="2456"
+            height="1491"
+            decoding="async"
+          />
+          <img
+            src="/img/requesto.webp"
+            alt="Request"
+            class="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
+            loading="eager"
+            width="1728"
+            height="992"
+            decoding="async"
+          />
+          <img
+            src="/img/darkstudio.webp"
+            alt="Studio"
+            class="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
+            loading="eager"
+            width="1728"
+            height="992"
+            decoding="async"
+          />
         </Marquee>
       )}
     </>

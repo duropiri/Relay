@@ -27,15 +27,20 @@ const CallToAction = () => {
         ) : (
           <div className="flex flex-col items-center gap-y-8">
             <h3 className="mx-2 text-center font-melodrama text-3xl font-medium text-neutral-100 lg:text-5xl">
-              {Header}
+              {/* {Header} */}
+              Are you ready to increase your conversion rate?{" "}
             </h3>
             <p className="text-md text-center leading-tight tracking-tight text-neutral-300 lg:mx-12 lg:max-w-2xl lg:text-xl">
-              {Description}
+              {/* {Description} */}
+              No matter what your business is, we can help you create a
+              marketing funnel that will drive conversions, increase your leads
+              and make you stand out from the crowd.{" "}
             </p>
             <a href="/contact">
               <button className="relative rounded-full text-center transition-all duration-500 transform overflow-hidden z-40   w-full px-6 py-3 text-base bg-purple-500 text-neutral-950 border border-purple-500 button hover:text-neutral-50 group uppercase leading-tight tracking-tight md:text-lg">
                 <div className="group relative z-10 w-full">
-                  {CTA}
+                  {/* {CTA} */}
+                  Yes, I'm Ready
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="32"
