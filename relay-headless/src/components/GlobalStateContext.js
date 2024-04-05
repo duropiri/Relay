@@ -7,7 +7,7 @@ const GlobalStateContext = createContext();
 // Step 2: Create a provider component
 export const GlobalStateProvider = ({ children }) => {
   // Existing global states
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
   const [user, setUser] = useState(null);
 
   // New global states

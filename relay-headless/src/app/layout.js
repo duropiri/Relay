@@ -19,7 +19,7 @@ const RootLayout = ({ children }) => {
     <html lang="en">
       <body className={inter.className}>
         <GlobalStateProvider>
-          <ContentLoader />
+          {/* <ContentLoader /> */}
           <Navbar />
           <MobileMenu />
           <SmoothScrolling>
