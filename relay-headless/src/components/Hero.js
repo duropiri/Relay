@@ -160,7 +160,7 @@ const Hero = () => {
                       <div
                       // dangerouslySetInnerHTML={{ __html: CTA }}
                       >
-                        Let's Chat
+                        Let&apos;s Chat
                       </div>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"

@@ -40,7 +40,7 @@ const CallToAction = () => {
               <button className="relative rounded-full text-center transition-all duration-500 transform overflow-hidden z-40   w-full px-6 py-3 text-base bg-purple-500 text-neutral-950 border border-purple-500 button hover:text-neutral-50 group uppercase leading-tight tracking-tight md:text-lg">
                 <div className="group relative z-10 w-full">
                   {/* {CTA} */}
-                  Yes, I'm Ready
+                  Yes, I&apos;m Ready
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="32"

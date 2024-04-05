@@ -93,7 +93,7 @@ const Why = () => {
                     {/* {WhyDescription1} */}
                     We design, develop and deploy custom marketing funnels to help
                   you convert your paid traffic into sales. Our funnels are
-                  completely managed by us, so you don't have to touch a thing.
+                  completely managed by us, so you don&apos;t have to touch a thing.
                   </p>
                   <a href="/contact">
                     <button className="relative rounded-full text-center transition-all duration-500 transform overflow-hidden z-40   px-6 py-3 text-base bg-purple-500 text-neutral-950 border border-purple-500 button hover:text-neutral-50 group mt-6 text-lg uppercase">
@@ -172,7 +172,7 @@ const Why = () => {
                   </h3>
                   <p className="text-md mt-6 font-light text-neutral-300 md:text-lg">
                     {/* {WhyDescription2} */}
-                    We've architected our own custom marketing framework so that
+                    We&apos;ve architected our own custom marketing framework so that
                   our funnels are up to 10x faster than typical websites and
                   convert 1.5x better than typical Shopify stores. Allowing us
                   to deliver a better user experience and increase your
