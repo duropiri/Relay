@@ -123,7 +123,8 @@ const Hero = () => {
                   // )}
                 >
                   Get <span className="text-blue-500">1.5x</span> More Out Of
-                  Your Ads, with the #1 High Performance <span className="text-blue-500">Marketing Funnels</span>.
+                  Your Ads, with the #1 High Performance{" "}
+                  <span className="text-blue-500">Marketing Funnels</span>.
                 </h1>
               </div>
             </div>
@@ -156,12 +157,8 @@ const Hero = () => {
               >
                 <a href="/contact">
                   <button className="relative rounded-full text-center transition-all duration-500 transform overflow-hidden z-40   w-full px-8 py-6 text-base bg-blue-500 text-neutral-950 border border-blue-500 button hover:text-neutral-50 group text-xl uppercase md:text-2xl">
-                    <div className="flex flex-row group relative z-10 w-full">
-                      <div
-                      // dangerouslySetInnerHTML={{ __html: CTA }}
-                      >
-                        Let&apos;s Chat
-                      </div>
+                    <div className="flex flex-row group relative z-10 w-full justify-center">
+                      Let&apos;s Chat
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="32"

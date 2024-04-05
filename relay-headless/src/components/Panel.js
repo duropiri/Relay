@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { useGlobalState } from "./GlobalStateContext";
@@ -8,6 +8,15 @@ import Image from "next/image";
 const Panel = () => {
   const { isLoading } = useGlobalState();
   const [isDesktop, setIsDesktop] = useState(true); // Default to one state
+  const panelRef = useRef(null);
+  const [panelHeight, setPanelHeight] = useState(0);
+
+  useEffect(() => {
+    // Measure and update panel height
+    if (panelRef.current && !isDesktop) {
+      setPanelHeight(panelRef.current.offsetHeight * 2.5); // Assuming you want double the height of the panel
+    }
+  }, [isLoading, isDesktop]); // Re-run when isLoading or isDesktop changes
 
   useEffect(() => {
     const updateLayout = () => {
@@ -25,36 +34,23 @@ const Panel = () => {
   }, []);
 
   useEffect(() => {
-    if (isDesktop) {
-      gsap.registerPlugin(ScrollTrigger);
+    gsap.registerPlugin(ScrollTrigger);
+    let actualWidth = document.querySelector(".section").offsetWidth * 3;
 
-      const debounce = (func, delay) => {
-        let inDebounce;
-        return function () {
-          const context = this;
-          const args = arguments;
-          clearTimeout(inDebounce);
-          inDebounce = setTimeout(() => func.apply(context, args), delay);
-        };
-      };
+    // Function to setup the animation
+    const setupAnimation = () => {
+      const sections = gsap.utils.toArray(".panel");
+      const totalWidth = sections.length * window.innerWidth;
+      actualWidth = document.querySelector(".section").offsetWidth * 2;
+      
+      const pinSpacer = document.querySelector(".pin-spacer");
+      if (pinSpacer) {
+        pinSpacer.style.height = `${actualWidth}px`;
+      }
 
-      const updateAnimation = () => {
-        // Ensure sections are re-queried to include any dynamic content changes
-        const sections = gsap.utils.toArray(".panel");
-        const totalWidth = sections.length * window.innerWidth;
-        const actualWidth = document.querySelector(".section").offsetWidth * 2;
-        // const totalWidth = sections.height * 2;
-
-        const pinSpacer = document.querySelector(".pin-spacer");
-        if (pinSpacer) {
-          pinSpacer.style.height = `${actualWidth}px`;
-          // Set bottom margin to 20% of the pinSpacer's height
-          // const bottomMargin = totalWidth * 0.2;
-          // pinSpacer.style.marginBottom = `${bottomMargin}px`;
-        }
-
-        // Recreate the ScrollTrigger instance for the horizontal scroll
-        const horizontalScroll = gsap.to(".panel-container", {
+      if (isDesktop) {
+        // Setup the ScrollTrigger instance for the horizontal scroll
+        return gsap.to(".panel-container", {
           x: () => `-${actualWidth - window.innerWidth}px`,
           ease: "none",
           scrollTrigger: {
@@ -65,42 +61,43 @@ const Panel = () => {
             scrub: 1,
             snap: 1 / (sections.length - 1),
             invalidateOnRefresh: true,
-            markers: false,
+            markers: true,
           },
         });
+      }
+    };
 
-        // checkSpacerHeight(); // Call after setting up the ScrollTrigger
+    // Only setup the animation if isDesktop is true
+    let animationInstance;
+    if (isDesktop) {
+      animationInstance = setupAnimation();
+    }
 
-        return horizontalScroll;
-      };
-
-      const debouncedUpdateAnimation = debounce(updateAnimation, 150);
-
-      // Immediate invocation
-      const animationInstance = updateAnimation();
-
-      window.addEventListener("resize", debouncedUpdateAnimation);
-      window.addEventListener("orientationchange", debouncedUpdateAnimation);
-
-      return () => {
-        window.removeEventListener("resize", debouncedUpdateAnimation);
-        window.removeEventListener(
-          "orientationchange",
-          debouncedUpdateAnimation
-        );
+    // Cleanup function
+    return () => {
+      if (animationInstance) {
         animationInstance.kill();
         ScrollTrigger.getAll().forEach((st) => st.kill());
-      };
-    }
+      }
+    };
   }, [isDesktop, isLoading]);
 
   console.log("Component rendering with isDesktop:", isDesktop);
 
   return (
     <>
-      <div className="absolute pin-spacer"></div>
       <div
-        className="section overscroll-none overflow-x-hidden"
+        className={`pin-spacer ${
+          isDesktop ? "absolute w-full" : "absolute w-full"
+        }`}
+      ></div>
+      <div
+        className={`section ${
+          isDesktop
+            ? "overscroll-none overflow-x-hidden"
+            : "overscroll-none overflow-hidden"
+        }`}
+        style={!isDesktop ? { height: `${panelHeight}px` } : {}}
         id="casestudies"
       >
         <div
@@ -210,6 +207,7 @@ const Panel = () => {
                 ? "relative flex w-full items-center justify-center overflow-hidden overscroll-none"
                 : "relative flex w-1/2"
             }`}
+            ref={panelRef}
           >
             <div className="py-2 md:py-12">
               <div className="mx-auto max-w-7xl px-6 lg:px-8">
