@@ -7,22 +7,21 @@ import Image from "next/image";
 
 const Panel = () => {
   const { isLoading } = useGlobalState();
-  const [isDesktop, setIsDesktop] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(true); // Default to one state
 
   useEffect(() => {
-    // This ensures the code runs only on the client side
-    const handleResize = () => {
+    const updateLayout = () => {
       setIsDesktop(window.innerWidth > 768);
     };
 
-    // Check once on mount
-    handleResize();
+    // Set the correct initial value once the component mounts
+    updateLayout();
 
-    // Set up event listener for resize events
-    window.addEventListener("resize", handleResize);
+    // Add event listener for window resize
+    window.addEventListener("resize", updateLayout);
 
-    // Clean up event listener
-    return () => window.removeEventListener("resize", handleResize);
+    // Cleanup
+    return () => window.removeEventListener("resize", updateLayout);
   }, []);
 
   useEffect(() => {
@@ -93,7 +92,9 @@ const Panel = () => {
         ScrollTrigger.getAll().forEach((st) => st.kill());
       };
     }
-  }, [isLoading]);
+  }, [isDesktop, isLoading]);
+
+  console.log("Component rendering with isDesktop:", isDesktop);
 
   return (
     <>
@@ -104,12 +105,18 @@ const Panel = () => {
       >
         <div
           className={`panel-container ${
-            !isDesktop
-              ? "flex flex-col gap-10"
-              : "flex h-full w-[200%] flex-nowrap overscroll-none"
+            isDesktop
+              ? "flex h-full w-[200%] flex-nowrap overscroll-none"
+              : "flex flex-col gap-10"
           }`}
         >
-          <section className="panel relative flex w-full items-center justify-center overflow-auto overscroll-none">
+          <section
+            className={`panel ${
+              isDesktop
+                ? "relative flex w-full items-center justify-center overflow-auto overscroll-none"
+                : "relative flex w-1/2"
+            }`}
+          >
             <div className="py-2 md:py-12">
               <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
@@ -119,7 +126,7 @@ const Panel = () => {
                         Clean Screens{" "}
                       </h2>
                       <h3 className="mt-2 font-melodrama text-2xl tracking-tight text-white sm:text-6xl">
-                        <span className="bg-gradient-to-b from-neutral-50 from-60% to-neutral-400 bg-clip-text font-medium text-transparent lg:to-neutral-600">
+                        <span className="bg-gradient-to-b from-neutral-50 fr             om-60% to-neutral-400 bg-clip-text font-medium text-transparent lg:to-neutral-600">
                           Increased Conversion Rate By 39% Overnight{" "}
                         </span>
                       </h3>
@@ -197,7 +204,13 @@ const Panel = () => {
               </div>
             </div>
           </section>
-          <section className="panel relative flex w-full items-center justify-center overflow-hidden overscroll-none">
+          <section
+            className={`panel ${
+              isDesktop
+                ? "relative flex w-full items-center justify-center overflow-hidden overscroll-none"
+                : "relative flex w-1/2"
+            }`}
+          >
             <div className="py-2 md:py-12">
               <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">

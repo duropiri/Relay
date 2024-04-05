@@ -284,7 +284,7 @@ const Hero = () => {
           <img
             src="/img/homezy.webp"
             alt="Homezy"
-            class="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
+            className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
             loading="eager"
             width="1728"
             height="992"
@@ -293,7 +293,7 @@ const Hero = () => {
           <img
             src="/img/thai.webp"
             alt="Thai"
-            class="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
+            className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
             loading="eager"
             width="1728"
             height="992"
@@ -302,7 +302,7 @@ const Hero = () => {
           <img
             src="/img/wellbeing.webp"
             alt="WellBeing"
-            class="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
+            className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
             loading="eager"
             width="3456"
             height="1984"
@@ -311,7 +311,7 @@ const Hero = () => {
           <img
             src="/img/agenci.webp"
             alt="Agenci"
-            class="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
+            className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
             loading="eager"
             width="1728"
             height="992"
@@ -320,7 +320,7 @@ const Hero = () => {
           <img
             src="/img/joyfolio.webp"
             alt="Joyfolio"
-            class="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
+            className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
             loading="eager"
             width="1728"
             height="992"
@@ -329,7 +329,7 @@ const Hero = () => {
           <img
             src="/img/inspire.webp"
             alt="Inspire"
-            class="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
+            className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
             loading="eager"
             width="1728"
             height="992"
@@ -338,7 +338,7 @@ const Hero = () => {
           <img
             src="/img/wellbeing.webp"
             alt="WellBeing"
-            class="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
+            className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
             loading="eager"
             width="3456"
             height="1984"
@@ -347,7 +347,7 @@ const Hero = () => {
           <img
             src="/img/fashion.webp"
             alt="Fashion"
-            class="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
+            className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
             loading="eager"
             width="2456"
             height="1491"
@@ -356,7 +356,7 @@ const Hero = () => {
           <img
             src="/img/requesto.webp"
             alt="Request"
-            class="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
+            className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
             loading="eager"
             width="1728"
             height="992"
@@ -365,7 +365,7 @@ const Hero = () => {
           <img
             src="/img/darkstudio.webp"
             alt="Studio"
-            class="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
+            className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
             loading="eager"
             width="1728"
             height="992"

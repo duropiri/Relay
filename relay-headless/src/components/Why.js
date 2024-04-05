@@ -141,7 +141,7 @@ const Why = () => {
               <img
               src="/img/increase-cr.webp"
               alt="Product screenshot"
-              class="right h-auto w-[24rem] max-w-none rounded-xl shadow-xl sm:w-[36rem] md:-ml-4 lg:-ml-0"
+              className="right h-auto w-[24rem] max-w-none rounded-xl shadow-xl sm:w-[36rem] md:-ml-4 lg:-ml-0"
               loading="lazy"
               width="1217"
               height="1227"
@@ -225,7 +225,7 @@ const Why = () => {
                 <img
                   src="/img/design.webp"
                   alt="Product screenshot"
-                  class="left h-auto w-[28rem] max-w-none rounded-xl shadow-xl sm:w-[50rem] md:-ml-4 lg:-ml-0"
+                  className="left h-auto w-[28rem] max-w-none rounded-xl shadow-xl sm:w-[50rem] md:-ml-4 lg:-ml-0"
                   loading="lazy"
                   width="1365"
                   height="832"
