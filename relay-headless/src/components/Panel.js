@@ -7,9 +7,23 @@ import Image from "next/image";
 
 const Panel = () => {
   const { isLoading } = useGlobalState();
+  const [isDesktop, setIsDesktop] = useState(false);
 
-  // Check if the current viewport width exceeds the mobile width breakpoint (e.g., 768px for tablets)
-  const isDesktop = window.innerWidth > 768;
+  useEffect(() => {
+    // This ensures the code runs only on the client side
+    const handleResize = () => {
+      setIsDesktop(window.innerWidth > 768);
+    };
+
+    // Check once on mount
+    handleResize();
+
+    // Set up event listener for resize events
+    window.addEventListener("resize", handleResize);
+
+    // Clean up event listener
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   useEffect(() => {
     if (isDesktop) {
