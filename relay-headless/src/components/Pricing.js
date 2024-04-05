@@ -15,7 +15,7 @@ const Pricing = () => {
             that fits your needs.
           </p>
         </div>
-        <div className="mx-auto mt-16 max-w-2xl rounded-3xl border border-neutral-700 shadow-xl shadow-purple-500/20 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
+        <div className="mx-auto mt-16 max-w-2xl rounded-3xl border border-neutral-700 shadow-xl shadow-blue-500/20 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
           <div className="p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
             <div className="h-full rounded-2xl border border-neutral-700 bg-neutral-900 py-10 text-center lg:mt-0 lg:flex lg:flex-col lg:justify-center lg:py-16">
               <div className="mx-auto flex max-w-xs flex-col px-8">
@@ -28,7 +28,7 @@ const Pricing = () => {
                   </span>
                 </p>
                 <a href="/contact">
-                  <button className="relative rounded-full text-center transition-all duration-500 transform overflow-hidden z-40   px-6 py-3 text-base bg-purple-500 text-neutral-950 border border-purple-500 button hover:text-neutral-50 group mt-6 text-lg uppercase">
+                  <button className="relative rounded-full text-center transition-all duration-500 transform overflow-hidden z-40   px-6 py-3 text-base bg-blue-500 text-neutral-950 border border-blue-500 button hover:text-neutral-50 group mt-6 text-lg uppercase">
                     <div className="group relative z-10 w-full">
                       Get Started
                       <svg

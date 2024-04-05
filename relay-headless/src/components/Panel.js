@@ -130,7 +130,7 @@ const Panel = () => {
                         and having a more streamlined checkout process.{" "}
                       </p>
                       <dl className="mt-16 grid max-w-xl grid-cols-2 gap-8 sm:mt-20 sm:grid-cols-2 xl:mt-16">
-                        <div className="flex flex-col gap-y-1 border-l border-purple-500 pl-6  md:gap-y-3">
+                        <div className="flex flex-col gap-y-1 border-l border-blue-500 pl-6  md:gap-y-3">
                           <dt className="text-sm leading-tight tracking-tight text-neutral-300 ">
                             Increase In Conversion Rate{" "}
                           </dt>
@@ -138,7 +138,7 @@ const Panel = () => {
                             39%{" "}
                           </dd>
                         </div>
-                        <div className="flex flex-col gap-y-1 border-l border-purple-500 pl-6  md:gap-y-3">
+                        <div className="flex flex-col gap-y-1 border-l border-blue-500 pl-6  md:gap-y-3">
                           <dt className="text-sm leading-tight tracking-tight text-neutral-300 ">
                             Increase In Ad ROI{" "}
                           </dt>
@@ -146,7 +146,7 @@ const Panel = () => {
                             44%{" "}
                           </dd>
                         </div>
-                        <div className="flex flex-col gap-y-1 border-l border-purple-500 pl-6  md:gap-y-3">
+                        <div className="flex flex-col gap-y-1 border-l border-blue-500 pl-6  md:gap-y-3">
                           <dt className="text-sm leading-tight tracking-tight text-neutral-300 ">
                             Increase In Speed{" "}
                           </dt>
@@ -154,7 +154,7 @@ const Panel = () => {
                             55%{" "}
                           </dd>
                         </div>
-                        <div className="flex flex-col gap-y-1 border-l border-purple-500 pl-6  md:gap-y-3">
+                        <div className="flex flex-col gap-y-1 border-l border-blue-500 pl-6  md:gap-y-3">
                           <dt className="text-sm leading-tight tracking-tight text-neutral-300 ">
                             Reduction in Bounce Rate{" "}
                           </dt>
@@ -164,7 +164,7 @@ const Panel = () => {
                         </div>
                       </dl>
                       <a href="/contact">
-                        <button className="relative rounded-full text-center transition-all duration-500 transform overflow-hidden z-40   w-full px-6 py-3 text-base bg-purple-500 text-neutral-950 border border-purple-500 button hover:text-neutral-50 group mt-6 text-lg uppercase lg:mt-12">
+                        <button className="relative rounded-full text-center transition-all duration-500 transform overflow-hidden z-40   w-full px-6 py-3 text-base bg-blue-500 text-neutral-950 border border-blue-500 button hover:text-neutral-50 group mt-6 text-lg uppercase lg:mt-12">
                           <div className="group relative z-10 w-full">
                             Get Started
                             <svg
@@ -218,7 +218,7 @@ const Panel = () => {
                         their ad spend and scale their business rapidly.{" "}
                       </p>
                       <dl className="mt-16 grid max-w-xl grid-cols-2 gap-8 sm:mt-20 sm:grid-cols-2 xl:mt-16">
-                        <div className="flex flex-col gap-y-1 border-l border-purple-500 pl-6  md:gap-y-3">
+                        <div className="flex flex-col gap-y-1 border-l border-blue-500 pl-6  md:gap-y-3">
                           <dt className="text-sm leading-tight tracking-tight text-neutral-300 ">
                             Increase In Conversion Rate{" "}
                           </dt>
@@ -226,7 +226,7 @@ const Panel = () => {
                             54%{" "}
                           </dd>
                         </div>
-                        <div className="flex flex-col gap-y-1 border-l border-purple-500 pl-6  md:gap-y-3">
+                        <div className="flex flex-col gap-y-1 border-l border-blue-500 pl-6  md:gap-y-3">
                           <dt className="text-sm leading-tight tracking-tight text-neutral-300 ">
                             Increase In Ad ROI{" "}
                           </dt>
@@ -234,7 +234,7 @@ const Panel = () => {
                             61%{" "}
                           </dd>
                         </div>
-                        <div className="flex flex-col gap-y-1 border-l border-purple-500 pl-6  md:gap-y-3">
+                        <div className="flex flex-col gap-y-1 border-l border-blue-500 pl-6  md:gap-y-3">
                           <dt className="text-sm leading-tight tracking-tight text-neutral-300 ">
                             Increase In Speed{" "}
                           </dt>
@@ -242,7 +242,7 @@ const Panel = () => {
                             80%{" "}
                           </dd>
                         </div>
-                        <div className="flex flex-col gap-y-1 border-l border-purple-500 pl-6  md:gap-y-3">
+                        <div className="flex flex-col gap-y-1 border-l border-blue-500 pl-6  md:gap-y-3">
                           <dt className="text-sm leading-tight tracking-tight text-neutral-300 ">
                             Reduction in Bounce Rate{" "}
                           </dt>
@@ -252,7 +252,7 @@ const Panel = () => {
                         </div>
                       </dl>
                       <a href="/contact">
-                        <button className="relative rounded-full text-center transition-all duration-500 transform overflow-hidden z-40   w-full px-6 py-3 text-base bg-purple-500 text-neutral-950 border border-purple-500 button hover:text-neutral-50 group mt-6 text-lg uppercase lg:mt-12">
+                        <button className="relative rounded-full text-center transition-all duration-500 transform overflow-hidden z-40   w-full px-6 py-3 text-base bg-blue-500 text-neutral-950 border border-blue-500 button hover:text-neutral-50 group mt-6 text-lg uppercase lg:mt-12">
                           <div className="group relative z-10 w-full">
                             Get Started
                             <svg

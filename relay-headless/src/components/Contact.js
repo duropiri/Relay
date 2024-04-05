@@ -206,7 +206,7 @@ const Contact = () => {
               <div className="h-captcha" data-captcha="true"></div>
               <button
                 type="submit"
-                className="button relative w-full transform overflow-hidden rounded-full border border-neutral-700 bg-purple-500 px-6 py-3 text-center text-neutral-950 transition duration-500 hover:text-neutral-50"
+                className="button relative w-full transform overflow-hidden rounded-full border border-neutral-700 bg-blue-500 px-6 py-3 text-center text-neutral-950 transition duration-500 hover:text-neutral-50"
                 disabled={isSubmitting}
               >
                 <div className="group relative z-10">

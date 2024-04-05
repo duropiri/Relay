@@ -12,7 +12,7 @@ export default function Custom404() {
         </p>
         <div className="mt-10 flex justify-center">
           <a> </a>
-          <button className="relative rounded-full text-center transition-all duration-500 transform overflow-hidden z-40   px-6 py-3 text-base bg-purple-500 text-neutral-950 border border-purple-500 button hover:text-neutral-50  flex items-center justify-center uppercase">
+          <button className="relative rounded-full text-center transition-all duration-500 transform overflow-hidden z-40   px-6 py-3 text-base bg-blue-500 text-neutral-950 border border-blue-500 button hover:text-neutral-50  flex items-center justify-center uppercase">
             <a> </a>
             <div className="group relative z-10 w-full">
               <a> </a>

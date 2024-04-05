@@ -26,7 +26,7 @@ const MobileMenu = () => {
         >
           <span className="font-[700] text-neutral-50">Relay</span>
           <span className="text-neutral-300">Digital</span>
-          <span className="text-purple-500">.</span>
+          <span className="text-blue-500">.</span>
         </a>
       </div>
       <div className="flex flex-col justify-start w-full h-full py-12 gap-y-6">
@@ -51,7 +51,7 @@ const MobileMenu = () => {
         <div className="  text-sm grid grid-cols-1 gap-4 items-center">
           <a
             href="/services/marketing-funnels"
-            className="group relative bg-grid-white/5 md:p-6 px-6 items-center  text-sm hover:bg-neutral-800 border bg-neutral-900 border-purple-500 hover:md:shadow-xl shadow-xl md:shadow-none shadow-purple-500/40 hover:md:shadow-purple-500/40 h-full lg:h-56 w-full duration-300 transition flex md:flex-col justify-start gap-x-2 lg:items-start"
+            className="group relative bg-grid-white/5 md:p-6 px-6 items-center  text-sm hover:bg-neutral-800 border bg-neutral-900 border-blue-500 hover:md:shadow-xl shadow-xl md:shadow-none shadow-blue-500/40 hover:md:shadow-blue-500/40 h-full lg:h-56 w-full duration-300 transition flex md:flex-col justify-start gap-x-2 lg:items-start"
           >
             <svg
               width="15"
@@ -143,7 +143,7 @@ const MobileMenu = () => {
           </a>
           <a
             href="/services/digital-ads"
-            className="group relative bg-grid-white/5 md:p-6 px-6 items-center  text-sm hover:bg-neutral-800 border bg-neutral-900 border-purple-500 hover:md:shadow-xl shadow-xl md:shadow-none shadow-purple-500/40 hover:md:shadow-purple-500/40 h-full lg:h-56 w-full duration-300 transition flex md:flex-col justify-start gap-x-2 lg:items-start"
+            className="group relative bg-grid-white/5 md:p-6 px-6 items-center  text-sm hover:bg-neutral-800 border bg-neutral-900 border-blue-500 hover:md:shadow-xl shadow-xl md:shadow-none shadow-blue-500/40 hover:md:shadow-blue-500/40 h-full lg:h-56 w-full duration-300 transition flex md:flex-col justify-start gap-x-2 lg:items-start"
           >
             <svg
               width="15"
@@ -235,7 +235,7 @@ const MobileMenu = () => {
           </a>
           <a
             href="/services/email-marketing"
-            className="group relative bg-grid-white/5 md:p-6 px-6 items-center  text-sm hover:bg-neutral-800 border bg-neutral-900 border-purple-500 hover:md:shadow-xl shadow-xl md:shadow-none shadow-purple-500/40 hover:md:shadow-purple-500/40 h-full lg:h-56 w-full duration-300 transition flex md:flex-col justify-start gap-x-2 lg:items-start"
+            className="group relative bg-grid-white/5 md:p-6 px-6 items-center  text-sm hover:bg-neutral-800 border bg-neutral-900 border-blue-500 hover:md:shadow-xl shadow-xl md:shadow-none shadow-blue-500/40 hover:md:shadow-blue-500/40 h-full lg:h-56 w-full duration-300 transition flex md:flex-col justify-start gap-x-2 lg:items-start"
           >
             <svg
               width="15"
@@ -327,7 +327,7 @@ const MobileMenu = () => {
           </a>
           <a
             href="/services/web-development"
-            className="group relative bg-grid-white/5 md:p-6 px-6 items-center  text-sm hover:bg-neutral-800 border bg-neutral-900 border-purple-500 hover:md:shadow-xl shadow-xl md:shadow-none shadow-purple-500/40 hover:md:shadow-purple-500/40 h-full lg:h-56 w-full duration-300 transition flex md:flex-col justify-start gap-x-2 lg:items-start"
+            className="group relative bg-grid-white/5 md:p-6 px-6 items-center  text-sm hover:bg-neutral-800 border bg-neutral-900 border-blue-500 hover:md:shadow-xl shadow-xl md:shadow-none shadow-blue-500/40 hover:md:shadow-blue-500/40 h-full lg:h-56 w-full duration-300 transition flex md:flex-col justify-start gap-x-2 lg:items-start"
           >
             <svg
               width="15"

@@ -5,7 +5,7 @@ const Services = () => {
   return (
     <div className="mx-auto grid max-w-7xl grid-cols-1 gap-4 md:auto-rows-[18rem] md:grid-cols-3  mx-auto max-w-7xl md:auto-rows-[20rem]">
       {" "}
-      <div className="group/bento shadow-input row-span-1 flex flex-col justify-between space-y-4 overflow-hidden rounded-none border-y border-transparent border-white/[0.2] bg-neutral-950 p-4 shadow-xl shadow-purple-500/20 transition duration-200 hover:shadow-3xl hover:shadow-purple-500/50 md:rounded-xl md:border md:col-span-1">
+      <div className="group/bento shadow-input row-span-1 flex flex-col justify-between space-y-4 overflow-hidden rounded-none border-y border-transparent border-white/[0.2] bg-neutral-950 p-4 shadow-xl shadow-blue-500/20 transition duration-200 hover:shadow-3xl hover:shadow-blue-500/50 md:rounded-xl md:border md:col-span-1">
         {" "}
         <div className="flex h-full min-h-[6rem] w-full flex-1 flex-col space-y-2 bg-dot-white/[0.4]">
           {" "}
@@ -55,7 +55,7 @@ const Services = () => {
           </div>{" "}
         </div>{" "}
       </div>{" "}
-      <div className="group/bento shadow-input row-span-1 flex flex-col justify-between space-y-4 overflow-hidden rounded-none border-y border-transparent border-white/[0.2] bg-neutral-950 p-4 shadow-xl shadow-purple-500/20 transition duration-200 hover:shadow-3xl hover:shadow-purple-500/50 md:rounded-xl md:border md:col-span-1">
+      <div className="group/bento shadow-input row-span-1 flex flex-col justify-between space-y-4 overflow-hidden rounded-none border-y border-transparent border-white/[0.2] bg-neutral-950 p-4 shadow-xl shadow-blue-500/20 transition duration-200 hover:shadow-3xl hover:shadow-blue-500/50 md:rounded-xl md:border md:col-span-1">
         {" "}
         <div className="flex h-full min-h-[6rem] w-full flex-1 flex-col space-y-2 overflow-hidden duration-500 bg-dot-white/[0.4] group-hover/bento:space-y-2.5">
           {" "}
@@ -96,7 +96,7 @@ const Services = () => {
           </div>{" "}
         </div>{" "}
       </div>{" "}
-      <div className="group/bento shadow-input row-span-1 flex flex-col justify-between space-y-4 overflow-hidden rounded-none border-y border-transparent border-white/[0.2] bg-neutral-950 p-4 shadow-xl shadow-purple-500/20 transition duration-200 hover:shadow-3xl hover:shadow-purple-500/50 md:rounded-xl md:border md:col-span-1">
+      <div className="group/bento shadow-input row-span-1 flex flex-col justify-between space-y-4 overflow-hidden rounded-none border-y border-transparent border-white/[0.2] bg-neutral-950 p-4 shadow-xl shadow-blue-500/20 transition duration-200 hover:shadow-3xl hover:shadow-blue-500/50 md:rounded-xl md:border md:col-span-1">
         {" "}
         <div className="flex h-full min-h-[6rem] w-full flex-1 flex-col space-y-2 overflow-hidden rounded-lg bg-dot-white/[0.4]">
           {" "}
@@ -140,11 +140,11 @@ const Services = () => {
           </div>{" "}
         </div>{" "}
       </div>{" "}
-      <div className="group/bento shadow-input row-span-1 flex flex-col justify-between space-y-4 overflow-hidden rounded-none border-y border-transparent border-white/[0.2] bg-neutral-950 p-4 shadow-xl shadow-purple-500/20 transition duration-200 hover:shadow-3xl hover:shadow-purple-500/50 md:rounded-xl md:border md:col-span-2">
+      <div className="group/bento shadow-input row-span-1 flex flex-col justify-between space-y-4 overflow-hidden rounded-none border-y border-transparent border-white/[0.2] bg-neutral-950 p-4 shadow-xl shadow-blue-500/20 transition duration-200 hover:shadow-3xl hover:shadow-blue-500/50 md:rounded-xl md:border md:col-span-2">
         {" "}
         <div className="flex h-full min-h-[6rem] w-full flex-1 transform-gpu flex-row space-x-2 bg-dot-white/[0.4]">
           {" "}
-          <div className="flex h-full w-1/3 translate-x-4 -rotate-6 flex-col items-center justify-center rounded-2xl border border-neutral-700 bg-neutral-950 p-2 shadow-lg shadow-purple-500/20 duration-500 group-hover/bento:translate-x-0 group-hover/bento:rotate-0 group-hover/bento:shadow-2xl group-hover/bento:shadow-purple-500/40 md:translate-x-8 md:p-4">
+          <div className="flex h-full w-1/3 translate-x-4 -rotate-6 flex-col items-center justify-center rounded-2xl border border-neutral-700 bg-neutral-950 p-2 shadow-lg shadow-blue-500/20 duration-500 group-hover/bento:translate-x-0 group-hover/bento:rotate-0 group-hover/bento:shadow-2xl group-hover/bento:shadow-blue-500/40 md:translate-x-8 md:p-4">
             {" "}
             <img
               src="/img/lindsay.webp"
@@ -162,7 +162,7 @@ const Services = () => {
               Marketing Agency
             </p>{" "}
           </div>{" "}
-          <div className="relative z-20 flex h-full w-1/3 translate-y-2 flex-col items-center justify-center rounded-2xl border border-neutral-700 bg-neutral-950 p-2 shadow-lg shadow-purple-500/20 duration-500 group-hover/bento:translate-y-0 group-hover/bento:shadow-2xl group-hover/bento:shadow-purple-500/40 md:p-4">
+          <div className="relative z-20 flex h-full w-1/3 translate-y-2 flex-col items-center justify-center rounded-2xl border border-neutral-700 bg-neutral-950 p-2 shadow-lg shadow-blue-500/20 duration-500 group-hover/bento:translate-y-0 group-hover/bento:shadow-2xl group-hover/bento:shadow-blue-500/40 md:p-4">
             {" "}
             <img
               src="/img/tom.webp"
@@ -180,7 +180,7 @@ const Services = () => {
               Ecommerce Brand
             </p>{" "}
           </div>{" "}
-          <div className="flex h-full w-1/3 -translate-x-4 rotate-6 flex-col items-center justify-center rounded-2xl border border-neutral-700 bg-neutral-950 p-2 shadow-lg shadow-purple-500/20 duration-500 group-hover/bento:translate-x-0 group-hover/bento:rotate-0 group-hover/bento:shadow-2xl group-hover/bento:shadow-purple-500/40 md:-translate-x-8 md:p-4">
+          <div className="flex h-full w-1/3 -translate-x-4 rotate-6 flex-col items-center justify-center rounded-2xl border border-neutral-700 bg-neutral-950 p-2 shadow-lg shadow-blue-500/20 duration-500 group-hover/bento:translate-x-0 group-hover/bento:rotate-0 group-hover/bento:shadow-2xl group-hover/bento:shadow-blue-500/40 md:-translate-x-8 md:p-4">
             {" "}
             <img
               src="/img/leslie.webp"
@@ -230,7 +230,7 @@ const Services = () => {
           </div>{" "}
         </div>{" "}
       </div>{" "}
-      <div className="group/bento shadow-input row-span-1 flex flex-col justify-between space-y-4 overflow-hidden rounded-none border-y border-transparent border-white/[0.2] bg-neutral-950 p-4 shadow-xl shadow-purple-500/20 transition duration-200 hover:shadow-3xl hover:shadow-purple-500/50 md:rounded-xl md:border md:col-span-1">
+      <div className="group/bento shadow-input row-span-1 flex flex-col justify-between space-y-4 overflow-hidden rounded-none border-y border-transparent border-white/[0.2] bg-neutral-950 p-4 shadow-xl shadow-blue-500/20 transition duration-200 hover:shadow-3xl hover:shadow-blue-500/50 md:rounded-xl md:border md:col-span-1">
         {" "}
         <div className="flex h-full min-h-[6rem] w-full flex-1 flex-col space-y-2 overflow-hidden bg-dot-white/[0.4]">
           {" "}

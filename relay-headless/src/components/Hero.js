@@ -51,11 +51,11 @@ const Hero = () => {
         __html: text
           .replaceAll(
             highlight1,
-            `<span className="text-purple-500">${highlight1}</span>`
+            `<span className="text-blue-500">${highlight1}</span>`
           )
           .replaceAll(
             highlight2,
-            `<span className="text-purple-500">${highlight2}</span>`
+            `<span className="text-blue-500">${highlight2}</span>`
           ),
       };
     }
@@ -122,8 +122,8 @@ const Hero = () => {
                   //   highlightedText2
                   // )}
                 >
-                  Get <span className="text-purple-500">1.5x</span> More Out Of
-                  Your Ads, with the #1 High Performance <span className="text-purple-500">Marketing Funnels</span>.
+                  Get <span className="text-blue-500">1.5x</span> More Out Of
+                  Your Ads, with the #1 High Performance <span className="text-blue-500">Marketing Funnels</span>.
                 </h1>
               </div>
             </div>
@@ -155,7 +155,7 @@ const Hero = () => {
                 data-speed="0.8"
               >
                 <a href="/contact">
-                  <button className="relative rounded-full text-center transition-all duration-500 transform overflow-hidden z-40   w-full px-8 py-6 text-base bg-purple-500 text-neutral-950 border border-purple-500 button hover:text-neutral-50 group text-xl uppercase md:text-2xl">
+                  <button className="relative rounded-full text-center transition-all duration-500 transform overflow-hidden z-40   w-full px-8 py-6 text-base bg-blue-500 text-neutral-950 border border-blue-500 button hover:text-neutral-50 group text-xl uppercase md:text-2xl">
                     <div className="flex flex-row group relative z-10 w-full">
                       <div
                       // dangerouslySetInnerHTML={{ __html: CTA }}
@@ -208,7 +208,7 @@ const Hero = () => {
           <div className="skeleton h-[143px] w-[862px]"></div>
         ) : (
           <dl
-            className="relative z-40 mt-6 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-neutral-600 bg-neutral-600 text-center shadow-2xl shadow-purple-500/50 lg:grid-cols-4"
+            className="relative z-40 mt-6 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-neutral-600 bg-neutral-600 text-center shadow-2xl shadow-blue-500/50 lg:grid-cols-4"
             data-speed="1.05"
           >
             <div className="flex flex-col items-center  justify-center bg-neutral-900 px-2 py-6">

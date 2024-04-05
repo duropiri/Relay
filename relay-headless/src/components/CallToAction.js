@@ -14,7 +14,7 @@ const CallToAction = () => {
 
   return (
     <div className="relative mb-12 w-full border-y border-neutral-700 bg-neutral-900 py-6 lg:py-16">
-      <div className="absolute inset-0 -z-20 h-full w-full transform rounded-full bg-purple-500 blur-3xl lg:scale-90"></div>
+      <div className="absolute inset-0 -z-20 h-full w-full transform rounded-full bg-blue-500 blur-3xl lg:scale-90"></div>
       <div className="mx-auto max-w-7xl px-5">
         {isLoading ? (
           <>
@@ -37,7 +37,7 @@ const CallToAction = () => {
               and make you stand out from the crowd.{" "}
             </p>
             <a href="/contact">
-              <button className="relative rounded-full text-center transition-all duration-500 transform overflow-hidden z-40   w-full px-6 py-3 text-base bg-purple-500 text-neutral-950 border border-purple-500 button hover:text-neutral-50 group uppercase leading-tight tracking-tight md:text-lg">
+              <button className="relative rounded-full text-center transition-all duration-500 transform overflow-hidden z-40   w-full px-6 py-3 text-base bg-blue-500 text-neutral-950 border border-blue-500 button hover:text-neutral-50 group uppercase leading-tight tracking-tight md:text-lg">
                 <div className="group relative z-10 w-full">
                   {/* {CTA} */}
                   Yes, I&apos;m Ready

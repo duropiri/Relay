@@ -96,7 +96,7 @@ const Why = () => {
                   completely managed by us, so you don&apos;t have to touch a thing.
                   </p>
                   <a href="/contact">
-                    <button className="relative rounded-full text-center transition-all duration-500 transform overflow-hidden z-40   px-6 py-3 text-base bg-purple-500 text-neutral-950 border border-purple-500 button hover:text-neutral-50 group mt-6 text-lg uppercase">
+                    <button className="relative rounded-full text-center transition-all duration-500 transform overflow-hidden z-40   px-6 py-3 text-base bg-blue-500 text-neutral-950 border border-blue-500 button hover:text-neutral-50 group mt-6 text-lg uppercase">
                       <div className="group relative z-10 w-full">
                         {/* {CTA} */}
                         Get Started
@@ -179,7 +179,7 @@ const Why = () => {
                   conversion rate.
                   </p>
                   <a href="/contact">
-                    <button className="relative rounded-full text-center transition-all duration-500 transform overflow-hidden z-40   px-6 py-3 text-base bg-purple-500 text-neutral-950 border border-purple-500 button hover:text-neutral-50 group mt-6 uppercase">
+                    <button className="relative rounded-full text-center transition-all duration-500 transform overflow-hidden z-40   px-6 py-3 text-base bg-blue-500 text-neutral-950 border border-blue-500 button hover:text-neutral-50 group mt-6 uppercase">
                       <div className="group relative z-10 w-full">
                         {/* {CTA} */}
                         Get Started
@@ -277,7 +277,7 @@ const Why = () => {
               </div>
             </div>
             <div
-              className="h-96 w-[32rem] absolute inset-0 bg-[#010101] rounded-2xl p-2 shadow-3xl shadow-purple-500 border border-purple-500"
+              className="h-96 w-[32rem] absolute inset-0 bg-[#010101] rounded-2xl p-2 shadow-3xl shadow-blue-500 border border-blue-500"
               bs="transform-bs: preserve-3d; transform-origin: center top; transform: translateY(0px) scaleX(1.2) scaleY(0.6) rotateX(-28deg) translateZ(0px);"
             >
               <div className="absolute inset-0 bg-[#272729] rounded-lg"></div>

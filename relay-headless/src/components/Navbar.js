@@ -17,7 +17,7 @@ const Navbar = () => {
           >
             <span className="font-[700] text-neutral-50">Relay</span>
             <span className="text-neutral-300">Digital</span>
-            <span className="text-purple-500">.</span>
+            <span className="text-blue-500">.</span>
           </a>
           <div className="flex flex-row gap-x-8 justify-center ">
             <a
@@ -41,7 +41,7 @@ const Navbar = () => {
           </div>
           <div className="flex items-center gap-4 ">
             <a href="/contact">
-              <button className="relative rounded-full text-center transition-all duration-500 transform relative overflow-hidden z-40 px-6 py-3 border border-purple-500 text-neutral-50 bg-neutral-950 button group text-lg uppercase">
+              <button className="relative rounded-full text-center transition-all duration-500 transform relative overflow-hidden z-40 px-6 py-3 border border-blue-500 text-neutral-50 bg-neutral-950 button group text-lg uppercase">
                 <div className="group relative z-10">
                   Get Started
                   <svg
@@ -67,7 +67,7 @@ const Navbar = () => {
         >
           <span className="font-[700] text-neutral-50">Relay</span>
           <span className="text-neutral-300">Digital</span>
-          <span className="text-purple-500">.</span>
+          <span className="text-blue-500">.</span>
         </a>
         <svg
           width="15"
