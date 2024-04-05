@@ -61,7 +61,7 @@ const Panel = () => {
             scrub: 1,
             snap: 1 / (sections.length - 1),
             invalidateOnRefresh: true,
-            markers: true,
+            markers: false,
           },
         });
       }
