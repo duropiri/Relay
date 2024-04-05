@@ -6,7 +6,7 @@ module.exports = [
     name: 'strapi::cors',
     config: {
       enabled: true,
-      origin: ['http://localhost:3000', 'https://relay-nine.vercel.app'], // Add your allowed origins here
+      origin: process.env.CORS_ORIGINS ? process.env.CORS_ORIGINS.split(',') : ['http://localhost:3000', 'https://relay-nine.vercel.app', '*'], // Add your allowed origins here
       // You can customize other CORS settings here
     },
   },
