@@ -11,7 +11,7 @@ const Pricing = () => {
           <p class="mt-4 max-w-4xl text-center text-lg leading-snug tracking-tight text-neutral-300">
             We hate the painful processes that other web agencies offer. We like
             to keep everything as simple as possible for you here. We simply
-            charge per page, and we'll work with you to create a custom package
+            charge per page, and we&apos;ll work with you to create a custom package
             that fits your needs.
           </p>
         </div>
@@ -53,14 +53,14 @@ const Pricing = () => {
             </h3>
             <p class="mt-6 text-base leading-snug tracking-tight text-neutral-300">
               Every Page is custom designed and coded to your specifications.
-              We'll work with you to get the perfect design for your business.
+              We&apos;ll work with you to get the perfect design for your business.
               We make sure that our sites are some of the fastest on the web,
-              and we'll make sure that your site is optimized for search engines
+              and we&apos;ll make sure that your site is optimized for search engines
               out of the box.
             </p>
             <div class="mt-10 flex items-center gap-x-4">
               <h4 class="text-md flex-none font-semibold leading-6 text-neutral-100">
-                What's included
+                What&apos;s included
               </h4>
               <div class="h-px flex-auto bg-neutral-700"></div>
             </div>

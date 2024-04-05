@@ -44,7 +44,7 @@ const Contact = () => {
         <div class="mx-auto my-8 max-w-xl pb-2 lg:pb-8 text-center lg:max-w-2xl">
           <div class="text-md mx-4 text-center text-neutral-300 lg:max-w-2xl lg:text-xl">
             <p>
-              Leave your details below and we'll get back to you as soon as
+              Leave your details below and we&apos;ll get back to you as soon as
               possible. We look forward to hearing from you!
             </p>
           </div>

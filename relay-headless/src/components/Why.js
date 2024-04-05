@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { useGlobalState } from "./GlobalStateContext";
+import Image from "next/image";
 
 const Why = () => {
   const { whyContent } = useGlobalState();
@@ -116,7 +117,7 @@ const Why = () => {
             ) : (
               Image1 && (
                 <>
-                  <img
+                  <Image
                     key={Image1.data.attributes.id}
                     src={`${
                       process.env.NEXT_PUBLIC_STRAPI_BASE_URL ||
@@ -184,7 +185,7 @@ const Why = () => {
               ) : (
                 Image2 && (
                   <>
-                    <img
+                    <Image
                       key={Image2.data.attributes.id}
                       src={`${
                         process.env.NEXT_PUBLIC_STRAPI_BASE_URL ||
@@ -249,7 +250,7 @@ const Why = () => {
               bs="transform-bs: preserve-3d; transform-origin: center top; transform: translateY(0px) scaleX(1.2) scaleY(0.6) rotateX(-28deg) translateZ(0px);"
             >
               <div class="absolute inset-0 bg-[#272729] rounded-lg"></div>
-              <img
+              <Image
                 src="/_astro/results.b214213f.webp"
                 alt="Macbook"
                 width="512"
@@ -1501,7 +1502,7 @@ const Why = () => {
             <div class="absolute bottom-4 left-4">
               <a href="https://peerlist.io/manuarora">
                 <p class="sr-only">Relay</p>
-                <img
+                <Image
                   src="/_astro/ss-logo-dark.08e32a2d.svg"
                   class="h-16 w-16 -rotate-12 transform rounded-full"
                   alt="Relay Logo"

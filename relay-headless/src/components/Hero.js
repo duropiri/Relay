@@ -5,6 +5,7 @@ import { ScrollTrigger } from "gsap/all";
 import { ScrollSmoother } from "gsap";
 import { useGlobalState } from "./GlobalStateContext";
 import Marquee from "./Marquee";
+import Image from "next/image";
 
 const Hero = () => {
   const { heroContent } = useGlobalState();
@@ -44,17 +45,19 @@ const Hero = () => {
 
   // Function to replace highlighted texts
   const renderMainMessageText = (text, highlight1, highlight2) => {
-    return {
-      __html: text
-        .replaceAll(
-          highlight1,
-          `<span class="text-purple-500">${highlight1}</span>`
-        )
-        .replaceAll(
-          highlight2,
-          `<span class="text-purple-500">${highlight2}</span>`
-        ),
-    };
+    if (heroContent) {
+      return {
+        __html: text
+          .replaceAll(
+            highlight1,
+            `<span class="text-purple-500">${highlight1}</span>`
+          )
+          .replaceAll(
+            highlight2,
+            `<span class="text-purple-500">${highlight2}</span>`
+          ),
+      };
+    }
   };
 
   // GSAP Animations
@@ -164,29 +167,29 @@ const Hero = () => {
             </div>
           )}
         </div>
-        {isLoading ? (
-          <div
-            class="absolute left-1/2 top-1/2 -z-10 w-full -translate-x-1/2 -translate-y-1/2 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] lg:w-max"
-            data-speed="0.6"
-          >
-            {/* <div className="skeleton h-full w-full"></div> */}
-          </div>
-        ) : (
-          <div
-            class="absolute left-1/2 top-1/2 -z-10 w-full -translate-x-1/2 -translate-y-1/2 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] lg:w-max"
-            data-speed="0.6"
-          >
-            <img
-              src="/svg/hero-circle.svg"
-              alt="circle background"
-              loading="eager"
-              class="h-auto w-[24rem] animate-spinSlow lg:w-[38rem]"
-              width="516"
-              height="516"
-              decoding="async"
-            />
-          </div>
-        )}
+        {/* {isLoading ? ( */}
+        {/* <div
+          class="absolute left-1/2 top-1/2 -z-10 w-full -translate-x-1/2 -translate-y-1/2 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] lg:w-max"
+          data-speed="0.6"
+        >
+          <div className="skeleton h-full w-full"></div>
+        </div> */}
+        {/* ) : (*/}
+        <div
+          class="absolute left-1/2 top-1/2 -z-10 w-full -translate-x-1/2 -translate-y-1/2 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] lg:w-max"
+          data-speed="0.6"
+        >
+          <Image
+            src="/svg/hero-circle.svg"
+            alt="circle background"
+            loading="eager"
+            class="h-auto w-[24rem] animate-spinSlow lg:w-[38rem]"
+            width="516"
+            height="516"
+            decoding="async"
+          />
+        </div>
+        {/* )}*/}
       </section>
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         {isLoading ? (
@@ -245,7 +248,7 @@ const Hero = () => {
       ) : (
         <Marquee speed={1}>
           {marqueeImages.map(({ id, url, alt }, index) => (
-            <img
+            <Image
               key={id}
               src={`${
                 process.env.NEXT_PUBLIC_STRAPI_BASE_URL ||
@@ -261,7 +264,7 @@ const Hero = () => {
           ))}
         </Marquee>
         // <Marquee speed={10}>
-        //   <img
+        //   <Image
         //     src="/img/homezy.webp"
         //     alt="Homezy"
         //     class="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
@@ -270,7 +273,7 @@ const Hero = () => {
         //     height="992"
         //     decoding="async"
         //   />
-        //   <img
+        //   <Image
         //     src="/img/thai.webp"
         //     alt="Thai"
         //     class="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
@@ -279,7 +282,7 @@ const Hero = () => {
         //     height="992"
         //     decoding="async"
         //   />
-        //   <img
+        //   <Image
         //     src="/img/wellbeing.webp"
         //     alt="WellBeing"
         //     class="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
@@ -288,7 +291,7 @@ const Hero = () => {
         //     height="1984"
         //     decoding="async"
         //   />
-        //   <img
+        //   <Image
         //     src="/img/agenci.webp"
         //     alt="Agenci"
         //     class="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
@@ -297,7 +300,7 @@ const Hero = () => {
         //     height="992"
         //     decoding="async"
         //   />
-        //   <img
+        //   <Image
         //     src="/img/joyfolio.webp"
         //     alt="Joyfolio"
         //     class="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
@@ -306,7 +309,7 @@ const Hero = () => {
         //     height="992"
         //     decoding="async"
         //   />
-        //   <img
+        //   <Image
         //     src="/img/inspire.webp"
         //     alt="Inspire"
         //     class="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
@@ -315,7 +318,7 @@ const Hero = () => {
         //     height="992"
         //     decoding="async"
         //   />
-        //   <img
+        //   <Image
         //     src="/img/wellbeing.webp"
         //     alt="WellBeing"
         //     class="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
@@ -324,7 +327,7 @@ const Hero = () => {
         //     height="1984"
         //     decoding="async"
         //   />
-        //   <img
+        //   <Image
         //     src="/img/fashion.webp"
         //     alt="Fashion"
         //     class="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
@@ -333,7 +336,7 @@ const Hero = () => {
         //     height="1491"
         //     decoding="async"
         //   />
-        //   <img
+        //   <Image
         //     src="/img/requesto.webp"
         //     alt="Request"
         //     class="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
@@ -342,7 +345,7 @@ const Hero = () => {
         //     height="992"
         //     decoding="async"
         //   />
-        //   <img
+        //   <Image
         //     src="/img/darkstudio.webp"
         //     alt="Studio"
         //     class="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"

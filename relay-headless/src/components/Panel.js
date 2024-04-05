@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { useGlobalState } from "./GlobalStateContext";
+import Image from "next/image";
 
 const Panel = () => {
   const { isLoading } = useGlobalState();
@@ -164,7 +165,7 @@ const Panel = () => {
                     </div>
                   </div>
                   <div class="hidden items-center justify-end md:flex lg:order-first">
-                    <img
+                    <Image
                       src="/img/clean-screens.webp"
                       loading="lazy"
                       alt="Product screenshot"
@@ -252,7 +253,7 @@ const Panel = () => {
                     </div>
                   </div>
                   <div class="hidden items-center justify-end md:flex lg:order-first">
-                    <img
+                    <Image
                       src="/img/goodmix.webp"
                       loading="lazy"
                       alt="Product screenshot"

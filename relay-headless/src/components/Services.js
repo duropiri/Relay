@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Services = () => {
   return (
@@ -99,7 +100,7 @@ const Services = () => {
         {" "}
         <div class="flex h-full min-h-[6rem] w-full flex-1 flex-col space-y-2 overflow-hidden rounded-lg bg-dot-white/[0.4]">
           {" "}
-          <img
+          <Image
             src="/img/jordans.webp"
             alt="jordans"
             class="scale-110 object-contain p-12 duration-500 group-hover/bento:scale-[1.2] group-hover/bento:brightness-125 md:-translate-y-16 md:scale-75 md:group-hover/bento:scale-[0.85]"
@@ -145,7 +146,7 @@ const Services = () => {
           {" "}
           <div class="flex h-full w-1/3 translate-x-4 -rotate-6 flex-col items-center justify-center rounded-2xl border border-neutral-700 bg-neutral-950 p-2 shadow-lg shadow-purple-500/20 duration-500 group-hover/bento:translate-x-0 group-hover/bento:rotate-0 group-hover/bento:shadow-2xl group-hover/bento:shadow-purple-500/40 md:translate-x-8 md:p-4">
             {" "}
-            <img
+            <Image
               src="/img/lindsay.webp"
               alt="avatar"
               class="h-10 w-10 rounded-full"
@@ -163,7 +164,7 @@ const Services = () => {
           </div>{" "}
           <div class="relative z-20 flex h-full w-1/3 translate-y-2 flex-col items-center justify-center rounded-2xl border border-neutral-700 bg-neutral-950 p-2 shadow-lg shadow-purple-500/20 duration-500 group-hover/bento:translate-y-0 group-hover/bento:shadow-2xl group-hover/bento:shadow-purple-500/40 md:p-4">
             {" "}
-            <img
+            <Image
               src="/img/tom.webp"
               alt="avatar"
               class="h-10 w-10 rounded-full"
@@ -181,7 +182,7 @@ const Services = () => {
           </div>{" "}
           <div class="flex h-full w-1/3 -translate-x-4 rotate-6 flex-col items-center justify-center rounded-2xl border border-neutral-700 bg-neutral-950 p-2 shadow-lg shadow-purple-500/20 duration-500 group-hover/bento:translate-x-0 group-hover/bento:rotate-0 group-hover/bento:shadow-2xl group-hover/bento:shadow-purple-500/40 md:-translate-x-8 md:p-4">
             {" "}
-            <img
+            <Image
               src="/img/leslie.webp"
               alt="avatar"
               class="h-10 w-10 rounded-full"
@@ -235,7 +236,7 @@ const Services = () => {
           {" "}
           <div class="h-full w-full duration-500 group-hover/bento:scale-[1.2] group-hover/bento:brightness-125">
             {" "}
-            <img
+            <Image
               src="/svg/integrations.svg"
               alt="Integrations"
               class="h-full w-full"
