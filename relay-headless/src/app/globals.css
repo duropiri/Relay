@@ -17,6 +17,7 @@ body {
   overflow-x: hidden;
   min-width: 100%;
   gap: 2.5rem;
+  z-index: 21;
 }
 
 .marquee-container > img {

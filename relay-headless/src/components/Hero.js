@@ -111,7 +111,7 @@ const Hero = () => {
               </div>
             </div>
           ) : (
-            <div className="col-span-2 lg:mt-6">
+            <div className="col-span-2 z-20 lg:mt-6">
               <div className="-z-10 max-w-4xl text-center font-melodrama text-3xl sm:text-5xl lg:text-start lg:text-7xl">
                 <h1
                   className="bg-gradient-to-br from-neutral-100 from-55% to-neutral-500 bg-clip-text font-medium tracking-tight text-transparent lg:min-h-[20rem] lg:to-neutral-600"
@@ -140,7 +140,7 @@ const Hero = () => {
               <div className="skeleton h-[82px] w-1/2"></div>
             </div>
           ) : (
-            <div className="col-span-1 flex flex-col items-start justify-between gap-y-8 py-12 text-start lg:h-full">
+            <div className="col-span-1 z-20 flex flex-col items-start justify-between gap-y-8 py-12 text-start lg:h-full">
               <div
                 className="text-center text-base leading-tight text-neutral-300 lg:text-start"
                 data-speed="0.7"
@@ -175,30 +175,21 @@ const Hero = () => {
               </div>
             </div>
           )}
+          <div
+            className="absolute left-1/2 top-1/2 z-10 w-full -translate-x-1/2 -translate-y-1/2 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] lg:w-max flex justify-center"
+            data-speed="0.6"
+          >
+            <img
+              src="/svg/hero-circle.svg/"
+              alt="circle background"
+              loading="eager"
+              className="h-auto w-[24rem] lg:w-[38rem]"
+              width="516"
+              height="516"
+              decoding="async"
+            />
+          </div>
         </div>
-        {/* {isLoading ? ( */}
-        {/* <div
-          className="absolute left-1/2 top-1/2 -z-10 w-full -translate-x-1/2 -translate-y-1/2 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] lg:w-max"
-          data-speed="0.6"
-        >
-          <div className="skeleton h-full w-full"></div>
-        </div> */}
-        {/* ) : (*/}
-        <div
-          className="absolute left-1/2 top-1/2 -z-10 w-full -translate-x-1/2 -translate-y-1/2 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] lg:w-max"
-          data-speed="0.6"
-        >
-          <img
-            src="/svg/hero-circle.svg"
-            alt="circle background"
-            loading="eager"
-            className="h-auto w-[24rem] animate-spinSlow lg:w-[38rem]"
-            width="516"
-            height="516"
-            decoding="async"
-          />
-        </div>
-        {/* )}*/}
       </section>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {isLoading ? (
@@ -264,20 +255,6 @@ const Hero = () => {
         </div>
       ) : (
         <Marquee speed={1}>
-          {/* {marqueeImages.map(({ id, url, alt }, index) => (
-            <img
-              key={id}
-              src={`${
-                process.env.NEXT_PUBLIC_STRAPI_BASE_URL ||
-                "http://localhost:1337"
-              }${url}`}
-              alt={alt}
-              className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
-              width={1728}
-              height={992}
-              priority={true} // optional, for preloading important images
-            />
-          ))} */}
           <img
             src="/img/homezy.webp"
             alt="Homezy"
