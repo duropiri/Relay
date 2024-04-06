@@ -45,7 +45,7 @@ const Panel = () => {
       
       const pinSpacer = document.querySelector(".pin-spacer");
       if (pinSpacer) {
-        pinSpacer.style.height = `${actualWidth}px`;
+        // pinSpacer.style.height = `${actualWidth}px`;
       }
 
       if (isDesktop) {
@@ -88,8 +88,9 @@ const Panel = () => {
     <>
       <div
         className={`pin-spacer ${
-          isDesktop ? "absolute w-full" : "absolute w-full"
+          isDesktop ? "absolute w-full" : "hidden absolute w-full"
         }`}
+        style={!isDesktop ? { height: `${panelHeight/2}px` } : {}}
       ></div>
       <div
         className={`section ${

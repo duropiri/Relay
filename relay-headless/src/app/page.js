@@ -14,7 +14,7 @@ const Home = () => {
         <Why />
         <CallToAction />
         <Services />
-        <div className="flex flex-col">
+        <div className="flex flex-col overflow-y-hidden">
           <Panel />
           <Contact />
         </div>
