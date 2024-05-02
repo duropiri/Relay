@@ -27,7 +27,7 @@ const Pricing = () => {
                     /page
                   </span>
                 </p>
-                <a href="/contact">
+                <a href="https://buy.stripe.com/3cs8wI6l16Z3dFK000">
                   <button className="relative rounded-full text-center transition-all duration-500 transform overflow-hidden z-40   px-6 py-3 text-base bg-blue-500 text-neutral-950 border border-blue-500 button hover:text-neutral-50 group mt-6 text-lg uppercase">
                     <div className="group relative z-10 w-full">
                       Get Started
@@ -238,7 +238,7 @@ const Pricing = () => {
                 <span className="text-sm text-neutral-300">/month</span>
               </p>
               <a
-                href="#"
+                href="https://buy.stripe.com/cN200c8t9bfj59e4gh"
                 aria-describedby="tier-essential"
                 className="bg-white/10 text-white hover:bg-white/20 focus-visible:outline-white mt-6 block rounded-full px-3 py-2 text-center text-sm font-semibold leading-6 transition-colors duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
               >
@@ -487,7 +487,7 @@ const Pricing = () => {
                 <span className="text-sm text-neutral-300">/month</span>
               </p>
               <a
-                href="#"
+                href="https://buy.stripe.com/eVa7sE9xd1EJbxC8wy"
                 aria-describedby="tier-cro"
                 className="border border-neutral-700 bg-neutral-50 text-neutral-800 shadow-sm hover:bg-white  mt-6 block rounded-full px-3 py-2 text-center text-sm font-semibold leading-6 transition-colors duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
               >
@@ -935,7 +935,7 @@ const Pricing = () => {
                 <span className="text-sm text-neutral-300">/month</span>
               </p>
               <a
-                href="#"
+                href="https://buy.stripe.com/8wMfZa5gX97b316eUX"
                 aria-describedby="tier-maintain"
                 className="bg-white/10 text-white hover:bg-white/20 focus-visible:outline-white mt-6 block rounded-full px-3 py-2 text-center text-sm font-semibold leading-6 transition-colors duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
               >
@@ -1516,7 +1516,7 @@ const Pricing = () => {
                         <span className="text-sm leading-6">/month</span>
                       </div>
                       <a
-                        href="#"
+                        href="https://buy.stripe.com/cN200c8t9bfj59e4gh"
                         aria-describedby="tier-essential"
                         className="bg-white/10 text-white hover:bg-white/20 focus-visible:outline-white  mt-6 block rounded-full px-3 py-2 text-center text-sm font-semibold leading-6 transition-colors duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
                       >
@@ -1529,7 +1529,7 @@ const Pricing = () => {
                         <span className="text-sm leading-6">/month</span>
                       </div>
                       <a
-                        href="#"
+                        href="https://buy.stripe.com/eVa7sE9xd1EJbxC8wy"
                         aria-describedby="tier-cro"
                         className="border border-neutral-700/20 bg-neutral-50 text-neutral-800 shadow-lg shadow-white/40 transition-all duration-200 hover:bg-neutral-400 hover:shadow-neutral-400  mt-6 block rounded-full px-3 py-2 text-center text-sm font-semibold leading-6 transition-colors duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
                       >
@@ -1542,7 +1542,7 @@ const Pricing = () => {
                         <span className="text-sm leading-6">/month</span>
                       </div>
                       <a
-                        href="#"
+                        href="https://buy.stripe.com/8wMfZa5gX97b316eUX"
                         aria-describedby="tier-maintain"
                         className="bg-white/10 text-white hover:bg-white/20 focus-visible:outline-white  mt-6 block rounded-full px-3 py-2 text-center text-sm font-semibold leading-6 transition-colors duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
                       >
