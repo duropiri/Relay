@@ -18,6 +18,7 @@ export async function POST(request) {
     service: "gmail",
     host: "smtp.gmail.com",
     port: 587,
+    secure: false,
     tls: {
       ciphers: "SSLv3",
       rejectUnauthorized: false,

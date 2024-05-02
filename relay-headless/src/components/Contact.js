@@ -14,48 +14,6 @@ const Contact = () => {
     return re.test(String(email).toLowerCase());
   };
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-  //   setIsSubmitting(true);
-  //   setSubmitAttempted(true); // Indicate a submission attempt has been made
-
-  //   const form = formRef.current;
-  //   const formData = new FormData(form); // Initialize FormData object
-
-  //   // Simple validation for demonstration
-  //   if (
-  //     !formData.get("name") ||
-  //     !formData.get("email").includes("@") ||
-  //     !formData.get("phone") ||
-  //     !formData.get("website") ||
-  //     !formData.get("message")
-  //   ) {
-  //     setResult("Please fill in all fields correctly.");
-  //     setIsSubmitting(false);
-  //     return; // Prevent submission if validation fails
-  //   }
-
-  //   try {
-  //     const response = await fetch("/api/contact", {
-  //       method: "post",
-  //       body: formData,
-  //     });
-
-  //     if (!response.ok) {
-  //       throw new Error(`HTTP error: ${response.status}`);
-  //     }
-
-  //     const responseData = await response.json();
-  //     console.log("Response Message:", responseData["message"]);
-  //     alert("Message successfully sent");
-  //   } catch (err) {
-  //     console.error("Submission Error:", err.message);
-  //     alert("Error, please try resubmitting the form");
-  //   } finally {
-  //     setIsSubmitting(false); // Reset submission flag regardless of outcome
-  //   }
-  // };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     const formData = new FormData(formRef.current); // Initialize FormData with form ref
