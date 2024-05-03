@@ -158,7 +158,7 @@ const Services = () => {
             <p className="mt-4 text-center text-xs font-medium italic text-neutral-400 transition-colors duration-500 group-hover/bento:text-neutral-100 sm:text-sm">
               Could you make a custom funnel for 3 of our clients?
             </p>{" "}
-            <p className="mt-4 rounded-full border border-rose-500 bg-rose-100 px-2 py-0.5 text-center text-xs text-rose-600 duration-500 group-hover/bento:border-rose-400 group-hover/bento:text-rose-500 dark:bg-rose-900/20">
+            <p className="mt-4 rounded-full border border-rose-500 bg-rose-100 px-2 py-0.5 text-center text-xs text-rose-500 duration-500 group-hover/bento:border-rose-400 group-hover/bento:text-rose-500 dark:bg-rose-900/20">
               Marketing Agency
             </p>{" "}
           </div>{" "}

@@ -1,9 +1,9 @@
-import CallToAction from "@/components/CallToAction";
-import Contact from "@/components/Contact";
-import Hero from "@/components/Hero";
-import Panel from "@/components/Panel";
-import Services from "@/components/Services";
-import Why from "@/components/Why";
+import CallToAction from "../components/CallToAction";
+import Contact from "../components/Contact";
+import Hero from "../components/Hero";
+import Panel from "../components/Panel";
+import Services from "../components/Services";
+import Why from "../components/Why";
 import React from "react";
 
 const Home = () => {
