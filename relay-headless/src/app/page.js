@@ -9,15 +9,13 @@ import React from "react";
 const Home = () => {
   return (
     <>
-      <div className="flex flex-col gap-10 overflow-x-hidden">
+      <div className="flex flex-col gap-10">
         <Hero />
         <Why />
         <CallToAction />
         <Services />
-        <div className="flex flex-col overflow-y-hidden">
-          <Panel />
-          <Contact />
-        </div>
+        <Panel />
+        <Contact />
       </div>
     </>
   );

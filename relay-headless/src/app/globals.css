@@ -23,3 +23,9 @@ body {
 .marquee-container > img {
   flex-shrink: 0;
 }
+
+@media (min-width: 1024px) { /* Adjust this value based on your Tailwind config for 'lg' */
+  .lg-height-custom {
+    height: calc(100vh - 90px);
+  }
+}

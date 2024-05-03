@@ -12,11 +12,13 @@
     "@gsap/react": "^2.1.0",
     "@studio-freight/react-lenis": "^0.0.46",
     "@vercel/analytics": "^1.2.2",
+    "framer-motion": "^11.1.7",
     "gsap": "^3.12.5",
-    "next": "14.1.4",
+    "next": "^14.2.3",
     "nodemailer": "^6.9.13",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-responsive": "^10.0.0"
   },
   "devDependencies": {
     "@types/node": "20.12.8",
