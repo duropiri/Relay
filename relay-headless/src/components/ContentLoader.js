@@ -1,7 +1,6 @@
 "use client";
 import React, { useEffect } from "react";
 import { useGlobalState } from "./GlobalStateContext";
-import config from "@/config";
 
 const fetchCMS = ({ collection }) => {
   const reqOptions = {
