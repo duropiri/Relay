@@ -16,41 +16,29 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setIsSubmitting(true);
-    setSubmitAttempted(true); // Indicate a submission attempt has been made
+    const formData = new FormData(formRef.current); // Initialize FormData with form ref
 
-    const form = formRef.current;
-    const name = form["name"].value;
-    const email = form["email"].value;
-    const phone = form["phone"].value;
-    const website = form["website"].value;
-    const message = form["message"].value;
+    async function sendContactForm(data) {
+      try {
+        const response = await fetch("/api/contact", {
+          method: "POST",
+          body: data,
+        });
 
-    // Simple validation for demonstration
-    if (!name || !email.includes("@") || !phone || !website || !message) {
-      setResult("Please fill in all fields correctly.");
-      setIsSubmitting(false);
-      return; // Prevent submission if validation fails
-    }
-
-    // If the email is valid, continue with the form submission logic
-    try {
-      // Simulated API call with a timeout
-      setTimeout(() => {
-        setIsSubmitting(false);
-        // Randomly simulate success or failure
-        if (Math.random() > 0.5) {
-          setResult("Success! Your message has been sent.");
-          formRef.current.reset(); // Reset the form upon success
-          setSubmitAttempted(false); // Reset submission attempt flag upon successful submission
-        } else {
-          setResult("An error occurred. Please try again later.");
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
         }
-      }, 2000); // Simulate a delay for the API call
-    } catch (error) {
-      setResult("An error occurred. Please try again later.");
-      setIsSubmitting(false);
+
+        const result = await response.json();
+        console.log(result.message);
+        setResult("Message successfully received!"); // Using alert for user feedback
+      } catch (error) {
+        console.error("Error:", error);
+        setResult("Failed to send message."); // Using alert for error feedback
+      }
     }
+
+    sendContactForm(formData);
   };
 
   return (
@@ -96,21 +84,14 @@ const Contact = () => {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-                <a href="mailto:info@relaymedia.agency">
-                  info@relaymedia.agency
+                <a href="mailto:relaydigitalyyc@gmail.com">
+                  relaydigitalyyc@gmail.com
                 </a>
               </div>
             </div>
           </div>
           <div className="mb-5 rounded-xl border border-neutral-700 bg-neutral-950 p-5 shadow-xl md:p-8">
-            <form
-              ref={formRef}
-              action="https://api.web3forms.com/submit"
-              method="POST"
-              id="form"
-              noValidate
-              onSubmit={handleSubmit}
-            >
+            <form ref={formRef} id="form" noValidate onSubmit={handleSubmit}>
               <input
                 type="hidden"
                 name="access_key"
