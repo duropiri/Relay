@@ -12,7 +12,7 @@ const Panel = () => {
       <div ref={targetRef} className="relative lg:h-[200vh]" id="casestudies">
         <div className="sticky top-[90px] flex lg-height-custom items-center overflow-hidden">
           <div className="hidden lg:flex">
-            <motion.div style={{ x }} className="flex gap-4">
+            <motion.div style={{ x }} className="flex gap-4 items-center">
               <div className="w-[100vw] flex justify-center items-center">
                 <div className="grid gap-x-8 grid-cols-2">
                   <div className="items-center justify-center flex flex-col">

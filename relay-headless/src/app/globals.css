@@ -28,4 +28,7 @@ body {
   .lg-height-custom {
     height: calc(100vh - 90px);
   }
+  .lg-max-height-custom {
+    max-height: calc(100vh - 90px);
+  }
 }

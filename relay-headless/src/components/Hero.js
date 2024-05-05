@@ -100,7 +100,7 @@ const Hero = () => {
   return (
     <>
       <section className="relative mx-auto overflow-x-clip px-8 sm:px-16 md:px-24 lg:px-32">
-        <div className="mb-6 mt-12 flex flex-col items-center text-center lg:mb-24 lg:mt-48 lg:grid lg:grid-cols-3">
+        <div className="mb-6 mt-12 flex flex-col items-center text-center lg:mb-24 lg:mt-28 2xl:mt-48 lg:grid lg:grid-cols-3">
           {/* Main Heading */}
           <div className="col-span-2 z-20 lg:mt-6 pointer-events-none">
             <div className="-z-10 max-w-4xl text-center font-melodrama text-3xl sm:text-5xl lg:text-start lg:text-7xl">
@@ -172,7 +172,7 @@ const Hero = () => {
               decoding="async"
             />
           </div> */}
-          <div className="absolute w-[100vw] h-[100vh] brightness-[0.3] left-10 " data-speed="0.6">
+          <div className="absolute w-[100vw] h-[100vh] brightness-[0.3] left-10" data-speed="0.6">
             <Spline
               scene="https://prod.spline.design/jihRugpNkwT9B6KT/scene.splinecode"
             />
