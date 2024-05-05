@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import { GlobalStateProvider } from "../components/GlobalStateContext";
 import MobileMenu from "../components/MobileMenu";
 import { Analytics } from "@vercel/analytics/react";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +19,7 @@ export const metadata = {
   charset: "UTF-8",
   viewport: "width=device-width, initial-scale=1.0",
   robots: "index, follow",
+  image: "/img/social-media-share-preview.png",
 };
 
 const RootLayout = ({ children }) => {
