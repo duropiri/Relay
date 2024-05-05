@@ -172,7 +172,7 @@ const Hero = () => {
               decoding="async"
             />
           </div> */}
-          <div className="absolute w-[100vw] h-[100vh] brightness-50 left-10" data-speed="0.6">
+          <div className="absolute w-[100vw] h-[100vh] brightness-50 left-10 pointer-events-none" data-speed="0.6">
             <Spline
               scene="https://prod.spline.design/zSeNwdR6l9-CpgeK/scene.splinecode"
             />
