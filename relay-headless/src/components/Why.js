@@ -32,16 +32,17 @@ const Why = () => {
     // Adjust the selector as needed to target your specific layout.
     const section = document.querySelector("#why");
 
-    // Animate images with 'left' and 'right' classes inside this section
     gsap.utils.toArray(".left, .right").forEach((image) => {
+      // Decide the direction based on the class and screen size
       const direction = image.classList.contains("left") ? 1 : -1;
+
       gsap.to(image, {
         x: () => direction * 50, // Adjust the distance as needed
         ease: "expoScale",
         scrollTrigger: {
-          trigger: section, // Use the common parent as the trigger
-          start: "top center", // When the top of the parent hits the center
-          end: "bottom center", // When the bottom of the parent hits the center
+          trigger: image.parentElement,
+          start: "top center",
+          end: "bottom center",
           scrub: true,
         },
       });
@@ -104,15 +105,27 @@ const Why = () => {
               </div>
             </div>
 
-            <img
-              src="/img/increase-cr.webp"
-              alt="Product screenshot"
-              className="right h-auto w-[24rem] max-w-none rounded-xl shadow-xl sm:w-[36rem] md:-ml-4 lg:-ml-0"
-              loading="lazy"
-              width="1217"
-              height="1227"
-              decoding="async"
-            />
+            <div className="relative flex items-start justify-end">
+              <img
+                src="/img/increase-cr.webp"
+                alt="Product screenshot"
+                className="hidden sm:block right h-auto w-[24rem] max-w-none rounded-xl shadow-xl sm:w-[36rem] md:-ml-4 lg:-ml-0"
+                loading="lazy"
+                width="1217"
+                height="1227"
+                decoding="async"
+              />
+
+              <img
+                src="/img/increase-cr.webp"
+                alt="Product screenshot"
+                className="block sm:hidden h-auto w-[24rem] max-w-none rounded-xl shadow-xl sm:w-[36rem]"
+                loading="lazy"
+                width="1217"
+                height="1227"
+                decoding="async"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -156,11 +169,21 @@ const Why = () => {
                 </a>
               </div>
             </div>
-            <div className="flex items-start justify-end lg:order-first">
+            <div className="relative flex items-start justify-end lg:order-first">
               <img
                 src="/img/design.webp"
                 alt="Product screenshot"
-                className="left h-auto w-[28rem] max-w-none rounded-xl shadow-xl sm:w-[40rem] md:-ml-4 lg:-ml-0"
+                className="hidden sm:block left h-auto w-[28rem] max-w-none rounded-xl shadow-xl sm:w-[40rem] md:-ml-4 lg:-ml-0"
+                loading="lazy"
+                width="1365"
+                height="832"
+                decoding="async"
+              />
+
+              <img
+                src="/img/design.webp"
+                alt="Product screenshot"
+                className="block sm:hidden h-auto w-[28rem] max-w-none rounded-xl shadow-xl sm:w-[40rem] -mr-24"
                 loading="lazy"
                 width="1365"
                 height="832"
