@@ -2,9 +2,9 @@
 import React from "react";
 import Spline from "@splinetool/react-spline";
 
-const Rocket = () => {
+const Rocket = ({className}) => {
   return (
-    <div className="relative">
+    <div className={className + " relative"}>
       {/* <div className="mx-2 lg:mx-8 text-3xl text-neutral-100 lg:text-5xl text-center z-10">
         <h2 className="bg-gradient-to-b from-neutral-50 from-60% to-neutral-400 bg-clip-text text-transparent lg:to-neutral-600">
           Are You Ready To{" "}
@@ -26,7 +26,7 @@ const Rocket = () => {
           </p>
         </div>
       </div> */}
-      <div className="h-60 w-full pointer-events-none sm:pointer-events-auto top-20 z-[-1] -mb-44">
+      <div className="w-full pointer-events-none sm:pointer-events-auto top-20 z-[1] -mb-32">
         <Spline scene="https://prod.spline.design/JhlNtBynD6AHN5aV/scene.splinecode" />
       </div>
     </div>

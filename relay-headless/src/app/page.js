@@ -17,7 +17,7 @@ const Home = () => {
       <CallToAction />
       <Services />
       <Panel />
-      <Rocket />
+      <Rocket className="z-20" />
       <Contact />
     </div>
   );
