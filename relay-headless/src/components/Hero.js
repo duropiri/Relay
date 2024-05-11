@@ -201,7 +201,7 @@ const Hero = () => {
         </div>
       </section>
       {/* Stats */}
-      <div className="mx-auto w-[75vw] px-6 lg:px-8">
+      <div className="mx-auto min-w-[75vw] px-6 lg:px-8">
         <dl
           className="relative z-40 mt-6 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-neutral-600 bg-neutral-600 text-center shadow-2xl shadow-blue-500/50 lg:grid-cols-4"
           data-speed="1.05"
