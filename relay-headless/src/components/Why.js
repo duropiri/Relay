@@ -74,15 +74,20 @@ const Why = () => {
                 <h2 className="mt-2 font-melodrama text-3xl font-medium tracking-tight text-white sm:text-6xl">
                   <span className="bg-gradient-to-b from-neutral-50 from-60% to-neutral-400 bg-clip-text text-transparent lg:to-neutral-600">
                     {/* {Why1} */}
-                    Designed to Convert Paid Traffic
+                    Optimized to{" "}
+                    <span className="bg-gradient-to-b from-blue-500 from-60% to-blue-400 bg-clip-text text-transparent lg:to-blue-600 underline">
+                      Convert
+                    </span>{" "}
+                    Paid Traffic
+                    <span className="text-blue-500">.</span>
                   </span>
                 </h2>
                 <p className="text-md mt-6 font-light text-neutral-300 md:text-lg">
                   {/* {WhyDescription1} */}
-                  We design, develop and deploy custom marketing funnels to help
-                  you convert your paid traffic into sales. Our funnels are
-                  completely managed by us, so you don&apos;t have to touch a
-                  thing.
+                  Our team expertly crafts, builds, and manages custom marketing
+                  funnels tailored to boost your sales from paid traffic. With
+                  our complete management, you can focus solely on your business
+                  without worrying about the technical details.
                 </p>
                 <a href="/contact">
                   <button className="relative rounded-full text-center transition-all duration-500 transform overflow-hidden z-40   px-6 py-3 text-base bg-blue-500 text-neutral-950 border border-blue-500 button hover:text-neutral-50 group mt-6 text-lg uppercase">
@@ -109,7 +114,7 @@ const Why = () => {
               <img
                 src="/img/increase-cr.webp"
                 alt="Product screenshot"
-                className="hidden sm:block right h-auto w-[24rem] max-w-none rounded-xl shadow-xl sm:w-[36rem] md:-ml-4 lg:-ml-0"
+                className="hidden sm:block right h-auto w-[24rem] max-w-none sm:w-[36rem] md:-ml-4 lg:-ml-0"
                 loading="lazy"
                 width="1217"
                 height="1227"
@@ -119,7 +124,7 @@ const Why = () => {
               <img
                 src="/img/increase-cr.webp"
                 alt="Product screenshot"
-                className="block sm:hidden h-auto w-[24rem] max-w-none rounded-xl shadow-xl sm:w-[36rem]"
+                className="block sm:hidden h-auto w-[24rem] max-w-none sm:w-[36rem]"
                 loading="lazy"
                 width="1217"
                 height="1227"
@@ -138,16 +143,21 @@ const Why = () => {
                 <h3 className="mt-2 font-melodrama text-3xl font-medium tracking-tight text-white sm:text-6xl">
                   <span className="bg-gradient-to-b from-neutral-50 from-60% to-neutral-400 bg-clip-text text-transparent lg:to-neutral-600">
                     {/* {Why2} */}
-                    Using Our Own Custom Technologies
+                    Pioneering{" "}
+                    <span className="bg-gradient-to-b from-blue-500 from-60% to-blue-400 bg-clip-text text-transparent lg:to-blue-600 underline">
+                      Custom
+                    </span>{" "}
+                    Technologies
+                    <span className="text-blue-500">.</span>
                   </span>
                 </h3>
                 <p className="text-md mt-6 font-light text-neutral-300 md:text-lg">
                   {/* {WhyDescription2} */}
-                  We&apos;ve architected our own custom marketing framework so
-                  that our funnels are up to 10x faster than typical websites
-                  and convert 1.5x better than typical Shopify stores. Allowing
-                  us to deliver a better user experience and increase your
-                  conversion rate.
+                  We&apos;ve developed our proprietary marketing framework to
+                  ensure our funnels perform up to 10 times faster than standard
+                  websites and achieve conversion rates 1.5 times higher than
+                  conventional websites. This approach enhances user experiences
+                  and significantly boosts your conversion rates.
                 </p>
                 <a href="/contact">
                   <button className="relative rounded-full text-center transition-all duration-500 transform overflow-hidden z-40   px-6 py-3 text-base bg-blue-500 text-neutral-950 border border-blue-500 button hover:text-neutral-50 group mt-6 uppercase">
@@ -173,7 +183,7 @@ const Why = () => {
               <img
                 src="/img/design.webp"
                 alt="Product screenshot"
-                className="hidden sm:block left h-auto w-[28rem] max-w-none rounded-xl shadow-xl sm:w-[40rem] md:-ml-4 lg:-ml-0"
+                className="hidden sm:block left h-auto w-[28rem] max-w-none sm:w-[40rem] md:-ml-4 lg:-ml-0"
                 loading="lazy"
                 width="1365"
                 height="832"
@@ -183,7 +193,7 @@ const Why = () => {
               <img
                 src="/img/design.webp"
                 alt="Product screenshot"
-                className="block sm:hidden h-auto w-[28rem] max-w-none rounded-xl shadow-xl sm:w-[40rem] -mr-24"
+                className="block sm:hidden h-auto w-[28rem] max-w-none sm:w-[40rem] -mr-24"
                 loading="lazy"
                 width="1365"
                 height="832"

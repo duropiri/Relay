@@ -99,10 +99,17 @@ const Hero = () => {
 
   return (
     <>
+      {/* <div className="absolute w-[100vw] h-[100vh] brightness-[0.2] left-0 top-0 pointer-events-none -z-[0] overflow-hidden sticky -mt-[calc(100vh+90px)]">
+        <Spline
+          scene="https://prod.spline.design/WUSmOcbDpAzwEFJo/scene.splinecode"
+          className=""
+        />
+      </div> */}
+      {/* Hero Content */}
       <section className="relative mx-auto overflow-x-clip px-8 sm:px-16 md:px-24 lg:px-32">
         <div className="mb-6 mt-12 flex flex-col items-center text-center lg:mb-24 lg:mt-28 2xl:mt-48 lg:grid lg:grid-cols-3">
           {/* Main Heading */}
-          <div className="col-span-2 z-20 lg:mt-6 pointer-events-none">
+          <div className="col-span-2 z-20 lg:mt-6 pointer-events-auto">
             <div className="-z-10 max-w-4xl text-center font-melodrama text-3xl sm:text-5xl lg:text-start lg:text-7xl">
               <h1
                 className="bg-gradient-to-br from-neutral-100 from-55% to-neutral-500 bg-clip-text font-medium tracking-tight text-transparent lg:min-h-[20rem] lg:to-neutral-600"
@@ -121,7 +128,7 @@ const Hero = () => {
           </div>
 
           {/* Hero Description */}
-          <div className="col-span-1 z-20 flex flex-col items-start justify-between gap-y-8 py-12 text-start lg:h-full pointer-events-none">
+          <div className="col-span-1 z-20 flex flex-col items-start justify-between gap-y-8 py-12 text-start lg:h-full pointer-events-auto">
             <p
               className="text-center text-base leading-tight text-neutral-300 lg:text-start"
               data-speed="0.7"
@@ -172,170 +179,168 @@ const Hero = () => {
               decoding="async"
             />
           </div> */}
-          <div className="absolute w-[100vw] h-[100vh] brightness-[0.3] -top-20 sm:-top-32 left-0 pointer-events-none sm:pointer-events-auto" data-speed="0.6">
-            <Spline
-              scene="https://prod.spline.design/jihRugpNkwT9B6KT/scene.splinecode"
-              className=""
-            />
-          </div>
+          {/* <div className="absolute left-0 -top-20">
+            <div className="relative h-[400vh]">
+              <div
+                className="sticky w-[100vw] h-[100vh] brightness-[0.3] sm:-top-32 left-0 pointer-events-none sm:pointer-events-auto -z-[0]"
+              >
+                <Spline scene="https://prod.spline.design/jihRugpNkwT9B6KT/scene.splinecode" />
+              </div>
+            </div>
+          </div> */}
+          {/* <div className="absolute left-0">
+            <div className="relative h-[1000vh] top-0">
+              <div
+                className="sticky w-[100vw] h-[100vh] brightness-[0.3] sm:-top-32 left-0 -z-[0]"
+                // data-speed="0.0001"
+              >
+                <Spline scene="https://prod.spline.design/uB6rV8ls7pt7xRz9/scene.splinecode" />
+              </div>
+            </div>
+          </div> */}
         </div>
       </section>
+      {/* Stats */}
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        {isLoading ? (
-          <div className="skeleton h-[143px] w-[862px]"></div>
-        ) : (
-          <dl
-            className="relative z-40 mt-6 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-neutral-600 bg-neutral-600 text-center shadow-2xl shadow-blue-500/50 lg:grid-cols-4"
-            data-speed="1.05"
-          >
-            <div className="flex flex-col items-center  justify-center bg-neutral-900 px-2 py-6">
-              <dt className="mt-1 text-sm font-normal leading-tight tracking-tight text-neutral-300">
-                {/* {Statistic[0].description} */}
-                Average Conversion Rate Boost
-              </dt>
-              <dd className="order-first font-melodrama text-5xl font-semibold tracking-tight text-white lg:text-5xl">
-                {/* {Statistic[0].value} */}
-                22%
-              </dd>
-            </div>
-            <div className="flex flex-col items-center  justify-center bg-neutral-900 px-2 py-6">
-              <dt className="mt-1 text-sm font-normal leading-tight tracking-tight text-neutral-300">
-                {/* {Statistic[1].description} */}
-                More Time Spent on Page
-              </dt>
-              <dd className="order-first font-melodrama text-5xl font-semibold tracking-tight text-white lg:text-5xl">
-                {/* {Statistic[1].value} */}
-                60%
-              </dd>
-            </div>
-            <div className="flex flex-col items-center  justify-center bg-neutral-900 px-2 py-6">
-              <dt className="mt-1 text-sm font-normal leading-tight tracking-tight text-neutral-300">
-                {/* {Statistic[2].description} */}
-                Faster Than Typical Websites
-              </dt>
-              <dd className="order-first font-melodrama text-5xl font-semibold tracking-tight text-white lg:text-5xl">
-                {/* {Statistic[2].value} */}
-                10x
-              </dd>
-            </div>
-            <div className="flex flex-col items-center  justify-center bg-neutral-900 px-2 py-6">
-              <dt className="mt-1 text-sm font-normal leading-tight tracking-tight text-neutral-300">
-                {/* {Statistic[3].description} */}
-                Average Ad ROI Increase
-              </dt>
-              <dd className="order-first font-melodrama text-5xl font-semibold tracking-tight text-white lg:text-5xl">
-                {/* {Statistic[3].value} */}
-                39%
-              </dd>
-            </div>
-          </dl>
-        )}
+        <dl
+          className="relative z-40 mt-6 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-neutral-600 bg-neutral-600 text-center shadow-2xl shadow-blue-500/50 lg:grid-cols-4"
+          data-speed="1.05"
+        >
+          <div className="flex flex-col items-center  justify-center bg-neutral-900 px-2 py-6">
+            <dt className="font-red-hat-text mt-1 text-sm font-normal leading-tight tracking-tight text-neutral-300">
+              {/* {Statistic[0].description} */}
+              Average Conversion Rate Boost
+            </dt>
+            <dd className="font-proxima-nova order-first font-melodrama text-5xl font-semibold tracking-tight text-white lg:text-5xl">
+              {/* {Statistic[0].value} */}
+              22%
+            </dd>
+          </div>
+          <div className="flex flex-col items-center  justify-center bg-neutral-900 px-2 py-6">
+            <dt className="font-red-hat-text mt-1 text-sm font-normal leading-tight tracking-tight text-neutral-300">
+              {/* {Statistic[1].description} */}
+              More Time Spent on Page
+            </dt>
+            <dd className="font-proxima-nova order-first font-melodrama text-5xl font-semibold tracking-tight text-white lg:text-5xl">
+              {/* {Statistic[1].value} */}
+              60%
+            </dd>
+          </div>
+          <div className="flex flex-col items-center  justify-center bg-neutral-900 px-2 py-6">
+            <dt className="font-red-hat-text mt-1 text-sm font-normal leading-tight tracking-tight text-neutral-300">
+              {/* {Statistic[2].description} */}
+              Faster Than Typical Websites
+            </dt>
+            <dd className="font-proxima-nova order-first font-melodrama text-5xl font-semibold tracking-tight text-white lg:text-5xl">
+              {/* {Statistic[2].value} */}
+              10x
+            </dd>
+          </div>
+          <div className="flex flex-col items-center  justify-center bg-neutral-900 px-2 py-6">
+            <dt className="font-red-hat-text mt-1 text-sm font-normal leading-tight tracking-tight text-neutral-300">
+              {/* {Statistic[3].description} */}
+              Average Ad ROI Increase
+            </dt>
+            <dd className="font-proxima-nova order-first font-melodrama text-5xl font-semibold tracking-tight text-white lg:text-5xl">
+              {/* {Statistic[3].value} */}
+              39%
+            </dd>
+          </div>
+        </dl>
       </div>
 
-      {isLoading ? (
-        <div className="flex flex-row w-[400%] overflow-x-hidden gap-10">
-          {Array.from({ length: 10 }).map((_, index) => (
-            <div
-              key={index}
-              className="skeleton sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 lg:h-72"
-              style={{ width: "471px", height: "286px" }} // Adjusted for consistent sizing
-            ></div>
-          ))}
-        </div>
-      ) : (
-        <Marquee speed={1}>
-          <img
-            src="/img/homezy.webp"
-            alt="Homezy"
-            className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
-            loading="eager"
-            width="1728"
-            height="992"
-            decoding="async"
-          />
-          <img
-            src="/img/thai.webp"
-            alt="Thai"
-            className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
-            loading="eager"
-            width="1728"
-            height="992"
-            decoding="async"
-          />
-          <img
-            src="/img/wellbeing.webp"
-            alt="WellBeing"
-            className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
-            loading="eager"
-            width="3456"
-            height="1984"
-            decoding="async"
-          />
-          <img
-            src="/img/agenci.webp"
-            alt="Agenci"
-            className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
-            loading="eager"
-            width="1728"
-            height="992"
-            decoding="async"
-          />
-          <img
-            src="/img/joyfolio.webp"
-            alt="Joyfolio"
-            className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
-            loading="eager"
-            width="1728"
-            height="992"
-            decoding="async"
-          />
-          <img
-            src="/img/inspire.webp"
-            alt="Inspire"
-            className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
-            loading="eager"
-            width="1728"
-            height="992"
-            decoding="async"
-          />
-          <img
-            src="/img/wellbeing.webp"
-            alt="WellBeing"
-            className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
-            loading="eager"
-            width="3456"
-            height="1984"
-            decoding="async"
-          />
-          <img
-            src="/img/fashion.webp"
-            alt="Fashion"
-            className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
-            loading="eager"
-            width="2456"
-            height="1491"
-            decoding="async"
-          />
-          <img
-            src="/img/requesto.webp"
-            alt="Request"
-            className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
-            loading="eager"
-            width="1728"
-            height="992"
-            decoding="async"
-          />
-          <img
-            src="/img/darkstudio.webp"
-            alt="Studio"
-            className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[50%] lg:h-72"
-            loading="eager"
-            width="1728"
-            height="992"
-            decoding="async"
-          />
-        </Marquee>
-      )}
+      <Marquee speed={1}>
+        <img
+          src="/img/homezy.webp"
+          alt="Homezy"
+          className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[0%] lg:h-72"
+          loading="eager"
+          width="1728"
+          height="992"
+          decoding="async"
+        />
+        <img
+          src="/img/thai.webp"
+          alt="Thai"
+          className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[0%] lg:h-72"
+          loading="eager"
+          width="1728"
+          height="992"
+          decoding="async"
+        />
+        <img
+          src="/img/wellbeing.webp"
+          alt="WellBeing"
+          className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[0%] lg:h-72"
+          loading="eager"
+          width="3456"
+          height="1984"
+          decoding="async"
+        />
+        <img
+          src="/img/agenci.webp"
+          alt="Agenci"
+          className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[0%] lg:h-72"
+          loading="eager"
+          width="1728"
+          height="992"
+          decoding="async"
+        />
+        <img
+          src="/img/joyfolio.webp"
+          alt="Joyfolio"
+          className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[0%] lg:h-72"
+          loading="eager"
+          width="1728"
+          height="992"
+          decoding="async"
+        />
+        <img
+          src="/img/inspire.webp"
+          alt="Inspire"
+          className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[0%] lg:h-72"
+          loading="eager"
+          width="1728"
+          height="992"
+          decoding="async"
+        />
+        <img
+          src="/img/wellbeing.webp"
+          alt="WellBeing"
+          className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[0%] lg:h-72"
+          loading="eager"
+          width="3456"
+          height="1984"
+          decoding="async"
+        />
+        <img
+          src="/img/fashion.webp"
+          alt="Fashion"
+          className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[0%] lg:h-72"
+          loading="eager"
+          width="2456"
+          height="1491"
+          decoding="async"
+        />
+        <img
+          src="/img/requesto.webp"
+          alt="Request"
+          className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[0%] lg:h-72"
+          loading="eager"
+          width="1728"
+          height="992"
+          decoding="async"
+        />
+        <img
+          src="/img/darkstudio.webp"
+          alt="Studio"
+          className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[0%] lg:h-72"
+          loading="eager"
+          width="1728"
+          height="992"
+          decoding="async"
+        />
+      </Marquee>
     </>
   );
 };

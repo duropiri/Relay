@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Services = () => {
   return (
-    <div className="mx-auto grid max-w-7xl grid-cols-1 gap-4 md:auto-rows-[18rem] md:grid-cols-3  mx-auto max-w-7xl md:auto-rows-[20rem]">
+    <div className="mx-auto grid max-w-7xl grid-cols-1 gap-4 md:auto-rows-[18rem] md:grid-cols-3  mx-auto max-w-7xl md:auto-rows-[20rem] z-10">
       
       <div className="group/bento shadow-input row-span-1 flex flex-col justify-between space-y-4 overflow-hidden rounded-none border-y border-transparent border-white/[0.2] bg-neutral-950 p-4 shadow-xl shadow-blue-500/20 transition duration-200 hover:shadow-3xl hover:shadow-blue-500/50 md:rounded-xl md:border md:col-span-1">
         

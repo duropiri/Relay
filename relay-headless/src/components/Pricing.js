@@ -3,6 +3,7 @@ import React from "react";
 const Pricing = () => {
   return (
     <div className="mx-auto max-w-7xl px-5">
+      {/* Page Top */}
       <div className="py-24 sm:py-32">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-center px-6 lg:px-8">
           <h1 className="text-center font-melodrama text-3xl text-neutral-50 sm:text-4xl lg:text-5xl">
@@ -11,10 +12,11 @@ const Pricing = () => {
           <p className="mt-4 max-w-4xl text-center text-lg leading-snug tracking-tight text-neutral-300">
             We hate the painful processes that other web agencies offer. We like
             to keep everything as simple as possible for you here. We simply
-            charge per page, and we&apos;ll work with you to create a custom package
-            that fits your needs.
+            charge per page, and we&apos;ll work with you to create a custom
+            package that fits your needs.
           </p>
         </div>
+        {/* High Converting Landing Page */}
         <div className="mx-auto mt-16 max-w-2xl rounded-3xl border border-neutral-700 shadow-xl shadow-blue-500/20 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
           <div className="p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
             <div className="h-full rounded-2xl border border-neutral-700 bg-neutral-900 py-10 text-center lg:mt-0 lg:flex lg:flex-col lg:justify-center lg:py-16">
@@ -28,7 +30,7 @@ const Pricing = () => {
                   </span>
                 </p>
                 <a href="https://buy.stripe.com/3cs8wI6l16Z3dFK000">
-                  <button className="relative rounded-full text-center transition-all duration-500 transform overflow-hidden z-40   px-6 py-3 text-base bg-blue-500 text-neutral-950 border border-blue-500 button hover:text-neutral-50 group mt-6 text-lg uppercase">
+                  <button className="relative rounded-full text-center transition-all duration-500 transform overflow-hidden z-40   px-6 py-3 bg-blue-500 text-neutral-950 border border-blue-500 button hover:text-neutral-50 group mt-6 text-lg uppercase">
                     <div className="group relative z-10 w-full">
                       Get Started
                       <svg
@@ -53,10 +55,10 @@ const Pricing = () => {
             </h3>
             <p className="mt-6 text-base leading-snug tracking-tight text-neutral-300">
               Every Page is custom designed and coded to your specifications.
-              We&apos;ll work with you to get the perfect design for your business.
-              We make sure that our sites are some of the fastest on the web,
-              and we&apos;ll make sure that your site is optimized for search engines
-              out of the box.
+              We&apos;ll work with you to get the perfect design for your
+              business. We make sure that our sites are some of the fastest on
+              the web, and we&apos;ll make sure that your site is optimized for
+              search engines out of the box.
             </p>
             <div className="mt-10 flex items-center gap-x-4">
               <h4 className="text-md flex-none font-semibold leading-6 text-neutral-100">
@@ -84,7 +86,7 @@ const Pricing = () => {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-                Designed by a Professional Designer{" "}
+                Designed by a Professional Designer
               </li>
               <li className="flex gap-x-2">
                 <svg
@@ -102,7 +104,7 @@ const Pricing = () => {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-                Custom Coded From Scratch{" "}
+                Custom Coded From Scratch
               </li>
               <li className="flex gap-x-2">
                 <svg
@@ -120,7 +122,7 @@ const Pricing = () => {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-                Custom Animations{" "}
+                Custom Animations
               </li>
               <li className="flex gap-x-2">
                 <svg
@@ -138,7 +140,7 @@ const Pricing = () => {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-                Built To Convert{" "}
+                Built To Convert
               </li>
               <li className="flex gap-x-2">
                 <svg
@@ -156,7 +158,7 @@ const Pricing = () => {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-                Fastest Load Times On The Web{" "}
+                Fastest Load Times On The Web
               </li>
               <li className="flex gap-x-2">
                 <svg
@@ -174,7 +176,7 @@ const Pricing = () => {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-                Search Engine Optimized{" "}
+                Search Engine Optimized
               </li>
               <li className="flex gap-x-2">
                 <svg
@@ -192,7 +194,7 @@ const Pricing = () => {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-                Up To x10 Sections{" "}
+                Up To x10 Sections
               </li>
               <li className="flex gap-x-2">
                 <svg
@@ -210,12 +212,13 @@ const Pricing = () => {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-                Lighthouse Audit{" "}
+                Lighthouse Audit
               </li>
             </div>
           </div>
         </div>
       </div>
+      {/* Website Service Packages */}
       <div className="py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <h3 className="text-start font-melodrama text-3xl text-neutral-50 sm:text-4xl lg:text-5xl">
@@ -225,13 +228,14 @@ const Pricing = () => {
             We offer a variety of website services to not only get your website
             online, but to also help grow your business.
           </p>
+          {/* Mobile View */}
           <div className="mx-auto mt-12 max-w-md space-y-8 sm:mt-16 lg:hidden">
             <section className="p-8">
               <h3
                 id="tier-essential"
                 className="text-sm font-semibold leading-6 text-white"
               >
-                Essential{" "}
+                Essential
               </h3>
               <p className="mt-2 flex items-baseline gap-x-1">
                 <span className="text-4xl font-bold text-white">$99</span>
@@ -321,7 +325,7 @@ const Pricing = () => {
                         ></path>
                       </svg>
                       <span>
-                        Bandwidth{" "}
+                        Bandwidth
                         <span className="text-sm leading-6 text-neutral-400">
                           (10 GB)
                         </span>
@@ -480,7 +484,7 @@ const Pricing = () => {
                 id="tier-cro"
                 className="text-sm font-semibold leading-6 text-white"
               >
-                Conversion Rate Optimisation{" "}
+                Conversion Rate Optimisation
               </h3>
               <p className="mt-2 flex items-baseline gap-x-1">
                 <span className="text-4xl font-bold text-white">$495</span>
@@ -570,7 +574,7 @@ const Pricing = () => {
                         ></path>
                       </svg>
                       <span>
-                        Bandwidth{" "}
+                        Bandwidth
                         <span className="text-sm leading-6 text-neutral-400">
                           (100 GB)
                         </span>
@@ -928,7 +932,7 @@ const Pricing = () => {
                 id="tier-maintain"
                 className="text-sm font-semibold leading-6 text-white"
               >
-                CRO + Development{" "}
+                CRO + Development
               </h3>
               <p className="mt-2 flex items-baseline gap-x-1">
                 <span className="text-4xl font-bold text-white">$1995</span>
@@ -1018,7 +1022,7 @@ const Pricing = () => {
                         ></path>
                       </svg>
                       <span>
-                        Bandwidth{" "}
+                        Bandwidth
                         <span className="text-sm leading-6 text-neutral-400">
                           (100GB)
                         </span>
@@ -1463,49 +1467,46 @@ const Pricing = () => {
               </ul>
             </section>
           </div>
+          {/* Desktop View */}
           <div className="isolate mt-20 hidden rounded-3xl border border-neutral-700 bg-neutral-950 p-6 lg:block">
             <div className="relative -mx-8">
+              {/* Colored Column */}
               <div className="absolute inset-x-4 inset-y-0 -z-10 flex">
-                <div
-                  className="flex w-1/4 px-4"
-                  aria-hidden="true"
-                >
-                  <div className="w-full rounded-t-xl border-x border-t border-white/10 bg-white/5"></div>
+                <div className="flex w-1/4 px-4" aria-hidden="true">
+                  <div className="w-full rounded-t-xl rounded-b-xl border-x border-y border-white/10 bg-white/5"></div>
                 </div>
               </div>
-              <div> </div>
-              <div> </div>
-              <div> </div>
-              <div> </div>
-              <div> </div>
-              <div> </div>
-              <table className="w-full table-fixed border-separate border-spacing-x-8 text-left">
+              {/* Price Table */}
+              <table className="w-full table-fixed border-separate border-spacing-x-8 text-left px-2">
                 <caption className="sr-only">Pricing plan comparison</caption>
-                <colgroup>
+                {/* <colgroup>
                   <col className="w-1/4" /> <col className="w-1/4" />
                   <col className="w-1/4" /> <col className="w-1/4" />
-                </colgroup>
+                </colgroup> */}
+                {/* Table Head */}
                 <thead>
                   <tr>
                     <td></td>
                     <th scope="col" className="px-6 pt-6 xl:px-8 xl:pt-8">
-                      <div className="text-sm font-semibold leading-7 text-white">
+                      <div className="text-sm font-semibold leading-7 text-white text-nowrap">
                         Essential
                       </div>
                     </th>
                     <th scope="col" className="px-6 pt-6 xl:px-8 xl:pt-8">
-                      <div className="text-sm font-semibold leading-7 text-white">
+                      <div className="text-sm font-semibold leading-7 text-white text-nowrap">
                         Conversion Rate Optimisation
                       </div>
                     </th>
                     <th scope="col" className="px-6 pt-6 xl:px-8 xl:pt-8">
-                      <div className="text-sm font-semibold leading-7 text-white">
+                      <div className="text-sm font-semibold leading-7 text-white text-nowrap">
                         CRO + Development
                       </div>
                     </th>
                   </tr>
                 </thead>
+                {/* Table Body */}
                 <tbody>
+                  {/* Price and CTA Buttons */}
                   <tr>
                     <th scope="row">
                       <span className="sr-only">Price</span>
@@ -1550,1831 +1551,1885 @@ const Pricing = () => {
                       </a>
                     </td>
                   </tr>
+
+                  {/* Hosting */}
+                  <>
+                    <tr>
+                      <th
+                        scope="colgroup"
+                        colSpan="4"
+                        className="pt-8 pb-4 text-sm font-semibold leading-6 text-white"
+                      >
+                        Hosting
+                        <div className="absolute inset-x-8 mt-4 h-px bg-white/10"></div>
+                      </th>
+                    </tr>
+                    <tr>
+                      <th
+                        scope="row"
+                        className="py-4 text-sm font-normal leading-6 text-white"
+                      >
+                        24/7 Web Hosting
+                        <div className="absolute inset-x-8 mt-4 h-px bg-white/5"></div>
+                      </th>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-white"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only"> Included in Essential </span>
+                      </td>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-white"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Included in Conversion Rate Optimisation
+                        </span>
+                      </td>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-white"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Included in CRO + Development
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th
+                        scope="row"
+                        className="py-4 text-sm font-normal leading-6 text-white"
+                      >
+                        HTTPS/SSL Security
+                        <div className="absolute inset-x-8 mt-4 h-px bg-white/5"></div>
+                      </th>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-white"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only"> Included in Essential </span>
+                      </td>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-white"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Included in Conversion Rate Optimisation
+                        </span>
+                      </td>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-white"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Included in CRO + Development
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th
+                        scope="row"
+                        className="py-4 text-sm font-normal leading-6 text-white"
+                      >
+                        DDos Mitigation
+                        <div className="absolute inset-x-8 mt-4 h-px bg-white/5"></div>
+                      </th>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-white"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only"> Included in Essential </span>
+                      </td>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-white"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Included in Conversion Rate Optimisation
+                        </span>
+                      </td>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-white"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Included in CRO + Development
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th
+                        scope="row"
+                        className="py-4 text-sm font-normal leading-6 text-white"
+                      >
+                        Bandwidth
+                        <div className="absolute inset-x-8 mt-4 h-px bg-white/5"></div>
+                      </th>
+                      <td className="px-6 py-4 xl:px-8">
+                        <div className="text-center text-sm leading-6 text-neutral-300">
+                          10 GB
+                        </div>
+                      </td>
+                      <td className="px-6 py-4 xl:px-8">
+                        <div className="text-center text-sm leading-6 text-neutral-300">
+                          100 GB
+                        </div>
+                      </td>
+                      <td className="px-6 py-4 xl:px-8">
+                        <div className="text-center text-sm leading-6 text-neutral-300">
+                          100GB
+                        </div>
+                      </td>
+                    </tr>
+                  </>
+                  {/* Support */}
+                  <>
+                    <tr>
+                      <th
+                        scope="colgroup"
+                        colSpan="4"
+                        className="pt-16 pb-4 text-sm font-semibold leading-6 text-white"
+                      >
+                        Support
+                        <div className="absolute inset-x-8 mt-4 h-px bg-white/10"></div>
+                      </th>
+                    </tr>
+                    <tr>
+                      <th
+                        scope="row"
+                        className="py-4 text-sm font-normal leading-6 text-white"
+                      >
+                        Support Resources
+                        <div className="absolute inset-x-8 mt-4 h-px bg-white/5"></div>
+                      </th>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-white"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only"> Included in Essential </span>
+                      </td>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-white"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Included in Conversion Rate Optimisation
+                        </span>
+                      </td>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-white"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Included in CRO + Development
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th
+                        scope="row"
+                        className="py-4 text-sm font-normal leading-6 text-white"
+                      >
+                        Email Support
+                        <div className="absolute inset-x-8 mt-4 h-px bg-white/5"></div>
+                      </th>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-white"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only"> Included in Essential </span>
+                      </td>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-white"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Included in Conversion Rate Optimisation
+                        </span>
+                      </td>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-white"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Included in CRO + Development
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th
+                        scope="row"
+                        className="py-4 text-sm font-normal leading-6 text-white"
+                      >
+                        Priority Support
+                        <div className="absolute inset-x-8 mt-4 h-px bg-white/5"></div>
+                      </th>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-neutral-400"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M2.25 7.5C2.25 7.22386 2.47386 7 2.75 7H12.25C12.5261 7 12.75 7.22386 12.75 7.5C12.75 7.77614 12.5261 8 12.25 8H2.75C2.47386 8 2.25 7.77614 2.25 7.5Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Not included in Essential
+                        </span>
+                      </td>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-white"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Included in Conversion Rate Optimisation
+                        </span>
+                      </td>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-white"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Included in CRO + Development
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th
+                        scope="row"
+                        className="py-4 text-sm font-normal leading-6 text-white"
+                      >
+                        Dedicated Account Manager
+                        <div className="absolute inset-x-8 mt-4 h-px bg-white/5"></div>
+                      </th>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-neutral-400"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M2.25 7.5C2.25 7.22386 2.47386 7 2.75 7H12.25C12.5261 7 12.75 7.22386 12.75 7.5C12.75 7.77614 12.5261 8 12.25 8H2.75C2.47386 8 2.25 7.77614 2.25 7.5Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Not included in Essential
+                        </span>
+                      </td>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-white"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Included in Conversion Rate Optimisation
+                        </span>
+                      </td>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-white"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Included in CRO + Development
+                        </span>
+                      </td>
+                    </tr>
+                  </>
+                  {/* Reporting */}
+                  <>
+                    <tr>
+                      <th
+                        scope="colgroup"
+                        colSpan="4"
+                        className="pt-16 pb-4 text-sm font-semibold leading-6 text-white"
+                      >
+                        Reporting
+                        <div className="absolute inset-x-8 mt-4 h-px bg-white/10"></div>
+                      </th>
+                    </tr>
+                    <tr>
+                      <th
+                        scope="row"
+                        className="py-4 text-sm font-normal leading-6 text-white"
+                      >
+                        Basic Website Insights
+                        <div className="absolute inset-x-8 mt-4 h-px bg-white/5"></div>
+                      </th>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-white"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only"> Included in Essential </span>
+                      </td>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-white"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Included in Conversion Rate Optimisation
+                        </span>
+                      </td>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-white"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Included in CRO + Development
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th
+                        scope="row"
+                        className="py-4 text-sm font-normal leading-6 text-white"
+                      >
+                        Google Analytics Integration
+                        <div className="absolute inset-x-8 mt-4 h-px bg-white/5"></div>
+                      </th>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-white"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only"> Included in Essential </span>
+                      </td>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-white"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Included in Conversion Rate Optimisation
+                        </span>
+                      </td>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-white"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Included in CRO + Development
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th
+                        scope="row"
+                        className="py-4 text-sm font-normal leading-6 text-white"
+                      >
+                        Microsoft Clarity Integration
+                        <div className="absolute inset-x-8 mt-4 h-px bg-white/5"></div>
+                      </th>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-white"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only"> Included in Essential </span>
+                      </td>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-white"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Included in Conversion Rate Optimisation
+                        </span>
+                      </td>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-white"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Included in CRO + Development
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th
+                        scope="row"
+                        className="py-4 text-sm font-normal leading-6 text-white"
+                      >
+                        Website Heatmaps
+                        <div className="absolute inset-x-8 mt-4 h-px bg-white/5"></div>
+                      </th>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-neutral-400"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M2.25 7.5C2.25 7.22386 2.47386 7 2.75 7H12.25C12.5261 7 12.75 7.22386 12.75 7.5C12.75 7.77614 12.5261 8 12.25 8H2.75C2.47386 8 2.25 7.77614 2.25 7.5Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Not included in Essential
+                        </span>
+                      </td>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-white"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Included in Conversion Rate Optimisation
+                        </span>
+                      </td>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-white"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Included in CRO + Development
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th
+                        scope="row"
+                        className="py-4 text-sm font-normal leading-6 text-white"
+                      >
+                        Advanced Website Insights
+                        <div className="absolute inset-x-8 mt-4 h-px bg-white/5"></div>
+                      </th>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-neutral-400"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M2.25 7.5C2.25 7.22386 2.47386 7 2.75 7H12.25C12.5261 7 12.75 7.22386 12.75 7.5C12.75 7.77614 12.5261 8 12.25 8H2.75C2.47386 8 2.25 7.77614 2.25 7.5Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Not included in Essential
+                        </span>
+                      </td>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-white"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Included in Conversion Rate Optimisation
+                        </span>
+                      </td>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-white"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Included in CRO + Development
+                        </span>
+                      </td>
+                    </tr>
+                  </>
+                  {/* Maintenance */}
+                  <>
+                    <tr>
+                      <th
+                        scope="colgroup"
+                        colSpan="4"
+                        className="pt-16 pb-4 text-sm font-semibold leading-6 text-white"
+                      >
+                        Maintenance
+                        <div className="absolute inset-x-8 mt-4 h-px bg-white/10"></div>
+                      </th>
+                    </tr>
+                    <tr>
+                      <th
+                        scope="row"
+                        className="py-4 text-sm font-normal leading-6 text-white"
+                      >
+                        Automatic Updates
+                        <div className="absolute inset-x-8 mt-4 h-px bg-white/5"></div>
+                      </th>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-white"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only"> Included in Essential </span>
+                      </td>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-white"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Included in Conversion Rate Optimisation
+                        </span>
+                      </td>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-white"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Included in CRO + Development
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th
+                        scope="row"
+                        className="py-4 text-sm font-normal leading-6 text-white"
+                      >
+                        Flexible CMS
+                        <div className="absolute inset-x-8 mt-4 h-px bg-white/5"></div>
+                      </th>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-white"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only"> Included in Essential </span>
+                      </td>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-white"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Included in Conversion Rate Optimisation
+                        </span>
+                      </td>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-white"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Included in CRO + Development
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th
+                        scope="row"
+                        className="py-4 text-sm font-normal leading-6 text-white"
+                      >
+                        Website Backups
+                        <div className="absolute inset-x-8 mt-4 h-px bg-white/5"></div>
+                      </th>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-neutral-400"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M2.25 7.5C2.25 7.22386 2.47386 7 2.75 7H12.25C12.5261 7 12.75 7.22386 12.75 7.5C12.75 7.77614 12.5261 8 12.25 8H2.75C2.47386 8 2.25 7.77614 2.25 7.5Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Not included in Essential
+                        </span>
+                      </td>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-white"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Included in Conversion Rate Optimisation
+                        </span>
+                      </td>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-white"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Included in CRO + Development
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th
+                        scope="row"
+                        className="py-4 text-sm font-normal leading-6 text-white"
+                      >
+                        2 Hours Of Website Updates
+                        <div className="absolute inset-x-8 mt-4 h-px bg-white/5"></div>
+                      </th>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-neutral-400"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M2.25 7.5C2.25 7.22386 2.47386 7 2.75 7H12.25C12.5261 7 12.75 7.22386 12.75 7.5C12.75 7.77614 12.5261 8 12.25 8H2.75C2.47386 8 2.25 7.77614 2.25 7.5Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Not included in Essential
+                        </span>
+                      </td>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-white"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Included in Conversion Rate Optimisation
+                        </span>
+                      </td>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-white"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Included in CRO + Development
+                        </span>
+                      </td>
+                    </tr>
+                  </>
+                  {/* Conversion Rate Optimization */}
+                  <>
+                    <tr>
+                      <th
+                        scope="colgroup"
+                        colSpan="4"
+                        className="pt-16 pb-4 text-sm font-semibold leading-6 text-white"
+                      >
+                        Conversion Rate Optimization
+                        <div className="absolute inset-x-8 mt-4 h-px bg-white/10"></div>
+                      </th>
+                    </tr>
+                    <tr>
+                      <th
+                        scope="row"
+                        className="py-4 text-sm font-normal leading-6 text-white"
+                      >
+                        A/B Testing
+                        <div className="absolute inset-x-8 mt-4 h-px bg-white/5"></div>
+                      </th>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-neutral-400"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M2.25 7.5C2.25 7.22386 2.47386 7 2.75 7H12.25C12.5261 7 12.75 7.22386 12.75 7.5C12.75 7.77614 12.5261 8 12.25 8H2.75C2.47386 8 2.25 7.77614 2.25 7.5Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Not included in Essential
+                        </span>
+                      </td>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-white"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Included in Conversion Rate Optimisation
+                        </span>
+                      </td>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-white"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Included in CRO + Development
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th
+                        scope="row"
+                        className="py-4 text-sm font-normal leading-6 text-white"
+                      >
+                        Heatmap Analysis
+                        <div className="absolute inset-x-8 mt-4 h-px bg-white/5"></div>
+                      </th>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-neutral-400"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M2.25 7.5C2.25 7.22386 2.47386 7 2.75 7H12.25C12.5261 7 12.75 7.22386 12.75 7.5C12.75 7.77614 12.5261 8 12.25 8H2.75C2.47386 8 2.25 7.77614 2.25 7.5Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Not included in Essential
+                        </span>
+                      </td>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-white"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Included in Conversion Rate Optimisation
+                        </span>
+                      </td>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-white"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Included in CRO + Development
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th
+                        scope="row"
+                        className="py-4 text-sm font-normal leading-6 text-white"
+                      >
+                        User Session Recordings
+                        <div className="absolute inset-x-8 mt-4 h-px bg-white/5"></div>
+                      </th>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-neutral-400"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M2.25 7.5C2.25 7.22386 2.47386 7 2.75 7H12.25C12.5261 7 12.75 7.22386 12.75 7.5C12.75 7.77614 12.5261 8 12.25 8H2.75C2.47386 8 2.25 7.77614 2.25 7.5Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Not included in Essential
+                        </span>
+                      </td>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-white"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Included in Conversion Rate Optimisation
+                        </span>
+                      </td>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-white"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Included in CRO + Development
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th
+                        scope="row"
+                        className="py-4 text-sm font-normal leading-6 text-white"
+                      >
+                        Conversion Funnel Analysis
+                        <div className="absolute inset-x-8 mt-4 h-px bg-white/5"></div>
+                      </th>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-neutral-400"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M2.25 7.5C2.25 7.22386 2.47386 7 2.75 7H12.25C12.5261 7 12.75 7.22386 12.75 7.5C12.75 7.77614 12.5261 8 12.25 8H2.75C2.47386 8 2.25 7.77614 2.25 7.5Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Not included in Essential
+                        </span>
+                      </td>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-white"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Included in Conversion Rate Optimisation
+                        </span>
+                      </td>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-white"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Included in CRO + Development
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th
+                        scope="row"
+                        className="py-4 text-sm font-normal leading-6 text-white"
+                      >
+                        Conversion Rate Analysis
+                        <div className="absolute inset-x-8 mt-4 h-px bg-white/5"></div>
+                      </th>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-neutral-400"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M2.25 7.5C2.25 7.22386 2.47386 7 2.75 7H12.25C12.5261 7 12.75 7.22386 12.75 7.5C12.75 7.77614 12.5261 8 12.25 8H2.75C2.47386 8 2.25 7.77614 2.25 7.5Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Not included in Essential
+                        </span>
+                      </td>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-white"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Included in Conversion Rate Optimisation
+                        </span>
+                      </td>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-white"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Included in CRO + Development
+                        </span>
+                      </td>
+                    </tr>
+                  </>
+                  {/* Ongoing Development */}
+                  <>
+                    <tr>
+                      <th
+                        scope="colgroup"
+                        colSpan="4"
+                        className="pt-16 pb-4 text-sm font-semibold leading-6 text-white"
+                      >
+                        On-going Development
+                        <div className="absolute inset-x-8 mt-4 h-px bg-white/10"></div>
+                      </th>
+                    </tr>
+                    <tr>
+                      <th
+                        scope="row"
+                        className="py-4 text-sm font-normal leading-6 text-white"
+                      >
+                        10 Hours Of Development
+                        <div className="absolute inset-x-8 mt-4 h-px bg-white/5"></div>
+                      </th>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-neutral-400"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M2.25 7.5C2.25 7.22386 2.47386 7 2.75 7H12.25C12.5261 7 12.75 7.22386 12.75 7.5C12.75 7.77614 12.5261 8 12.25 8H2.75C2.47386 8 2.25 7.77614 2.25 7.5Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Not included in Essential
+                        </span>
+                      </td>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-neutral-400"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M2.25 7.5C2.25 7.22386 2.47386 7 2.75 7H12.25C12.5261 7 12.75 7.22386 12.75 7.5C12.75 7.77614 12.5261 8 12.25 8H2.75C2.47386 8 2.25 7.77614 2.25 7.5Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Not included in Conversion Rate Optimisation
+                        </span>
+                      </td>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-white"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Included in CRO + Development
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th
+                        scope="row"
+                        className="py-4 text-sm font-normal leading-6 text-white"
+                      >
+                        Custom Feature Development
+                        <div className="absolute inset-x-8 mt-4 h-px bg-white/5"></div>
+                      </th>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-neutral-400"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M2.25 7.5C2.25 7.22386 2.47386 7 2.75 7H12.25C12.5261 7 12.75 7.22386 12.75 7.5C12.75 7.77614 12.5261 8 12.25 8H2.75C2.47386 8 2.25 7.77614 2.25 7.5Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Not included in Essential
+                        </span>
+                      </td>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-neutral-400"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M2.25 7.5C2.25 7.22386 2.47386 7 2.75 7H12.25C12.5261 7 12.75 7.22386 12.75 7.5C12.75 7.77614 12.5261 8 12.25 8H2.75C2.47386 8 2.25 7.77614 2.25 7.5Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Not included in Conversion Rate Optimisation
+                        </span>
+                      </td>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-white"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Included in CRO + Development
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th
+                        scope="row"
+                        className="py-4 text-sm font-normal leading-6 text-white"
+                      >
+                        Custom Plugin Development
+                        <div className="absolute inset-x-8 mt-4 h-px bg-white/5"></div>
+                      </th>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-neutral-400"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M2.25 7.5C2.25 7.22386 2.47386 7 2.75 7H12.25C12.5261 7 12.75 7.22386 12.75 7.5C12.75 7.77614 12.5261 8 12.25 8H2.75C2.47386 8 2.25 7.77614 2.25 7.5Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Not included in Essential
+                        </span>
+                      </td>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-neutral-400"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M2.25 7.5C2.25 7.22386 2.47386 7 2.75 7H12.25C12.5261 7 12.75 7.22386 12.75 7.5C12.75 7.77614 12.5261 8 12.25 8H2.75C2.47386 8 2.25 7.77614 2.25 7.5Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Not included in Conversion Rate Optimisation
+                        </span>
+                      </td>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-white"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Included in CRO + Development
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th
+                        scope="row"
+                        className="py-4 text-sm font-normal leading-6 text-white"
+                      >
+                        Custom Theme Development
+                        <div className="absolute inset-x-8 mt-4 h-px bg-white/5"></div>
+                      </th>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-neutral-400"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M2.25 7.5C2.25 7.22386 2.47386 7 2.75 7H12.25C12.5261 7 12.75 7.22386 12.75 7.5C12.75 7.77614 12.5261 8 12.25 8H2.75C2.47386 8 2.25 7.77614 2.25 7.5Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Not included in Essential
+                        </span>
+                      </td>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-neutral-400"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M2.25 7.5C2.25 7.22386 2.47386 7 2.75 7H12.25C12.5261 7 12.75 7.22386 12.75 7.5C12.75 7.77614 12.5261 8 12.25 8H2.75C2.47386 8 2.25 7.77614 2.25 7.5Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Not included in Conversion Rate Optimisation
+                        </span>
+                      </td>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-white"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Included in CRO + Development
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th
+                        scope="row"
+                        className="py-4 text-sm font-normal leading-6 text-white"
+                      >
+                        Custom API Integrations
+                        <div className="absolute inset-x-8 mt-4 h-px bg-white/5"></div>
+                      </th>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-neutral-400"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M2.25 7.5C2.25 7.22386 2.47386 7 2.75 7H12.25C12.5261 7 12.75 7.22386 12.75 7.5C12.75 7.77614 12.5261 8 12.25 8H2.75C2.47386 8 2.25 7.77614 2.25 7.5Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Not included in Essential
+                        </span>
+                      </td>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-neutral-400"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M2.25 7.5C2.25 7.22386 2.47386 7 2.75 7H12.25C12.5261 7 12.75 7.22386 12.75 7.5C12.75 7.77614 12.5261 8 12.25 8H2.75C2.47386 8 2.25 7.77614 2.25 7.5Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Not included in Conversion Rate Optimisation
+                        </span>
+                      </td>
+                      <td className="px-6 py-4 xl:px-8">
+                        <svg
+                          className="mx-auto h-5 w-5 text-white"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="sr-only">
+                          Included in CRO + Development
+                        </span>
+                      </td>
+                    </tr>
+                  </>
                   <tr>
-                    <th
-                      scope="colgroup"
-                      colspan="4"
-                      className="pt-8 pb-4 text-sm font-semibold leading-6 text-white"
-                    >
-                      Hosting{" "}
-                      <div className="absolute inset-x-8 mt-4 h-px bg-white/10"></div>
-                    </th>
-                  </tr>
-                  <tr>
-                    <th
-                      scope="row"
-                      className="py-4 text-sm font-normal leading-6 text-white"
-                    >
-                      24/7 Web Hosting{" "}
-                      <div className="absolute inset-x-8 mt-4 h-px bg-white/5"></div>
-                    </th>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-white"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only"> Included in Essential </span>
-                    </td>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-white"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only">
-                        Included in Conversion Rate Optimisation{" "}
-                      </span>
-                    </td>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-white"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only">
-                        Included in CRO + Development{" "}
-                      </span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th
-                      scope="row"
-                      className="py-4 text-sm font-normal leading-6 text-white"
-                    >
-                      HTTPS/SSL Security{" "}
-                      <div className="absolute inset-x-8 mt-4 h-px bg-white/5"></div>
-                    </th>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-white"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only"> Included in Essential </span>
-                    </td>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-white"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only">
-                        Included in Conversion Rate Optimisation{" "}
-                      </span>
-                    </td>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-white"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only">
-                        Included in CRO + Development{" "}
-                      </span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th
-                      scope="row"
-                      className="py-4 text-sm font-normal leading-6 text-white"
-                    >
-                      DDos Mitigation{" "}
-                      <div className="absolute inset-x-8 mt-4 h-px bg-white/5"></div>
-                    </th>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-white"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only"> Included in Essential </span>
-                    </td>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-white"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only">
-                        Included in Conversion Rate Optimisation{" "}
-                      </span>
-                    </td>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-white"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only">
-                        Included in CRO + Development{" "}
-                      </span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th
-                      scope="row"
-                      className="py-4 text-sm font-normal leading-6 text-white"
-                    >
-                      Bandwidth{" "}
-                      <div className="absolute inset-x-8 mt-4 h-px bg-white/5"></div>
-                    </th>
-                    <td className="px-6 py-4 xl:px-8">
-                      <div className="text-center text-sm leading-6 text-neutral-300">
-                        10 GB{" "}
-                      </div>
-                    </td>
-                    <td className="px-6 py-4 xl:px-8">
-                      <div className="text-center text-sm leading-6 text-neutral-300">
-                        100 GB{" "}
-                      </div>
-                    </td>
-                    <td className="px-6 py-4 xl:px-8">
-                      <div className="text-center text-sm leading-6 text-neutral-300">
-                        100GB{" "}
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th
-                      scope="colgroup"
-                      colspan="4"
-                      className="pt-16 pb-4 text-sm font-semibold leading-6 text-white"
-                    >
-                      Support{" "}
-                      <div className="absolute inset-x-8 mt-4 h-px bg-white/10"></div>
-                    </th>
-                  </tr>
-                  <tr>
-                    <th
-                      scope="row"
-                      className="py-4 text-sm font-normal leading-6 text-white"
-                    >
-                      Support Resources{" "}
-                      <div className="absolute inset-x-8 mt-4 h-px bg-white/5"></div>
-                    </th>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-white"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only"> Included in Essential </span>
-                    </td>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-white"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only">
-                        Included in Conversion Rate Optimisation{" "}
-                      </span>
-                    </td>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-white"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only">
-                        Included in CRO + Development{" "}
-                      </span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th
-                      scope="row"
-                      className="py-4 text-sm font-normal leading-6 text-white"
-                    >
-                      Email Support{" "}
-                      <div className="absolute inset-x-8 mt-4 h-px bg-white/5"></div>
-                    </th>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-white"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only"> Included in Essential </span>
-                    </td>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-white"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only">
-                        Included in Conversion Rate Optimisation{" "}
-                      </span>
-                    </td>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-white"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only">
-                        Included in CRO + Development{" "}
-                      </span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th
-                      scope="row"
-                      className="py-4 text-sm font-normal leading-6 text-white"
-                    >
-                      Priority Support{" "}
-                      <div className="absolute inset-x-8 mt-4 h-px bg-white/5"></div>
-                    </th>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-neutral-400"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M2.25 7.5C2.25 7.22386 2.47386 7 2.75 7H12.25C12.5261 7 12.75 7.22386 12.75 7.5C12.75 7.77614 12.5261 8 12.25 8H2.75C2.47386 8 2.25 7.77614 2.25 7.5Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only"> Not included in Essential </span>
-                    </td>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-white"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only">
-                        Included in Conversion Rate Optimisation{" "}
-                      </span>
-                    </td>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-white"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only">
-                        Included in CRO + Development{" "}
-                      </span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th
-                      scope="row"
-                      className="py-4 text-sm font-normal leading-6 text-white"
-                    >
-                      Dedicated Account Manager{" "}
-                      <div className="absolute inset-x-8 mt-4 h-px bg-white/5"></div>
-                    </th>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-neutral-400"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M2.25 7.5C2.25 7.22386 2.47386 7 2.75 7H12.25C12.5261 7 12.75 7.22386 12.75 7.5C12.75 7.77614 12.5261 8 12.25 8H2.75C2.47386 8 2.25 7.77614 2.25 7.5Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only"> Not included in Essential </span>
-                    </td>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-white"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only">
-                        Included in Conversion Rate Optimisation{" "}
-                      </span>
-                    </td>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-white"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only">
-                        Included in CRO + Development{" "}
-                      </span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th
-                      scope="colgroup"
-                      colspan="4"
-                      className="pt-16 pb-4 text-sm font-semibold leading-6 text-white"
-                    >
-                      Reporting{" "}
-                      <div className="absolute inset-x-8 mt-4 h-px bg-white/10"></div>
-                    </th>
-                  </tr>
-                  <tr>
-                    <th
-                      scope="row"
-                      className="py-4 text-sm font-normal leading-6 text-white"
-                    >
-                      Basic Website Insights{" "}
-                      <div className="absolute inset-x-8 mt-4 h-px bg-white/5"></div>
-                    </th>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-white"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only"> Included in Essential </span>
-                    </td>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-white"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only">
-                        Included in Conversion Rate Optimisation{" "}
-                      </span>
-                    </td>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-white"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only">
-                        Included in CRO + Development{" "}
-                      </span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th
-                      scope="row"
-                      className="py-4 text-sm font-normal leading-6 text-white"
-                    >
-                      Google Analytics Integration{" "}
-                      <div className="absolute inset-x-8 mt-4 h-px bg-white/5"></div>
-                    </th>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-white"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only"> Included in Essential </span>
-                    </td>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-white"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only">
-                        Included in Conversion Rate Optimisation{" "}
-                      </span>
-                    </td>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-white"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only">
-                        Included in CRO + Development{" "}
-                      </span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th
-                      scope="row"
-                      className="py-4 text-sm font-normal leading-6 text-white"
-                    >
-                      Microsoft Clarity Integration{" "}
-                      <div className="absolute inset-x-8 mt-4 h-px bg-white/5"></div>
-                    </th>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-white"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only"> Included in Essential </span>
-                    </td>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-white"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only">
-                        Included in Conversion Rate Optimisation{" "}
-                      </span>
-                    </td>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-white"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only">
-                        Included in CRO + Development{" "}
-                      </span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th
-                      scope="row"
-                      className="py-4 text-sm font-normal leading-6 text-white"
-                    >
-                      Website Heatmaps{" "}
-                      <div className="absolute inset-x-8 mt-4 h-px bg-white/5"></div>
-                    </th>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-neutral-400"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M2.25 7.5C2.25 7.22386 2.47386 7 2.75 7H12.25C12.5261 7 12.75 7.22386 12.75 7.5C12.75 7.77614 12.5261 8 12.25 8H2.75C2.47386 8 2.25 7.77614 2.25 7.5Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only"> Not included in Essential </span>
-                    </td>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-white"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only">
-                        Included in Conversion Rate Optimisation{" "}
-                      </span>
-                    </td>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-white"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only">
-                        Included in CRO + Development{" "}
-                      </span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th
-                      scope="row"
-                      className="py-4 text-sm font-normal leading-6 text-white"
-                    >
-                      Advanced Website Insights{" "}
-                      <div className="absolute inset-x-8 mt-4 h-px bg-white/5"></div>
-                    </th>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-neutral-400"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M2.25 7.5C2.25 7.22386 2.47386 7 2.75 7H12.25C12.5261 7 12.75 7.22386 12.75 7.5C12.75 7.77614 12.5261 8 12.25 8H2.75C2.47386 8 2.25 7.77614 2.25 7.5Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only"> Not included in Essential </span>
-                    </td>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-white"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only">
-                        Included in Conversion Rate Optimisation{" "}
-                      </span>
-                    </td>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-white"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only">
-                        Included in CRO + Development{" "}
-                      </span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th
-                      scope="colgroup"
-                      colspan="4"
-                      className="pt-16 pb-4 text-sm font-semibold leading-6 text-white"
-                    >
-                      Maintenance{" "}
-                      <div className="absolute inset-x-8 mt-4 h-px bg-white/10"></div>
-                    </th>
-                  </tr>
-                  <tr>
-                    <th
-                      scope="row"
-                      className="py-4 text-sm font-normal leading-6 text-white"
-                    >
-                      Automatic Updates{" "}
-                      <div className="absolute inset-x-8 mt-4 h-px bg-white/5"></div>
-                    </th>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-white"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only"> Included in Essential </span>
-                    </td>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-white"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only">
-                        Included in Conversion Rate Optimisation{" "}
-                      </span>
-                    </td>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-white"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only">
-                        Included in CRO + Development{" "}
-                      </span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th
-                      scope="row"
-                      className="py-4 text-sm font-normal leading-6 text-white"
-                    >
-                      Flexible CMS{" "}
-                      <div className="absolute inset-x-8 mt-4 h-px bg-white/5"></div>
-                    </th>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-white"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only"> Included in Essential </span>
-                    </td>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-white"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only">
-                        Included in Conversion Rate Optimisation{" "}
-                      </span>
-                    </td>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-white"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only">
-                        Included in CRO + Development{" "}
-                      </span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th
-                      scope="row"
-                      className="py-4 text-sm font-normal leading-6 text-white"
-                    >
-                      Website Backups{" "}
-                      <div className="absolute inset-x-8 mt-4 h-px bg-white/5"></div>
-                    </th>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-neutral-400"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M2.25 7.5C2.25 7.22386 2.47386 7 2.75 7H12.25C12.5261 7 12.75 7.22386 12.75 7.5C12.75 7.77614 12.5261 8 12.25 8H2.75C2.47386 8 2.25 7.77614 2.25 7.5Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only"> Not included in Essential </span>
-                    </td>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-white"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only">
-                        Included in Conversion Rate Optimisation{" "}
-                      </span>
-                    </td>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-white"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only">
-                        Included in CRO + Development{" "}
-                      </span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th
-                      scope="row"
-                      className="py-4 text-sm font-normal leading-6 text-white"
-                    >
-                      2 Hours Of Website Updates{" "}
-                      <div className="absolute inset-x-8 mt-4 h-px bg-white/5"></div>
-                    </th>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-neutral-400"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M2.25 7.5C2.25 7.22386 2.47386 7 2.75 7H12.25C12.5261 7 12.75 7.22386 12.75 7.5C12.75 7.77614 12.5261 8 12.25 8H2.75C2.47386 8 2.25 7.77614 2.25 7.5Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only"> Not included in Essential </span>
-                    </td>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-white"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only">
-                        Included in Conversion Rate Optimisation{" "}
-                      </span>
-                    </td>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-white"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only">
-                        Included in CRO + Development{" "}
-                      </span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th
-                      scope="colgroup"
-                      colspan="4"
-                      className="pt-16 pb-4 text-sm font-semibold leading-6 text-white"
-                    >
-                      Conversion Rate Optimization{" "}
-                      <div className="absolute inset-x-8 mt-4 h-px bg-white/10"></div>
-                    </th>
-                  </tr>
-                  <tr>
-                    <th
-                      scope="row"
-                      className="py-4 text-sm font-normal leading-6 text-white"
-                    >
-                      A/B Testing{" "}
-                      <div className="absolute inset-x-8 mt-4 h-px bg-white/5"></div>
-                    </th>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-neutral-400"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M2.25 7.5C2.25 7.22386 2.47386 7 2.75 7H12.25C12.5261 7 12.75 7.22386 12.75 7.5C12.75 7.77614 12.5261 8 12.25 8H2.75C2.47386 8 2.25 7.77614 2.25 7.5Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only"> Not included in Essential </span>
-                    </td>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-white"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only">
-                        Included in Conversion Rate Optimisation{" "}
-                      </span>
-                    </td>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-white"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only">
-                        Included in CRO + Development{" "}
-                      </span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th
-                      scope="row"
-                      className="py-4 text-sm font-normal leading-6 text-white"
-                    >
-                      Heatmap Analysis{" "}
-                      <div className="absolute inset-x-8 mt-4 h-px bg-white/5"></div>
-                    </th>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-neutral-400"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M2.25 7.5C2.25 7.22386 2.47386 7 2.75 7H12.25C12.5261 7 12.75 7.22386 12.75 7.5C12.75 7.77614 12.5261 8 12.25 8H2.75C2.47386 8 2.25 7.77614 2.25 7.5Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only"> Not included in Essential </span>
-                    </td>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-white"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only">
-                        Included in Conversion Rate Optimisation{" "}
-                      </span>
-                    </td>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-white"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only">
-                        Included in CRO + Development{" "}
-                      </span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th
-                      scope="row"
-                      className="py-4 text-sm font-normal leading-6 text-white"
-                    >
-                      User Session Recordings{" "}
-                      <div className="absolute inset-x-8 mt-4 h-px bg-white/5"></div>
-                    </th>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-neutral-400"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M2.25 7.5C2.25 7.22386 2.47386 7 2.75 7H12.25C12.5261 7 12.75 7.22386 12.75 7.5C12.75 7.77614 12.5261 8 12.25 8H2.75C2.47386 8 2.25 7.77614 2.25 7.5Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only"> Not included in Essential </span>
-                    </td>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-white"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only">
-                        Included in Conversion Rate Optimisation{" "}
-                      </span>
-                    </td>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-white"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only">
-                        Included in CRO + Development{" "}
-                      </span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th
-                      scope="row"
-                      className="py-4 text-sm font-normal leading-6 text-white"
-                    >
-                      Conversion Funnel Analysis{" "}
-                      <div className="absolute inset-x-8 mt-4 h-px bg-white/5"></div>
-                    </th>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-neutral-400"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M2.25 7.5C2.25 7.22386 2.47386 7 2.75 7H12.25C12.5261 7 12.75 7.22386 12.75 7.5C12.75 7.77614 12.5261 8 12.25 8H2.75C2.47386 8 2.25 7.77614 2.25 7.5Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only"> Not included in Essential </span>
-                    </td>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-white"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only">
-                        Included in Conversion Rate Optimisation{" "}
-                      </span>
-                    </td>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-white"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only">
-                        Included in CRO + Development{" "}
-                      </span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th
-                      scope="row"
-                      className="py-4 text-sm font-normal leading-6 text-white"
-                    >
-                      Conversion Rate Analysis{" "}
-                      <div className="absolute inset-x-8 mt-4 h-px bg-white/5"></div>
-                    </th>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-neutral-400"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M2.25 7.5C2.25 7.22386 2.47386 7 2.75 7H12.25C12.5261 7 12.75 7.22386 12.75 7.5C12.75 7.77614 12.5261 8 12.25 8H2.75C2.47386 8 2.25 7.77614 2.25 7.5Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only"> Not included in Essential </span>
-                    </td>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-white"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only">
-                        Included in Conversion Rate Optimisation{" "}
-                      </span>
-                    </td>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-white"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only">
-                        Included in CRO + Development{" "}
-                      </span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th
-                      scope="colgroup"
-                      colspan="4"
-                      className="pt-16 pb-4 text-sm font-semibold leading-6 text-white"
-                    >
-                      On-going Development{" "}
-                      <div className="absolute inset-x-8 mt-4 h-px bg-white/10"></div>
-                    </th>
-                  </tr>
-                  <tr>
-                    <th
-                      scope="row"
-                      className="py-4 text-sm font-normal leading-6 text-white"
-                    >
-                      10 Hours Of Development{" "}
-                      <div className="absolute inset-x-8 mt-4 h-px bg-white/5"></div>
-                    </th>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-neutral-400"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M2.25 7.5C2.25 7.22386 2.47386 7 2.75 7H12.25C12.5261 7 12.75 7.22386 12.75 7.5C12.75 7.77614 12.5261 8 12.25 8H2.75C2.47386 8 2.25 7.77614 2.25 7.5Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only"> Not included in Essential </span>
-                    </td>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-neutral-400"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M2.25 7.5C2.25 7.22386 2.47386 7 2.75 7H12.25C12.5261 7 12.75 7.22386 12.75 7.5C12.75 7.77614 12.5261 8 12.25 8H2.75C2.47386 8 2.25 7.77614 2.25 7.5Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only">
-                        Not included in Conversion Rate Optimisation{" "}
-                      </span>
-                    </td>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-white"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only">
-                        Included in CRO + Development{" "}
-                      </span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th
-                      scope="row"
-                      className="py-4 text-sm font-normal leading-6 text-white"
-                    >
-                      Custom Feature Development{" "}
-                      <div className="absolute inset-x-8 mt-4 h-px bg-white/5"></div>
-                    </th>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-neutral-400"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M2.25 7.5C2.25 7.22386 2.47386 7 2.75 7H12.25C12.5261 7 12.75 7.22386 12.75 7.5C12.75 7.77614 12.5261 8 12.25 8H2.75C2.47386 8 2.25 7.77614 2.25 7.5Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only"> Not included in Essential </span>
-                    </td>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-neutral-400"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M2.25 7.5C2.25 7.22386 2.47386 7 2.75 7H12.25C12.5261 7 12.75 7.22386 12.75 7.5C12.75 7.77614 12.5261 8 12.25 8H2.75C2.47386 8 2.25 7.77614 2.25 7.5Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only">
-                        Not included in Conversion Rate Optimisation{" "}
-                      </span>
-                    </td>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-white"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only">
-                        Included in CRO + Development{" "}
-                      </span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th
-                      scope="row"
-                      className="py-4 text-sm font-normal leading-6 text-white"
-                    >
-                      Custom Plugin Development{" "}
-                      <div className="absolute inset-x-8 mt-4 h-px bg-white/5"></div>
-                    </th>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-neutral-400"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M2.25 7.5C2.25 7.22386 2.47386 7 2.75 7H12.25C12.5261 7 12.75 7.22386 12.75 7.5C12.75 7.77614 12.5261 8 12.25 8H2.75C2.47386 8 2.25 7.77614 2.25 7.5Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only"> Not included in Essential </span>
-                    </td>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-neutral-400"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M2.25 7.5C2.25 7.22386 2.47386 7 2.75 7H12.25C12.5261 7 12.75 7.22386 12.75 7.5C12.75 7.77614 12.5261 8 12.25 8H2.75C2.47386 8 2.25 7.77614 2.25 7.5Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only">
-                        Not included in Conversion Rate Optimisation{" "}
-                      </span>
-                    </td>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-white"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only">
-                        Included in CRO + Development{" "}
-                      </span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th
-                      scope="row"
-                      className="py-4 text-sm font-normal leading-6 text-white"
-                    >
-                      Custom Theme Development{" "}
-                      <div className="absolute inset-x-8 mt-4 h-px bg-white/5"></div>
-                    </th>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-neutral-400"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M2.25 7.5C2.25 7.22386 2.47386 7 2.75 7H12.25C12.5261 7 12.75 7.22386 12.75 7.5C12.75 7.77614 12.5261 8 12.25 8H2.75C2.47386 8 2.25 7.77614 2.25 7.5Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only"> Not included in Essential </span>
-                    </td>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-neutral-400"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M2.25 7.5C2.25 7.22386 2.47386 7 2.75 7H12.25C12.5261 7 12.75 7.22386 12.75 7.5C12.75 7.77614 12.5261 8 12.25 8H2.75C2.47386 8 2.25 7.77614 2.25 7.5Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only">
-                        Not included in Conversion Rate Optimisation{" "}
-                      </span>
-                    </td>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-white"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only">
-                        Included in CRO + Development{" "}
-                      </span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th
-                      scope="row"
-                      className="py-4 text-sm font-normal leading-6 text-white"
-                    >
-                      Custom API Integrations{" "}
-                      <div className="absolute inset-x-8 mt-4 h-px bg-white/5"></div>
-                    </th>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-neutral-400"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M2.25 7.5C2.25 7.22386 2.47386 7 2.75 7H12.25C12.5261 7 12.75 7.22386 12.75 7.5C12.75 7.77614 12.5261 8 12.25 8H2.75C2.47386 8 2.25 7.77614 2.25 7.5Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only"> Not included in Essential </span>
-                    </td>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-neutral-400"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M2.25 7.5C2.25 7.22386 2.47386 7 2.75 7H12.25C12.5261 7 12.75 7.22386 12.75 7.5C12.75 7.77614 12.5261 8 12.25 8H2.75C2.47386 8 2.25 7.77614 2.25 7.5Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only">
-                        Not included in Conversion Rate Optimisation{" "}
-                      </span>
-                    </td>
-                    <td className="px-6 py-4 xl:px-8">
-                      <svg
-                        className="mx-auto h-5 w-5 text-white"
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only">
-                        Included in CRO + Development{" "}
-                      </span>
-                    </td>
+                    <td scope="col" className="px-6 py-6 xl:px-8 xl:py-8"></td>
                   </tr>
                 </tbody>
               </table>

@@ -1,4 +1,5 @@
 "use client";
+import Spline from "@splinetool/react-spline";
 import React, { useState, useRef } from "react";
 
 const Contact = () => {
@@ -42,24 +43,31 @@ const Contact = () => {
   };
 
   return (
-    <div className="mx-auto max-w-7xl px-5">
-      <div className="pt-24 lg:pt-36">
-        <h2 className="mx-2 lg:mx-8 font-melodrama text-3xl text-neutral-100 lg:text-5xl text-center">
+    <div className="relative mx-auto max-w-7xl px-5 z-10">
+      <div className="relative pt-20 lg:pt-24">
+        {" "}
+        <h2 className="mx-2 lg:mx-8 font-melodrama text-3xl text-neutral-100 lg:text-5xl text-center z-10">
           <span className="bg-gradient-to-b from-neutral-50 from-60% to-neutral-400 bg-clip-text text-transparent lg:to-neutral-600">
-            Are You Ready To Rocket Your Conversion Rate?
+            Are You Ready To{" "}
+            <span className="bg-gradient-to-b from-blue-500 from-60% to-blue-400 bg-clip-text text-transparent lg:to-blue-600 underline">
+              Rocket
+            </span>{" "}
+            Your Conversion Rate
+            <span className="bg-gradient-to-b from-blue-500 from-60% to-blue-400 bg-clip-text text-transparent lg:to-blue-600 underline">
+              ?
+            </span>
           </span>
         </h2>
-        <div className="mx-auto my-8 max-w-xl pb-2 lg:pb-8 text-center lg:max-w-2xl">
+        <div className="mx-auto my-8 max-w-xl pb-2 lg:pb-8 text-center lg:max-w-2xl z-10">
           <div className="text-md mx-4 text-center text-neutral-300 lg:max-w-2xl lg:text-xl">
             <p>
               Leave your details below and we&apos;ll get back to you as soon as
               possible. We look forward to hearing from you!
             </p>
           </div>
-          <div> </div>
         </div>
-        <div className="mx-auto mt-16 grid max-w-screen-xl gap-10 md:grid-cols-2">
-          <div>
+        <div className="mx-auto mt-16 grid max-w-screen-xl gap-10 md:grid-cols-2 z-10">
+          <div className="relative">
             <h2 className="font-melodrama text-3xl font-medium text-neutral-50">
               Contact Relay
             </h2>
@@ -90,7 +98,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <div className="mb-5 rounded-xl border border-neutral-700 bg-neutral-950 p-5 shadow-xl md:p-8">
+          <div className="mb-5 rounded-xl border border-neutral-700 bg-neutral-950 p-5 shadow-xl md:p-8 shadow-blue-500/50">
             <form ref={formRef} id="form" noValidate onSubmit={handleSubmit}>
               <input
                 type="hidden"
@@ -145,7 +153,7 @@ const Contact = () => {
                 <input
                   id="phone"
                   type="tel"
-                  placeholder="Phone"
+                  placeholder="Phone Number"
                   name="phone"
                   required
                   className="w-full rounded-md border border-neutral-700 bg-neutral-900 px-4 py-3 outline-none placeholder:text-neutral-400 focus:border-neutral-400 focus:ring-0 text-neutral-50"
@@ -158,16 +166,16 @@ const Contact = () => {
               </div>
               <div className="mb-5">
                 <input
-                  id="website"
+                  id="project"
                   type="text"
-                  placeholder="Website"
-                  name="website"
+                  placeholder="New Project"
+                  name="project"
                   required
                   className="w-full rounded-md border border-neutral-700 bg-neutral-900 px-4 py-3 outline-none placeholder:text-neutral-400 focus:border-neutral-400 focus:ring-0 text-neutral-50"
                 />
                 {submitAttempted && (
                   <div className="empty-feedback invalid-feedback mt-1 text-sm text-red-400">
-                    Please enter a valid website url.
+                    Please enter a project name.
                   </div>
                 )}
               </div>
@@ -175,7 +183,7 @@ const Contact = () => {
                 <textarea
                   name="message"
                   required
-                  placeholder="Your Message"
+                  placeholder="Tell us about your project"
                   className="w-full rounded-md border border-neutral-700 bg-neutral-900 px-4 py-3 outline-none placeholder:text-neutral-400 focus:border-neutral-400 focus:ring-0 h-32 resize-none text-neutral-50"
                 ></textarea>
                 {submitAttempted && (

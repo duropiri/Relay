@@ -7,6 +7,7 @@ import { GlobalStateProvider } from "../components/GlobalStateContext";
 import MobileMenu from "../components/MobileMenu";
 import { Analytics } from "@vercel/analytics/react";
 import Head from "next/head";
+import Spline from "@splinetool/react-spline";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -66,7 +67,6 @@ const RootLayout = ({ children }) => {
             {/* <ContentLoader /> */}
             <Navbar />
             <MobileMenu />
-
             {children}
             <Footer />
           </SmoothScrolling>

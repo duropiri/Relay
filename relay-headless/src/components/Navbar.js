@@ -1,43 +1,99 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import { useGlobalState } from "./GlobalStateContext";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 
 const Navbar = () => {
   const { mobileMenuOpen, setMobileMenuOpen } = useGlobalState();
 
-  const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen);
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
+  };
+
+  useEffect(() => {
+    const textUnderlineAnimation = () => {
+      document.querySelectorAll(".hover-link").forEach((link) => {
+        const underline = link.querySelector(".underline");
+
+        // Set initial styles for GSAP to manage transform origin
+        gsap.set(underline, { transformOrigin: "left center", scaleX: 0 });
+
+        // Hover start: expand the underline from the left
+        link.addEventListener("mouseenter", () => {
+          gsap.to(underline, {
+            scaleX: 1,
+            duration: 0.3,
+            ease: "power2.out",
+            transformOrigin: "left center", // Ensures the origin is correct for expanding
+          });
+        });
+
+        // Hover end: contract the underline to the right
+        link.addEventListener("mouseleave", () => {
+          gsap.to(underline, {
+            scaleX: 0,
+            duration: 0.3,
+            ease: "power2.in",
+            transformOrigin: "right center", // Shifts the origin to right for contraction
+          });
+        });
+      });
+    };
+
+    textUnderlineAnimation();
+    window.addEventListener("DOMContentLoaded", textUnderlineAnimation);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("DOMContentLoaded", textUnderlineAnimation);
+
+      ScrollTrigger.getAll().forEach((st) => st.kill());
+    };
+  }, []);
 
   return (
-    <div className="sticky top-0 z-50 w-full bg-neutral-950">
-      <nav className=" bg-neutral-950 py-4  hidden md:block ">
+    <div className="sticky top-0 z-50 w-full">
+      <nav className=" bg-neutral-950/50 backdrop-blur-md py-4 hidden lg:block border-neutral-700 border-b-[1px]">
         <div className="mx-auto max-w-7xl px-5 flex justify-between items-center">
           <a
-            className="-ml-2 flex w-60 items-center rounded-full px-2 font-melodrama text-3xl transition"
+            className="-ml-2 flex w-60 items-center rounded-full px-2 text-3xl transition"
             href="/"
           >
             <span className="font-[700] text-neutral-50">Relay</span>
             <span className="text-neutral-300">Digital</span>
             <span className="text-blue-500">.</span>
           </a>
-          <div className="flex flex-row gap-x-8 justify-center ">
-            <a
-              href="/#why"
-              className="cursor-pointer text-neutral-50 text-5xl font-normal md:text-base"
-            >
-              Why Use Us?{" "}
-            </a>
-            <a
-              href="/#casestudies"
-              className="cursor-pointer text-neutral-50 text-5xl font-normal md:text-base"
-            >
-              Portfolio
-            </a>
-            <a
-              href="/pricing"
-              className="cursor-pointer text-neutral-50 text-5xl font-normal md:text-base"
-            >
-              Pricing
-            </a>
+          <div className="flex justify-center h-[58px]">
+            <ul className="flex flex-row items-center gap-x-8 w-full h-full">
+              <li className="group flex flex-col hover-link cursor-pointer">
+                <a
+                  href="/#why"
+                  className="cursor-pointer text-neutral-50 text-5xl font-normal md:text-base group-hover:text-blue-500 transition-all"
+                >
+                  Why Use Us?
+                </a>
+                <span className="underline transition-colors duration-400 bg-neutral-50 group-hover:bg-blue-500 h-[2px]"></span>
+              </li>
+              <li className="group flex flex-col hover-link cursor-pointer">
+                <a
+                  href="/#casestudies"
+                  className="cursor-pointer text-neutral-50 text-5xl font-normal md:text-base group-hover:text-blue-500 transition-all"
+                >
+                  Portfolio
+                </a>
+                <span className="underline transition-colors duration-400 bg-neutral-50 group-hover:bg-blue-500 h-[2px]"></span>
+              </li>
+              <li className="group flex flex-col hover-link cursor-pointer">
+                <a
+                  href="/pricing"
+                  className="cursor-pointer text-neutral-50 text-5xl font-normal md:text-base group-hover:text-blue-500 transition-all"
+                >
+                  Pricing
+                </a>
+                <span className="underline transition-colors duration-400 bg-neutral-50 group-hover:bg-blue-500 h-[2px]"></span>
+              </li>
+            </ul>
           </div>
           <div className="flex items-center gap-4 ">
             <a href="/contact">
@@ -60,9 +116,9 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-      <nav className=" bg-neutral-950 py-4 backdrop-blur-lg flex flex-row justify-between items-center md:hidden mx-8  ">
+      <nav className=" bg-neutral-950/50 backdrop-blur-md p-6 flex flex-row justify-between items-center lg:hidden border-neutral-700 border-b-[1px]">
         <a
-          className="-ml-2 flex  items-center rounded-full px-2 font-melodrama text-3xl transition"
+          className="-ml-2 flex  items-center rounded-full px-2 text-3xl transition"
           href="/"
         >
           <span className="font-[700] text-neutral-50">Relay</span>
