@@ -4,7 +4,7 @@ import Spline from "@splinetool/react-spline";
 
 const Rocket = ({className}) => {
   return (
-    <div className=" relative">
+    <div className="flex flex-col items-center justify-center relative">
       {/* <div className="mx-2 lg:mx-8 text-3xl text-neutral-100 lg:text-5xl text-center z-10">
         <h2 className="bg-gradient-to-b from-neutral-50 from-60% to-neutral-400 bg-clip-text text-transparent lg:to-neutral-600">
           Are You Ready To{" "}
@@ -26,7 +26,7 @@ const Rocket = ({className}) => {
           </p>
         </div>
       </div> */}
-      <div className="flex flex-col items-center justify-center w-full pointer-events-none sm:pointer-events-auto top-20 z-[1] -my-32 -my-96">
+      <div className="flex flex-col items-center justify-center max-w-screen-xl pointer-events-none sm:pointer-events-auto -mt-24 -mb-52 lg:-mb-52 lg:-mt-72 ">
         <Spline scene="https://prod.spline.design/JhlNtBynD6AHN5aV/scene.splinecode" />
       </div>
     </div>
