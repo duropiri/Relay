@@ -15,8 +15,8 @@ const Panel = () => {
           <div className="hidden lg:flex">
             <motion.div style={{ x }} className="flex gap-4 items-center">
               <div className="w-[100vw] flex justify-center items-center max-h-[80vh]">
-                <div className="grid gap-x-8 grid-cols-2">
-                  <div className="items-start justify-between flex flex-col lg:max-w-lg">
+                <div className="grid gap-x-8 grid-cols-2 max-w-screen-xl">
+                  <div className="items-start justify-center gap-1 sm:gap-6 flex flex-col lg:max-w-lg">
                     <h2 className="text-md leading-tight tracking-tight text-neutral-300 md:text-xl">
                       Clean Screens
                     </h2>
@@ -101,8 +101,8 @@ const Panel = () => {
               </div>
 
               <div className="w-[100vw] flex justify-center items-center max-h-[80vh]">
-                <div className="grid gap-x-8 grid-cols-2">
-                  <div className="items-start justify-between flex flex-col lg:max-w-lg">
+                <div className="grid gap-x-8 grid-cols-2  max-w-screen-xl">
+                  <div className="items-start justify-center gap-1 sm:gap-6 flex flex-col lg:max-w-lg">
                     <h2 className="text-md leading-tight tracking-tight text-neutral-300 md:text-xl">
                       GoodMix
                     </h2>
