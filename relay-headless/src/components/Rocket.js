@@ -26,7 +26,7 @@ const Rocket = ({className}) => {
           </p>
         </div>
       </div> */}
-      <div className="flex flex-col items-center justify-center max-w-screen-xl pointer-events-none sm:pointer-events-auto -mt-24 -mb-52 lg:-mb-52 lg:-mt-72 ">
+      <div className="flex flex-col items-center justify-center max-w-screen-xl pointer-events-none sm:pointer-events-auto -mt-24 -mb-52 lg:-mb-52">
         <Spline scene="https://prod.spline.design/JhlNtBynD6AHN5aV/scene.splinecode" />
       </div>
     </div>
