@@ -169,13 +169,13 @@ const Hero = () => {
             className="absolute left-1/2 top-1/2 z-[10] w-full -translate-x-1/2 -translate-y-1/2 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] lg:w-max flex justify-center"
             data-speed="0.6"
           >
-            <img
+            <Image
               src="/svg/hero-circle.svg/"
               alt="circle background"
               loading="eager"
               className="h-auto w-[24rem] lg:w-[38rem]"
-              width="516"
-              height="516"
+              width={516"
+              height={516"
               decoding="async"
             />
           </div> */}
@@ -250,94 +250,94 @@ const Hero = () => {
       </div>
 
       <Marquee speed={1}>
-        <img
+        <Image
           src="/img/homezy.webp"
           alt="Homezy"
           className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[0%] lg:h-72"
           loading="eager"
-          width="1728"
-          height="992"
+          width={1728}
+          height={992}
           decoding="async"
         />
-        <img
+        <Image
           src="/img/thai.webp"
           alt="Thai"
           className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[0%] lg:h-72"
           loading="eager"
-          width="1728"
-          height="992"
+          width={1728}
+          height={992}
           decoding="async"
         />
-        <img
+        <Image
           src="/img/wellbeing.webp"
           alt="WellBeing"
           className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[0%] lg:h-72"
           loading="eager"
-          width="3456"
-          height="1984"
+          width={3456}
+          height={1984}
           decoding="async"
         />
-        <img
+        <Image
           src="/img/agenci.webp"
           alt="Agenci"
           className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[0%] lg:h-72"
           loading="eager"
-          width="1728"
-          height="992"
+          width={1728}
+          height={992}
           decoding="async"
         />
-        <img
+        <Image
           src="/img/joyfolio.webp"
           alt="Joyfolio"
           className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[0%] lg:h-72"
           loading="eager"
-          width="1728"
-          height="992"
+          width={1728}
+          height={992}
           decoding="async"
         />
-        <img
+        <Image
           src="/img/inspire.webp"
           alt="Inspire"
           className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[0%] lg:h-72"
           loading="eager"
-          width="1728"
-          height="992"
+          width={1728}
+          height={992}
           decoding="async"
         />
-        <img
+        <Image
           src="/img/wellbeing.webp"
           alt="WellBeing"
           className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[0%] lg:h-72"
           loading="eager"
-          width="3456"
-          height="1984"
+          width={3456}
+          height={1984}
           decoding="async"
         />
-        <img
+        <Image
           src="/img/fashion.webp"
           alt="Fashion"
           className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[0%] lg:h-72"
           loading="eager"
-          width="2456"
-          height="1491"
+          width={2456}
+          height={1491}
           decoding="async"
         />
-        <img
+        <Image
           src="/img/requesto.webp"
           alt="Request"
           className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[0%] lg:h-72"
           loading="eager"
-          width="1728"
-          height="992"
+          width={1728}
+          height={992}
           decoding="async"
         />
-        <img
+        <Image
           src="/img/darkstudio.webp"
           alt="Studio"
           className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[0%] lg:h-72"
           loading="eager"
-          width="1728"
-          height="992"
+          width={1728}
+          height={992}
           decoding="async"
         />
       </Marquee>

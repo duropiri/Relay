@@ -1,6 +1,7 @@
 "use client";
 import React, { useRef } from "react";
 import { motion, useTransform, useScroll } from "framer-motion";
+import Image from "next/image";
 
 const HorizontalScrolling = () => {
   const targetRef = useRef(null);
@@ -83,13 +84,13 @@ const HorizontalScrolling = () => {
               </div>
             </div>
             <div className="items-center justify-center flex order-first">
-              <img
+              <Image
                 src="/img/clean-screens.webp"
                 loading="lazy"
                 alt="Product screenshot"
                 className="w-[50rem] "
-                width="1932"
-                height="1305"
+                width={1932}
+                height={1305}
                 decoding="async"
               />
             </div>
@@ -168,13 +169,13 @@ const HorizontalScrolling = () => {
               </div>
             </div>
             <div className="items-center justify-center flex order-first">
-              <img
+              <Image
                 src="/img/goodmix.webp"
                 loading="lazy"
                 alt="Product screenshot"
                 className="w-[50rem]"
-                width="1434"
-                height="1447"
+                width={1434}
+                height={1447}
                 decoding="async"
               />
             </div>

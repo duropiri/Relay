@@ -14,7 +14,7 @@ const PricingSection = () => {
           Discover the perfect package for your brand from our trio of
           meticulously crafted options. Unsure which one aligns with your
           vision? Schedule a discovery call, and let us guide you towards your
-          ideal match, setting the stage for your brand's next big leap.
+          ideal match, setting the stage for your brand&apos;s next big leap.
         </p>
         <div className="isolate mx-auto mt-10 grid grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           <div className="ring-1 ring-white/10 bg-neutral-950 rounded-3xl p-8 xl:p-10">

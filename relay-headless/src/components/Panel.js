@@ -1,6 +1,7 @@
 "use client";
 import React, { useRef } from "react";
 import { motion, useTransform, useScroll } from "framer-motion";
+import Image from "next/image";
 
 const Panel = () => {
   const targetRef = useRef(null);
@@ -84,7 +85,7 @@ const Panel = () => {
                     </a>
                   </div>
                   <div className="items-center justify-center flex order-first h-full">
-                    <img
+                    <Image
                       src="/img/clean-screens.webp"
                       loading="lazy"
                       alt="Product screenshot"
@@ -170,7 +171,7 @@ const Panel = () => {
                     </a>
                   </div>
                   <div className="items-center justify-center flex order-first h-full">
-                    <img
+                    <Image
                       src="/img/goodmix.webp"
                       loading="lazy"
                       alt="Product screenshot"

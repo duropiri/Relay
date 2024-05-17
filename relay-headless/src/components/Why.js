@@ -111,23 +111,23 @@ const Why = () => {
             </div>
 
             <div className="relative flex items-start justify-end">
-              <img
+              <Image
                 src="/img/increase-cr.webp"
                 alt="Product screenshot"
                 className="hidden sm:block right h-auto w-[24rem] max-w-none sm:w-[36rem] md:-ml-4 lg:-ml-0"
                 loading="lazy"
-                width="1217"
-                height="1227"
+                width={1217}
+                height={1227}
                 decoding="async"
               />
 
-              <img
+              <Image
                 src="/img/increase-cr.webp"
                 alt="Product screenshot"
                 className="block sm:hidden h-auto w-[24rem] max-w-none sm:w-[36rem]"
                 loading="lazy"
-                width="1217"
-                height="1227"
+                width={1217}
+                height={1227}
                 decoding="async"
               />
             </div>
@@ -180,23 +180,23 @@ const Why = () => {
               </div>
             </div>
             <div className="relative flex items-start justify-end lg:order-first">
-              <img
+              <Image
                 src="/img/design.webp"
                 alt="Product screenshot"
                 className="hidden sm:block left h-auto w-[28rem] max-w-none sm:w-[40rem] md:-ml-4 lg:-ml-0"
                 loading="lazy"
-                width="1365"
-                height="832"
+                width={1365}
+                height={832}
                 decoding="async"
               />
 
-              <img
+              <Image
                 src="/img/design.webp"
                 alt="Product screenshot"
                 className="block sm:hidden h-auto w-[28rem] max-w-none sm:w-[40rem] -mr-24"
                 loading="lazy"
-                width="1365"
-                height="832"
+                width={1365}
+                height={832}
                 decoding="async"
               />
             </div>
