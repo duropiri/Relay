@@ -12,6 +12,44 @@ const Navbar = () => {
   };
 
   useEffect(() => {
+    // Fix for id links
+    document.querySelectorAll('a[href^="/#"]').forEach((el) => {
+      el.addEventListener("click", (e) => {
+        e.preventDefault();
+        const href = el.getAttribute("href");
+        const id = href?.slice(2); // Slice to remove "/#"
+        if (!id) return;
+
+        const currentUrl = window.location.pathname;
+        const targetUrl = href.split("#")[0] || "/";
+
+        if (currentUrl === targetUrl) {
+          // Target element is on the same page
+          const target = document.getElementById(id);
+          if (target) {
+            target.scrollIntoView({ behavior: "smooth" });
+          }
+        } else {
+          // Navigate to the correct URL with the hash
+          window.location.href = `${targetUrl}#${id}`;
+        }
+      });
+    });
+
+    // Check for anchor in URL on page load
+    window.addEventListener("load", () => {
+      const hash = window.location.hash;
+      if (hash) {
+        setTimeout(() => {
+          const id = hash.slice(1); // Remove the "#"
+          const target = document.getElementById(id);
+          if (target) {
+            target.scrollIntoView({ behavior: "smooth" });
+          }
+        }, 100); // Adjust the delay as necessary
+      }
+    });
+
     const textUnderlineAnimation = () => {
       document.querySelectorAll(".hover-link").forEach((link) => {
         const underline = link.querySelector(".underline");
@@ -86,7 +124,7 @@ const Navbar = () => {
               </li>
               <li className="group flex flex-col hover-link cursor-pointer">
                 <a
-                  href="/pricing"
+                  href="/#pricing"
                   className="cursor-pointer text-neutral-50 text-5xl font-normal md:text-base group-hover:text-blue-500 transition-all"
                 >
                   Pricing

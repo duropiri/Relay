@@ -1,51 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* Custom Font Import */
-@font-face {
-  font-family: "Proxima Nova";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../../public/font/Proxima Nova Regular.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "Proxima Nova";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../../public/font/Proxima Nova Bold.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "Red Hat Text";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../../public/font/RedHatText[wght].ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Red Hat Text";
-  font-style: italic;
-  font-weight: 400;
-  src: url("../../public/font/RedHatText-Italic[wght].ttf") format("truetype");
-}
-
-/* html {
-  scroll-behavior: smooth;
-} */
-
-
-/* Hide scrollbar for Chrome, Safari and Opera */
-html::-webkit-scrollbar {
-  display: none;
-}
-
-body {
-  @apply bg-neutral-950 font-sans;
-  /* font-family: 'Proxima Nova', sans-serif; */
-}
-
+.font-proxima-nova,
 h1,
 h2,
 h3,
@@ -53,29 +6,57 @@ h4,
 h5,
 h6 {
   font-family: "Proxima Nova", sans-serif;
-  font-weight: 700; /* Bold for headers */
 }
-
-/* Applying font to paragraph tags */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../public/font/Proxima Nova Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../../public/font/Proxima Nova Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../public/font/RedHatText[wght].ttf") format("truetype");
+}
+@font-face {
+  font-family: "Red Hat Text";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../../public/font/RedHatText-Italic[wght].ttf") format("truetype");
+}
+html::-webkit-scrollbar {
+  display: none;
+}
+body {
+  @apply bg-neutral-950 font-sans;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
 p {
   font-family: "Red Hat Text", sans-serif;
-  font-weight: 400; /* Regular weight */
-  font-style: normal; /* Normal style */
-}
-
-/* Italic paragraphs example */
-p.italic {
-  font-style: italic;
-}
-
-.font-proxima-nova {
-  font-family: "Proxima Nova", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .font-red-hat-text {
   font-family: "Red Hat Text", sans-serif;
 }
-
 .marquee-container {
   display: flex;
   flex-wrap: nowrap;
@@ -84,13 +65,10 @@ p.italic {
   gap: 2.5rem;
   z-index: 21;
 }
-
 .marquee-container > img {
   flex-shrink: 0;
 }
-
 @media (min-width: 1024px) {
-  /* Adjust this value based on your Tailwind config for 'lg' */
   .lg-height-custom {
     height: calc(100vh - 90px);
   }

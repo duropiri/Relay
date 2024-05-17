@@ -1,40 +1,54 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import { useGlobalState } from "./GlobalStateContext";
-import Lenis from "@studio-freight/lenis";
 
 const MobileMenu = () => {
   const { mobileMenuOpen, setMobileMenuOpen } = useGlobalState();
-  const lenisRef = useRef(null); // Using useRef to persist Lenis instance without causing re-renders
 
   useEffect(() => {
-    if (!lenisRef.current) {
-      lenisRef.current = new Lenis({
-        lerp: 0.1,
-        smooth: true,
-      });
-    }
+    // Fix for id links
+    document.querySelectorAll('a[href^="/#"]').forEach((el) => {
+      el.addEventListener("click", (e) => {
+        e.preventDefault();
+        const href = el.getAttribute("href");
+        const id = href?.slice(2); // Slice to remove "/#"
+        if (!id) return;
 
-    return () => {
-      // Cleanup function if needed, for example:
-      // lenisRef.current.destroy(); if there is a method to properly cleanup Lenis
-    };
+        const currentUrl = window.location.pathname;
+        const targetUrl = href.split("#")[0] || "/";
+
+        if (currentUrl === targetUrl) {
+          // Target element is on the same page
+          const target = document.getElementById(id);
+          if (target) {
+            target.scrollIntoView({ behavior: "smooth" });
+          }
+        } else {
+          // Navigate to the correct URL with the hash
+          window.location.href = `${targetUrl}#${id}`;
+        }
+      });
+    });
+
+    // Check for anchor in URL on page load
+    window.addEventListener("load", () => {
+      const hash = window.location.hash;
+      if (hash) {
+        setTimeout(() => {
+          const id = hash.slice(1); // Remove the "#"
+          const target = document.getElementById(id);
+          if (target) {
+            target.scrollIntoView({ behavior: "smooth" });
+          }
+        }, 100); // Adjust the delay as necessary
+      }
+    });
   }, []); // Empty dependency array ensures this runs once on mount
 
   if (!mobileMenuOpen) return null; // If the mobile menu is not open, don't render anything
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
-  };
-
-  const handleClick = (e, anchor) => {
-    e.preventDefault(); // Prevent default anchor link behavior
-    toggleMobileMenu(); // Call to toggle the mobile menu
-
-    // Scroll to the anchor using Lenis, referencing the Lenis instance stored in lenisRef
-    if (lenisRef.current) {
-      lenisRef.current.scrollTo(document.querySelector(anchor));
-    }
   };
 
   return (
@@ -100,7 +114,7 @@ const MobileMenu = () => {
             Portfolio
           </a>
           <a
-            href="/pricing"
+            href="/#pricing"
             onClick={toggleMobileMenu}
             className="cursor-pointer text-neutral-50 text-2xl font-normal md:text-base"
           >

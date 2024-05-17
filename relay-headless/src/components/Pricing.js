@@ -23,7 +23,10 @@ const Pricing = () => {
               <div className="mx-auto flex max-w-xs flex-col px-8">
                 <p className="flex items-baseline justify-center gap-x-2">
                   <span className="text-7xl font-bold tracking-tight text-neutral-100">
-                    $1995
+                    1995
+                  </span>
+                  <span className="text-lg -ml-0 font-semibold tracking-tight text-neutral-100 uppercase">
+                    usd
                   </span>
                   <span className="text-sm font-semibold leading-6 tracking-wide text-neutral-300">
                     /page
@@ -46,6 +49,13 @@ const Pricing = () => {
                     </div>
                   </button>
                 </a>
+                <p className="flex items-baseline justify-center gap-x-2 mt-3">
+                  <a href="https://calendly.com/relaydigitalyyc/discovery">
+                    <span className="text-sm font-semibold leading-6 tracking-wide text-neutral-400 hover:text-neutral-300 underline duration-300">
+                      Book a call
+                    </span>
+                  </a>
+                </p>
               </div>
             </div>
           </div>
@@ -66,7 +76,7 @@ const Pricing = () => {
               </h4>
               <div className="h-px flex-auto bg-neutral-700"></div>
             </div>
-            <div
+            <ul
               role="list"
               className="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-neutral-300 sm:grid-cols-2"
             >
@@ -214,12 +224,12 @@ const Pricing = () => {
                 </svg>
                 Lighthouse Audit
               </li>
-            </div>
+            </ul>
           </div>
         </div>
       </div>
       {/* Website Service Packages */}
-      <div className="py-24 sm:py-32">
+      <div className="py-24 sm:py-32" id="hosting">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <h3 className="text-start font-melodrama text-3xl text-neutral-50 sm:text-4xl lg:text-5xl">
             Website Service Packages
@@ -229,8 +239,8 @@ const Pricing = () => {
             online, but to also help grow your business.
           </p>
           {/* Mobile View */}
-          <div className="mx-auto mt-12 max-w-md space-y-8 sm:mt-16 lg:hidden">
-            <section className="p-8">
+          <div className="mx-auto mt-12 max-w-none space-y-8 sm:mt-16 lg:hidden ">
+            <section className="ring-1 ring-inset ring-white/10 rounded-3xl p-8 xl:p-10">
               <h3
                 id="tier-essential"
                 className="text-sm font-semibold leading-6 text-white"
@@ -238,16 +248,26 @@ const Pricing = () => {
                 Essential
               </h3>
               <p className="mt-2 flex items-baseline gap-x-1">
-                <span className="text-4xl font-bold text-white">$99</span>
+                <span className="text-4xl font-bold text-white">99</span>
+                <span className="text-lg -ml-0 font-semibold tracking-tight text-neutral-100 uppercase">
+                  usd
+                </span>
                 <span className="text-sm text-neutral-300">/month</span>
               </p>
               <a
                 href="https://buy.stripe.com/cN200c8t9bfj59e4gh"
                 aria-describedby="tier-essential"
-                className="bg-white/10 text-white hover:bg-white/20 focus-visible:outline-white mt-6 block rounded-full px-3 py-2 text-center text-sm font-semibold leading-6 transition-colors duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+                className="bg-white/10 text-white hover:bg-white/20 focus-visible:outline-white mt-6 block rounded-full px-3 py-2.5 text-center text-sm font-semibold leading-6 transition-colors duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
               >
                 Buy plan
               </a>
+              <p className="flex items-baseline justify-center gap-x-2 mt-3">
+                <a href="https://calendly.com/relaydigitalyyc/discovery">
+                  <span className="text-sm font-semibold leading-6 tracking-wide text-neutral-400 hover:text-neutral-300 underline duration-300">
+                    Book a call
+                  </span>
+                </a>
+              </p>
               <ul
                 role="list"
                 className="mt-10 space-y-4 text-sm leading-6 text-white"
@@ -479,7 +499,7 @@ const Pricing = () => {
                 </li>
               </ul>
             </section>
-            <section className="rounded-xl bg-white/5 ring-1 ring-inset ring-white/10 p-8">
+            <section className="bg-white/5 ring-1 ring-inset ring-white/10 rounded-3xl p-8 xl:p-10">
               <h3
                 id="tier-cro"
                 className="text-sm font-semibold leading-6 text-white"
@@ -487,16 +507,26 @@ const Pricing = () => {
                 Conversion Rate Optimisation
               </h3>
               <p className="mt-2 flex items-baseline gap-x-1">
-                <span className="text-4xl font-bold text-white">$495</span>
+                <span className="text-4xl font-bold text-white">495</span>
+                <span className="text-lg -ml-0 font-semibold tracking-tight text-neutral-100 uppercase">
+                  usd
+                </span>
                 <span className="text-sm text-neutral-300">/month</span>
               </p>
               <a
                 href="https://buy.stripe.com/eVa7sE9xd1EJbxC8wy"
                 aria-describedby="tier-cro"
-                className="border border-neutral-700 bg-neutral-50 text-neutral-800 shadow-sm hover:bg-white  mt-6 block rounded-full px-3 py-2 text-center text-sm font-semibold leading-6 transition-colors duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+                className="border border-neutral-700 bg-neutral-50 text-neutral-800 shadow-sm hover:bg-white  mt-6 block rounded-full px-3 py-2.5 text-center text-sm font-semibold leading-6 transition-colors duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
               >
                 Buy plan
               </a>
+              <p className="flex items-baseline justify-center gap-x-2 mt-3">
+                <a href="https://calendly.com/relaydigitalyyc/discovery">
+                  <span className="text-sm font-semibold leading-6 tracking-wide text-neutral-400 hover:text-neutral-300 underline duration-300">
+                    Book a call
+                  </span>
+                </a>
+              </p>
               <ul
                 role="list"
                 className="mt-10 space-y-4 text-sm leading-6 text-white"
@@ -927,7 +957,7 @@ const Pricing = () => {
                 </li>
               </ul>
             </section>
-            <section className="p-8">
+            <section className="ring-1 ring-inset ring-white/10 rounded-3xl p-8 xl:p-10">
               <h3
                 id="tier-maintain"
                 className="text-sm font-semibold leading-6 text-white"
@@ -935,16 +965,26 @@ const Pricing = () => {
                 CRO + Development
               </h3>
               <p className="mt-2 flex items-baseline gap-x-1">
-                <span className="text-4xl font-bold text-white">$1995</span>
+                <span className="text-4xl font-bold text-white">1995</span>
+                <span className="text-lg -ml-0 font-semibold tracking-tight text-neutral-100 uppercase">
+                  usd
+                </span>
                 <span className="text-sm text-neutral-300">/month</span>
               </p>
               <a
                 href="https://buy.stripe.com/8wMfZa5gX97b316eUX"
                 aria-describedby="tier-maintain"
-                className="bg-white/10 text-white hover:bg-white/20 focus-visible:outline-white mt-6 block rounded-full px-3 py-2 text-center text-sm font-semibold leading-6 transition-colors duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+                className="bg-white/10 text-white hover:bg-white/20 focus-visible:outline-white mt-6 block rounded-full px-3 py-2.5 text-center text-sm font-semibold leading-6 transition-colors duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
               >
                 Buy plan
               </a>
+              <p className="flex items-baseline justify-center gap-x-2 mt-3">
+                <a href="https://calendly.com/relaydigitalyyc/discovery">
+                  <span className="text-sm font-semibold leading-6 tracking-wide text-neutral-400 hover:text-neutral-300 underline duration-300">
+                    Book a call
+                  </span>
+                </a>
+              </p>
               <ul
                 role="list"
                 className="mt-10 space-y-4 text-sm leading-6 text-white"
@@ -1513,7 +1553,10 @@ const Pricing = () => {
                     </th>
                     <td className="px-6 pt-2 xl:px-8">
                       <div className="flex items-baseline gap-x-1 text-white">
-                        <span className="text-4xl font-bold">$99</span>
+                        <span className="text-4xl font-bold">99</span>
+                        <span className="text-lg -ml-0 font-semibold tracking-tight text-neutral-100 uppercase">
+                          usd
+                        </span>
                         <span className="text-sm leading-6">/month</span>
                       </div>
                       <a
@@ -1526,7 +1569,10 @@ const Pricing = () => {
                     </td>
                     <td className="px-6 pt-2 xl:px-8">
                       <div className="flex items-baseline gap-x-1 text-white">
-                        <span className="text-4xl font-bold">$495</span>
+                        <span className="text-4xl font-bold">495</span>
+                        <span className="text-lg -ml-0 font-semibold tracking-tight text-neutral-100 uppercase">
+                          usd
+                        </span>
                         <span className="text-sm leading-6">/month</span>
                       </div>
                       <a
@@ -1539,7 +1585,10 @@ const Pricing = () => {
                     </td>
                     <td className="px-6 pt-2 xl:px-8">
                       <div className="flex items-baseline gap-x-1 text-white">
-                        <span className="text-4xl font-bold">$1995</span>
+                        <span className="text-4xl font-bold">1995</span>
+                        <span className="text-lg -ml-0 font-semibold tracking-tight text-neutral-100 uppercase">
+                          usd
+                        </span>
                         <span className="text-sm leading-6">/month</span>
                       </div>
                       <a
@@ -3435,6 +3484,14 @@ const Pricing = () => {
               </table>
             </div>
           </div>
+          <p className="mt-4 text-center text-lg text-neutral-300">
+            Unsure which one aligns with your vision?{" "}
+            <a href="https://calendly.com/relaydigitalyyc/discovery">
+              <span className="font-semibold leading-6 tracking-wide text-neutral-400 hover:text-neutral-300 underline duration-300">
+                Book a discovery call
+              </span>
+            </a>
+          </p>
         </div>
       </div>
     </div>

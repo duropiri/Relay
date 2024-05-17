@@ -97,6 +97,16 @@ const Contact = () => {
                 </a>
               </div>
             </div>
+            <p className="mt-3 text-lg leading-relaxed text-neutral-300">
+              or
+            </p>
+            <p className="mt-3 text-lg leading-relaxed text-neutral-300">
+                  <a href="https://calendly.com/relaydigitalyyc/discovery">
+                    <span className="text-sm font-semibold leading-6 tracking-wide text-neutral-400 hover:text-neutral-300 underline duration-300">
+                      Book a call
+                    </span>
+                  </a>
+                </p>
           </div>
           <div className="mb-5 rounded-xl border border-neutral-700 bg-neutral-950 p-5 shadow-xl md:p-8 shadow-blue-500/50">
             <form ref={formRef} id="form" noValidate onSubmit={handleSubmit}>

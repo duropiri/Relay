@@ -195,11 +195,11 @@ const Panel = () => {
                 <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20">
                   <div className="flex flex-col justify-center">
                     <div className="flex flex-col">
-                      <h2 className="text-md  mt-2 leading-tight tracking-tight text-neutral-300 md:text-xl">
+                      <h2 className="text-md mt-2 leading-tight tracking-tight text-neutral-300 md:text-xl">
                         Clean Screens
                       </h2>
-                      <h3 className="mt-2 text-2xl tracking-tight text-white md:text-4xl lg:text-6xl">
-                        <span className="bg-gradient-to-b from-neutral-50 from-60% to-neutral-400 bg-clip-text font-medium text-transparent">
+                      <h3 className="mt-2 font-melodrama text-3xl font-medium tracking-tight text-white sm:text-6xl">
+                        <span className="bg-gradient-to-b from-neutral-50 from-60% to-neutral-400 bg-clip-text text-transparent lg:to-neutral-600">
                           Increased Conversion Rate By 39% Overnight
                         </span>
                       </h3>
@@ -274,8 +274,8 @@ const Panel = () => {
                       <h2 className="text-md mt-2 leading-tight tracking-tight text-neutral-300 md:text-xl">
                         GoodMix
                       </h2>
-                      <h3 className="mt-2 text-2xl tracking-tight text-white md:text-4xl lg:text-6xl">
-                        <span className="bg-gradient-to-b from-neutral-50 from-60% to-neutral-400 bg-clip-text font-medium text-transparent ">
+                      <h3 className="mt-2 font-melodrama text-3xl font-medium tracking-tight text-white sm:text-6xl">
+                        <span className="bg-gradient-to-b from-neutral-50 from-60% to-neutral-400 bg-clip-text text-transparent lg:to-neutral-600">
                           Increased Revenue By 54% in a week.
                         </span>
                       </h3>
