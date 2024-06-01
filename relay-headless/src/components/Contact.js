@@ -46,7 +46,7 @@ const Contact = () => {
     <div className="relative mx-auto max-w-7xl px-5 z-10">
       <div className="relative pt-20 lg:pt-24">
         {" "}
-        <h2 className="mx-2 lg:mx-8 font-melodrama text-3xl text-neutral-100 lg:text-5xl text-center z-10">
+        <h2 className="mx-2 lg:mx-8  text-3xl text-neutral-100 lg:text-5xl text-center z-10">
           <span className="bg-gradient-to-b from-neutral-50 from-60% to-neutral-400 bg-clip-text text-transparent lg:to-neutral-600">
             Are You Ready To{" "}
             <span className="bg-gradient-to-b from-blue-500 from-60% to-blue-400 bg-clip-text text-transparent lg:to-blue-600 underline">
@@ -68,7 +68,7 @@ const Contact = () => {
         </div>
         <div className="mx-auto mt-16 grid max-w-screen-xl gap-10 md:grid-cols-2 z-10">
           <div className="relative">
-            <h2 className="font-melodrama text-3xl font-medium text-neutral-50">
+            <h2 className=" text-3xl font-medium text-neutral-50">
               Contact Relay
             </h2>
             <p className="mt-3 text-lg leading-relaxed text-neutral-300">

@@ -19,7 +19,7 @@ const HorizontalScrolling = () => {
                 <h2 className="text-md mt-2 leading-tight tracking-tight text-neutral-300 md:text-xl">
                   Clean Screens
                 </h2>
-                <h3 className="mt-2 font-melodrama text-2xl tracking-tight text-white sm:text-6xl">
+                <h3 className="mt-2  text-2xl tracking-tight text-white sm:text-6xl">
                   <span className="bg-gradient-to-b from-neutral-50 from-60% to-neutral-400 bg-clip-text font-medium text-transparent lg:to-neutral-600">
                     Increased Conversion Rate By 39% Overnight
                   </span>
@@ -104,7 +104,7 @@ const HorizontalScrolling = () => {
                 <h2 className="text-md  mt-2 leading-tight tracking-tight text-neutral-300 md:text-xl">
                   GoodMix
                 </h2>
-                <h3 className="mt-2 font-melodrama text-2xl tracking-tight text-white sm:text-6xl">
+                <h3 className="mt-2  text-2xl tracking-tight text-white sm:text-6xl">
                   <span className="bg-gradient-to-b from-neutral-50 from-60% to-neutral-400 bg-clip-text font-medium text-transparent lg:to-neutral-600">
                     Increased Revenue By 54% in a week.
                   </span>

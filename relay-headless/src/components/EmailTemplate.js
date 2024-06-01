@@ -15,7 +15,7 @@ export default function emailTemplate({
           Thank You for Your <span className="text-blue-500">Contact</span>{" "}
           Request.
         </h1>
-        <h2 className="mt-2 font-melodrama text-3xl font-medium tracking-tight text-white sm:text-6xl">
+        <h2 className="mt-2  text-3xl font-medium tracking-tight text-white sm:text-6xl">
           <span className="bg-gradient-to-b from-neutral-50 from-60% to-neutral-400 bg-clip-text text-transparent lg:to-neutral-600">
             Hello {name}!
           </span>

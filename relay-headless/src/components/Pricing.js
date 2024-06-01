@@ -6,7 +6,7 @@ const Pricing = () => {
       {/* Page Top */}
       <div className="py-24 sm:py-32">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-center px-6 lg:px-8">
-          <h1 className="text-center font-melodrama text-3xl text-neutral-50 sm:text-4xl lg:text-5xl">
+          <h1 className="text-center  text-3xl text-neutral-50 sm:text-4xl lg:text-5xl">
             Relay Pricing
           </h1>
           <p className="mt-4 max-w-4xl text-center text-lg leading-snug tracking-tight text-neutral-300">
@@ -60,7 +60,7 @@ const Pricing = () => {
             </div>
           </div>
           <div className="p-8 sm:p-10 lg:flex-auto">
-            <h3 className="font-melodrama text-3xl font-medium text-neutral-100">
+            <h3 className=" text-3xl font-medium text-neutral-100">
               High Converting Landing Page
             </h3>
             <p className="mt-6 text-base leading-snug tracking-tight text-neutral-300">
@@ -231,7 +231,7 @@ const Pricing = () => {
       {/* Website Service Packages */}
       <div className="py-24 sm:py-32" id="hosting">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <h3 className="text-start font-melodrama text-3xl text-neutral-50 sm:text-4xl lg:text-5xl">
+          <h3 className="text-start  text-3xl text-neutral-50 sm:text-4xl lg:text-5xl">
             Website Service Packages
           </h3>
           <p className="mt-4 text-start text-lg text-neutral-300">

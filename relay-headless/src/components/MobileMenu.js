@@ -58,13 +58,13 @@ const MobileMenu = () => {
       aria-describedby="radix-:r6RaH2:"
       aria-labelledby="radix-:r6RaH1:"
       data-state="open"
-      className="fixed z-50 border-neutral-700 shadow-lg transition ease-in-out data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:duration-300 data-[state=open]:duration-500 inset-y-0 right-0 h-full border-l data-[state=closed]:slide-out-to-right data-[state=open]:slide-in-from-right sm:max-w-sm w-screen bg-neutral-950/50 backdrop-blur-md overflow-y-auto flex flex-col justify-start"
+      className="fixed z-50 border-neutral-700 shadow-lg transition ease-in-out data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:duration-300 data-[state=open]:duration-500 inset-y-0 right-0 h-full  data-[state=closed]:slide-out-to-right data-[state=open]:slide-in-from-right sm:max-w-sm w-screen bg-neutral-950/50 backdrop-blur-md overflow-y-auto flex flex-col justify-start mt-[84px]"
       tabIndex="-1"
     >
       {/* Navbar*/}
-      <div className="sticky bg-neutral-950/75 backdrop-blur-md p-6 border-neutral-700 border-b-[1px] flex flex-row justify-between z-10">
+      {/* <div className="sticky bg-neutral-950/75 backdrop-blur-md p-6 border-neutral-700 border-b-[1px] flex flex-row justify-between z-10">
         <a
-          className="-ml-2 flex items-center rounded-full px-2 font-melodrama text-3xl transition "
+          className="-ml-2 flex items-center rounded-full px-2  text-3xl transition "
           href="/"
         >
           <span className="font-[700] text-neutral-50">Relay</span>
@@ -93,10 +93,10 @@ const MobileMenu = () => {
           </svg>
           <span className="sr-only">Close</span>
         </button>
-      </div>
+      </div> */}
 
       {/* Content */}
-      <div className="flex flex-col justify-between w-full h-full p-6 gap-y-6">
+      <div className="flex flex-col justify-between w-full h-full p-5 gap-y-6">
         {/* Links */}
         <div className="flex flex-col justify-start gap-y-6">
           <a
@@ -204,7 +204,7 @@ const MobileMenu = () => {
                 </svg>
               </div>
               <span
-                className="md:mt-6 block text-center font-melodrama font-semibold text-2xl tracking-tight text-neutral-100 md:text-neutral-200 group-hover:text-neutral-50 leading-tight"
+                className="md:mt-6 block text-center  font-semibold text-2xl tracking-tight text-neutral-100 md:text-neutral-200 group-hover:text-neutral-50 leading-tight"
               >
                 Marketing Funnels
               </span>
@@ -294,7 +294,7 @@ const MobileMenu = () => {
                   ></path>
                 </svg>
               </div>
-              <span className="md:mt-6 block text-center font-melodrama font-semibold text-2xl tracking-tight text-neutral-100 md:text-neutral-200 group-hover:text-neutral-50 leading-tight">
+              <span className="md:mt-6 block text-center  font-semibold text-2xl tracking-tight text-neutral-100 md:text-neutral-200 group-hover:text-neutral-50 leading-tight">
                 Digital Ads
               </span>
               <p className="mt-1 md:mt-4 hidden text-sm md:block font-light text-neutral-400 group-hover:text-neutral-300">
@@ -384,7 +384,7 @@ const MobileMenu = () => {
                 </svg>
               </div>
               <span
-                className="md:mt-6 block text-center font-melodrama font-semibold text-2xl tracking-tight text-neutral-100 md:text-neutral-200 group-hover:text-neutral-50 leading-tight"
+                className="md:mt-6 block text-center  font-semibold text-2xl tracking-tight text-neutral-100 md:text-neutral-200 group-hover:text-neutral-50 leading-tight"
               >
                 Email Marketing
               </span>
@@ -475,7 +475,7 @@ const MobileMenu = () => {
                 </svg>
               </div>
               <span
-                className="md:mt-6 block text-center font-melodrama font-semibold text-2xl tracking-tight text-neutral-100 md:text-neutral-200 group-hover:text-neutral-50 leading-tight"
+                className="md:mt-6 block text-center  font-semibold text-2xl tracking-tight text-neutral-100 md:text-neutral-200 group-hover:text-neutral-50 leading-tight"
               >
                 Web Design
               </span>

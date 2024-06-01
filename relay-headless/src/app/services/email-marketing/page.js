@@ -4,7 +4,7 @@ export default function emailMarketing() {
   return (
     <div className="flex items-center justify-center min-h-screen">
       <div className="flex flex-col justify-start text-center">
-        <h1 className="bg-gradient-to-b from-neutral-50 to-neutral-600 bg-clip-text font-melodrama text-wrap text-5xl sm:text-7xl font-bold text-transparent lg:text-[160px] lg:tracking-tight">
+        <h1 className="bg-gradient-to-b from-neutral-50 to-neutral-600 bg-clip-text  text-wrap text-5xl sm:text-7xl font-bold text-transparent lg:text-[160px] lg:tracking-tight">
           Under Construction 
         </h1>
         <p className="mt-4 text-lg font-medium text-neutral-300 lg:text-2xl">

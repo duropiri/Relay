@@ -4,7 +4,7 @@ export default function Custom404() {
   return (
     <div className="flex min-h-[calc(100vh-20rem)] items-center justify-center">
       <div className="mt-16 text-center">
-        <h1 className="bg-gradient-to-b from-neutral-50 to-neutral-600 bg-clip-text font-melodrama text-7xl font-bold text-transparent lg:text-[160px] lg:tracking-tight">
+        <h1 className="bg-gradient-to-b from-neutral-50 to-neutral-600 bg-clip-text  text-7xl font-bold text-transparent lg:text-[160px] lg:tracking-tight">
           404
         </h1>
         <p className="mt-4 text-lg font-medium text-neutral-300 lg:text-2xl">

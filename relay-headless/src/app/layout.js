@@ -66,7 +66,7 @@ const RootLayout = ({ children }) => {
           <SmoothScrolling>
             {/* <ContentLoader /> */}
             <Navbar />
-            <MobileMenu />
+            {/* <MobileMenu /> */}
             {children}
             <Footer />
           </SmoothScrolling>

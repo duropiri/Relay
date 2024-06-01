@@ -5,7 +5,7 @@ const PricingSection = () => {
   return (
     <section className="py-12" id="pricing">
       <div className="mx-auto max-w-7xl px-5">
-        <h2 className="mt-2 font-melodrama text-3xl font-medium tracking-tight text-white sm:text-6xl">
+        <h2 className="mt-2  text-3xl font-medium tracking-tight text-white sm:text-6xl">
           <span className="bg-gradient-to-b from-neutral-50 from-60% to-neutral-400 bg-clip-text text-transparent lg:to-neutral-600">
             Simple Pricing For All Brands
           </span>

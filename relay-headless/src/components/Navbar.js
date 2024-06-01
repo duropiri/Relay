@@ -79,6 +79,13 @@ const Navbar = () => {
       });
     };
 
+    // Add or remove the 'overflow-hidden' class to the body element based on mobileMenuOpen state
+    if (mobileMenuOpen) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+
     textUnderlineAnimation();
     window.addEventListener("DOMContentLoaded", textUnderlineAnimation);
 
@@ -88,11 +95,12 @@ const Navbar = () => {
 
       ScrollTrigger.getAll().forEach((st) => st.kill());
     };
-  }, []);
+  }, [mobileMenuOpen]);
 
   return (
     <div className="sticky top-0 z-50 w-full">
-      <nav className=" bg-neutral-950/50 backdrop-blur-md py-4 hidden lg:block border-neutral-700 border-b-[1px]">
+      {/* Dekstop Nav */}
+      <nav className=" bg-neutral-950/50 backdrop-blur-md py-4 hidden md:block border-neutral-700 border-b-[1px] w-full">
         <div className="mx-auto max-w-7xl px-5 flex justify-between items-center">
           <a
             className="-ml-2 flex w-60 items-center rounded-full px-2 text-3xl transition"
@@ -154,38 +162,97 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-      <nav className=" bg-neutral-950/50 backdrop-blur-md p-6 flex flex-row justify-between items-center lg:hidden border-neutral-700 border-b-[1px]">
-        <a
-          className="-ml-2 flex  items-center rounded-full px-2 text-3xl transition"
-          href="/"
+
+      {/* Mobile Nav */}
+      <nav
+        className={` bg-neutral-950/50 backdrop-blur-md p-6 flex flex-col justify-between items-start md:hidden border-neutral-700 w-[100vw] ${mobileMenuOpen ? "h-[100vh]" : "border-b-[1px]"}`}
+      >
+        {/* Mobile Menu Navbar */}
+        <div className="flex flex-row justify-between items-center w-full">
+          <a
+            className="-ml-2 flex  items-center rounded-full px-2 text-3xl transition"
+            href="/"
+          >
+            <span className="font-[700] text-neutral-50">Relay</span>
+            <span className="text-neutral-300">Digital</span>
+            <span className="text-blue-500">.</span>
+          </a>
+
+          <div class="flex items-center">
+            <button
+              class={`flex flex-col h-12 w-12 rounded justify-center items-center cursor-pointer group ${mobileMenuOpen ? "expanded" : ""}`}
+              aria-label="Toggle Menu"
+              data-aw-toggle-menu=""
+              onClick={toggleMobileMenu}
+            >
+              <span class="sr-only">Toggle Menu</span>
+              <span
+                aria-hidden="true"
+                class="h-0.5 w-6 my-1 rounded-full bg-white transition ease transform duration-200 opacity-80 group-[.expanded]:rotate-45 group-[.expanded]:translate-y-2.5"
+              ></span>
+              <span
+                aria-hidden="true"
+                class="h-0.5 w-6 my-1 rounded-full bg-white transition ease transform duration-200 opacity-80 group-[.expanded]:opacity-0"
+              ></span>
+              <span
+                aria-hidden="true"
+                class="h-0.5 w-6 my-1 rounded-full bg-white transition ease transform duration-200 opacity-80 group-[.expanded]:-rotate-45 group-[.expanded]:-translate-y-2.5"
+              ></span>
+            </button>
+          </div>
+        </div>
+        {/* Mobile Menu Content */}
+        <div
+          className={`flex flex-col justify-between w-full h-full pt-12 gap-y-6 ${
+            mobileMenuOpen ? "" : "hidden"
+          }`}
         >
-          <span className="font-[700] text-neutral-50">Relay</span>
-          <span className="text-neutral-300">Digital</span>
-          <span className="text-blue-500">.</span>
-        </a>
-        <svg
-          width="15"
-          height="15"
-          viewBox="0 0 15 15"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className="text-neutral-300 w-7 h-7"
-          aria-label="open menu"
-          role="button"
-          type="button"
-          aria-haspopup="dialog"
-          aria-expanded="false"
-          aria-controls="radix-:r6Ra:"
-          data-state="closed"
-          onClick={toggleMobileMenu}
-        >
-          <path
-            d="M1.5 3C1.22386 3 1 3.22386 1 3.5C1 3.77614 1.22386 4 1.5 4H13.5C13.7761 4 14 3.77614 14 3.5C14 3.22386 13.7761 3 13.5 3H1.5ZM1 7.5C1 7.22386 1.22386 7 1.5 7H13.5C13.7761 7 14 7.22386 14 7.5C14 7.77614 13.7761 8 13.5 8H1.5C1.22386 8 1 7.77614 1 7.5ZM1 11.5C1 11.2239 1.22386 11 1.5 11H13.5C13.7761 11 14 11.2239 14 11.5C14 11.7761 13.7761 12 13.5 12H1.5C1.22386 12 1 11.7761 1 11.5Z"
-            fill="currentColor"
-            fillRule="evenodd"
-            clipRule="evenodd"
-          ></path>
-        </svg>
+          {/* Links */}
+          <div className="flex flex-col justify-start gap-y-6">
+            <a
+              href="/#why"
+              onClick={toggleMobileMenu}
+              className="cursor-pointer text-neutral-50 text-2xl font-normal md:text-base"
+            >
+              Why Use Us?
+            </a>
+            <a
+              href="/#casestudies"
+              onClick={toggleMobileMenu}
+              className="cursor-pointer text-neutral-50 text-2xl font-normal md:text-base"
+            >
+              Portfolio
+            </a>
+            <a
+              href="/#pricing"
+              onClick={toggleMobileMenu}
+              className="cursor-pointer text-neutral-50 text-2xl font-normal md:text-base"
+            >
+              Pricing
+            </a>
+          </div>
+
+          {/* CTA Button */}
+          <div className="flex items-center gap-4">
+            <a href="/contact" className="w-full">
+              <button className="relative rounded-full text-center transition-all duration-500 transform overflow-hidden z-40 px-6 py-3 border border-blue-500 text-neutral-50 bg-neutral-950 button group text-lg uppercase w-full">
+                <div className="group relative z-10">
+                  Get Started
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                    className="ml-2 inline-block transition-all duration-200 group-hover:translate-x-2 group-hover:text-neutral-50"
+                  >
+                    <path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path>
+                  </svg>
+                </div>
+              </button>
+            </a>
+          </div>
+        </div>
       </nav>
     </div>
   );

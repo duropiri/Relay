@@ -110,7 +110,7 @@ const Hero = () => {
         <div className="mb-6 mt-12 flex flex-col items-center text-center lg:mb-24 lg:mt-28 2xl:mt-48 lg:grid lg:grid-cols-3">
           {/* Main Heading */}
           <div className="col-span-2 z-20 lg:mt-6 pointer-events-auto">
-            <div className="-z-10 max-w-4xl text-center font-melodrama text-3xl sm:text-5xl lg:text-start lg:text-7xl">
+            <div className="-z-10 max-w-4xl text-center  text-3xl sm:text-5xl lg:text-start lg:text-7xl">
               <h1
                 className="bg-gradient-to-br from-neutral-100 from-55% to-neutral-500 bg-clip-text font-medium tracking-tight text-transparent lg:min-h-[20rem] lg:to-neutral-600"
                 data-speed="0.5"
@@ -211,7 +211,7 @@ const Hero = () => {
               {/* {Statistic[0].description} */}
               Average Conversion Rate Boost
             </dt>
-            <dd className="font-proxima-nova order-first font-melodrama text-5xl font-semibold tracking-tight text-white lg:text-5xl">
+            <dd className="font-proxima-nova order-first  text-5xl font-semibold tracking-tight text-white lg:text-5xl">
               {/* {Statistic[0].value} */}
               22%
             </dd>
@@ -221,7 +221,7 @@ const Hero = () => {
               {/* {Statistic[1].description} */}
               More Time Spent on Page
             </dt>
-            <dd className="font-proxima-nova order-first font-melodrama text-5xl font-semibold tracking-tight text-white lg:text-5xl">
+            <dd className="font-proxima-nova order-first  text-5xl font-semibold tracking-tight text-white lg:text-5xl">
               {/* {Statistic[1].value} */}
               60%
             </dd>
@@ -231,7 +231,7 @@ const Hero = () => {
               {/* {Statistic[2].description} */}
               Faster Than Typical Websites
             </dt>
-            <dd className="font-proxima-nova order-first font-melodrama text-5xl font-semibold tracking-tight text-white lg:text-5xl">
+            <dd className="font-proxima-nova order-first  text-5xl font-semibold tracking-tight text-white lg:text-5xl">
               {/* {Statistic[2].value} */}
               10x
             </dd>
@@ -241,7 +241,7 @@ const Hero = () => {
               {/* {Statistic[3].description} */}
               Average Ad ROI Increase
             </dt>
-            <dd className="font-proxima-nova order-first font-melodrama text-5xl font-semibold tracking-tight text-white lg:text-5xl">
+            <dd className="font-proxima-nova order-first  text-5xl font-semibold tracking-tight text-white lg:text-5xl">
               {/* {Statistic[3].value} */}
               39%
             </dd>

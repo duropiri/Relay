@@ -58,7 +58,7 @@ const Why = () => {
     <>
       <div className="relative flex min-h-[30vh] flex-col items-center justify-center overflow-hidden w-full rounded-md z-0">
         <div className="relative z-50 flex  flex-col items-center px-5">
-          <h2 className="font-melodrama text-4xl sm:text-5xl lg:text-7xl text-center lg:text-start">
+          <h2 className=" text-4xl sm:text-5xl lg:text-7xl text-center lg:text-start">
             <span className="bg-gradient-to-br from-neutral-100 from-55% to-neutral-500 bg-clip-text font-medium tracking-tight text-transparent lg:min-h-[50vw] lg:to-neutral-600">
               {/* {Header} */}
               Why Should You Use Our Marketing Funnels?
@@ -71,7 +71,7 @@ const Why = () => {
           <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
             <div className="lg:pr-8 lg:pt-4">
               <div className="lg:max-w-lg">
-                <h2 className="mt-2 font-melodrama text-3xl font-medium tracking-tight text-white sm:text-6xl">
+                <h2 className="mt-2  text-3xl font-medium tracking-tight text-white sm:text-6xl">
                   <span className="bg-gradient-to-b from-neutral-50 from-60% to-neutral-400 bg-clip-text text-transparent lg:to-neutral-600">
                     {/* {Why1} */}
                     Optimized to{" "}
@@ -140,7 +140,7 @@ const Why = () => {
           <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
             <div className="lg:ml-auto lg:pl-4 lg:pt-4">
               <div className="lg:max-w-lg">
-                <h3 className="mt-2 font-melodrama text-3xl font-medium tracking-tight text-white sm:text-6xl">
+                <h3 className="mt-2  text-3xl font-medium tracking-tight text-white sm:text-6xl">
                   <span className="bg-gradient-to-b from-neutral-50 from-60% to-neutral-400 bg-clip-text text-transparent lg:to-neutral-600">
                     {/* {Why2} */}
                     Pioneering{" "}
