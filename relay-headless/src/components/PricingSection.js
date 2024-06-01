@@ -5,7 +5,7 @@ const PricingSection = () => {
   return (
     <section className="py-12" id="pricing">
       <div className="mx-auto max-w-7xl px-5">
-        <h2 className="mt-2  text-3xl font-medium tracking-tight text-white sm:text-6xl">
+        <h2 className="mt-2 font-melodrama text-3xl font-medium tracking-tight text-white sm:text-6xl">
           <span className="bg-gradient-to-b from-neutral-50 from-60% to-neutral-400 bg-clip-text text-transparent lg:to-neutral-600">
             Simple Pricing For All Brands
           </span>
@@ -73,16 +73,19 @@ const PricingSection = () => {
                   width="1em"
                   height="1em"
                   viewBox="0 0 24 24"
-                  className="h-6 w-5 flex-none text-white"
+                  className="h-6 w-5 flex-none text-white icon icon-tabler point-filled"
                   aria-hidden="true"
                   data-icon="tabler:point-filled"
                 >
-                  <symbol id="ai:tabler:point-filled">
-                    <path
-                      fill="currentColor"
-                      d="M12 7a5 5 0 1 1-4.995 5.217L7 12l.005-.217A5 5 0 0 1 12 7"
-                    ></path>
-                  </symbol>
+                  <defs>
+                    <symbol id="ai:tabler:point-filled" viewBox="0 0 24 24">
+                      <path
+                        fill="currentColor"
+                        d="M12 7a5 5 0 1 1-4.995 5.217L7 12l.005-.217A5 5 0 0 1 12 7"
+                      ></path>
+                    </symbol>
+                  </defs>
+                  <use href="#ai:tabler:point-filled"></use>
                 </svg>
                 Spend up to $100k /month on ads
               </li>
@@ -94,7 +97,17 @@ const PricingSection = () => {
                   className="h-6 w-5 flex-none text-white"
                   aria-hidden="true"
                   data-icon="tabler:point-filled"
-                ></svg>
+                >
+                  <defs>
+                    <symbol id="ai:tabler:point-filled" viewBox="0 0 24 24">
+                      <path
+                        fill="currentColor"
+                        d="M12 7a5 5 0 1 1-4.995 5.217L7 12l.005-.217A5 5 0 0 1 12 7"
+                      ></path>
+                    </symbol>
+                  </defs>
+                  <use href="#ai:tabler:point-filled"></use>
+                </svg>
                 Are looking to test the benefits of a LP
               </li>
               <li className="flex gap-x-3">
@@ -105,7 +118,17 @@ const PricingSection = () => {
                   className="h-6 w-5 flex-none text-white"
                   aria-hidden="true"
                   data-icon="tabler:point-filled"
-                ></svg>
+                >
+                  <defs>
+                    <symbol id="ai:tabler:point-filled" viewBox="0 0 24 24">
+                      <path
+                        fill="currentColor"
+                        d="M12 7a5 5 0 1 1-4.995 5.217L7 12l.005-.217A5 5 0 0 1 12 7"
+                      ></path>
+                    </symbol>
+                  </defs>
+                  <use href="#ai:tabler:point-filled"></use>
+                </svg>
                 Beginning customer acquisition
               </li>
             </ul>
@@ -133,6 +156,7 @@ const PricingSection = () => {
                       d="m5 12l5 5L20 7"
                     ></path>
                   </symbol>
+                  <use href="#ai:tabler:check"></use>
                 </svg>
                 x1 Landing Page Total
               </li>
@@ -144,7 +168,19 @@ const PricingSection = () => {
                   className="h-6 w-5 flex-none text-white"
                   aria-hidden="true"
                   data-icon="tabler:check"
-                ></svg>
+                >
+                  <symbol id="ai:tabler:check">
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="m5 12l5 5L20 7"
+                    ></path>
+                  </symbol>
+                  <use href="#ai:tabler:check"></use>
+                </svg>
                 15 Business-day Turnaround
               </li>
               <li className="flex gap-x-3">
@@ -155,7 +191,19 @@ const PricingSection = () => {
                   className="h-6 w-5 flex-none text-white"
                   aria-hidden="true"
                   data-icon="tabler:check"
-                ></svg>
+                >
+                  <symbol id="ai:tabler:check">
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="m5 12l5 5L20 7"
+                    ></path>
+                  </symbol>
+                  <use href="#ai:tabler:check"></use>
+                </svg>
                 x2 Variations / Revisions
               </li>
               <li className="flex gap-x-3">
@@ -166,7 +214,19 @@ const PricingSection = () => {
                   className="h-6 w-5 flex-none text-white"
                   aria-hidden="true"
                   data-icon="tabler:check"
-                ></svg>
+                >
+                  <symbol id="ai:tabler:check">
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="m5 12l5 5L20 7"
+                    ></path>
+                  </symbol>
+                  <use href="#ai:tabler:check"></use>
+                </svg>
                 Analytics Integration
               </li>
             </ul>
@@ -236,7 +296,17 @@ const PricingSection = () => {
                   className="h-6 w-5 flex-none text-white"
                   aria-hidden="true"
                   data-icon="tabler:point-filled"
-                ></svg>
+                >
+                  <defs>
+                    <symbol id="ai:tabler:point-filled" viewBox="0 0 24 24">
+                      <path
+                        fill="currentColor"
+                        d="M12 7a5 5 0 1 1-4.995 5.217L7 12l.005-.217A5 5 0 0 1 12 7"
+                      ></path>
+                    </symbol>
+                  </defs>
+                  <use href="#ai:tabler:point-filled"></use>
+                </svg>
                 Spend up to $100k - $250k /month on ads
               </li>
               <li className="flex gap-x-3">
@@ -247,7 +317,17 @@ const PricingSection = () => {
                   className="h-6 w-5 flex-none text-white"
                   aria-hidden="true"
                   data-icon="tabler:point-filled"
-                ></svg>
+                >
+                  <defs>
+                    <symbol id="ai:tabler:point-filled" viewBox="0 0 24 24">
+                      <path
+                        fill="currentColor"
+                        d="M12 7a5 5 0 1 1-4.995 5.217L7 12l.005-.217A5 5 0 0 1 12 7"
+                      ></path>
+                    </symbol>
+                  </defs>
+                  <use href="#ai:tabler:point-filled"></use>
+                </svg>
                 Looking to drive heavy customer acquisition
               </li>
               <li className="flex gap-x-3">
@@ -258,7 +338,17 @@ const PricingSection = () => {
                   className="h-6 w-5 flex-none text-white"
                   aria-hidden="true"
                   data-icon="tabler:point-filled"
-                ></svg>
+                >
+                  <defs>
+                    <symbol id="ai:tabler:point-filled" viewBox="0 0 24 24">
+                      <path
+                        fill="currentColor"
+                        d="M12 7a5 5 0 1 1-4.995 5.217L7 12l.005-.217A5 5 0 0 1 12 7"
+                      ></path>
+                    </symbol>
+                  </defs>
+                  <use href="#ai:tabler:point-filled"></use>
+                </svg>
                 Looking to get more out of sale periods
               </li>
             </ul>
@@ -275,7 +365,19 @@ const PricingSection = () => {
                   className="h-6 w-5 flex-none text-white"
                   aria-hidden="true"
                   data-icon="tabler:check"
-                ></svg>
+                >
+                  <symbol id="ai:tabler:check">
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="m5 12l5 5L20 7"
+                    ></path>
+                  </symbol>
+                  <use href="#ai:tabler:check"></use>
+                </svg>
                 x3 Landing Page Total
               </li>
               <li className="flex gap-x-3">
@@ -286,7 +388,19 @@ const PricingSection = () => {
                   className="h-6 w-5 flex-none text-white"
                   aria-hidden="true"
                   data-icon="tabler:check"
-                ></svg>
+                >
+                  <symbol id="ai:tabler:check">
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="m5 12l5 5L20 7"
+                    ></path>
+                  </symbol>
+                  <use href="#ai:tabler:check"></use>
+                </svg>
                 10 Business-day Turnaround
               </li>
               <li className="flex gap-x-3">
@@ -297,7 +411,19 @@ const PricingSection = () => {
                   className="h-6 w-5 flex-none text-white"
                   aria-hidden="true"
                   data-icon="tabler:check"
-                ></svg>
+                >
+                  <symbol id="ai:tabler:check">
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="m5 12l5 5L20 7"
+                    ></path>
+                  </symbol>
+                  <use href="#ai:tabler:check"></use>
+                </svg>
                 x6 Variations
               </li>
               <li className="flex gap-x-3">
@@ -308,7 +434,19 @@ const PricingSection = () => {
                   className="h-6 w-5 flex-none text-white"
                   aria-hidden="true"
                   data-icon="tabler:check"
-                ></svg>
+                >
+                  <symbol id="ai:tabler:check">
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="m5 12l5 5L20 7"
+                    ></path>
+                  </symbol>
+                  <use href="#ai:tabler:check"></use>
+                </svg>
                 Analytics Integration
               </li>
               <li className="flex gap-x-3">
@@ -319,7 +457,19 @@ const PricingSection = () => {
                   className="h-6 w-5 flex-none text-white"
                   aria-hidden="true"
                   data-icon="tabler:check"
-                ></svg>
+                >
+                  <symbol id="ai:tabler:check">
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="m5 12l5 5L20 7"
+                    ></path>
+                  </symbol>
+                  <use href="#ai:tabler:check"></use>
+                </svg>
                 Dedicated Account Manager
               </li>
             </ul>
@@ -386,7 +536,17 @@ const PricingSection = () => {
                   className="h-6 w-5 flex-none text-white"
                   aria-hidden="true"
                   data-icon="tabler:point-filled"
-                ></svg>
+                >
+                  <defs>
+                    <symbol id="ai:tabler:point-filled" viewBox="0 0 24 24">
+                      <path
+                        fill="currentColor"
+                        d="M12 7a5 5 0 1 1-4.995 5.217L7 12l.005-.217A5 5 0 0 1 12 7"
+                      ></path>
+                    </symbol>
+                  </defs>
+                  <use href="#ai:tabler:point-filled"></use>
+                </svg>
                 Spend up over $250k /month on ads
               </li>
               <li className="flex gap-x-3">
@@ -397,7 +557,17 @@ const PricingSection = () => {
                   className="h-6 w-5 flex-none text-white"
                   aria-hidden="true"
                   data-icon="tabler:point-filled"
-                ></svg>
+                >
+                  <defs>
+                    <symbol id="ai:tabler:point-filled" viewBox="0 0 24 24">
+                      <path
+                        fill="currentColor"
+                        d="M12 7a5 5 0 1 1-4.995 5.217L7 12l.005-.217A5 5 0 0 1 12 7"
+                      ></path>
+                    </symbol>
+                  </defs>
+                  <use href="#ai:tabler:point-filled"></use>
+                </svg>
                 Are looking to maximize sales across multiple paid channels
                 (meta, TikTok, etc).
               </li>
@@ -409,7 +579,17 @@ const PricingSection = () => {
                   className="h-6 w-5 flex-none text-white"
                   aria-hidden="true"
                   data-icon="tabler:point-filled"
-                ></svg>
+                >
+                  <defs>
+                    <symbol id="ai:tabler:point-filled" viewBox="0 0 24 24">
+                      <path
+                        fill="currentColor"
+                        d="M12 7a5 5 0 1 1-4.995 5.217L7 12l.005-.217A5 5 0 0 1 12 7"
+                      ></path>
+                    </symbol>
+                  </defs>
+                  <use href="#ai:tabler:point-filled"></use>
+                </svg>
                 Are looking to expand their customer demographic reach.
               </li>
             </ul>
@@ -426,7 +606,19 @@ const PricingSection = () => {
                   className="h-6 w-5 flex-none text-white"
                   aria-hidden="true"
                   data-icon="tabler:check"
-                ></svg>
+                >
+                  <symbol id="ai:tabler:check">
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="m5 12l5 5L20 7"
+                    ></path>
+                  </symbol>
+                  <use href="#ai:tabler:check"></use>
+                </svg>
                 x5 Landing Page Total
               </li>
               <li className="flex gap-x-3">
@@ -437,7 +629,19 @@ const PricingSection = () => {
                   className="h-6 w-5 flex-none text-white"
                   aria-hidden="true"
                   data-icon="tabler:check"
-                ></svg>
+                >
+                  <symbol id="ai:tabler:check">
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="m5 12l5 5L20 7"
+                    ></path>
+                  </symbol>
+                  <use href="#ai:tabler:check"></use>
+                </svg>
                 10 Business-day Turnaround
               </li>
               <li className="flex gap-x-3">
@@ -448,7 +652,19 @@ const PricingSection = () => {
                   className="h-6 w-5 flex-none text-white"
                   aria-hidden="true"
                   data-icon="tabler:check"
-                ></svg>
+                >
+                  <symbol id="ai:tabler:check">
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="m5 12l5 5L20 7"
+                    ></path>
+                  </symbol>
+                  <use href="#ai:tabler:check"></use>
+                </svg>
                 x10 Variations
               </li>
               <li className="flex gap-x-3">
@@ -459,7 +675,19 @@ const PricingSection = () => {
                   className="h-6 w-5 flex-none text-white"
                   aria-hidden="true"
                   data-icon="tabler:check"
-                ></svg>
+                >
+                  <symbol id="ai:tabler:check">
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="m5 12l5 5L20 7"
+                    ></path>
+                  </symbol>
+                  <use href="#ai:tabler:check"></use>
+                </svg>
                 Analytics Integration
               </li>
               <li className="flex gap-x-3">
@@ -470,7 +698,19 @@ const PricingSection = () => {
                   className="h-6 w-5 flex-none text-white"
                   aria-hidden="true"
                   data-icon="tabler:check"
-                ></svg>
+                >
+                  <symbol id="ai:tabler:check">
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="m5 12l5 5L20 7"
+                    ></path>
+                  </symbol>
+                  <use href="#ai:tabler:check"></use>
+                </svg>
                 Dedicated Account Manager
               </li>
             </ul>
