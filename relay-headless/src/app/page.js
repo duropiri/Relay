@@ -7,12 +7,13 @@ import Why from "../components/Why";
 import React from "react";
 import PricingSection from "../components/PricingSection";
 import Rocket from "../components/Rocket";
+import CustomerJourney from "../components/CustomerJourney";
 import Head from "next/head";
 import { metadata } from "./layout";
 
 const Home = () => {
   return (
-    <div className="flex flex-col gap-10">
+    <div className="flex flex-col gap-10 bg-grid-white/[0.05]">
       <Hero />
       <Why />
       <CallToAction
@@ -21,7 +22,9 @@ const Home = () => {
         cta="Yes, Boost my Conversions"
         href="/contact"
       />
+      <CustomerJourney />
       <Services />
+
       <Panel />
       <CallToAction
         header="Get Started Today, Make Your Landing Pages Work As A 24/7 Salesman."

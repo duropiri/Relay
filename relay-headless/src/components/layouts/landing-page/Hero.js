@@ -5,62 +5,14 @@ import { ScrollTrigger } from "gsap/all";
 import { useGlobalState } from "./GlobalStateContext";
 import Marquee from "./Marquee";
 import Image from "next/image";
-import Spline from "@splinetool/react-spline";
 
-const Hero = () => {
-  const { heroContent } = useGlobalState();
-  const { marqueeContent } = useGlobalState();
-  const { isLoading } = useGlobalState();
-  // const isLoading = useState(true);
-
-  let mainMessage,
-    highlightedText1,
-    highlightedText2,
-    Description,
-    CTA,
-    Decoration,
-    Statistic,
-    marqueeImages;
-
-  if (heroContent) {
-    ({
-      mainMessage,
-      highlightedText1,
-      highlightedText2,
-      Description,
-      CTA,
-      Decoration,
-      Statistic,
-    } = heroContent);
-  }
-
-  if (marqueeContent) {
-    marqueeImages = marqueeContent.images.data.map(({ id, attributes }) => ({
-      id,
-      ...attributes,
-      url: attributes.url, // adjust according to your actual API's URL structure
-      alt: attributes.alternativeText || "Default Alt Text",
-    }));
-    // console.log(marqueeImages[0].url);
-  }
-
-  // Function to replace highlighted texts
-  const renderMainMessageText = (text, highlight1, highlight2) => {
-    if (heroContent) {
-      return {
-        __html: text
-          .replaceAll(
-            highlight1,
-            `<span className="text-blue-500">${highlight1}</span>`
-          )
-          .replaceAll(
-            highlight2,
-            `<span className="text-blue-500">${highlight2}</span>`
-          ),
-      };
-    }
-  };
-
+const Hero = ({
+  heroHeader,
+  heroDescription,
+  heroCTA,
+  heroStats,
+  marqueeData,
+}) => {
   // GSAP Animations
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -109,9 +61,7 @@ const Hero = () => {
                 className="bg-gradient-to-br from-neutral-100 from-55% to-neutral-500 bg-clip-text font-medium tracking-tight text-transparent lg:min-h-[20rem] lg:to-neutral-600"
                 data-speed="0.5"
               >
-                Get <span className="text-blue-500">1.5x</span> More Out Of Your
-                Ads, with the #1 High Performance{" "}
-                <span className="text-blue-500">Marketing Funnels</span>.
+                {heroHeader}
               </h1>
             </div>
           </div>
@@ -122,10 +72,7 @@ const Hero = () => {
               className="text-center text-base leading-tight text-neutral-300 lg:text-start"
               data-speed="0.7"
             >
-              Relay is a modern development studio specialising in high
-              converting marketing funnels. We design, develop and deploy high
-              performance, lightning-fast landing pages that will sky-rocket
-              your conversion rate.
+              {heroDescription}
             </p>
 
             {/* Hero CTA Button */}
@@ -136,7 +83,7 @@ const Hero = () => {
               <a href="/contact" className="pointer-events-auto">
                 <button className="relative rounded-full text-center transition-all duration-500 transform overflow-hidden z-40 w-full px-8 py-6 bg-blue-500 text-neutral-950 border border-blue-500 button hover:text-neutral-50 group text-xl uppercase md:text-2xl">
                   <div className="flex flex-row group relative z-10 w-full justify-center">
-                    Let&apos;s Chat
+                    {heroCTA}
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="32"
@@ -154,7 +101,7 @@ const Hero = () => {
           </div>
         </div>
       </section>
-      
+
       {/* Stats */}
       <div className="mx-auto min-w-[75vw] px-6 lg:px-8">
         <dl
@@ -164,137 +111,59 @@ const Hero = () => {
           <div className="flex flex-col items-center  justify-center bg-neutral-900 px-2 py-6">
             <dt className="font-red-hat-text mt-1 text-sm font-normal leading-tight tracking-tight text-neutral-300">
               {/* {Statistic[0].description} */}
-              Average Conversion Rate Boost
+              {heroStats[0].statTitle}
             </dt>
             <dd className="font-proxima-nova order-first  text-5xl font-semibold tracking-tight text-white lg:text-5xl">
               {/* {Statistic[0].value} */}
-              22%
+              {heroStats[0].statDescription}
             </dd>
           </div>
           <div className="flex flex-col items-center  justify-center bg-neutral-900 px-2 py-6">
             <dt className="font-red-hat-text mt-1 text-sm font-normal leading-tight tracking-tight text-neutral-300">
               {/* {Statistic[1].description} */}
-              More Time Spent on Page
+              {heroStats[1].statTitle}
             </dt>
             <dd className="font-proxima-nova order-first  text-5xl font-semibold tracking-tight text-white lg:text-5xl">
               {/* {Statistic[1].value} */}
-              60%
+              {heroStats[1].statDescription}
             </dd>
           </div>
           <div className="flex flex-col items-center  justify-center bg-neutral-900 px-2 py-6">
             <dt className="font-red-hat-text mt-1 text-sm font-normal leading-tight tracking-tight text-neutral-300">
               {/* {Statistic[2].description} */}
-              Faster Than Typical Websites
+              {heroStats[2].statTitle}
             </dt>
             <dd className="font-proxima-nova order-first  text-5xl font-semibold tracking-tight text-white lg:text-5xl">
               {/* {Statistic[2].value} */}
-              10x
+              {heroStats[2].statDescription}
             </dd>
           </div>
           <div className="flex flex-col items-center  justify-center bg-neutral-900 px-2 py-6">
             <dt className="font-red-hat-text mt-1 text-sm font-normal leading-tight tracking-tight text-neutral-300">
               {/* {Statistic[3].description} */}
-              Average Ad ROI Increase
+              {heroStats[3].statTitle}
             </dt>
             <dd className="font-proxima-nova order-first  text-5xl font-semibold tracking-tight text-white lg:text-5xl">
               {/* {Statistic[3].value} */}
-              39%
+              {heroStats[3].statDescription}
             </dd>
           </div>
         </dl>
       </div>
 
       <Marquee speed={1}>
-        <Image
-          src="/img/homezy.webp"
-          alt="Homezy"
-          className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[0%] lg:h-72"
-          loading="eager"
-          width={1728}
-          height={992}
-          decoding="async"
-        />
-        <Image
-          src="/img/thai.webp"
-          alt="Thai"
-          className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[0%] lg:h-72"
-          loading="eager"
-          width={1728}
-          height={992}
-          decoding="async"
-        />
-        <Image
-          src="/img/wellbeing.webp"
-          alt="WellBeing"
-          className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[0%] lg:h-72"
-          loading="eager"
-          width={3456}
-          height={1984}
-          decoding="async"
-        />
-        <Image
-          src="/img/agenci.webp"
-          alt="Agenci"
-          className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[0%] lg:h-72"
-          loading="eager"
-          width={1728}
-          height={992}
-          decoding="async"
-        />
-        <Image
-          src="/img/joyfolio.webp"
-          alt="Joyfolio"
-          className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[0%] lg:h-72"
-          loading="eager"
-          width={1728}
-          height={992}
-          decoding="async"
-        />
-        <Image
-          src="/img/inspire.webp"
-          alt="Inspire"
-          className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[0%] lg:h-72"
-          loading="eager"
-          width={1728}
-          height={992}
-          decoding="async"
-        />
-        <Image
-          src="/img/wellbeing.webp"
-          alt="WellBeing"
-          className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[0%] lg:h-72"
-          loading="eager"
-          width={3456}
-          height={1984}
-          decoding="async"
-        />
-        <Image
-          src="/img/fashion.webp"
-          alt="Fashion"
-          className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[0%] lg:h-72"
-          loading="eager"
-          width={2456}
-          height={1491}
-          decoding="async"
-        />
-        <Image
-          src="/img/requesto.webp"
-          alt="Request"
-          className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[0%] lg:h-72"
-          loading="eager"
-          width={1728}
-          height={992}
-          decoding="async"
-        />
-        <Image
-          src="/img/darkstudio.webp"
-          alt="Studio"
-          className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[0%] lg:h-72"
-          loading="eager"
-          width={1728}
-          height={992}
-          decoding="async"
-        />
+        {marqueeData.images.map((image, index) => (
+          <Image
+            key={index}
+            src={image.src}
+            alt={image.alt}
+            className="sm:h-54 h-72 w-auto rounded-lg border border-neutral-700 grayscale-[0%] lg:h-96"
+            loading="eager"
+            width={image.width}
+            height={image.height}
+            decoding="async"
+          />
+        ))}
       </Marquee>
     </>
   );

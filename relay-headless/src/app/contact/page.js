@@ -3,7 +3,7 @@ import React from "react";
 
 const contact = () => {
   return (
-    <div>
+    <div className="bg-grid-white/[0.05]">
       <Contact />
     </div>
   );
