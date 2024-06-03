@@ -8,6 +8,7 @@ import MobileMenu from "../components/MobileMenu";
 import { Analytics } from "@vercel/analytics/react";
 import Head from "next/head";
 import Spline from "@splinetool/react-spline";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -59,6 +60,18 @@ const RootLayout = ({ children }) => {
         <meta name="twitter:title" content={metadata.title} />
         <meta name="twitter:description" content={metadata.description} />
         <meta name="twitter:image" content={metadata.image} />
+
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-NQH0Z2981Z"
+        ></Script>
+        <Script id="google-analytics">
+          {`  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NQH0Z2981Z');`}
+        </Script>
       </head>
       <body className={inter.className}>
         <Analytics />
