@@ -52,7 +52,7 @@ const CustomerJourney = () => {
               Landing pages streamline the marketing funnel, creating direct
               routes to conversion with targeted messages. They capture user
               attention with a focused call to action, removing any distractions
-              and significantly enhancing conversion rates. It's like paving a
+              and significantly enhancing conversion rates. It&apos;s like paving a
               high-speed expressway directly to your desired outcomes.
             </p>
           </div>
@@ -80,7 +80,7 @@ const CustomerJourney = () => {
               Our landing pages enable you to craft messages that resonate
               deeply with specific audience segments, offering a highly
               personalized browsing experience. By homing in on a unique
-              product, service, or offer, they speak directly to your visitor's
+              product, service, or offer, they speak directly to your visitor&apos;s
               interests, significantly increasing engagement and conversions.
               This approach ensures that every visitor feels understood and
               valued.
