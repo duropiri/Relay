@@ -66,15 +66,17 @@ const RootLayout = ({ children }) => {
           src="https://www.googletagmanager.com/gtag/js?id=G-NQH0Z2981Z"
         ></Script>
         <Script id="google-analytics">
-          {`  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
-  gtag('config', 'G-NQH0Z2981Z');`}
+            gtag('config', 'G-NQH0Z2981Z');
+          `}
         </Script>
       </head>
       <body className={inter.className}>
-        <Analytics />
+        {/* <Analytics /> */}
         <GlobalStateProvider>
           <SmoothScrolling>
             {/* <ContentLoader /> */}
