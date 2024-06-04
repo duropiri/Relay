@@ -8,6 +8,7 @@ import React from "react";
 import PricingSection from "../components/PricingSection";
 import Rocket from "../components/Rocket";
 import CustomerJourney from "../components/CustomerJourney";
+import LeakSection from "../components/LeakSection";
 import Head from "next/head";
 import { metadata } from "./layout";
 
@@ -32,6 +33,7 @@ const Home = () => {
         cta="Get Started Now"
         href="https://calendly.com/relaydigitalyyc/discovery"
       />
+      {/* <LeakSection /> */}
       <PricingSection />
       <Rocket className="z-20" />
       <Contact />

@@ -180,27 +180,27 @@ const Navbar = () => {
             <span className="text-blue-500">.</span>
           </a>
 
-          <div class="flex items-center">
+          <div className="flex items-center">
             <button
-              class={`flex flex-col h-12 w-12 rounded justify-center items-center cursor-pointer group ${
+              className={`flex flex-col h-12 w-12 rounded justify-center items-center cursor-pointer group ${
                 mobileMenuOpen ? "expanded" : ""
               }`}
               aria-label="Toggle Menu"
               data-aw-toggle-menu=""
               onClick={toggleMobileMenu}
             >
-              <span class="sr-only">Toggle Menu</span>
+              <span className="sr-only">Toggle Menu</span>
               <span
                 aria-hidden="true"
-                class="h-0.5 w-6 my-1 rounded-full bg-white transition ease transform duration-200 opacity-80 group-[.expanded]:rotate-45 group-[.expanded]:translate-y-2.5"
+                className="h-0.5 w-6 my-1 rounded-full bg-white transition ease transform duration-200 opacity-80 group-[.expanded]:rotate-45 group-[.expanded]:translate-y-2.5"
               ></span>
               <span
                 aria-hidden="true"
-                class="h-0.5 w-6 my-1 rounded-full bg-white transition ease transform duration-200 opacity-80 group-[.expanded]:opacity-0"
+                className="h-0.5 w-6 my-1 rounded-full bg-white transition ease transform duration-200 opacity-80 group-[.expanded]:opacity-0"
               ></span>
               <span
                 aria-hidden="true"
-                class="h-0.5 w-6 my-1 rounded-full bg-white transition ease transform duration-200 opacity-80 group-[.expanded]:-rotate-45 group-[.expanded]:-translate-y-2.5"
+                className="h-0.5 w-6 my-1 rounded-full bg-white transition ease transform duration-200 opacity-80 group-[.expanded]:-rotate-45 group-[.expanded]:-translate-y-2.5"
               ></span>
             </button>
           </div>

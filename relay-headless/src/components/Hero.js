@@ -109,7 +109,7 @@ const Hero = () => {
                 className="bg-gradient-to-br from-neutral-100 from-55% to-neutral-500 bg-clip-text font-medium tracking-tight text-transparent lg:min-h-[20rem] lg:to-neutral-600"
                 data-speed="0.5"
               >
-                Get <span className="text-blue-500">1.5x</span> More Out Of Your
+                Get <span className="text-blue-500">2.7x</span> More Out Of Your
                 Ads, with the #1 High Performance{" "}
                 <span className="text-blue-500">Marketing Funnels</span>.
               </h1>
