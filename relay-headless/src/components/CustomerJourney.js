@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const CustomerJourney = () => {
@@ -10,21 +11,21 @@ const CustomerJourney = () => {
             Why Are Our Landing Pages So <span className="bg-gradient-to-b from-blue-500 from-60% to-blue-400 bg-clip-text text-transparent lg:to-blue-600 underline">Effective?</span>
           </span>
         </h2>
-        <img
+        <Image
           src="/svg/svgexport-1.svg"
           alt="Journey Desktop"
           className="mt-16 w-full hidden sm:block"
-          width="1031"
-          height="323"
+          width={1031}
+          height={323}
           loading="lazy"
           decoding="async"
         />
-        <img
+        <Image
           src="/svg/svgexport-2.svg"
           alt="Journey Mobile"
           className="mt-16 w-full sm:hidden"
-          width="343"
-          height="523"
+          width={343}
+          height={523}
           loading="lazy"
           decoding="async"
         />

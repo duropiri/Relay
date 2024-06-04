@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const LeakSection = () => {
   return (
@@ -28,19 +29,19 @@ const LeakSection = () => {
             {/* Subheading */}
             <div className="flex flex-row gap-2 items-center justify-center">
               <div className="flex flex-row items-center gap-4 rounded-3xl border border-neutral-700 shadow-xl shadow-blue-500/20 px-8 py-4">
-                <img
+                <Image
                   src="https://assets-global.website-files.com/66149821b79906211250b327/66166c78568ebf05d86db043_warning.png"
                   loading="lazy"
                   width="20"
                   alt="Warning"
                 />
-                <div className="p-normal">Don't waste your ad spend.</div>
+                <div className="p-normal">Don&apos;t waste your ad spend.</div>
               </div>
               <div className="label-bar-dot is-1"></div>
             </div>
             {/* Images */}
             <div className="flex flex-row gap-8 items-center justify-center">
-              <img
+              <Image
                 src="https://assets-global.website-files.com/66149821b79906211250b327/66166cddc6151f9331b00f27_Group%201272633393.webp"
                 loading="lazy"
                 sizes="(max-width: 479px) 95vw, (max-width: 767px) 97vw, (max-width: 991px) 47vw, 435.203125px"
@@ -48,7 +49,7 @@ const LeakSection = () => {
                 alt=""
                 className="leak-image"
               />
-              <img
+              <Image
                 src="https://assets-global.website-files.com/66149821b79906211250b327/66166cdc840d0bff9ba54a75_Group%201272633394.webp"
                 loading="lazy"
                 sizes="(max-width: 479px) 95vw, (max-width: 767px) 97vw, (max-width: 991px) 47vw, 435.203125px"
@@ -85,7 +86,7 @@ const LeakSection = () => {
             </h2>
             <div className="w-layout-vflex label-bar-wrap">
               <div className="label-bar white-gr">
-                <img
+                <Image
                   src="https://assets-global.website-files.com/66149821b79906211250b327/66166dce3b6f36cee13ab93d_hands.png"
                   loading="lazy"
                   width="20"
@@ -105,7 +106,7 @@ const LeakSection = () => {
               <div className="help-box">
                 <div className="help-box-wrap">
                   <div className="help-box is-inner">
-                    <img
+                    <Image
                       src="https://assets-global.website-files.com/66149821b79906211250b327/66166f88e4f17dd77e526a46_Group%201272633434.png"
                       loading="lazy"
                       width="82"
@@ -134,7 +135,7 @@ const LeakSection = () => {
               </div>
               <div className="help-box-wrap">
                 <div className="help-box is-inner">
-                  <img
+                  <Image
                     src="https://assets-global.website-files.com/66149821b79906211250b327/66166f88e05af9939df0174f_Group%201272633435.png"
                     loading="lazy"
                     width="82"
@@ -160,7 +161,7 @@ const LeakSection = () => {
               </div>
               <div className="help-box-wrap">
                 <div className="help-box is-inner">
-                  <img
+                  <Image
                     src="https://assets-global.website-files.com/66149821b79906211250b327/66166f87f27ac4336b9f2a90_Group%201272633437.png"
                     loading="lazy"
                     width="82"
@@ -184,7 +185,7 @@ const LeakSection = () => {
               </div>
               <div className="help-box-wrap">
                 <div className="help-box is-inner">
-                  <img
+                  <Image
                     src="https://assets-global.website-files.com/66149821b79906211250b327/66166f88bb103231a006587c_Group%201272633434-1.png"
                     loading="lazy"
                     width="82"
