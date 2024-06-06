@@ -33,65 +33,65 @@ function Cfunnel() {
         </div>
         {/* Middle-Top */}
         <div className="flex flex-col gap-8 w-full mt-12 items-center justify-center">
-          <div className="flex flex-col bg-neutral-950 rounded-xl p-4 border-neutral-700 border relative min-w-80 w-[50vw]">
+          <div className="flex flex-col bg-neutral-950 rounded-xl p-4 border-neutral-700 border relative min-w-80 w-[50vw] shadow-xl shadow-red-900/20 transition duration-200 hover:shadow-3xl hover:shadow-red-900/50">
             <div className="flex flex-row items-start justify-center px-18 overflow-hidden">
               <img
                 src="https://assets-global.website-files.com/66149821b79906211250b327/661667f05307acc0fcadaf31_list-item-ellipse.svg"
                 loading="lazy"
                 alt=""
-                className="m-auto absolute top-0 bottom-0 left-0 right-0 blur-xl w-full opacity-10"
+                className="m-auto absolute top-0 bottom-0 left-0 right-0 blur-xl w-full opacity-10 pointer-events-none"
               />
               <p className="text-md font-light text-neutral-300 md:text-lg">
                 Increasing ad costs
               </p>
             </div>
           </div>
-          <div className="flex flex-col bg-neutral-950 rounded-xl p-4 border-neutral-700 border relative min-w-80 w-[50vw]">
+          <div className="flex flex-col bg-neutral-950 rounded-xl p-4 border-neutral-700 border relative min-w-80 w-[50vw] shadow-xl shadow-red-900/20 transition duration-200 hover:shadow-3xl hover:shadow-red-900/50">
             <div className="flex flex-row items-start justify-center px-18 overflow-hidden">
               <img
                 src="https://assets-global.website-files.com/66149821b79906211250b327/661667f05307acc0fcadaf31_list-item-ellipse.svg"
                 loading="lazy"
                 alt=""
-                className="m-auto absolute top-0 bottom-0 left-0 right-0 blur-xl w-full opacity-10"
+                className="m-auto absolute top-0 bottom-0 left-0 right-0 blur-xl w-full opacity-10 pointer-events-none"
               />
               <p className="text-md font-light text-neutral-300 md:text-lg">
                 Overwhelming competition
               </p>
             </div>
           </div>
-          <div className="flex flex-col bg-neutral-950 rounded-xl p-4 border-neutral-700 border relative min-w-80 w-[50vw]">
+          <div className="flex flex-col bg-neutral-950 rounded-xl p-4 border-neutral-700 border relative min-w-80 w-[50vw] shadow-xl shadow-red-900/20 transition duration-200 hover:shadow-3xl hover:shadow-red-900/50">
             <div className="flex flex-row items-start justify-center px-18 overflow-hidden">
               <img
                 src="https://assets-global.website-files.com/66149821b79906211250b327/661667f05307acc0fcadaf31_list-item-ellipse.svg"
                 loading="lazy"
                 alt=""
-                className="m-auto absolute top-0 bottom-0 left-0 right-0 blur-xl w-full opacity-10"
+                className="m-auto absolute top-0 bottom-0 left-0 right-0 blur-xl w-full opacity-10 pointer-events-none"
               />
               <p className="text-md font-light text-neutral-300 md:text-lg">
                 Lower barrier of entry
               </p>
             </div>
           </div>
-          <div className="flex flex-col bg-neutral-950 rounded-xl p-4 border-neutral-700 border relative min-w-80 w-[50vw]">
+          <div className="flex flex-col bg-neutral-950 rounded-xl p-4 border-neutral-700 border relative min-w-80 w-[50vw] shadow-xl shadow-red-900/20 transition duration-200 hover:shadow-3xl hover:shadow-red-900/50">
             <div className="flex flex-row items-start justify-center px-18 overflow-hidden">
               <img
                 src="https://assets-global.website-files.com/66149821b79906211250b327/661667f05307acc0fcadaf31_list-item-ellipse.svg"
                 loading="lazy"
                 alt=""
-                className="m-auto absolute top-0 bottom-0 left-0 right-0 blur-xl w-full opacity-10"
+                className="m-auto absolute top-0 bottom-0 left-0 right-0 blur-xl w-full opacity-10 pointer-events-none"
               />
               <p className="text-md font-light text-neutral-300 md:text-lg">
                 Lack of tracking
               </p>
             </div>
           </div>
-          <div className="flex flex-col bg-neutral-950 rounded-xl p-4 border-neutral-700 border relative min-w-80 w-[50vw]">
+          <div className="flex flex-col bg-neutral-950 rounded-xl p-4 border-neutral-700 border relative min-w-80 w-[50vw] shadow-xl shadow-red-900/20 transition duration-200 hover:shadow-3xl hover:shadow-red-900/50">
             <div className="flex flex-row items-start justify-center px-18 overflow-hidden">
               <img
                 src="https://assets-global.website-files.com/66149821b79906211250b327/661667f05307acc0fcadaf31_list-item-ellipse.svg"
                 loading="lazy"
                 alt=""
-                className="m-auto absolute top-0 bottom-0 left-0 right-0 blur-xl w-full opacity-10"
+                className="m-auto absolute top-0 bottom-0 left-0 right-0 blur-xl w-full opacity-10 pointer-events-none"
               />
               <p className="text-md font-light text-neutral-300 md:text-lg">
                 Less trust from online shoppers

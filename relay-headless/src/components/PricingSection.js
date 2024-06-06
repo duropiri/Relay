@@ -29,19 +29,19 @@ const PricingSection = () => {
             <p className="mt-4 text-sm leading-6 text-neutral-300">
               For small brands starting out, spending up to $100k/month on ads.
             </p>
-            <p className="mt-6 flex items-baseline gap-x-1">
+            {/* <p className="mt-6 flex items-baseline gap-x-1">
               <span className="text-4xl font-bold tracking-tight text-white">
                 1995
               </span>
               <span className="text-lg -ml-0 font-semibold tracking-tight text-neutral-100 uppercase">
                 usd
               </span>
-            </p>
+            </p> */}
             <div className="mt-6">
-              <a href="https://buy.stripe.com/3cs6oA10H1EJ1X24gm">
+              <a href="https://calendly.com/relaydigitalyyc/discovery">
                 <button className="relative rounded-full text-center transition-all duration-500 transform overflow-hidden   w-full px-5 py-2.5 border border-blue-500 text-neutral-50 bg-neutral-950 button group text-lg uppercase">
                   <div className="group relative z-10 w-full">
-                    Buy Now
+                    Book a call
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="32"
@@ -57,9 +57,9 @@ const PricingSection = () => {
               </a>
             </div>
             <p className="flex items-baseline justify-center gap-x-2 mt-3">
-              <a href="https://calendly.com/relaydigitalyyc/discovery">
+              <a href="https://buy.stripe.com/3cs6oA10H1EJ1X24gm">
                 <span className="text-sm font-semibold leading-6 tracking-wide text-neutral-400 hover:text-neutral-300 underline duration-300">
-                  Book a call
+                  Get a price
                 </span>
               </a>
             </p>
@@ -246,7 +246,7 @@ const PricingSection = () => {
             <p className="mt-4 text-sm leading-6 text-neutral-300">
               For growing businesses, spending $100k to $250k/month on ads.
             </p>
-            <p className="mt-6 flex items-baseline gap-x-1">
+            {/* <p className="mt-6 flex items-baseline gap-x-1">
               <span
                 className="text-4xl font-bold tracking-tight text-white tooltip tooltip-top"
                 data-tip="17% off"
@@ -256,12 +256,12 @@ const PricingSection = () => {
               <span className="text-lg -ml-0 font-semibold tracking-tight text-neutral-100 uppercase">
                 usd
               </span>
-            </p>
+            </p> */}
             <div className="mt-6">
-              <a href="https://buy.stripe.com/6oEfZabFl0AFbxCeUY">
+              <a href="https://calendly.com/relaydigitalyyc/discovery">
                 <button className="relative rounded-full text-center transition-all duration-500 transform overflow-hidden   w-full px-5 py-2.5 bg-blue-500 text-neutral-950 border border-blue-500 button hover:text-neutral-50 group uppercase leading-tight tracking-tight md:text-lg">
                   <div className="group relative z-10 w-full">
-                    Buy Now
+                    Book a call
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="32"
@@ -277,9 +277,9 @@ const PricingSection = () => {
               </a>
             </div>
             <p className="flex items-baseline justify-center gap-x-2 mt-3">
-              <a href="https://calendly.com/relaydigitalyyc/discovery">
+              <a href="https://buy.stripe.com/6oEfZabFl0AFbxCeUY">
                 <span className="text-sm font-semibold leading-6 tracking-wide text-neutral-400 hover:text-neutral-300 underline duration-300">
-                  Book a call
+                  Get a price
                 </span>
               </a>
             </p>
@@ -486,7 +486,7 @@ const PricingSection = () => {
             <p className="mt-4 text-sm leading-6 text-neutral-300">
               For large companies, spending over $250k/month on ads.
             </p>
-            <p className="mt-6 flex items-baseline gap-x-1">
+            {/* <p className="mt-6 flex items-baseline gap-x-1">
               <span
                 className="text-4xl font-bold tracking-tight text-white tooltip tooltip-top"
                 data-tip="20% off"
@@ -496,12 +496,12 @@ const PricingSection = () => {
               <span className="text-lg -ml-0 font-semibold tracking-tight text-neutral-100 uppercase">
                 usd
               </span>
-            </p>
+            </p> */}
             <div className="mt-6">
-              <a href="https://buy.stripe.com/eVa8wI6l1bfjdFKeUZ">
+              <a href="https://calendly.com/relaydigitalyyc/discovery">
                 <button className="relative rounded-full text-center transition-all duration-500 transform overflow-hidden   w-full px-5 py-2.5 border border-blue-500 text-neutral-50 bg-neutral-950 button group text-lg uppercase">
                   <div className="group relative z-10 w-full">
-                    Buy Now
+                    Book a call
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="32"
@@ -517,9 +517,9 @@ const PricingSection = () => {
               </a>
             </div>
             <p className="flex items-baseline justify-center gap-x-2 mt-3">
-              <a href="https://calendly.com/relaydigitalyyc/discovery">
+              <a href="https://buy.stripe.com/eVa8wI6l1bfjdFKeUZ">
                 <span className="text-sm font-semibold leading-6 tracking-wide text-neutral-400 hover:text-neutral-300 underline duration-300">
-                  Book a call
+                  Get a price
                 </span>
               </a>
             </p>
@@ -717,9 +717,9 @@ const PricingSection = () => {
           </div>
         </div>
         <p className="flex justify-center text-md mt-6 font-light text-neutral-300 md:text-lg">
-          <a href="/pricing#hosting">
+          <a href="/pricing">
             <span className="text-sm text-center font-semibold leading-6 tracking-wide text-neutral-400 hover:text-neutral-300 underline duration-300">
-              Discover our hosting solutions
+              Interested in funnel-specific pricing?
             </span>
           </a>
         </p>

@@ -39,7 +39,7 @@ const Help = () => {
 
         {/* Boxes */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full p-2 mx-auto mt-16 max-w-2xl rounded-3xl border border-neutral-700 shadow-xl shadow-blue-500/20 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:grid-rows-2">
-          <div className="w-full p-1 flex flex-col bg-neutral-950 rounded-xl border-neutral-700 border">
+          <div className="w-full p-1 flex flex-col bg-neutral-950 rounded-xl border-neutral-700 border shadow-xl shadow-blue-500/20 transition duration-200 hover:shadow-3xl hover:shadow-blue-500/50">
             <div className="flex flex-col items-start justify-start h-full p-8 gap-4">
               <img
                 src="https://assets-global.website-files.com/66149821b79906211250b327/66166f88e4f17dd77e526a46_Group%201272633434.png"
@@ -120,7 +120,7 @@ const Help = () => {
               </ul>
             </div>
           </div>
-          <div className="w-full p-1 flex flex-col bg-neutral-950 rounded-xl border-neutral-700 border">
+          <div className="w-full p-1 flex flex-col bg-neutral-950 rounded-xl border-neutral-700 border shadow-xl shadow-blue-500/20 transition duration-200 hover:shadow-3xl hover:shadow-blue-500/50">
             <div className="flex flex-col items-start justify-start h-full p-8 gap-4">
               <img
                 src="https://assets-global.website-files.com/66149821b79906211250b327/66166f88e05af9939df0174f_Group%201272633435.png"
@@ -199,7 +199,7 @@ const Help = () => {
               </ul>
             </div>
           </div>
-          <div className="w-full p-1 flex flex-col bg-neutral-950 rounded-xl border-neutral-700 border">
+          <div className="w-full p-1 flex flex-col bg-neutral-950 rounded-xl border-neutral-700 border shadow-xl shadow-blue-500/20 transition duration-200 hover:shadow-3xl hover:shadow-blue-500/50">
             <div className="flex flex-col items-start justify-start h-full p-8 gap-4">
               <img
                 src="https://assets-global.website-files.com/66149821b79906211250b327/66166f87f27ac4336b9f2a90_Group%201272633437.png"
@@ -259,7 +259,7 @@ const Help = () => {
               </ul>
             </div>
           </div>
-          <div className="w-full p-1 flex flex-col bg-neutral-950 rounded-xl border-neutral-700 border">
+          <div className="w-full p-1 flex flex-col bg-neutral-950 rounded-xl border-neutral-700 border shadow-xl shadow-blue-500/20 transition duration-200 hover:shadow-3xl hover:shadow-blue-500/50">
             <div className="flex flex-col items-start justify-start h-full p-8 gap-4">
               <img
                 src="https://assets-global.website-files.com/66149821b79906211250b327/66166f88bb103231a006587c_Group%201272633434-1.png"
