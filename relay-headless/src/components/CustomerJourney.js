@@ -38,13 +38,13 @@ const CustomerJourney = () => {
                   1
                 </span>
               </div>
-              <h4 className="mt-2 text-xl md:text-3xl font-medium tracking-tight text-white ">
+              <h3 className="mt-2 text-xl md:text-3xl font-medium tracking-tight text-white ">
                 
                 <span className="bg-gradient-to-b from-neutral-50 from-60% to-neutral-400 bg-clip-text text-transparent lg:to-neutral-600">
                   
                   Streamlined Customer Journeys
                 </span>
-              </h4>
+              </h3>
             </div>
             <p className="text-md mt-6 font-light text-neutral-300 md:text-lg">
               
@@ -66,13 +66,13 @@ const CustomerJourney = () => {
                   2
                 </span>
               </div>
-              <h4 className="mt-2 text-xl md:text-3xl font-medium tracking-tight text-white ">
+              <h3 className="mt-2 text-xl md:text-3xl font-medium tracking-tight text-white ">
                 
                 <span className="bg-gradient-to-b from-neutral-50 from-60% to-neutral-400 bg-clip-text text-transparent lg:to-neutral-600">
                   
                   Targeted Messaging
                 </span>
-              </h4>
+              </h3>
             </div>
             <p className="text-md mt-6 font-light text-neutral-300 md:text-lg">
               
@@ -96,13 +96,13 @@ const CustomerJourney = () => {
                   3
                 </span>
               </div>
-              <h4 className="mt-2 text-xl md:text-3xl font-medium tracking-tight text-white ">
+              <h3 className="mt-2 text-xl md:text-3xl font-medium tracking-tight text-white ">
                 
                 <span className="bg-gradient-to-b from-neutral-50 from-60% to-neutral-400 bg-clip-text text-transparent lg:to-neutral-600">
                   
                   Quantifiable Results
                 </span>
-              </h4>
+              </h3>
             </div>
             <p className="text-md mt-6 font-light text-neutral-300 md:text-lg">
               
