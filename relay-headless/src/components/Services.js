@@ -5,7 +5,7 @@ const Services = () => {
   return (
     <section className="relative overflow-hidden py-12">
       <div className="mx-auto max-w-7xl px-5">
-        <h2 className="mt-2  text-3xl font-medium tracking-tight text-white sm:text-6xl">
+        <h2 className="mt-2 text-3xl font-medium tracking-tight text-white sm:text-6xl">
           <span className="bg-gradient-to-b from-neutral-50 from-60% to-neutral-400 bg-clip-text text-transparent lg:to-neutral-600">
             <span className="bg-gradient-to-b from-blue-500 from-60% to-blue-400 bg-clip-text text-transparent lg:to-blue-600 underline">
               Don&apos;t Settle

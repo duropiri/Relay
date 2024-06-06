@@ -84,3 +84,38 @@ p {
 .bg-grid-white\/\[0\.05\] {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(255 255 255 / 0.05)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e");
 }
+
+.w-layout-vflex {
+  flex-direction: column;
+  align-items: flex-start;
+  display: flex;
+}
+
+.check-items-list {
+  grid-column-gap: 1.9rem;
+  grid-row-gap: 1.9rem;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.check-item {
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.check-item-wrap {
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+
+.check-items-list {
+  grid-column-gap: 1.9rem;
+  grid-row-gap: 1.9rem;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: center;
+}

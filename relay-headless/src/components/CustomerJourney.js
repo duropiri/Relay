@@ -5,7 +5,6 @@ const CustomerJourney = () => {
   return (
     <section className="relative py-12" id="how-it-works">
       <div className="mx-auto max-w-7xl px-5">
-        
         <h2 className="mt-2 text-3xl font-medium tracking-tight text-white sm:text-6xl text-center">
           <span className="bg-gradient-to-b from-neutral-50 from-60% to-neutral-400 bg-clip-text text-transparent lg:to-neutral-600">
             Why Are Our Landing Pages So <span className="bg-gradient-to-b from-blue-500 from-60% to-blue-400 bg-clip-text text-transparent lg:to-blue-600 underline">Effective?</span>
@@ -30,7 +29,6 @@ const CustomerJourney = () => {
           decoding="async"
         />
         <div className="grid md:grid-cols-3 gap-6 mt-12">
-          
           <div className="flex flex-col bg-neutral-950 rounded-xl p-4 border-neutral-700 border">
             <div className="flex flex-row gap-x-8 items-center justify-start">
               <div className="mt-2 font-melodrama text-3xl font-medium tracking-tight text-white sm:text-6xl">

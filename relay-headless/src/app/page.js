@@ -8,9 +8,11 @@ import React from "react";
 import PricingSection from "../components/PricingSection";
 import Rocket from "../components/Rocket";
 import CustomerJourney from "../components/CustomerJourney";
-import LeakSection from "../components/LeakSection";
+import Cfunnel from "../components/Cfunnel";
 import Head from "next/head";
 import { metadata } from "./layout";
+import Leaking from "../components/Leaking";
+import Help from "../components/Help";
 
 const Home = () => {
   return (
@@ -33,7 +35,17 @@ const Home = () => {
         cta="Get Started Now"
         href="https://calendly.com/relaydigitalyyc/discovery"
       />
-      {/* <LeakSection /> */}
+      <Cfunnel />
+      <Leaking />
+      <CallToAction
+        header="Unlock more revenue with elite funnels & landing pages."
+        description="Same ad spend, more revenue.
+        Live within 20 days.
+        Conversion-driven, beyond just aesthetics."
+        cta="Get A Price"
+        href="https://calendly.com/relaydigitalyyc/discovery"
+      />
+      <Help />
       <PricingSection />
       <Rocket className="z-20" />
       <Contact />
