@@ -71,7 +71,7 @@ const Help = () => {
                     </defs>
                     <use href="#ai:tabler:point-filled"></use>
                   </svg>
-                  <p className="text-normal text-cream">In-Depth Research</p>
+                  <p className="text-normal leading-6 text-neutral-300">In-Depth Research</p>
                 </li>
                 <li className="flex items-center gap-x-3">
                   <svg
@@ -92,7 +92,7 @@ const Help = () => {
                     </defs>
                     <use href="#ai:tabler:point-filled"></use>
                   </svg>
-                  <p className="text-normal text-cream">Consumer Psychology</p>
+                  <p className="text-normal leading-6 text-neutral-300">Consumer Psychology</p>
                 </li>
                 <li className="flex items-center gap-x-3">
                   <svg
@@ -113,7 +113,7 @@ const Help = () => {
                     </defs>
                     <use href="#ai:tabler:point-filled"></use>
                   </svg>
-                  <p className="text-normal text-cream">
+                  <p className="text-normal leading-6 text-neutral-300">
                     Direct Response Principles
                   </p>
                 </li>
@@ -152,7 +152,7 @@ const Help = () => {
                     </defs>
                     <use href="#ai:tabler:point-filled"></use>
                   </svg>
-                  <p className="text-normal text-cream">On-Brand</p>
+                  <p className="text-normal leading-6 text-neutral-300">On-Brand</p>
                 </li>
                 <li className="flex items-center gap-x-3">
                   <svg
@@ -173,7 +173,7 @@ const Help = () => {
                     </defs>
                     <use href="#ai:tabler:point-filled"></use>
                   </svg>
-                  <p className="text-normal text-cream">CRO Principles</p>
+                  <p className="text-normal leading-6 text-neutral-300">CRO Principles</p>
                 </li>
                 <li className="flex items-center gap-x-3">
                   <svg
@@ -194,7 +194,7 @@ const Help = () => {
                     </defs>
                     <use href="#ai:tabler:point-filled"></use>
                   </svg>
-                  <p className="text-normal text-cream">Mobile Optimized</p>
+                  <p className="text-normal leading-6 text-neutral-300">Mobile Optimized</p>
                 </li>
               </ul>
             </div>
@@ -231,7 +231,7 @@ const Help = () => {
                     </defs>
                     <use href="#ai:tabler:point-filled"></use>
                   </svg>
-                  <p className="text-normal text-cream">Offer Building</p>
+                  <p className="text-normal leading-6 text-neutral-300">Offer Building</p>
                 </li>
                 <li className="flex items-center gap-x-3">
                   <svg
@@ -252,7 +252,7 @@ const Help = () => {
                     </defs>
                     <use href="#ai:tabler:point-filled"></use>
                   </svg>
-                  <p className="text-normal text-cream">
+                  <p className="text-normal leading-6 text-neutral-300">
                     Bundles, AOV Upsell Strategy
                   </p>
                 </li>
@@ -291,7 +291,7 @@ const Help = () => {
                     </defs>
                     <use href="#ai:tabler:point-filled"></use>
                   </svg>
-                  <p className="text-normal text-cream">
+                  <p className="text-normal leading-6 text-neutral-300">
                     Easy To Edit & Duplicate
                   </p>
                 </li>
@@ -314,7 +314,7 @@ const Help = () => {
                     </defs>
                     <use href="#ai:tabler:point-filled"></use>
                   </svg>
-                  <p className="text-normal text-cream">Fast Loading Speed</p>
+                  <p className="text-normal leading-6 text-neutral-300">Fast Loading Speed</p>
                 </li>
               </ul>
             </div>
