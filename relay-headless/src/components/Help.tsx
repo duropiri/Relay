@@ -36,7 +36,7 @@ const Help = () => {
           <p className="text-md mt-12 font-light text-neutral-400 md:text-lg text-center">
             After working with hundreds of ecommerce brands and consulting them
             on their post-click experience, we&apos;ve identified & mastered the
-            key needle-moovers that turn average pages into conversion machines.
+            key needle-movers that turn average pages into conversion machines.
           </p>
         </div>
 
