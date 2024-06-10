@@ -155,8 +155,8 @@ const Hero = () => {
           alt="Homezy"
           className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[0%] lg:h-72"
           loading="eager"
-          width={1728}
-          height={992}
+          width={500}
+          height={288}
           decoding="async"
         />
         <Image
@@ -164,8 +164,8 @@ const Hero = () => {
           alt="Thai"
           className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[0%] lg:h-72"
           loading="eager"
-          width={1728}
-          height={992}
+          width={500}
+          height={288}
           decoding="async"
         />
         <Image
@@ -173,8 +173,8 @@ const Hero = () => {
           alt="WellBeing"
           className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[0%] lg:h-72"
           loading="eager"
-          width={3456}
-          height={1984}
+          width={500}
+          height={288}
           decoding="async"
         />
         <Image
@@ -182,8 +182,8 @@ const Hero = () => {
           alt="Agenci"
           className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[0%] lg:h-72"
           loading="eager"
-          width={1728}
-          height={992}
+          width={500}
+          height={288}
           decoding="async"
         />
         <Image
@@ -191,8 +191,8 @@ const Hero = () => {
           alt="Joyfolio"
           className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[0%] lg:h-72"
           loading="eager"
-          width={1728}
-          height={992}
+          width={500}
+          height={288}
           decoding="async"
         />
         <Image
@@ -200,8 +200,8 @@ const Hero = () => {
           alt="Inspire"
           className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[0%] lg:h-72"
           loading="eager"
-          width={1728}
-          height={992}
+          width={500}
+          height={288}
           decoding="async"
         />
         <Image
@@ -209,8 +209,8 @@ const Hero = () => {
           alt="WellBeing"
           className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[0%] lg:h-72"
           loading="eager"
-          width={3456}
-          height={1984}
+          width={500}
+          height={288}
           decoding="async"
         />
         <Image
@@ -218,8 +218,8 @@ const Hero = () => {
           alt="Fashion"
           className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[0%] lg:h-72"
           loading="eager"
-          width={2456}
-          height={1491}
+          width={500}
+          height={288}
           decoding="async"
         />
         <Image
@@ -227,8 +227,8 @@ const Hero = () => {
           alt="Request"
           className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[0%] lg:h-72"
           loading="eager"
-          width={1728}
-          height={992}
+          width={500}
+          height={288}
           decoding="async"
         />
         <Image
@@ -236,8 +236,8 @@ const Hero = () => {
           alt="Studio"
           className="sm:h-54 h-48 w-auto rounded-lg border border-neutral-700 grayscale-[0%] lg:h-72"
           loading="eager"
-          width={1728}
-          height={992}
+          width={500}
+          height={288}
           decoding="async"
         />
       </Marquee>
