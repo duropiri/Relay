@@ -1,5 +1,4 @@
 "use client";
-import Spline from "@splinetool/react-spline";
 import React, { useState, useRef } from "react";
 
 const Contact = () => {
@@ -7,13 +6,6 @@ const Contact = () => {
   const [result, setResult] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitAttempted, setSubmitAttempted] = useState(false);
-
-  const validateEmail = (email) => {
-    // Simple regex for basic email validation
-    const re =
-      /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@(([^<>()[\]\\.,;:\s@"]+\.)+[^<>()[\]\\.,;:\s@"]{2,})$/i;
-    return re.test(String(email).toLowerCase());
-  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();

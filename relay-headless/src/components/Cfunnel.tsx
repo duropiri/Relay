@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 function Cfunnel() {
@@ -17,11 +18,13 @@ function Cfunnel() {
           <div className="bg-neutral-900 ring-2 ring-blue-500 rounded-3xl p-2 xl:p-3 mt-12 overflow-hidden">
             <div className="z-5 justify-center items-center px-4 flex relative gap-[0.67rem]">
               <div className="relative">
-                <img
+                <Image
                   src="https://assets-global.website-files.com/66149821b79906211250b327/6616655cae37311cff37aadf_diamond.png"
                   loading="lazy"
-                  width="20"
                   alt="Diamond"
+                  width={20}
+                  height={20}
+                  decoding="async"
                 />
                 <div className="z-1 bg-[#e9fd66] rounded-full w-[1rem] h-[1rem] mt-auto mb-auto absolute top-0 bottom-0 blur-xl"></div>
               </div>
@@ -35,11 +38,14 @@ function Cfunnel() {
         <div className="flex flex-col gap-8 w-full mt-12 items-center justify-center">
           <div className="flex flex-col bg-neutral-950 rounded-xl p-4 border-neutral-700 border relative min-w-80 w-[50vw] shadow-xl shadow-red-900/20 transition duration-200 hover:shadow-3xl hover:shadow-red-900/50">
             <div className="flex flex-row items-start justify-center px-18 overflow-hidden">
-              <img
+              <Image
                 src="https://assets-global.website-files.com/66149821b79906211250b327/661667f05307acc0fcadaf31_list-item-ellipse.svg"
                 loading="lazy"
                 alt=""
                 className="m-auto absolute top-0 bottom-0 left-0 right-0 blur-xl w-full opacity-10 pointer-events-none"
+                width={453}
+                height={22}
+                decoding="async"
               />
               <p className="text-md font-light text-neutral-300 md:text-lg">
                 Increasing ad costs
@@ -48,11 +54,14 @@ function Cfunnel() {
           </div>
           <div className="flex flex-col bg-neutral-950 rounded-xl p-4 border-neutral-700 border relative min-w-80 w-[50vw] shadow-xl shadow-red-900/20 transition duration-200 hover:shadow-3xl hover:shadow-red-900/50">
             <div className="flex flex-row items-start justify-center px-18 overflow-hidden">
-              <img
+              <Image
                 src="https://assets-global.website-files.com/66149821b79906211250b327/661667f05307acc0fcadaf31_list-item-ellipse.svg"
                 loading="lazy"
                 alt=""
                 className="m-auto absolute top-0 bottom-0 left-0 right-0 blur-xl w-full opacity-10 pointer-events-none"
+                width={453}
+                height={22}
+                decoding="async"
               />
               <p className="text-md font-light text-neutral-300 md:text-lg">
                 Overwhelming competition
@@ -61,11 +70,14 @@ function Cfunnel() {
           </div>
           <div className="flex flex-col bg-neutral-950 rounded-xl p-4 border-neutral-700 border relative min-w-80 w-[50vw] shadow-xl shadow-red-900/20 transition duration-200 hover:shadow-3xl hover:shadow-red-900/50">
             <div className="flex flex-row items-start justify-center px-18 overflow-hidden">
-              <img
+              <Image
                 src="https://assets-global.website-files.com/66149821b79906211250b327/661667f05307acc0fcadaf31_list-item-ellipse.svg"
                 loading="lazy"
                 alt=""
                 className="m-auto absolute top-0 bottom-0 left-0 right-0 blur-xl w-full opacity-10 pointer-events-none"
+                width={453}
+                height={22}
+                decoding="async"
               />
               <p className="text-md font-light text-neutral-300 md:text-lg">
                 Lower barrier of entry
@@ -74,11 +86,14 @@ function Cfunnel() {
           </div>
           <div className="flex flex-col bg-neutral-950 rounded-xl p-4 border-neutral-700 border relative min-w-80 w-[50vw] shadow-xl shadow-red-900/20 transition duration-200 hover:shadow-3xl hover:shadow-red-900/50">
             <div className="flex flex-row items-start justify-center px-18 overflow-hidden">
-              <img
+              <Image
                 src="https://assets-global.website-files.com/66149821b79906211250b327/661667f05307acc0fcadaf31_list-item-ellipse.svg"
                 loading="lazy"
                 alt=""
                 className="m-auto absolute top-0 bottom-0 left-0 right-0 blur-xl w-full opacity-10 pointer-events-none"
+                width={453}
+                height={22}
+                decoding="async"
               />
               <p className="text-md font-light text-neutral-300 md:text-lg">
                 Lack of tracking
@@ -87,11 +102,14 @@ function Cfunnel() {
           </div>
           <div className="flex flex-col bg-neutral-950 rounded-xl p-4 border-neutral-700 border relative min-w-80 w-[50vw] shadow-xl shadow-red-900/20 transition duration-200 hover:shadow-3xl hover:shadow-red-900/50">
             <div className="flex flex-row items-start justify-center px-18 overflow-hidden">
-              <img
+              <Image
                 src="https://assets-global.website-files.com/66149821b79906211250b327/661667f05307acc0fcadaf31_list-item-ellipse.svg"
                 loading="lazy"
                 alt=""
                 className="m-auto absolute top-0 bottom-0 left-0 right-0 blur-xl w-full opacity-10 pointer-events-none"
+                width={453}
+                height={22}
+                decoding="async"
               />
               <p className="text-md font-light text-neutral-300 md:text-lg">
                 Less trust from online shoppers
@@ -136,23 +154,27 @@ function Cfunnel() {
                 </symbol>
                 <use href="#ai:tabler:check"></use>
               </svg>
-              <img
+              <Image
                 src="https://assets-global.website-files.com/66149821b79906211250b327/661669848c9ca1005b439f97_Group%201272633407.png"
                 loading="lazy"
-                width="162"
                 alt=""
                 className="check-icon"
+                width={162}
+                height={162}
+                decoding="async"
               />
               <p className="text-md font-light text-neutral-300 md:text-lg text-center">
                 AD CREATIVES
               </p>
             </div>
-            <img
+            <Image
               src="https://assets-global.website-files.com/66149821b79906211250b327/66166984a189d8612d684e8e_arrow.png"
               loading="lazy"
-              width="132.5"
               alt=""
               className="z-2 -ml-[7rem] absolute -right-4 sm:right-0 pointer-events-none"
+              width={132}
+              height={8}
+              decoding="async"
             />
           </div>
           <div className="flex justify-center items-center relative">
@@ -177,38 +199,47 @@ function Cfunnel() {
                 </symbol>
                 <use href="#ai:tabler:check"></use>
               </svg>
-              <img
+              <Image
                 src="https://assets-global.website-files.com/66149821b79906211250b327/66166984d93cbef32c4a1975_Group%201272633406.png"
                 loading="lazy"
-                width="162"
                 alt=""
                 className="check-icon"
+                width={162}
+                height={162}
+                decoding="async"
               />
               <p className="text-md font-light text-neutral-300 md:text-lg text-center">
                 GOOD PRODUCT
               </p>
             </div>
-            <img
+            <Image
               src="https://assets-global.website-files.com/66149821b79906211250b327/66166984a189d8612d684e8e_arrow.png"
               loading="lazy"
-              width="132.5"
               alt=""
               className="z-2 -ml-[7rem] absolute -right-4 sm:right-0 pointer-events-none"
+              width={132}
+              height={8}
+              decoding="async"
             />
           </div>
-          <div className="flex justify-center items-center">
-            <div className="flex flex-col items-start items-center gap-[1rem]">
-              <img
+          <div className="flex justify-center items-start">
+            <div className="flex flex-col items-center gap-[1rem]">
+              <Image
                 src="https://assets-global.website-files.com/66149821b79906211250b327/66166984cce5e186422e9ed9_Group.svg"
                 loading="lazy"
                 alt=""
+                width={29}
+                height={29}
+                decoding="async"
               />
-              <img
+              <Image
                 src="https://assets-global.website-files.com/66149821b79906211250b327/66166984a2121c43134d5f94_Group%201272633408.png"
                 loading="lazy"
-                width="162"
                 alt=""
                 className="check-icon"
+                width={162}
+                height={162}
+                decoding="async"
               />
               <p className="text-md font-light text-neutral-300 md:text-lg text-center">
                 CUSTOM FUNNEL

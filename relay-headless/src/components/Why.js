@@ -2,28 +2,9 @@
 import React, { useEffect, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
-import { useGlobalState } from "./GlobalStateContext";
 import Image from "next/image";
 
 const Why = () => {
-  const { whyContent } = useGlobalState();
-  const { isLoading } = useGlobalState();
-
-  let Header, Why1, Why2, WhyDescription1, WhyDescription2, CTA, Image1, Image2;
-
-  if (whyContent) {
-    ({
-      Header,
-      Why1,
-      Why2,
-      WhyDescription1,
-      WhyDescription2,
-      CTA,
-      Image1,
-      Image2,
-    } = whyContent);
-  }
-
   // GSAP Animations
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -52,7 +33,7 @@ const Why = () => {
     return () => {
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
-  }, [isLoading]);
+  }, []);
 
   return (
     <>

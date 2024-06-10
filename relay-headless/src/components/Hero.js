@@ -1,66 +1,11 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
-import { useGlobalState } from "./GlobalStateContext";
 import Marquee from "./Marquee";
 import Image from "next/image";
-import Spline from "@splinetool/react-spline";
 
 const Hero = () => {
-  const { heroContent } = useGlobalState();
-  const { marqueeContent } = useGlobalState();
-  const { isLoading } = useGlobalState();
-  // const isLoading = useState(true);
-
-  let mainMessage,
-    highlightedText1,
-    highlightedText2,
-    Description,
-    CTA,
-    Decoration,
-    Statistic,
-    marqueeImages;
-
-  if (heroContent) {
-    ({
-      mainMessage,
-      highlightedText1,
-      highlightedText2,
-      Description,
-      CTA,
-      Decoration,
-      Statistic,
-    } = heroContent);
-  }
-
-  if (marqueeContent) {
-    marqueeImages = marqueeContent.images.data.map(({ id, attributes }) => ({
-      id,
-      ...attributes,
-      url: attributes.url, // adjust according to your actual API's URL structure
-      alt: attributes.alternativeText || "Default Alt Text",
-    }));
-    // console.log(marqueeImages[0].url);
-  }
-
-  // Function to replace highlighted texts
-  const renderMainMessageText = (text, highlight1, highlight2) => {
-    if (heroContent) {
-      return {
-        __html: text
-          .replaceAll(
-            highlight1,
-            `<span className="text-blue-500">${highlight1}</span>`
-          )
-          .replaceAll(
-            highlight2,
-            `<span className="text-blue-500">${highlight2}</span>`
-          ),
-      };
-    }
-  };
-
   // GSAP Animations
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -95,7 +40,7 @@ const Hero = () => {
     return () => {
       ScrollTrigger.getAll().forEach((st) => st.kill());
     };
-  }, [isLoading]); // Re-run when isLoading changes, to ensure animations are correctly initialized once the content is loaded
+  }, []);
 
   return (
     <>
@@ -104,7 +49,7 @@ const Hero = () => {
         <div className="mb-6 mt-12 flex flex-col items-center text-center lg:mb-24 lg:mt-28 2xl:mt-48 lg:grid lg:grid-cols-3">
           {/* Main Heading */}
           <div className="col-span-2 z-20 lg:mt-6 pointer-events-auto">
-            <div className="-z-10 max-w-4xl text-center  text-3xl sm:text-5xl lg:text-start lg:text-7xl">
+            <div className="-z-10 max-w-4xl text-center text-3xl sm:text-5xl lg:text-start lg:text-7xl">
               <h1
                 className="bg-gradient-to-br from-neutral-100 from-55% to-neutral-500 bg-clip-text font-medium tracking-tight text-transparent lg:min-h-[20rem] lg:to-neutral-600"
                 data-speed="0.5"
@@ -154,7 +99,7 @@ const Hero = () => {
           </div>
         </div>
       </section>
-      
+
       {/* Stats */}
       <div className="mx-auto min-w-[75vw] px-6 lg:px-8">
         <dl

@@ -19,11 +19,13 @@ const Leaking = () => {
           <div className="bg-neutral-900 ring-2 ring-blue-500 rounded-3xl p-2 xl:p-3 mt-12 overflow-hidden">
             <div className="z-5 justify-center items-center px-4 flex relative gap-[0.67rem]">
               <div className="relative">
-                <img
+                <Image
                   src="https://assets-global.website-files.com/66149821b79906211250b327/66166c78568ebf05d86db043_warning.png"
                   loading="lazy"
-                  width="20"
                   alt="Warning"
+                  width={20}
+                  height={20}
+                  decoding="async"
                 />
                 <div className="z-1 bg-[#e9fd66] rounded-full w-[1rem] h-[1rem] mt-auto mb-auto absolute top-0 bottom-0 blur-xl"></div>
               </div>

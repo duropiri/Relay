@@ -4,13 +4,9 @@ import SmoothScrolling from "../components/SmoothScrolling";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { GlobalStateProvider } from "../components/GlobalStateContext";
-import MobileMenu from "../components/MobileMenu";
-import { Analytics } from "@vercel/analytics/react";
-import Head from "next/head";
-import Spline from "@splinetool/react-spline";
 import Script from "next/script";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Relay - Modern Web Design & Development Agency",
@@ -19,11 +15,12 @@ export const metadata = {
   keywords:
     "modern web design, web development services, professional web design agency, scalable web solutions, custom web development",
   charset: "UTF-8",
-  viewport: "width=device-width, initial-scale=1.0",
   robots: "index, follow",
-  image: "/img/social-media-share-preview.png",
+  image: "/img/social-media-share-preview.webp",
   url: "http://relaymedia.agency",
 };
+
+export const viewport = "width=device-width, initial-scale=1.0";
 
 const RootLayout = ({ children }) => {
   return (
@@ -33,23 +30,53 @@ const RootLayout = ({ children }) => {
         <meta name="description" content={metadata.description} />
         <meta name="keywords" content={metadata.keywords} />
         <meta charSet={metadata.charset} />
-        <meta name="viewport" content={metadata.viewport} />
+        <meta name="viewport" content={viewport} />
         <meta name="robots" content={metadata.robots} />
 
         <link rel="shortcut icon" href="/img/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon.webp" />
         <link
           rel="icon"
-          type="image/png"
+          type="image/webp"
           sizes="32x32"
-          href="/img/favicon.png"
+          href="/img/favicon.webp"
         />
         <link
           rel="icon"
-          type="image/png"
+          type="image/webp"
           sizes="16x16"
-          href="/img/favicon.png"
+          href="/img/favicon.webp"
         />
+
+        <link
+          rel="preload"
+          href="/font/Proxima Nova Regular.otf"
+          as="font"
+          type="font/otf"
+          crossorigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/font/Proxima Nova Bold.otf"
+          as="font"
+          type="font/otf"
+          crossorigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/font/RedHatText[wght].ttf"
+          as="font"
+          type="font/ttf"
+          crossorigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/font/RedHatText-Italic[wght].ttf"
+          as="font"
+          type="font/ttf"
+          crossorigin="anonymous"
+        />
+
         <meta property="og:type" content="website" />
         <meta property="og:url" content={metadata.url} />
         <meta property="og:title" content={metadata.title} />
@@ -88,13 +115,14 @@ const RootLayout = ({ children }) => {
           }}
         ></Script>
       </head>
-      <body className={inter.className}>
+      <body
+      // className={inter.className}
+      >
         {/* <Analytics /> */}
         <GlobalStateProvider>
           <SmoothScrolling>
             {/* <ContentLoader /> */}
             <Navbar />
-            {/* <MobileMenu /> */}
             {children}
             <Footer />
           </SmoothScrolling>

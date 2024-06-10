@@ -15,30 +15,35 @@ h6 {
   font-style: normal;
   font-weight: 400;
   src: url("../../public/font/Proxima Nova Regular.otf") format("opentype");
+  font-display: swap;
 }
 @font-face {
   font-family: "Proxima Nova";
   font-style: normal;
   font-weight: 700;
   src: url("../../public/font/Proxima Nova Bold.otf") format("opentype");
+  font-display: swap;
 }
 @font-face {
   font-family: "Red Hat Text";
   font-style: normal;
   font-weight: 400;
   src: url("../../public/font/RedHatText[wght].ttf") format("truetype");
+  font-display: swap;
 }
 @font-face {
   font-family: "Red Hat Text";
   font-style: italic;
   font-weight: 400;
   src: url("../../public/font/RedHatText-Italic[wght].ttf") format("truetype");
+  font-display: swap;
 }
 html::-webkit-scrollbar {
   display: none;
 }
 body {
   @apply bg-neutral-950 font-sans;
+  font-family: "Proxima Nova", sans-serif;
 }
 h1,
 h2,

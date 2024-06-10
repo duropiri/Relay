@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Help = () => {
@@ -17,11 +18,13 @@ const Help = () => {
           <div className="bg-neutral-900 ring-2 ring-blue-500 rounded-3xl p-2 xl:p-3 mt-12 overflow-hidden">
             <div className="z-5 justify-center items-center px-4 flex relative gap-[0.67rem]">
               <div className="relative">
-                <img
+                <Image
                   src="https://assets-global.website-files.com/66149821b79906211250b327/66166dce3b6f36cee13ab93d_hands.png"
                   loading="lazy"
-                  width="20"
                   alt="Handshake"
+                  width={20}
+                  height={20}
+                  decoding="async"
                 />
                 <div className="z-1 bg-[#e9fd66] rounded-full w-[1rem] h-[1rem] mt-auto mb-auto absolute top-0 bottom-0 blur-xl"></div>
               </div>
@@ -41,12 +44,14 @@ const Help = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full p-2 mx-auto mt-16 max-w-2xl rounded-3xl border border-neutral-700 shadow-xl shadow-blue-500/20 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:grid-rows-2">
           <div className="w-full p-1 flex flex-col bg-neutral-950 rounded-xl border-neutral-700 border shadow-xl shadow-blue-500/20 transition duration-200 hover:shadow-3xl hover:shadow-blue-500/50">
             <div className="flex flex-col items-start justify-start h-full p-8 gap-4">
-              <img
+              <Image
                 src="https://assets-global.website-files.com/66149821b79906211250b327/66166f88e4f17dd77e526a46_Group%201272633434.png"
                 loading="lazy"
-                width="82"
                 alt=""
                 className="help-box-icon"
+                width={82}
+                height={82}
+                decoding="async"
               />
               <h3 className="text-lg md:text-2xl font-semibold leading-8 text-white">
                 Copy that persuades
@@ -71,7 +76,9 @@ const Help = () => {
                     </defs>
                     <use href="#ai:tabler:point-filled"></use>
                   </svg>
-                  <p className="text-normal leading-6 text-neutral-300">In-Depth Research</p>
+                  <p className="text-normal leading-6 text-neutral-300">
+                    In-Depth Research
+                  </p>
                 </li>
                 <li className="flex items-center gap-x-3">
                   <svg
@@ -92,7 +99,9 @@ const Help = () => {
                     </defs>
                     <use href="#ai:tabler:point-filled"></use>
                   </svg>
-                  <p className="text-normal leading-6 text-neutral-300">Consumer Psychology</p>
+                  <p className="text-normal leading-6 text-neutral-300">
+                    Consumer Psychology
+                  </p>
                 </li>
                 <li className="flex items-center gap-x-3">
                   <svg
@@ -122,12 +131,14 @@ const Help = () => {
           </div>
           <div className="w-full p-1 flex flex-col bg-neutral-950 rounded-xl border-neutral-700 border shadow-xl shadow-blue-500/20 transition duration-200 hover:shadow-3xl hover:shadow-blue-500/50">
             <div className="flex flex-col items-start justify-start h-full p-8 gap-4">
-              <img
+              <Image
                 src="https://assets-global.website-files.com/66149821b79906211250b327/66166f88e05af9939df0174f_Group%201272633435.png"
                 loading="lazy"
-                width="82"
                 alt=""
                 className="help-box-icon"
+                width={82}
+                height={82}
+                decoding="async"
               />
               <h3 className="text-lg md:text-2xl font-semibold leading-8 text-white">
                 Design that converts
@@ -152,7 +163,9 @@ const Help = () => {
                     </defs>
                     <use href="#ai:tabler:point-filled"></use>
                   </svg>
-                  <p className="text-normal leading-6 text-neutral-300">On-Brand</p>
+                  <p className="text-normal leading-6 text-neutral-300">
+                    On-Brand
+                  </p>
                 </li>
                 <li className="flex items-center gap-x-3">
                   <svg
@@ -173,7 +186,9 @@ const Help = () => {
                     </defs>
                     <use href="#ai:tabler:point-filled"></use>
                   </svg>
-                  <p className="text-normal leading-6 text-neutral-300">CRO Principles</p>
+                  <p className="text-normal leading-6 text-neutral-300">
+                    CRO Principles
+                  </p>
                 </li>
                 <li className="flex items-center gap-x-3">
                   <svg
@@ -194,19 +209,23 @@ const Help = () => {
                     </defs>
                     <use href="#ai:tabler:point-filled"></use>
                   </svg>
-                  <p className="text-normal leading-6 text-neutral-300">Mobile Optimized</p>
+                  <p className="text-normal leading-6 text-neutral-300">
+                    Mobile Optimized
+                  </p>
                 </li>
               </ul>
             </div>
           </div>
           <div className="w-full p-1 flex flex-col bg-neutral-950 rounded-xl border-neutral-700 border shadow-xl shadow-blue-500/20 transition duration-200 hover:shadow-3xl hover:shadow-blue-500/50">
             <div className="flex flex-col items-start justify-start h-full p-8 gap-4">
-              <img
+              <Image
                 src="https://assets-global.website-files.com/66149821b79906211250b327/66166f87f27ac4336b9f2a90_Group%201272633437.png"
                 loading="lazy"
-                width="82"
                 alt=""
                 className="help-box-icon"
+                width={82}
+                height={82}
+                decoding="async"
               />
               <h3 className="text-lg md:text-2xl font-semibold leading-8 text-white">
                 More profits
@@ -231,7 +250,9 @@ const Help = () => {
                     </defs>
                     <use href="#ai:tabler:point-filled"></use>
                   </svg>
-                  <p className="text-normal leading-6 text-neutral-300">Offer Building</p>
+                  <p className="text-normal leading-6 text-neutral-300">
+                    Offer Building
+                  </p>
                 </li>
                 <li className="flex items-center gap-x-3">
                   <svg
@@ -261,12 +282,14 @@ const Help = () => {
           </div>
           <div className="w-full p-1 flex flex-col bg-neutral-950 rounded-xl border-neutral-700 border shadow-xl shadow-blue-500/20 transition duration-200 hover:shadow-3xl hover:shadow-blue-500/50">
             <div className="flex flex-col items-start justify-start h-full p-8 gap-4">
-              <img
+              <Image
                 src="https://assets-global.website-files.com/66149821b79906211250b327/66166f88bb103231a006587c_Group%201272633434-1.png"
                 loading="lazy"
-                width="82"
                 alt=""
                 className="help-box-icon"
+                width={82}
+                height={82}
+                decoding="async"
               />
               <h3 className="text-lg md:text-2xl font-semibold leading-8 text-white">
                 Seamless Development
@@ -314,7 +337,9 @@ const Help = () => {
                     </defs>
                     <use href="#ai:tabler:point-filled"></use>
                   </svg>
-                  <p className="text-normal leading-6 text-neutral-300">Fast Loading Speed</p>
+                  <p className="text-normal leading-6 text-neutral-300">
+                    Fast Loading Speed
+                  </p>
                 </li>
               </ul>
             </div>

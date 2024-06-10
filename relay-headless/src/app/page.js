@@ -47,7 +47,7 @@ const Home = () => {
       />
       <Help />
       <PricingSection />
-      <Rocket className="z-20" />
+      {/* <Rocket className="z-20" /> */}
       <Contact />
     </div>
   );
