@@ -51,7 +51,7 @@ const Hero = () => {
           <div className="col-span-2 z-20 lg:mt-6 pointer-events-auto">
             <div className="-z-10 max-w-4xl text-center text-3xl sm:text-5xl lg:text-start lg:text-7xl">
               <h1
-                className="bg-gradient-to-br from-neutral-100 from-55% to-neutral-500 bg-clip-text font-medium tracking-tight text-transparent lg:min-h-[20rem] lg:to-neutral-600"
+                className="text-neutral-100 font-medium tracking-tight lg:min-h-[20rem]"
                 data-speed="0.5"
               >
                 Get <span className="text-blue-500">2.7x</span> More Out Of Your
