@@ -1,45 +1,49 @@
 "use client";
-import React, { useEffect } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/all";
+import { useEffect } from "react";
 import Marquee from "./Marquee";
 import Image from "next/image";
 
 const Hero = () => {
   // GSAP Animations
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
+    const loadGSAP = async () => {
+      const { gsap } = await import('gsap');
+      const { ScrollTrigger } = await import('gsap/ScrollTrigger');
+      gsap.registerPlugin(ScrollTrigger);
 
-    let effectElements = gsap.utils.toArray("[data-speed]");
-    effectElements.forEach((el) => {
-      let speed = parseFloat(el.getAttribute("data-speed"));
-      gsap.fromTo(
-        el,
-        { y: 0 },
-        {
-          y: 0,
-          ease: "none",
-          scrollTrigger: {
-            trigger: el,
-            start: "top bottom",
-            end: "bottom top",
-            scrub: true,
-            onRefresh: (self) => {
-              let start = Math.max(0, self.start); // ensure no negative values
-              let distance = self.end - start;
-              let end = start + distance / speed;
-              self.setPositions(start, end);
-              self.animation.vars.y = (end - start) * (1 - speed);
-              self.animation.invalidate().progress(1).progress(self.progress);
+      let effectElements = gsap.utils.toArray("[data-speed]");
+      effectElements.forEach((el) => {
+        let speed = parseFloat(el.getAttribute("data-speed"));
+        gsap.fromTo(
+          el,
+          { y: 0 },
+          {
+            y: 0,
+            ease: "none",
+            scrollTrigger: {
+              trigger: el,
+              start: "top bottom",
+              end: "bottom top",
+              scrub: true,
+              onRefresh: (self) => {
+                let start = Math.max(0, self.start); // ensure no negative values
+                let distance = self.end - start;
+                let end = start + distance / speed;
+                self.setPositions(start, end);
+                self.animation.vars.y = (end - start) * (1 - speed);
+                self.animation.invalidate().progress(1).progress(self.progress);
+              },
             },
-          },
-        }
-      );
-    });
+          }
+        );
+      });
 
-    return () => {
-      ScrollTrigger.getAll().forEach((st) => st.kill());
+      return () => {
+        ScrollTrigger.getAll().forEach((st) => st.kill());
+      };
     };
+
+    loadGSAP();
   }, []);
 
   return (

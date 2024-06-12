@@ -4,13 +4,10 @@ import Hero from "../components/Hero";
 import Panel from "../components/Panel";
 import Services from "../components/Services";
 import Why from "../components/Why";
-import React from "react";
 import PricingSection from "../components/PricingSection";
-import Rocket from "../components/Rocket";
+// import Rocket from "../components/Rocket";
 import CustomerJourney from "../components/CustomerJourney";
 import Cfunnel from "../components/Cfunnel";
-import Head from "next/head";
-import { metadata } from "./layout";
 import Leaking from "../components/Leaking";
 import Help from "../components/Help";
 

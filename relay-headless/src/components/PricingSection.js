@@ -1,5 +1,3 @@
-import React from "react";
-
 const PricingSection = () => {
   return (
     <section className="py-12" id="pricing">

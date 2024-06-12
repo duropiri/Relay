@@ -1,37 +1,48 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/all";
+import { useEffect } from "react";
 import Image from "next/image";
 
 const Why = () => {
   // GSAP Animations
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
+    const loadGSAP = async () => {
+      const { gsap } = await import("gsap");
+      const { ScrollTrigger } = await import("gsap/ScrollTrigger");
+      gsap.registerPlugin(ScrollTrigger);
 
-    // Define a common parent selector that wraps all your images.
-    // Adjust the selector as needed to target your specific layout.
-    const section = document.querySelector("#why");
+      // Define a common parent selector that wraps all your images.
+      // Adjust the selector as needed to target your specific layout.
+      const section = document.querySelector("#why");
 
-    gsap.utils.toArray(".left, .right").forEach((image) => {
-      // Decide the direction based on the class and screen size
-      const direction = image.classList.contains("left") ? 1 : -1;
+      gsap.utils.toArray(".left, .right").forEach((image) => {
+        // Decide the direction based on the class and screen size
+        const direction = image.classList.contains("left") ? 1 : -1;
 
-      gsap.to(image, {
-        x: () => direction * 50, // Adjust the distance as needed
-        ease: "expoScale",
-        scrollTrigger: {
-          trigger: image.parentElement,
-          start: "top center",
-          end: "bottom center",
-          scrub: true,
-        },
+        gsap.to(image, {
+          x: () => direction * 50, // Adjust the distance as needed
+          ease: "expoScale",
+          scrollTrigger: {
+            trigger: image.parentElement,
+            start: "top center",
+            end: "bottom center",
+            scrub: true,
+          },
+        });
       });
-    });
 
-    // Clean up the ScrollTriggers when the component unmounts
+      // Clean up the ScrollTriggers when the component unmounts
+      return () => {
+        ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+      };
+    };
+
+    loadGSAP();
+
     return () => {
-      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+      // Ensure clean up happens here as well
+      if (window.ScrollTrigger) {
+        ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+      }
     };
   }, []);
 

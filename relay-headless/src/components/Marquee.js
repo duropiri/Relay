@@ -1,24 +1,28 @@
 "use client";
-import React, { useRef, useEffect } from "react";
-import gsap from "gsap";
+import { useRef, useEffect } from "react";
 
 const Marquee = ({ children, speed, paused }) => {
-
   const marqueeRef = useRef();
 
   useEffect(() => {
-    const elements = marqueeRef.current.children;
-    const config = {
-      speed: speed || 1,
-      paused: paused || false,
-      repeat: -1, // Ensure this is set to -1 for an infinite loop
+    const loadGSAP = async () => {
+      const { gsap } = await import('gsap');
+      const elements = marqueeRef.current.children;
+      const config = {
+        speed: speed || 1,
+        paused: paused || false,
+        repeat: -1, // Ensure this is set to -1 for an infinite loop
+      };
+
+      const loopTimeline = horizontalLoop(elements, config, gsap);
+
+      return () => {
+        loopTimeline.kill(); // Clean up the timeline when the component unmounts
+      };
     };
 
-    const loopTimeline = horizontalLoop(elements, config);
+    loadGSAP();
 
-    return () => {
-      loopTimeline.kill(); // Clean up the timeline when the component unmounts
-    };
   }, [speed, paused, children]);
 
   return (
@@ -29,7 +33,7 @@ const Marquee = ({ children, speed, paused }) => {
   );
 };
 
-function horizontalLoop(items, config) {
+function horizontalLoop(items, config, gsap) {
   items = gsap.utils.toArray(items);
   config = config || {};
 
@@ -45,7 +49,7 @@ function horizontalLoop(items, config) {
     xPercents = [],
     curIndex = 0,
     pixelsPerSecond = (config.speed || 1) * 100,
-    snap = config.snap === false ? (v) => v : gsap.utils.snap(config.snap || 1), // some browsers shift by a pixel to accommodate flex layouts, so for example if width is 20% the first element's width might be 242px, and the next 243px, alternating back and forth. So we snap to 5 percentage points to make things look more natural
+    snap = config.snap === false ? (v) => v : gsap.utils.snap(config.snap || 1), 
     totalWidth,
     curX,
     distanceToStart,
@@ -111,7 +115,6 @@ function horizontalLoop(items, config) {
     let newIndex = gsap.utils.wrap(0, length, index),
       time = times[newIndex];
     if (time > tl.time() !== index > curIndex) {
-      // if we're wrapping the timeline's playhead, make the proper adjustments
       vars.modifiers = { time: gsap.utils.wrap(0, tl.duration()) };
       time += tl.duration() * (index > curIndex ? 1 : -1);
     }
@@ -120,10 +123,7 @@ function horizontalLoop(items, config) {
     return tl.tweenTo(time, vars);
   }
 
-  // Repeat and yoyo for infinite looping in both directions
   tl.repeat(-1);
-//   tl.yoyo(true);
-
   tl.next = (vars) => toIndex(curIndex + 1, vars);
   tl.previous = (vars) => toIndex(curIndex - 1, vars);
   tl.current = () => curIndex;

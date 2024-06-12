@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function Custom404() {
   return (
     <div className="flex min-h-[calc(100vh-20rem)] items-center justify-center">

@@ -1,8 +1,6 @@
 "use client";
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useGlobalState } from "./GlobalStateContext";
-import gsap from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
 
 const Navbar = () => {
   const { mobileMenuOpen, setMobileMenuOpen } = useGlobalState();
@@ -50,7 +48,9 @@ const Navbar = () => {
       }
     });
 
-    const textUnderlineAnimation = () => {
+    // GSAP Animations
+    const textUnderlineAnimation = async () => {
+      const { gsap } = await import('gsap');
       document.querySelectorAll(".hover-link").forEach((link) => {
         const underline = link.querySelector(".underline");
 
@@ -92,8 +92,6 @@ const Navbar = () => {
     // Clean up the event listener when the component unmounts
     return () => {
       window.removeEventListener("DOMContentLoaded", textUnderlineAnimation);
-
-      ScrollTrigger.getAll().forEach((st) => st.kill());
     };
   }, [mobileMenuOpen]);
 

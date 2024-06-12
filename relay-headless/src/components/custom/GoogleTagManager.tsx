@@ -1,5 +1,5 @@
 import Script from "next/script"
-import React, {FC} from "react"
+import {FC} from "react"
 
 interface Props {
     containerId: string;

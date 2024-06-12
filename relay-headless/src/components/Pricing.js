@@ -1,5 +1,3 @@
-import React from "react";
-
 const Pricing = () => {
   return (
     <div className="mx-auto max-w-7xl px-5">
