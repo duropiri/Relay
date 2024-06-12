@@ -95,6 +95,7 @@ const RootLayout = ({ children }) => {
         ></Script>
         <Script
           id="google-analytics"
+          async
           strategy="afterInteracive"
           dangerouslySetInnerHTML={{
             __html: `window.dataLayer = window.dataLayer || [];
@@ -106,6 +107,7 @@ const RootLayout = ({ children }) => {
         ></Script>
         <Script
           id="gtm"
+          async
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -117,6 +119,7 @@ const RootLayout = ({ children }) => {
 
         <Script
           id="hotjar"
+          async
           dangerouslySetInnerHTML={{
             __html: `(function(h,o,t,j,a,r){
             h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
