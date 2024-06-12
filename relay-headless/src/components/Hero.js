@@ -1,14 +1,15 @@
 "use client";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Marquee from "./Marquee";
 import Image from "next/image";
 
 const Hero = () => {
+  const [headerLoaded, setHeaderLoaded] = useState(false);
   // GSAP Animations
   useEffect(() => {
     const loadGSAP = async () => {
-      const { gsap } = await import('gsap');
-      const { ScrollTrigger } = await import('gsap/ScrollTrigger');
+      const { gsap } = await import("gsap");
+      const { ScrollTrigger } = await import("gsap/ScrollTrigger");
       gsap.registerPlugin(ScrollTrigger);
 
       let effectElements = gsap.utils.toArray("[data-speed]");
@@ -42,6 +43,13 @@ const Hero = () => {
         ScrollTrigger.getAll().forEach((st) => st.kill());
       };
     };
+    // const loadHeader = async () => {
+    //   // Simulate a network request or some async operation
+    //   await new Promise((resolve) => setTimeout(resolve, 2000));
+    //   setHeaderLoaded(true);
+    // };
+
+    // loadHeader();
 
     loadGSAP();
   }, []);
@@ -49,13 +57,13 @@ const Hero = () => {
   return (
     <>
       {/* Hero Content */}
-      <section className="relative mx-auto overflow-x-clip px-8 sm:px-16 md:px-24 lg:px-32">
-        <div className="mb-6 mt-12 flex flex-col items-center text-center lg:mb-24 lg:mt-28 2xl:mt-48 lg:grid lg:grid-cols-3">
+      <section className="relative mx-auto overflow-x-clip px-8 sm:px-16 md:px-24 lg:px-32 z-10">
+        <div className="mb-6 mt-12 flex flex-col items-center text-center lg:mb-24 lg:mt-48 lg:grid lg:grid-cols-3">
           {/* Main Heading */}
-          <div className="col-span-2 z-20 lg:mt-6 pointer-events-auto">
-            <div className="-z-10 max-w-4xl text-center text-3xl sm:text-5xl lg:text-start lg:text-7xl">
+          <div className="col-span-2 lg:mt-6 lg:mr-4">
+            <div className="-z-10 max-w-4xl text-center text-neutral-200 text-3xl sm:text-5xl lg:text-start lg:text-7xl">
               <h1
-                className="text-neutral-100 font-medium tracking-tight lg:min-h-[20rem]"
+                className="bg-gradient-to-br from-neutral-100 from-55% to-neutral-500 bg-clip-text font-medium tracking-tight text-transparent lg:min-h-[20rem]"
                 data-speed="0.5"
               >
                 Get <span className="text-blue-500">2.7x</span> More Out Of Your
@@ -66,7 +74,7 @@ const Hero = () => {
           </div>
 
           {/* Hero Description */}
-          <div className="col-span-1 z-20 flex flex-col items-start justify-between gap-y-8 py-12 text-start lg:h-full pointer-events-auto">
+          <div className="col-span-1 flex flex-col items-start justify-between gap-y-8 py-12 text-start lg:h-full">
             <p
               className="text-center text-base leading-tight text-neutral-300 lg:text-start"
               data-speed="0.7"
@@ -101,6 +109,21 @@ const Hero = () => {
               </a>
             </div>
           </div>
+        </div>
+        <div
+          class="absolute left-1/2 top-1/2 -z-10 -translate-x-1/2 -translate-y-1/2 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] w-max pointer-events-none"
+          data-speed="0.6"
+        >
+          {" "}
+          <Image
+            src="/svg/_image.svg"
+            alt="circle background"
+            className="h-auto w-[24rem] animate-spinSlow lg:w-[38rem] pointer-events-none"
+            loading="eager"
+            width={516}
+            height={516}
+            decoding="async"
+          />{" "}
         </div>
       </section>
 

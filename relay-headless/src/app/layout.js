@@ -53,28 +53,28 @@ const RootLayout = ({ children }) => {
           href="/font/Proxima Nova Regular.otf"
           as="font"
           type="font/otf"
-          crossorigin="anonymous"
+          crossOrigin="anonymous"
         />
         <link
           rel="preload"
           href="/font/Proxima Nova Bold.otf"
           as="font"
           type="font/otf"
-          crossorigin="anonymous"
+          crossOrigin="anonymous"
         />
         <link
           rel="preload"
           href="/font/RedHatText[wght].ttf"
           as="font"
           type="font/ttf"
-          crossorigin="anonymous"
+          crossOrigin="anonymous"
         />
         <link
           rel="preload"
           href="/font/RedHatText-Italic[wght].ttf"
           as="font"
           type="font/ttf"
-          crossorigin="anonymous"
+          crossOrigin="anonymous"
         />
 
         <meta property="og:type" content="website" />
