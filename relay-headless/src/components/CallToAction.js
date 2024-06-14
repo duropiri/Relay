@@ -1,3 +1,6 @@
+"use client";
+import { sendGAEvent } from "@next/third-parties/google";
+
 const CallToAction = ({
   header = "",
   description = "",
@@ -24,7 +27,12 @@ const CallToAction = ({
           )}
 
           {cta && (
-            <a href={href}>
+            <a
+              onClick={() =>
+                sendGAEvent({ event: "buttonClicked", value: "calendly" })
+              }
+              href={href}
+            >
               <button className="relative rounded-full text-center transition-all duration-500 transform overflow-hidden z-40   w-full px-6 py-3 text-base bg-blue-500 text-neutral-950 border border-blue-500 button hover:text-neutral-50 group uppercase leading-tight tracking-tight md:text-lg">
                 <div className="group relative z-10 w-full">
                   {/* {CTA} */}

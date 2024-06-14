@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { GlobalStateProvider } from "../components/GlobalStateContext";
 import Script from "next/script";
+import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -141,6 +142,7 @@ const RootLayout = ({ children }) => {
             gtag('config', 'G-NQH0Z2981Z');`,
           }}
         ></Script>
+        <GoogleAnalytics gaId="G-NQH0Z2981Z" />
         <Script
           id="gtm"
           async
@@ -152,6 +154,7 @@ const RootLayout = ({ children }) => {
             })(window,document,'script','dataLayer','GTM-PXXTT7FJ');`,
           }}
         ></Script>
+        <GoogleTagManager gtmId="GTM-PXXTT7FJ" />
 
         <Script
           id="tiktok"

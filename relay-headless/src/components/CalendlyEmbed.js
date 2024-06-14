@@ -1,4 +1,6 @@
+"use client";
 import Script from "next/script";
+import { sendGAEvent } from "@next/third-parties/google";
 
 const CalendlyEmbed = () => {
   return (
@@ -17,10 +19,11 @@ const CalendlyEmbed = () => {
             <div className="w-full h-[900px] rounded-3xl overflow-hidden bg-neutral-900 ring-2 ring-blue-500">
               <div
                 className="calendly-inline-widget w-full h-full calendly"
-                onClick={`return gtag_report_conversion('https://relaydigital.agency/')`}
+                onClick={() =>
+                  sendGAEvent({ event: "buttonClicked", value: "calendly" })
+                }
                 data-url="https://calendly.com/relaydigitalyyc/discovery"
-              >
-              </div>
+              ></div>
             </div>
             <Script
               type="text/javascript"
@@ -52,7 +55,12 @@ const CalendlyEmbed = () => {
                 call today, and we look forward to speaking to you soon!
               </p>
               <div className="mt-6">
-                <a onClick={`return gtag_report_conversion('https://relaydigital.agency/')`} href="https://calendly.com/relaydigitalyyc/discovery">
+                <a
+                  onClick={() =>
+                    sendGAEvent({ event: "buttonClicked", value: "calendly" })
+                  }
+                  href="https://calendly.com/relaydigitalyyc/discovery"
+                >
                   <button className="relative rounded-full text-center transition-all duration-500 transform overflow-hidden   w-full px-5 py-2.5 border border-blue-500 text-neutral-50 bg-neutral-950 button group text-lg uppercase">
                     <div className="calendly group relative z-10 w-full">
                       Book a call

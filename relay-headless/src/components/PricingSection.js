@@ -1,3 +1,6 @@
+"use client";
+import { sendGAEvent } from "@next/third-parties/google";
+
 const PricingSection = () => {
   return (
     <section className="py-12" id="pricing">
@@ -35,7 +38,12 @@ const PricingSection = () => {
               </span>
             </p> */}
             <div className="mt-6">
-              <a onClick={`return gtag_report_conversion('https://relaydigital.agency/')`} href="https://calendly.com/relaydigitalyyc/discovery">
+              <a
+                onClick={() =>
+                  sendGAEvent({ event: "buttonClicked", value: "calendly" })
+                }
+                href="https://calendly.com/relaydigitalyyc/discovery"
+              >
                 <button className="relative rounded-full text-center transition-all duration-500 transform overflow-hidden   w-full px-5 py-2.5 border border-blue-500 text-neutral-50 bg-neutral-950 button group text-lg uppercase">
                   <div className="calendly group relative z-10 w-full">
                     Book a call
@@ -255,7 +263,12 @@ const PricingSection = () => {
               </span>
             </p> */}
             <div className="mt-6">
-              <a onClick={`return gtag_report_conversion('https://relaydigital.agency/')`} href="https://calendly.com/relaydigitalyyc/discovery">
+              <a
+                onClick={() =>
+                  sendGAEvent({ event: "buttonClicked", value: "calendly" })
+                }
+                href="https://calendly.com/relaydigitalyyc/discovery"
+              >
                 <button className="relative rounded-full text-center transition-all duration-500 transform overflow-hidden   w-full px-5 py-2.5 bg-blue-500 text-neutral-950 border border-blue-500 button hover:text-neutral-50 group uppercase leading-tight tracking-tight md:text-lg">
                   <div className="calendly group relative z-10 w-full">
                     Book a call
@@ -495,7 +508,12 @@ const PricingSection = () => {
               </span>
             </p> */}
             <div className="mt-6">
-              <a onClick={`return gtag_report_conversion('https://relaydigital.agency/')`} href="https://calendly.com/relaydigitalyyc/discovery">
+              <a
+                onClick={() =>
+                  sendGAEvent({ event: "buttonClicked", value: "calendly" })
+                }
+                href="https://calendly.com/relaydigitalyyc/discovery"
+              >
                 <button className="relative rounded-full text-center transition-all duration-500 transform overflow-hidden   w-full px-5 py-2.5 border border-blue-500 text-neutral-50 bg-neutral-950 button group text-lg uppercase">
                   <div className="calendly group relative z-10 w-full">
                     Book a call

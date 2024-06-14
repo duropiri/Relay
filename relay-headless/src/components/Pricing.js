@@ -1,3 +1,6 @@
+"use client";
+import { sendGAEvent } from "@next/third-parties/google";
+
 const Pricing = () => {
   return (
     <div className="mx-auto max-w-7xl px-5">
@@ -48,7 +51,12 @@ const Pricing = () => {
                   </button>
                 </a>
                 <p className="flex items-baseline justify-center gap-x-2 mt-3">
-                  <a onClick={`return gtag_report_conversion('https://relaydigital.agency/')`} href="https://calendly.com/relaydigitalyyc/discovery">
+                  <a
+                    onClick={() =>
+                      sendGAEvent({ event: "buttonClicked", value: "calendly" })
+                    }
+                    href="https://calendly.com/relaydigitalyyc/discovery"
+                  >
                     <span className="calendly text-sm font-semibold leading-6 tracking-wide text-neutral-400 hover:text-neutral-300 underline duration-300">
                       Book a call
                     </span>
@@ -260,7 +268,12 @@ const Pricing = () => {
                 Buy plan
               </a>
               <p className="flex items-baseline justify-center gap-x-2 mt-3">
-                <a onClick={`return gtag_report_conversion('https://relaydigital.agency/')`} href="https://calendly.com/relaydigitalyyc/discovery">
+                <a
+                  onClick={() =>
+                    sendGAEvent({ event: "buttonClicked", value: "calendly" })
+                  }
+                  href="https://calendly.com/relaydigitalyyc/discovery"
+                >
                   <span className="calendly text-sm font-semibold leading-6 tracking-wide text-neutral-400 hover:text-neutral-300 underline duration-300">
                     Book a call
                   </span>
@@ -519,7 +532,12 @@ const Pricing = () => {
                 Buy plan
               </a>
               <p className="flex items-baseline justify-center gap-x-2 mt-3">
-                <a onClick={`return gtag_report_conversion('https://relaydigital.agency/')`} href="https://calendly.com/relaydigitalyyc/discovery">
+                <a
+                  onClick={() =>
+                    sendGAEvent({ event: "buttonClicked", value: "calendly" })
+                  }
+                  href="https://calendly.com/relaydigitalyyc/discovery"
+                >
                   <span className="calendly text-sm font-semibold leading-6 tracking-wide text-neutral-400 hover:text-neutral-300 underline duration-300">
                     Book a call
                   </span>
@@ -977,7 +995,12 @@ const Pricing = () => {
                 Buy plan
               </a>
               <p className="flex items-baseline justify-center gap-x-2 mt-3">
-                <a onClick={`return gtag_report_conversion('https://relaydigital.agency/')`} href="https://calendly.com/relaydigitalyyc/discovery">
+                <a
+                  onClick={() =>
+                    sendGAEvent({ event: "buttonClicked", value: "calendly" })
+                  }
+                  href="https://calendly.com/relaydigitalyyc/discovery"
+                >
                   <span className="calendly text-sm font-semibold leading-6 tracking-wide text-neutral-400 hover:text-neutral-300 underline duration-300">
                     Book a call
                   </span>
@@ -3484,7 +3507,12 @@ const Pricing = () => {
           </div>
           <p className="mt-4 text-center text-lg text-neutral-300">
             Unsure which one aligns with your vision?{" "}
-            <a onClick={`return gtag_report_conversion('https://relaydigital.agency/')`} href="https://calendly.com/relaydigitalyyc/discovery">
+            <a
+              onClick={() =>
+                sendGAEvent({ event: "buttonClicked", value: "calendly" })
+              }
+              href="https://calendly.com/relaydigitalyyc/discovery"
+            >
               <span className="font-semibold leading-6 tracking-wide text-neutral-400 hover:text-neutral-300 underline duration-300">
                 Book a discovery call
               </span>
