@@ -68,13 +68,6 @@ const CalendlyEmbed = () => {
                   </button>
                 </a>
               </div>
-              <p className="flex items-baseline justify-center gap-x-2 mt-3">
-                <a href="https://buy.stripe.com/eVa8wI6l1bfjdFKeUZ">
-                  <span className="text-sm font-semibold leading-6 tracking-wide text-neutral-400 hover:text-neutral-300 underline duration-300">
-                    Get a price
-                  </span>
-                </a>
-              </p>
               <ul
                 role="list"
                 className="mt-8 space-y-3 text-sm leading-6 text-neutral-300 xl:mt-10"
