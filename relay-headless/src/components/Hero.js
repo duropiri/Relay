@@ -76,7 +76,7 @@ const Hero = () => {
           {/* Hero Description */}
           <div className="col-span-1 flex flex-col items-start justify-between gap-y-8 py-12 text-start lg:h-full">
             <p
-              className="text-center text-base leading-tight text-neutral-300 lg:text-start"
+              className="text-center text-xl leading-tight text-neutral-300 lg:text-start"
               data-speed="0.7"
             >
               Relay is a modern development studio specialising in high
@@ -134,7 +134,7 @@ const Hero = () => {
           data-speed="1.05"
         >
           <div className="flex flex-col items-center  justify-center bg-neutral-900 px-2 py-6">
-            <dt className="font-red-hat-text mt-1 text-sm font-normal leading-tight tracking-tight text-neutral-300">
+            <dt className="font-red-hat-text mt-1 text-base font-normal leading-tight tracking-tight text-neutral-300">
               {/* {Statistic[0].description} */}
               Average Conversion Rate Boost
             </dt>
@@ -144,7 +144,7 @@ const Hero = () => {
             </dd>
           </div>
           <div className="flex flex-col items-center  justify-center bg-neutral-900 px-2 py-6">
-            <dt className="font-red-hat-text mt-1 text-sm font-normal leading-tight tracking-tight text-neutral-300">
+            <dt className="font-red-hat-text mt-1 text-base font-normal leading-tight tracking-tight text-neutral-300">
               {/* {Statistic[1].description} */}
               More Time Spent on Page
             </dt>
@@ -154,7 +154,7 @@ const Hero = () => {
             </dd>
           </div>
           <div className="flex flex-col items-center  justify-center bg-neutral-900 px-2 py-6">
-            <dt className="font-red-hat-text mt-1 text-sm font-normal leading-tight tracking-tight text-neutral-300">
+            <dt className="font-red-hat-text mt-1 text-base font-normal leading-tight tracking-tight text-neutral-300">
               {/* {Statistic[2].description} */}
               Faster Than Typical Websites
             </dt>
@@ -164,7 +164,7 @@ const Hero = () => {
             </dd>
           </div>
           <div className="flex flex-col items-center  justify-center bg-neutral-900 px-2 py-6">
-            <dt className="font-red-hat-text mt-1 text-sm font-normal leading-tight tracking-tight text-neutral-300">
+            <dt className="font-red-hat-text mt-1 text-base font-normal leading-tight tracking-tight text-neutral-300">
               {/* {Statistic[3].description} */}
               Average Ad ROI Increase
             </dt>
