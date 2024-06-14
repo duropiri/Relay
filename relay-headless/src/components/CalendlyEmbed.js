@@ -6,9 +6,9 @@ const CalendlyEmbed = () => {
       <div className="relative pt-20 lg:pt-24">
         <h2 className="mt-2 text-3xl font-medium tracking-tight text-white sm:text-6xl text-center">
           <span className="bg-gradient-to-b from-neutral-50 from-60% to-neutral-400 bg-clip-text text-transparent lg:to-neutral-600">
-            Free 15-Minute{" "}
+            Free{" "}
             <span className="bg-gradient-to-b from-blue-500 from-60% to-blue-400 bg-clip-text text-transparent lg:to-blue-600 underline">
-              Demo Call
+              Consultation
             </span>
           </span>
         </h2>
@@ -37,7 +37,7 @@ const CalendlyEmbed = () => {
                 </h3>
               </div>
               <h2 className="mt-2 text-3xl font-medium tracking-tight text-white sm:text-6xl text-start">
-                Free 15-Minute Demo Call
+                Free Consultation
               </h2>
               <p className="mt-4 text-sm leading-6 text-neutral-300">
                 By the end of this audit call, you will have a clear
