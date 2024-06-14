@@ -37,7 +37,7 @@ const PricingSection = () => {
             <div className="mt-6">
               <a href="https://calendly.com/relaydigitalyyc/discovery">
                 <button className="relative rounded-full text-center transition-all duration-500 transform overflow-hidden   w-full px-5 py-2.5 border border-blue-500 text-neutral-50 bg-neutral-950 button group text-lg uppercase">
-                  <div className="group relative z-10 w-full">
+                  <div className="calendly group relative z-10 w-full">
                     Book a call
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -147,9 +147,9 @@ const PricingSection = () => {
                     <path
                       fill="none"
                       stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
                       d="m5 12l5 5L20 7"
                     ></path>
                   </symbol>
@@ -170,9 +170,9 @@ const PricingSection = () => {
                     <path
                       fill="none"
                       stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
                       d="m5 12l5 5L20 7"
                     ></path>
                   </symbol>
@@ -193,9 +193,9 @@ const PricingSection = () => {
                     <path
                       fill="none"
                       stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
                       d="m5 12l5 5L20 7"
                     ></path>
                   </symbol>
@@ -216,9 +216,9 @@ const PricingSection = () => {
                     <path
                       fill="none"
                       stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
                       d="m5 12l5 5L20 7"
                     ></path>
                   </symbol>
@@ -257,7 +257,7 @@ const PricingSection = () => {
             <div className="mt-6">
               <a href="https://calendly.com/relaydigitalyyc/discovery">
                 <button className="relative rounded-full text-center transition-all duration-500 transform overflow-hidden   w-full px-5 py-2.5 bg-blue-500 text-neutral-950 border border-blue-500 button hover:text-neutral-50 group uppercase leading-tight tracking-tight md:text-lg">
-                  <div className="group relative z-10 w-full">
+                  <div className="calendly group relative z-10 w-full">
                     Book a call
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -367,9 +367,9 @@ const PricingSection = () => {
                     <path
                       fill="none"
                       stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
                       d="m5 12l5 5L20 7"
                     ></path>
                   </symbol>
@@ -390,9 +390,9 @@ const PricingSection = () => {
                     <path
                       fill="none"
                       stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
                       d="m5 12l5 5L20 7"
                     ></path>
                   </symbol>
@@ -413,9 +413,9 @@ const PricingSection = () => {
                     <path
                       fill="none"
                       stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
                       d="m5 12l5 5L20 7"
                     ></path>
                   </symbol>
@@ -436,9 +436,9 @@ const PricingSection = () => {
                     <path
                       fill="none"
                       stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
                       d="m5 12l5 5L20 7"
                     ></path>
                   </symbol>
@@ -459,9 +459,9 @@ const PricingSection = () => {
                     <path
                       fill="none"
                       stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
                       d="m5 12l5 5L20 7"
                     ></path>
                   </symbol>
@@ -497,7 +497,7 @@ const PricingSection = () => {
             <div className="mt-6">
               <a href="https://calendly.com/relaydigitalyyc/discovery">
                 <button className="relative rounded-full text-center transition-all duration-500 transform overflow-hidden   w-full px-5 py-2.5 border border-blue-500 text-neutral-50 bg-neutral-950 button group text-lg uppercase">
-                  <div className="group relative z-10 w-full">
+                  <div className="calendly group relative z-10 w-full">
                     Book a call
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -608,9 +608,9 @@ const PricingSection = () => {
                     <path
                       fill="none"
                       stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
                       d="m5 12l5 5L20 7"
                     ></path>
                   </symbol>
@@ -631,9 +631,9 @@ const PricingSection = () => {
                     <path
                       fill="none"
                       stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
                       d="m5 12l5 5L20 7"
                     ></path>
                   </symbol>
@@ -654,9 +654,9 @@ const PricingSection = () => {
                     <path
                       fill="none"
                       stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
                       d="m5 12l5 5L20 7"
                     ></path>
                   </symbol>
@@ -677,9 +677,9 @@ const PricingSection = () => {
                     <path
                       fill="none"
                       stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
                       d="m5 12l5 5L20 7"
                     ></path>
                   </symbol>
@@ -700,9 +700,9 @@ const PricingSection = () => {
                     <path
                       fill="none"
                       stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
                       d="m5 12l5 5L20 7"
                     ></path>
                   </symbol>

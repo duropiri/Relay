@@ -59,7 +59,7 @@ const Contact = () => {
             <p className="mt-3 text-lg leading-relaxed text-neutral-300">or</p>
             <p className="mt-3 text-lg leading-relaxed text-neutral-300">
               <a href="https://calendly.com/relaydigitalyyc/discovery">
-                <span className="text-sm font-semibold leading-6 tracking-wide text-neutral-400 hover:text-neutral-300 underline duration-300">
+                <span className="calendly text-sm font-semibold leading-6 tracking-wide text-neutral-400 hover:text-neutral-300 underline duration-300">
                   Book a call
                 </span>
               </a>

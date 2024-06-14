@@ -49,7 +49,7 @@ const Pricing = () => {
                 </a>
                 <p className="flex items-baseline justify-center gap-x-2 mt-3">
                   <a href="https://calendly.com/relaydigitalyyc/discovery">
-                    <span className="text-sm font-semibold leading-6 tracking-wide text-neutral-400 hover:text-neutral-300 underline duration-300">
+                    <span className="calendly text-sm font-semibold leading-6 tracking-wide text-neutral-400 hover:text-neutral-300 underline duration-300">
                       Book a call
                     </span>
                   </a>
@@ -261,7 +261,7 @@ const Pricing = () => {
               </a>
               <p className="flex items-baseline justify-center gap-x-2 mt-3">
                 <a href="https://calendly.com/relaydigitalyyc/discovery">
-                  <span className="text-sm font-semibold leading-6 tracking-wide text-neutral-400 hover:text-neutral-300 underline duration-300">
+                  <span className="calendly text-sm font-semibold leading-6 tracking-wide text-neutral-400 hover:text-neutral-300 underline duration-300">
                     Book a call
                   </span>
                 </a>
@@ -520,7 +520,7 @@ const Pricing = () => {
               </a>
               <p className="flex items-baseline justify-center gap-x-2 mt-3">
                 <a href="https://calendly.com/relaydigitalyyc/discovery">
-                  <span className="text-sm font-semibold leading-6 tracking-wide text-neutral-400 hover:text-neutral-300 underline duration-300">
+                  <span className="calendly text-sm font-semibold leading-6 tracking-wide text-neutral-400 hover:text-neutral-300 underline duration-300">
                     Book a call
                   </span>
                 </a>
@@ -978,7 +978,7 @@ const Pricing = () => {
               </a>
               <p className="flex items-baseline justify-center gap-x-2 mt-3">
                 <a href="https://calendly.com/relaydigitalyyc/discovery">
-                  <span className="text-sm font-semibold leading-6 tracking-wide text-neutral-400 hover:text-neutral-300 underline duration-300">
+                  <span className="calendly text-sm font-semibold leading-6 tracking-wide text-neutral-400 hover:text-neutral-300 underline duration-300">
                     Book a call
                   </span>
                 </a>

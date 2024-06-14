@@ -106,6 +106,25 @@ const RootLayout = ({ children }) => {
           }}
         ></Script>
         <Script
+          id="calendly-inline-widget"
+          async
+          strategy="afterInteracive"
+          dangerouslySetInnerHTML={{
+            __html: `function gtag_report_conversion(url) {
+            var callback = function () {
+              if (typeof(url) != 'undefined') {
+                window.location = url;
+              }
+            };
+            gtag('event', 'conversion', {
+                'send_to': 'AW-16609057729/AZ3KCLynjboZEMG36O89',
+                'event_callback': callback
+            });
+            return false;
+          }`,
+          }}
+        ></Script>
+        <Script
           id="google-tag"
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-NQH0Z2981Z"
