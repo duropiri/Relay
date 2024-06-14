@@ -120,7 +120,7 @@ const pricing = () => {
           application identification numbers, location, browser type, hardware
           model, Internet service provider and/or mobile carrier, operating
           system, and system configuration information. Location Data. We
-          collect location data such as information about your device's
+          collect location data such as information about your device&apos;s
           location, which can be either precise or imprecise. How much
           information we collect depends on the type and settings of the device
           you use to access the Services. For example, we may use GPS and other
@@ -162,7 +162,7 @@ const pricing = () => {
           our marketing and promotional campaigns. We may process your
           information to better understand how to provide marketing and
           promotional campaigns that are most relevant to you. To save or
-          protect an individual's vital interest. We may process your
+          protect an individual&apos;s vital interest. We may process your
           information when necessary to save or protect an individual’s vital
           interest, such as to prevent harm. 3. WHAT LEGAL BASES DO WE RELY ON
           TO PROCESS YOUR INFORMATION? In Short: We only process your personal
@@ -465,7 +465,7 @@ const pricing = () => {
           Depending upon the state where you live, you may also have the
           following rights: Right to obtain a list of the categories of third
           parties to which we have disclosed personal data (as permitted by
-          applicable law, including California's and Delaware's privacy law)
+          applicable law, including California&apos;s and Delaware&apos;s privacy law)
           Right to obtain a list of specific third parties to which we have
           disclosed personal data (as permitted by applicable law, including
           Oregon’s privacy law) Right to limit use and disclosure of sensitive
@@ -514,7 +514,7 @@ const pricing = () => {
           In Short: You may have additional rights based on the country you
           reside in. Australia and New Zealand We collect and process your
           personal information under the obligations and conditions set by
-          Australia's Privacy Act 1988 and New Zealand's Privacy Act 2020
+          Australia&apos;s Privacy Act 1988 and New Zealand&apos;s Privacy Act 2020
           (Privacy Act). This privacy notice satisfies the notice requirements
           defined in both Privacy Acts, in particular: what personal information
           we collect from you, from which sources, for which purposes, and other
@@ -529,7 +529,7 @@ const pricing = () => {
           DATA WE COLLECT FROM YOU?" If you believe we are unlawfully processing
           your personal information, you have the right to submit a complaint
           about a breach of the Australian Privacy Principles to the Office of
-          the Australian Information Commissioner and a breach of New Zealand's
+          the Australian Information Commissioner and a breach of New Zealand&apos;s
           Privacy Principles to the Office of New Zealand Privacy Commissioner.
           Republic of South Africa At any time, you have the right to request
           access to or correction of your personal information. You can make
