@@ -79,15 +79,15 @@ const Footer = () => {
     //     </p>
     //   </div>
     // </footer>
-    <footer class="relative border-t border-neutral-700 not-prose bg-neutral-950">
-      <div class="mx-auto max-w-7xl px-5">
+    <footer className="relative border-t border-neutral-700 not-prose bg-neutral-950">
+      <div className="mx-auto max-w-7xl px-5">
         <div
-          class="absolute inset-0 pointer-events-none"
+          className="absolute inset-0 pointer-events-none"
           aria-hidden="true"
         ></div>
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 text-neutral-300">
-          <div class="grid grid-cols-12 gap-4 gap-y-8 sm:gap-8 py-8 md:py-12">
-            <div class="col-span-12 lg:col-span-4">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 text-neutral-300">
+          <div className="grid grid-cols-12 gap-4 gap-y-8 sm:gap-8 py-8 md:py-12">
+            <div className="col-span-12 lg:col-span-4">
               <div>
                 <a
                   className="-ml-2 flex w-60 items-center rounded-full px-2 text-3xl transition"
@@ -99,30 +99,30 @@ const Footer = () => {
                 </a>
               </div>
             </div>
-            <div class="col-span-6 md:col-span-3 lg:col-span-2">
-              <div class="dark:text-neutral-300 font-medium mb-2">
+            <div className="col-span-6 md:col-span-3 lg:col-span-2">
+              <div className="dark:text-neutral-300 font-medium mb-2">
                 Get Started
               </div>
-              <ul class="text-sm">
-                <li class="mb-2">
+              <ul className="text-sm">
+                <li className="mb-2">
                   <a
-                    class="text-muted hover:text-neutral-700 hover:underline dark:text-neutral-400 transition duration-150 ease-in-out"
+                    className="text-muted hover:text-neutral-700 hover:underline dark:text-neutral-400 transition duration-150 ease-in-out"
                     href="/"
                   >
                     Home
                   </a>
                 </li>
-                <li class="mb-2">
+                <li className="mb-2">
                   <a
-                    class="text-muted hover:text-neutral-700 hover:underline dark:text-neutral-400 transition duration-150 ease-in-out"
+                    className="text-muted hover:text-neutral-700 hover:underline dark:text-neutral-400 transition duration-150 ease-in-out"
                     href="/pricing"
                   >
                     Pricing
                   </a>
                 </li>
-                <li class="mb-2">
+                <li className="mb-2">
                   <a
-                    class="text-muted hover:text-neutral-700 hover:underline dark:text-neutral-400 transition duration-150 ease-in-out"
+                    className="text-muted hover:text-neutral-700 hover:underline dark:text-neutral-400 transition duration-150 ease-in-out"
                     href="/contact"
                   >
                     Contact
@@ -131,11 +131,11 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div class="md:flex md:items-center md:justify-between py-6 md:py-8">
-            <ul class="flex mb-4 md:order-1 -ml-2 md:ml-4 md:mb-0 rtl:ml-0 rtl:-mr-2 rtl:md:ml-0 rtl:md:mr-4">
+          <div className="md:flex md:items-center md:justify-between py-6 md:py-8">
+            <ul className="flex mb-4 md:order-1 -ml-2 md:ml-4 md:mb-0 rtl:ml-0 rtl:-mr-2 rtl:md:ml-0 rtl:md:mr-4">
               <li>
                 <a
-                  class="text-muted dark:text-neutral-400 hover:bg-neutral-100 dark:hover:bg-neutral-700 focus:outline-none focus:ring-4 focus:ring-neutral-200 dark:focus:ring-neutral-700 rounded-lg text-sm p-2.5 inline-flex items-center"
+                  className="text-muted dark:text-neutral-400 hover:bg-neutral-100 dark:hover:bg-neutral-700 focus:outline-none focus:ring-4 focus:ring-neutral-200 dark:focus:ring-neutral-700 rounded-lg text-sm p-2.5 inline-flex items-center"
                   aria-label="Instagram"
                   href="https://www.instagram.com/relaydigitalmktg/"
                   previewlistener="true"
@@ -144,16 +144,16 @@ const Footer = () => {
                     width="1em"
                     height="1em"
                     viewBox="0 0 24 24"
-                    class="w-5 h-5"
+                    className="w-5 h-5"
                     data-icon="tabler:brand-instagram"
                   >
                     <symbol id="ai:tabler:brand-instagram">
                       <g
                         fill="none"
                         stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
                       >
                         <path d="M4 8a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z"></path>
                         <path d="M9 12a3 3 0 1 0 6 0a3 3 0 1 0-6 0m7.5-4.5v.01"></path>
@@ -165,7 +165,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  class="text-muted dark:text-neutral-400 hover:bg-neutral-100 dark:hover:bg-neutral-700 focus:outline-none focus:ring-4 focus:ring-neutral-200 dark:focus:ring-neutral-700 rounded-lg text-sm p-2.5 inline-flex items-center"
+                  className="text-muted dark:text-neutral-400 hover:bg-neutral-100 dark:hover:bg-neutral-700 focus:outline-none focus:ring-4 focus:ring-neutral-200 dark:focus:ring-neutral-700 rounded-lg text-sm p-2.5 inline-flex items-center"
                   aria-label="LinkedIn"
                   href="https://www.linkedin.com/company/relaydigitalagency"
                   previewlistener="true"
@@ -174,16 +174,16 @@ const Footer = () => {
                     width="1em"
                     height="1em"
                     viewBox="0 0 24 24"
-                    class="w-5 h-5"
+                    className="w-5 h-5"
                     data-icon="tabler:brand-linkedin"
                   >
                     <symbol id="ai:tabler:brand-linkedin">
                       <g
                         fill="none"
                         stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
                       >
                         <path d="M4 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm4 5v5m0-8v.01M12 16v-5"></path>
                         <path d="M16 16v-3a2 2 0 0 0-4 0"></path>
@@ -195,7 +195,7 @@ const Footer = () => {
               </li>
               {/* <li>
                 <a
-                  class="text-muted dark:text-neutral-400 hover:bg-neutral-100 dark:hover:bg-neutral-700 focus:outline-none focus:ring-4 focus:ring-neutral-200 dark:focus:ring-neutral-700 rounded-lg text-sm p-2.5 inline-flex items-center"
+                  className="text-muted dark:text-neutral-400 hover:bg-neutral-100 dark:hover:bg-neutral-700 focus:outline-none focus:ring-4 focus:ring-neutral-200 dark:focus:ring-neutral-700 rounded-lg text-sm p-2.5 inline-flex items-center"
                   aria-label="Github"
                   href="https://github.com/RelayDigital"
                   previewlistener="true"
@@ -204,16 +204,16 @@ const Footer = () => {
                     width="1em"
                     height="1em"
                     viewBox="0 0 24 24"
-                    class="w-5 h-5"
+                    className="w-5 h-5"
                     data-icon="tabler:brand-github"
                   >
                     <symbol id="ai:tabler:brand-github">
                       <path
                         fill="none"
                         stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
                         d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2c2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2a4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6c-.6.6-.6 1.2-.5 2V21"
                       ></path>
                     </symbol>
@@ -222,7 +222,7 @@ const Footer = () => {
                 </a>
               </li> */}
             </ul>
-            <div class="text-sm mr-4"> </div>
+            <div className="text-sm mr-4"> </div>
           </div>
         </div>
       </div>

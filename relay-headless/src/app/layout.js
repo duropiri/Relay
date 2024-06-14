@@ -89,6 +89,23 @@ const RootLayout = ({ children }) => {
         <meta name="twitter:image" content={metadata.image} />
 
         <Script
+          id="google-tag-ads"
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-16609057729"
+        ></Script>
+        <Script
+          id="google-ads"
+          async
+          strategy="afterInteracive"
+          dangerouslySetInnerHTML={{
+            __html: `  window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'AW-16609057729');`,
+          }}
+        ></Script>
+        <Script
           id="google-tag"
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-NQH0Z2981Z"

@@ -153,7 +153,7 @@ const ContactForm = () => {
       <div className="h-captcha" data-captcha="true"></div>
       <button
         type="submit"
-        className={`button relative w-full transform overflow-hidden rounded-full border border-neutral-700 px-6 py-3 text-center transition duration-500 ${!isFormValid || isSubmitting ? 'bg-gray-500 text-neutral-400 cursor-not-allowed' : 'bg-blue-500 text-neutral-950 hover:text-neutral-50'}`}
+        className={`button relative w-full transform overflow-hidden rounded-full border border-neutral-700 px-6 py-3 text-center transition duration-500 ${!isFormValid ? 'bg-blue-500/20 text-neutral-400 cursor-not-allowed' : 'bg-blue-500 text-neutral-950 hover:text-neutral-50'} ${isSubmitting ? `cursor-wait bg-blue-500/20 text-neutral-400` : ``}`}
         disabled={!isFormValid || isSubmitting}
       >
         <div className="group relative z-10">

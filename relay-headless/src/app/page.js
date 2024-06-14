@@ -1,5 +1,6 @@
 import CallToAction from "../components/CallToAction";
 import Contact from "../components/Contact";
+import CalendlyEmbed from "../components/CalendlyEmbed";
 import Hero from "../components/Hero";
 import Panel from "../components/Panel";
 import Services from "../components/Services";
@@ -45,6 +46,7 @@ const Home = () => {
       <Help />
       <PricingSection />
       {/* <Rocket className="z-20" /> */}
+      <CalendlyEmbed />
       <Contact />
     </div>
   );

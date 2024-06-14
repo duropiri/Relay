@@ -12,7 +12,7 @@ const Services = () => {
             For Low Effort Agencies
           </span>
         </h2>
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-3  mx-auto max-w-7xl md:auto-rows-[20rem] mt-12">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-3 mx-auto max-w-7xl md:auto-rows-[20rem] mt-12">
           <div className="group/bento h-full shadow-input row-span-1 flex flex-col justify-between space-y-4 overflow-hidden rounded-none border-y border-white/[0.2] bg-neutral-950 p-4 shadow-xl shadow-blue-500/20 transition duration-200 hover:shadow-3xl hover:shadow-blue-500/50 md:rounded-xl md:border md:col-span-1">
             <div className="flex h-full min-h-[6rem] w-full flex-1 flex-col space-y-2 bg-dot-white/[0.4]">
               <div className="flex flex-row items-center space-x-2 rounded-full border border-neutral-600 bg-neutral-950 p-2 duration-300 group-hover/bento:translate-y-2">

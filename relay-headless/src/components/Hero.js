@@ -111,7 +111,7 @@ const Hero = () => {
           </div>
         </div>
         <div
-          class="absolute left-1/2 top-1/2 -z-10 -translate-x-1/2 -translate-y-1/2 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] w-max pointer-events-none"
+          className="absolute left-1/2 top-1/2 -z-10 -translate-x-1/2 -translate-y-1/2 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] w-max pointer-events-none"
           data-speed="0.6"
         >
           {" "}
