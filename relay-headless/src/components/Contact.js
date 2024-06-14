@@ -1,39 +1,6 @@
-"use client";
-import { useState, useRef } from "react";
+import ContactForm from "./ContactForm.js";
 
 const Contact = () => {
-  const formRef = useRef();
-  const [result, setResult] = useState("");
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitAttempted, setSubmitAttempted] = useState(false);
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const formData = new FormData(formRef.current); // Initialize FormData with form ref
-
-    async function sendContactForm(data) {
-      try {
-        const response = await fetch("/api/contact", {
-          method: "POST",
-          body: data,
-        });
-
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
-
-        const result = await response.json();
-        console.log(result.message);
-        setResult("Message successfully received!"); // Using alert for user feedback
-      } catch (error) {
-        console.error("Error:", error);
-        setResult("Failed to send message."); // Using alert for error feedback
-      }
-    }
-
-    sendContactForm(formData);
-  };
-
   return (
     <div className="relative mx-auto max-w-7xl px-5 z-10">
       <div className="relative pt-20 lg:pt-24">
@@ -89,125 +56,17 @@ const Contact = () => {
                 </a>
               </div>
             </div>
+            <p className="mt-3 text-lg leading-relaxed text-neutral-300">or</p>
             <p className="mt-3 text-lg leading-relaxed text-neutral-300">
-              or
+              <a href="https://calendly.com/relaydigitalyyc/discovery">
+                <span className="text-sm font-semibold leading-6 tracking-wide text-neutral-400 hover:text-neutral-300 underline duration-300">
+                  Book a call
+                </span>
+              </a>
             </p>
-            <p className="mt-3 text-lg leading-relaxed text-neutral-300">
-                  <a href="https://calendly.com/relaydigitalyyc/discovery">
-                    <span className="text-sm font-semibold leading-6 tracking-wide text-neutral-400 hover:text-neutral-300 underline duration-300">
-                      Book a call
-                    </span>
-                  </a>
-                </p>
           </div>
           <div className="mb-5 rounded-xl border border-neutral-700 bg-neutral-950 p-5 shadow-xl md:p-8 shadow-blue-500/50">
-            <form ref={formRef} id="form" noValidate onSubmit={handleSubmit}>
-              <input
-                type="hidden"
-                name="access_key"
-                value="8fb384a2-c120-475a-b013-b02012741b63"
-              />
-              <input
-                type="checkbox"
-                className="hidden text-neutral-50"
-                bs="display:none"
-                name="botcheck"
-              />
-              <div className="mb-5">
-                <input
-                  type="text"
-                  placeholder="Full Name"
-                  required
-                  className="w-full rounded-md border border-neutral-700 bg-neutral-900 px-4 py-3 outline-none placeholder:text-neutral-400 focus:border-neutral-400 focus:ring-0 text-neutral-50"
-                  name="name"
-                />
-                {submitAttempted && (
-                  <div className="empty-feedback invalid-feedback mt-1 text-sm text-red-400">
-                    Please provide your full name.
-                  </div>
-                )}
-              </div>
-              <div className="mb-5">
-                <input
-                  id="email_address"
-                  type="email"
-                  placeholder="Email Address"
-                  name="email"
-                  required
-                  className="w-full rounded-md border border-neutral-700 bg-neutral-900 px-4 py-3 outline-none placeholder:text-neutral-400 focus:border-neutral-400 focus:ring-0 text-neutral-50"
-                />
-                {submitAttempted && (
-                  <div className="empty-feedback mt-1 text-sm text-red-400">
-                    Please provide your email address.
-                  </div>
-                )}
-                {submitAttempted && (
-                  <>
-                    {!formRef.current?.email.value.includes("@") && (
-                      <div className="invalid-feedback mt-1 text-sm text-red-400">
-                        Please provide a valid email address.
-                      </div>
-                    )}
-                  </>
-                )}
-              </div>
-              <div className="mb-5">
-                <input
-                  id="phone"
-                  type="tel"
-                  placeholder="Phone Number"
-                  name="phone"
-                  required
-                  className="w-full rounded-md border border-neutral-700 bg-neutral-900 px-4 py-3 outline-none placeholder:text-neutral-400 focus:border-neutral-400 focus:ring-0 text-neutral-50"
-                />
-                {submitAttempted && (
-                  <div className="empty-feedback invalid-feedback mt-1 text-sm text-red-400">
-                    Please enter a valid phone number.
-                  </div>
-                )}
-              </div>
-              <div className="mb-5">
-                <input
-                  id="project"
-                  type="text"
-                  placeholder="New Project"
-                  name="project"
-                  required
-                  className="w-full rounded-md border border-neutral-700 bg-neutral-900 px-4 py-3 outline-none placeholder:text-neutral-400 focus:border-neutral-400 focus:ring-0 text-neutral-50"
-                />
-                {submitAttempted && (
-                  <div className="empty-feedback invalid-feedback mt-1 text-sm text-red-400">
-                    Please enter a project name.
-                  </div>
-                )}
-              </div>
-              <div className="mb-3">
-                <textarea
-                  name="message"
-                  required
-                  placeholder="Tell us about your project"
-                  className="w-full rounded-md border border-neutral-700 bg-neutral-900 px-4 py-3 outline-none placeholder:text-neutral-400 focus:border-neutral-400 focus:ring-0 h-32 resize-none text-neutral-50"
-                ></textarea>
-                {submitAttempted && (
-                  <div className="empty-feedback invalid-feedback mt-1 text-sm text-red-400">
-                    Please enter a message.
-                  </div>
-                )}
-              </div>
-              <div className="h-captcha" data-captcha="true"></div>
-              <button
-                type="submit"
-                className="button relative w-full transform overflow-hidden rounded-full border border-neutral-700 bg-blue-500 px-6 py-3 text-center text-neutral-950 transition duration-500 hover:text-neutral-50"
-                disabled={isSubmitting}
-              >
-                <div className="group relative z-10">
-                  {isSubmitting ? "Sending..." : "Send Message"}
-                </div>
-              </button>
-              <div id="result" className="mt-3 text-center text-neutral-50">
-                {result}
-              </div>
-            </form>
+            <ContactForm />
           </div>
         </div>
       </div>
