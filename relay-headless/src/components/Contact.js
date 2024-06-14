@@ -58,7 +58,7 @@ const Contact = () => {
             </div>
             <p className="mt-3 text-lg leading-relaxed text-neutral-300">or</p>
             <p className="mt-3 text-lg leading-relaxed text-neutral-300">
-              <a onClick="return gtag_report_conversion('https://relaydigital.agency/')" href="https://calendly.com/relaydigitalyyc/discovery">
+              <a onClick={gtag_report_conversion('https://relaydigital.agency/')} href="https://calendly.com/relaydigitalyyc/discovery">
                 <span className="calendly text-sm font-semibold leading-6 tracking-wide text-neutral-400 hover:text-neutral-300 underline duration-300">
                   Book a call
                 </span>

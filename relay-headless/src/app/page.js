@@ -31,7 +31,7 @@ const Home = () => {
         header="Get Started Today, Make Your Landing Pages Work As A 24/7 Salesman."
         description=""
         cta="Get Started Now"
-        onClick="return gtag_report_conversion('https://relaydigital.agency/')" href="https://calendly.com/relaydigitalyyc/discovery"
+        onClick={gtag_report_conversion('https://relaydigital.agency/')} href="https://calendly.com/relaydigitalyyc/discovery"
       />
       <Cfunnel />
       <Leaking />
@@ -41,7 +41,7 @@ const Home = () => {
         Live within 20 days.
         Conversion-driven, beyond just aesthetics."
         cta="Get A Price"
-        onClick="return gtag_report_conversion('https://relaydigital.agency/')" href="https://calendly.com/relaydigitalyyc/discovery"
+        onClick={gtag_report_conversion('https://relaydigital.agency/')} href="https://calendly.com/relaydigitalyyc/discovery"
       />
       <Help />
       <PricingSection />
