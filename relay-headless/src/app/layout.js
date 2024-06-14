@@ -9,7 +9,7 @@ import Script from "next/script";
 // const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Relay - Modern Web Design & Development Agency",
+  title: "Relay Digital - Modern Web Design & Development Agency",
   description:
     "Relay Digital delivers innovative web design and development services, focusing on performance, cutting-edge design, and scalability to boost your online presence.",
   keywords:
