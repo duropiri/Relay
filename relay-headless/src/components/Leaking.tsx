@@ -56,7 +56,7 @@ const Leaking = () => {
           />
         </div>
         <div className="flex flex-col items-center justify-center mt-16">
-          <a onclick="return gtag_report_conversion('https://relaydigital.agency/')" href="https://calendly.com/relaydigitalyyc/discovery">
+          <a onClick="return gtag_report_conversion('https://relaydigital.agency/')" href="https://calendly.com/relaydigitalyyc/discovery">
             <button className="relative rounded-full text-center transition-all duration-500 transform overflow-hidden w-full sm:w-96 px-5 py-2.5 bg-blue-500 text-neutral-950 border border-blue-500 button hover:text-neutral-50 group uppercase leading-tight tracking-tight md:text-lg">
               <div className="group relative z-10 w-full">
                 Get a price
