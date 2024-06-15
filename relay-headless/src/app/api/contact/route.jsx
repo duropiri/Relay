@@ -15,14 +15,14 @@ export async function POST(request) {
   const message = formData.get("message");
 
   const transporter = nodemailer.createTransport({
-    // service: "gmail",
-    host: "smtp.relaydigital.agency",
-    port: 587,
-    secure: false,
-    tls: {
-      // ciphers: "SSLv3",
-      rejectUnauthorized: false,
-    },
+    service: "gmail",
+    // host: "smtp.relaydigital.agency",
+    // port: 587,
+    // secure: false,
+    // tls: {
+    //   // ciphers: "SSLv3",
+    //   rejectUnauthorized: false,
+    // },
     auth: {
       user: username,
       pass: password,
