@@ -16,7 +16,7 @@ export async function POST(request) {
 
   const transporter = nodemailer.createTransport({
     service: "gmail",
-    host: "smtp.gmail.com",
+    host: "smtp.relaydigital.agency",
     port: 587,
     secure: false,
     tls: {
