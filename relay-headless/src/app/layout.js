@@ -106,6 +106,9 @@ const RootLayout = ({ children }) => {
             gtag('config', 'AW-16609057729');`,
           }}
         ></Script>
+        <Script id="calendly-event-snippet" async strategy="afterInteracive">
+          {`gtag('event', 'conversion', {'send_to': 'AW-16609057729/AZ3KCLynjboZEMG36O89'});`}
+        </Script>
         <Script
           id="calendly-inline-widget"
           async
