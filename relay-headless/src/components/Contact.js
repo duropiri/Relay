@@ -53,8 +53,8 @@ const Contact = () => {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-                <a href="mailto:relaydigitalyyc@gmail.com">
-                  relaydigitalyyc@gmail.com
+                <a href="mailto:info@relaydigital.agency">
+                  info@relaydigital.agency
                 </a>
               </div>
             </div>

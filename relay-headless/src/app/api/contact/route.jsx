@@ -3,9 +3,9 @@ const nodemailer = require("nodemailer");
 
 // Handles POST requests to /api
 export async function POST(request) {
-  const username = process.env.NEXT_PUBLIC_EMAIL_USERNAME;
-  const password = process.env.NEXT_PUBLIC_EMAIL_PASSWORD;
-  const myEmail = process.env.NEXT_PUBLIC_PERSONAL_EMAIL;
+  const username = process.env.NEXT_PUBLIC_EMAIL_USERNAME_2;
+  const password = process.env.NEXT_PUBLIC_EMAIL_PASSWORD_2;
+  const myEmail = process.env.NEXT_PUBLIC_PERSONAL_EMAIL_2;
 
   const formData = await request.formData();
   const name = formData.get("name");
