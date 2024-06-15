@@ -32,7 +32,7 @@ export async function POST(request) {
   try {
     // Send email to site owner
     await transporter.sendMail({
-      from: username,
+      from: `info@relaydigital.agency`, // Alias
       to: myEmail,
       replyTo: email,
       subject: `Website activity from ${email}`,
@@ -51,7 +51,7 @@ export async function POST(request) {
 
     // Send confirmation email to the submitter
     await transporter.sendMail({
-      from: username,
+      from: `info@relaydigital.agency`, // Alias
       to: email, // Note this change to send to the submitter
       subject: `Confirmation of Your Contact Request`,
       html: `
