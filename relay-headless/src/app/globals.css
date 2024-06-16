@@ -11,31 +11,34 @@ h6 {
 @tailwind components;
 @tailwind utilities;
 @font-face {
-  font-family: "Proxima Nova";
-  font-style: normal;
-  font-weight: 400;
+  font-family: 'Proxima Nova';
   src: url("../../public/font/Proxima Nova Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
   font-display: swap;
 }
+
 @font-face {
-  font-family: "Proxima Nova";
-  font-style: normal;
-  font-weight: 700;
+  font-family: 'Proxima Nova';
   src: url("../../public/font/Proxima Nova Bold.otf") format("opentype");
-  font-display: swap;
-}
-@font-face {
-  font-family: "Red Hat Text";
+  font-weight: bold;
   font-style: normal;
-  font-weight: 400;
-  src: url("../../public/font/RedHatText[wght].ttf") format("truetype");
   font-display: swap;
 }
+
 @font-face {
-  font-family: "Red Hat Text";
-  font-style: italic;
-  font-weight: 400;
+  font-family: 'Red Hat Text';
+  src: url("../../public/font/RedHatText[wght].ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Red Hat Text';
   src: url("../../public/font/RedHatText-Italic[wght].ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
   font-display: swap;
 }
 html::-webkit-scrollbar {
@@ -142,23 +145,4 @@ p {
 
 .animate-spinSlow {
   animation: spin 4s linear infinite;
-}
-
-.ReactModal__Overlay {
-  background-color: rgba(0, 0, 0, 0.75) !important;
-}
-
-.ReactModal__Content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  right: auto;
-  bottom: auto;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  background: white;
-  padding: 20px;
-  max-width: 500px;
-  width: 100%;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
