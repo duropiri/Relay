@@ -1,9 +1,9 @@
 // import { Inter } from "next/font/google";
 import "./globals.css";
 import SmoothScrolling from "../components/SmoothScrolling";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import { GlobalStateProvider } from "../components/GlobalStateContext";
+import Navbar from "../components/layouts/header/Navbar";
+import Footer from "../components/layouts/footer/Footer";
+import { GlobalStateProvider } from "../contexts/GlobalStateContext";
 import Script from "next/script";
 import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 
@@ -97,7 +97,7 @@ const RootLayout = ({ children }) => {
         <Script
           id="google-ads"
           async
-          strategy="afterInteracive"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `  window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -106,13 +106,13 @@ const RootLayout = ({ children }) => {
             gtag('config', 'AW-16609057729');`,
           }}
         ></Script>
-        <Script id="calendly-event-snippet" async strategy="afterInteracive">
+        <Script id="calendly-event-snippet" async strategy="afterInteractive">
           {`gtag('event', 'conversion', {'send_to': 'AW-16609057729/AZ3KCLynjboZEMG36O89'});`}
         </Script>
         <Script
           id="calendly-inline-widget"
           async
-          strategy="afterInteracive"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `function gtag_report_conversion(url) {
             var callback = function () {
@@ -136,7 +136,7 @@ const RootLayout = ({ children }) => {
         <Script
           id="google-analytics"
           async
-          strategy="afterInteracive"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}

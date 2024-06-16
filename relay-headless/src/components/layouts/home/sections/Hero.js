@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import Marquee from "./Marquee";
+import Marquee from "../../../Marquee";
 import Image from "next/image";
 
 const Hero = () => {

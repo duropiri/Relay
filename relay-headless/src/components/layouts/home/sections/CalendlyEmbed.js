@@ -29,6 +29,7 @@ const CalendlyEmbed = () => {
               type="text/javascript"
               src="https://assets.calendly.com/assets/external/widget.js"
               async
+              strategy="afterInteractive"
             ></Script>
           </div>
           <div className="relative flex items-center justify-center w-full md:w-1/2 h-full md:p-6 overflow-hidden">

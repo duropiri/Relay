@@ -1,13 +1,21 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { useGlobalState } from "../../../../contexts/GlobalStateContext";
 
-const ExitIntentPopup = ({ onClose }) => {
+const ExitIntentPopup = () => {
+  const { isExitIntentPopupOpen, closeHeroPopup, closeExitIntentPopup } = useGlobalState();
   const formRef = useRef();
   const [result, setResult] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitAttempted, setSubmitAttempted] = useState(false);
   const [isFormValid, setIsFormValid] = useState(false);
+
+  useEffect(() => {
+    if (isExitIntentPopupOpen) {
+      closeHeroPopup();
+    }
+  }, [isExitIntentPopupOpen, closeHeroPopup]);
 
   useEffect(() => {
     const form = formRef.current;
@@ -58,8 +66,10 @@ const ExitIntentPopup = ({ onClose }) => {
     }
   };
 
+  if (!isExitIntentPopupOpen) return null;
+
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-[999]">
+    <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-[9999]">
       <div className="mb-5 rounded-xl border border-neutral-700 bg-neutral-950 p-5 shadow-xl md:p-8 shadow-blue-500/50 text-center">
         <h2 className="text-2xl font-bold mb-4">Wait! Before you go...</h2>
         <p className="mb-4">Enter your email to download our free ebook.</p>
@@ -103,7 +113,7 @@ const ExitIntentPopup = ({ onClose }) => {
         <div id="result" className="mt-3 text-center text-neutral-50">
           {result}
         </div>
-        <button onClick={onClose} className="mt-4 px-4 py-2 text-gray-500">
+        <button onClick={closeExitIntentPopup} className="mt-4 px-4 py-2 text-gray-500">
           Close
         </button>
       </div>

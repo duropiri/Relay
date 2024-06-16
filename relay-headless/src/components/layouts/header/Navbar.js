@@ -1,6 +1,6 @@
 "use client";
 import { useEffect } from "react";
-import { useGlobalState } from "./GlobalStateContext";
+import { useGlobalState } from "../../../contexts/GlobalStateContext";
 
 const Navbar = () => {
   const { mobileMenuOpen, setMobileMenuOpen } = useGlobalState();
@@ -86,12 +86,12 @@ const Navbar = () => {
       document.body.classList.remove("overflow-hidden");
     }
 
-    textUnderlineAnimation();
-    window.addEventListener("DOMContentLoaded", textUnderlineAnimation);
+    // textUnderlineAnimation();
+    // window.addEventListener("DOMContentLoaded", textUnderlineAnimation);
 
     // Clean up the event listener when the component unmounts
     return () => {
-      window.removeEventListener("DOMContentLoaded", textUnderlineAnimation);
+      // window.removeEventListener("DOMContentLoaded", textUnderlineAnimation);
     };
   }, [mobileMenuOpen]);
 
@@ -117,7 +117,7 @@ const Navbar = () => {
                 >
                   Why Use Us?
                 </a>
-                <span className="underline transition-colors duration-400 bg-neutral-50 group-hover:bg-blue-500 h-[2px]"></span>
+                {/* <span className="underline transition-colors duration-400 bg-neutral-50 group-hover:bg-blue-500 h-[2px]"></span> */}
               </li>
               <li className="group flex flex-col hover-link cursor-pointer">
                 <a
@@ -126,7 +126,7 @@ const Navbar = () => {
                 >
                   Portfolio
                 </a>
-                <span className="underline transition-colors duration-400 bg-neutral-50 group-hover:bg-blue-500 h-[2px]"></span>
+                {/* <span className="underline transition-colors duration-400 bg-neutral-50 group-hover:bg-blue-500 h-[2px]"></span> */}
               </li>
               <li className="group flex flex-col hover-link cursor-pointer">
                 <a
@@ -135,7 +135,7 @@ const Navbar = () => {
                 >
                   Pricing
                 </a>
-                <span className="underline transition-colors duration-400 bg-neutral-50 group-hover:bg-blue-500 h-[2px]"></span>
+                {/* <span className="underline transition-colors duration-400 bg-neutral-50 group-hover:bg-blue-500 h-[2px]"></span> */}
               </li>
             </ul>
           </div>

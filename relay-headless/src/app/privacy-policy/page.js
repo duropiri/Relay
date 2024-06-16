@@ -1,44 +1,43 @@
-import Pricing from "../../components/Pricing";
-
-const pricing = () => {
+const privacyPolicy = () => {
   return (
     <>
       <div className="bg-grid-white/[0.05] min-h-screen">
         <p>
           PRIVACY POLICY Last updated May 05, 2024 This privacy notice for Relay
-          Digital Marketing Inc. (doing business as Relay) (&quot;we,&quot; &quot;us,&quot; or
-          &quot;our&quot;), describes how and why we might collect, store, use, and/or
-          share (&quot;process&quot;) your information when you use our services
-          (&quot;Services&quot;), such as when you: Visit our website at
-          https://relaydigital.agency/, or any website of ours that links to
-          this privacy notice Engage with us in other related ways, including
-          any sales, marketing, or events Questions or concerns? Reading this
-          privacy notice will help you understand your privacy rights and
-          choices. If you do not agree with our policies and practices, please
-          do not use our Services. If you still have any questions or concerns,
-          please contact us at privacy@relaydigital.agency. SUMMARY OF KEY
-          POINTS This summary provides key points from our privacy notice, but
-          you can find out more details about any of these topics by clicking
-          the link following each key point or by using our table of contents
-          below to find the section you are looking for. What personal
-          information do we process? When you visit, use, or navigate our
-          Services, we may process personal information depending on how you
-          interact with us and the Services, the choices you make, and the
-          products and features you use. Learn more about personal information
-          you disclose to us. Do we process any sensitive personal information?
-          We may process sensitive personal information when necessary with your
-          consent or as otherwise permitted by applicable law. Learn more about
-          sensitive information we process. Do we collect any information from
-          third parties? We do not collect any information from third parties.
-          How do we process your information? We process your information to
-          provide, improve, and administer our Services, communicate with you,
-          for security and fraud prevention, and to comply with law. We may also
-          process your information for other purposes with your consent. We
-          process your information only when we have a valid legal reason to do
-          so. Learn more about how we process your information. In what
-          situations and with which parties do we share personal information? We
-          may share information in specific situations and with specific third
-          parties. Learn more about when and with whom we share your personal
+          Digital Marketing Inc. (doing business as Relay) (&quot;we,&quot;
+          &quot;us,&quot; or &quot;our&quot;), describes how and why we might
+          collect, store, use, and/or share (&quot;process&quot;) your
+          information when you use our services (&quot;Services&quot;), such as
+          when you: Visit our website at https://relaydigital.agency/, or any
+          website of ours that links to this privacy notice Engage with us in
+          other related ways, including any sales, marketing, or events
+          Questions or concerns? Reading this privacy notice will help you
+          understand your privacy rights and choices. If you do not agree with
+          our policies and practices, please do not use our Services. If you
+          still have any questions or concerns, please contact us at
+          privacy@relaydigital.agency. SUMMARY OF KEY POINTS This summary
+          provides key points from our privacy notice, but you can find out more
+          details about any of these topics by clicking the link following each
+          key point or by using our table of contents below to find the section
+          you are looking for. What personal information do we process? When you
+          visit, use, or navigate our Services, we may process personal
+          information depending on how you interact with us and the Services,
+          the choices you make, and the products and features you use. Learn
+          more about personal information you disclose to us. Do we process any
+          sensitive personal information? We may process sensitive personal
+          information when necessary with your consent or as otherwise permitted
+          by applicable law. Learn more about sensitive information we process.
+          Do we collect any information from third parties? We do not collect
+          any information from third parties. How do we process your
+          information? We process your information to provide, improve, and
+          administer our Services, communicate with you, for security and fraud
+          prevention, and to comply with law. We may also process your
+          information for other purposes with your consent. We process your
+          information only when we have a valid legal reason to do so. Learn
+          more about how we process your information. In what situations and
+          with which parties do we share personal information? We may share
+          information in specific situations and with specific third parties.
+          Learn more about when and with whom we share your personal
           information. How do we keep your information safe? We have
           organizational and technical processes and procedures in place to
           protect your personal information. However, no electronic transmission
@@ -112,15 +111,15 @@ const pricing = () => {
           as the date/time stamps associated with your usage, pages and files
           viewed, searches, and other actions you take such as which features
           you use), device event information (such as system activity, error
-          reports (sometimes called &quot;crash dumps&quot;), and hardware settings).
-          Device Data. We collect device data such as information about your
-          computer, phone, tablet, or other device you use to access the
-          Services. Depending on the device used, this device data may include
-          information such as your IP address (or proxy server), device and
-          application identification numbers, location, browser type, hardware
-          model, Internet service provider and/or mobile carrier, operating
-          system, and system configuration information. Location Data. We
-          collect location data such as information about your device&apos;s
+          reports (sometimes called &quot;crash dumps&quot;), and hardware
+          settings). Device Data. We collect device data such as information
+          about your computer, phone, tablet, or other device you use to access
+          the Services. Depending on the device used, this device data may
+          include information such as your IP address (or proxy server), device
+          and application identification numbers, location, browser type,
+          hardware model, Internet service provider and/or mobile carrier,
+          operating system, and system configuration information. Location Data.
+          We collect location data such as information about your device&apos;s
           location, which can be either precise or imprecise. How much
           information we collect depends on the type and settings of the device
           you use to access the Services. For example, we may use GPS and other
@@ -153,11 +152,11 @@ const pricing = () => {
           communications. We may process the personal information you send to us
           for our marketing purposes, if this is in accordance with your
           marketing preferences. You can opt out of our marketing emails at any
-          time. For more information, see &quot;WHAT ARE YOUR PRIVACY RIGHTS?&quot; below.
-          To deliver targeted advertising to you. We may process your
-          information to develop and display personalized content and
-          advertising tailored to your interests, location, and more. For more
-          information see our Cookie Notice:
+          time. For more information, see &quot;WHAT ARE YOUR PRIVACY
+          RIGHTS?&quot; below. To deliver targeted advertising to you. We may
+          process your information to develop and display personalized content
+          and advertising tailored to your interests, location, and more. For
+          more information see our Cookie Notice:
           https://relaydigital.agency/cookies. To determine the effectiveness of
           our marketing and promotional campaigns. We may process your
           information to better understand how to provide marketing and
@@ -255,13 +254,14 @@ const pricing = () => {
           service providers use their technology to provide advertising about
           products and services tailored to your interests which may appear
           either on our Services or on other websites. To the extent these
-          online tracking technologies are deemed to be a &quot;sale&quot;/&quot;sharing&quot;
-          (which includes targeted advertising, as defined under the applicable
-          laws) under applicable US state laws, you can opt out of these online
-          tracking technologies by submitting a request as described below under
-          section &quot;DO UNITED STATES RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?&quot;
-          Specific information about how we use such technologies and how you
-          can refuse certain cookies is set out in our Cookie Notice:
+          online tracking technologies are deemed to be a
+          &quot;sale&quot;/&quot;sharing&quot; (which includes targeted
+          advertising, as defined under the applicable laws) under applicable US
+          state laws, you can opt out of these online tracking technologies by
+          submitting a request as described below under section &quot;DO UNITED
+          STATES RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?&quot; Specific
+          information about how we use such technologies and how you can refuse
+          certain cookies is set out in our Cookie Notice:
           https://relaydigital.agency/cookies. Google Analytics We may share
           your information with Google Analytics to track and analyze the use of
           the Services. The Google Analytics Advertising Features that we may
@@ -327,8 +327,8 @@ const pricing = () => {
           automated decision-making. In certain circumstances, you may also have
           the right to object to the processing of your personal information.
           You can make such a request by contacting us by using the contact
-          details provided in the section &quot;HOW CAN YOU CONTACT US ABOUT THIS
-          NOTICE?&quot; below. We will consider and act upon any request in
+          details provided in the section &quot;HOW CAN YOU CONTACT US ABOUT
+          THIS NOTICE?&quot; below. We will consider and act upon any request in
           accordance with applicable data protection laws. If you are located in
           the EEA or UK and you believe we are unlawfully processing your
           personal information, you also have the right to complain to your
@@ -339,44 +339,45 @@ const pricing = () => {
           information, which may be express and/or implied consent depending on
           the applicable law, you have the right to withdraw your consent at any
           time. You can withdraw your consent at any time by contacting us by
-          using the contact details provided in the section &quot;HOW CAN YOU CONTACT
-          US ABOUT THIS NOTICE?&quot; below. However, please note that this will not
-          affect the lawfulness of the processing before its withdrawal nor,
-          when applicable law allows, will it affect the processing of your
-          personal information conducted in reliance on lawful processing
-          grounds other than consent. Opting out of marketing and promotional
-          communications: You can unsubscribe from our marketing and promotional
-          communications at any time by clicking on the unsubscribe link in the
-          emails that we send, replying &quot;STOP&quot; or &quot;UNSUBSCRIBE&quot; to the SMS
-          messages that we send, or by contacting us using the details provided
-          in the section &quot;HOW CAN YOU CONTACT US ABOUT THIS NOTICE?&quot; below. You
-          will then be removed from the marketing lists. However, we may still
-          communicate with you — for example, to send you service-related
-          messages that are necessary for the administration and use of your
-          account, to respond to service requests, or for other non-marketing
-          purposes. Cookies and similar technologies: Most Web browsers are set
-          to accept cookies by default. If you prefer, you can usually choose to
-          set your browser to remove cookies and to reject cookies. If you
-          choose to remove cookies or reject cookies, this could affect certain
-          features or services of our Services. For further information, please
-          see our Cookie Notice: https://relaydigital.agency/cookies. If you
-          have questions or comments about your privacy rights, you may email us
-          at privacy@relaydigital.agency. 10. CONTROLS FOR DO-NOT-TRACK FEATURES
+          using the contact details provided in the section &quot;HOW CAN YOU
+          CONTACT US ABOUT THIS NOTICE?&quot; below. However, please note that
+          this will not affect the lawfulness of the processing before its
+          withdrawal nor, when applicable law allows, will it affect the
+          processing of your personal information conducted in reliance on
+          lawful processing grounds other than consent. Opting out of marketing
+          and promotional communications: You can unsubscribe from our marketing
+          and promotional communications at any time by clicking on the
+          unsubscribe link in the emails that we send, replying &quot;STOP&quot;
+          or &quot;UNSUBSCRIBE&quot; to the SMS messages that we send, or by
+          contacting us using the details provided in the section &quot;HOW CAN
+          YOU CONTACT US ABOUT THIS NOTICE?&quot; below. You will then be
+          removed from the marketing lists. However, we may still communicate
+          with you — for example, to send you service-related messages that are
+          necessary for the administration and use of your account, to respond
+          to service requests, or for other non-marketing purposes. Cookies and
+          similar technologies: Most Web browsers are set to accept cookies by
+          default. If you prefer, you can usually choose to set your browser to
+          remove cookies and to reject cookies. If you choose to remove cookies
+          or reject cookies, this could affect certain features or services of
+          our Services. For further information, please see our Cookie Notice:
+          https://relaydigital.agency/cookies. If you have questions or comments
+          about your privacy rights, you may email us at
+          privacy@relaydigital.agency. 10. CONTROLS FOR DO-NOT-TRACK FEATURES
           Most web browsers and some mobile operating systems and mobile
-          applications include a Do-Not-Track (&quot;DNT&quot;) feature or setting you can
-          activate to signal your privacy preference not to have data about your
-          online browsing activities monitored and collected. At this stage, no
-          uniform technology standard for recognizing and implementing DNT
-          signals has been finalized. As such, we do not currently respond to
-          DNT browser signals or any other mechanism that automatically
-          communicates your choice not to be tracked online. If a standard for
-          online tracking is adopted that we must follow in the future, we will
-          inform you about that practice in a revised version of this privacy
-          notice. California law requires us to let you know how we respond to
-          web browser DNT signals. Because there currently is not an industry or
-          legal standard for recognizing or honoring DNT signals, we do not
-          respond to them at this time. 11. DO UNITED STATES RESIDENTS HAVE
-          SPECIFIC PRIVACY RIGHTS? In Short: If you are a resident of
+          applications include a Do-Not-Track (&quot;DNT&quot;) feature or
+          setting you can activate to signal your privacy preference not to have
+          data about your online browsing activities monitored and collected. At
+          this stage, no uniform technology standard for recognizing and
+          implementing DNT signals has been finalized. As such, we do not
+          currently respond to DNT browser signals or any other mechanism that
+          automatically communicates your choice not to be tracked online. If a
+          standard for online tracking is adopted that we must follow in the
+          future, we will inform you about that practice in a revised version of
+          this privacy notice. California law requires us to let you know how we
+          respond to web browser DNT signals. Because there currently is not an
+          industry or legal standard for recognizing or honoring DNT signals, we
+          do not respond to them at this time. 11. DO UNITED STATES RESIDENTS
+          HAVE SPECIFIC PRIVACY RIGHTS? In Short: If you are a resident of
           California, Colorado, Connecticut, Delaware, Florida, Indiana, Iowa,
           Kentucky, Montana, New Hampshire, New Jersey, Oregon, Tennessee,
           Texas, Utah, or Virginia, you may have the right to request access to
@@ -435,50 +436,51 @@ const pricing = () => {
           account with us Category K - As long as the user has an account with
           us Category L - As long as the user has an account with us Sources of
           Personal Information Learn more about the sources of personal
-          information we collect in &quot;WHAT INFORMATION DO WE COLLECT?&quot; How We Use
-          and Share Personal Information Learn about how we use your personal
-          information in the section, &quot;HOW DO WE PROCESS YOUR INFORMATION?&quot; Will
-          your information be shared with anyone else? We may disclose your
-          personal information with our service providers pursuant to a written
-          contract between us and each service provider. Learn more about how we
-          disclose personal information to in the section, &quot;WHEN AND WITH WHOM
-          DO WE SHARE YOUR PERSONAL INFORMATION?&quot; We may use your personal
-          information for our own business purposes, such as for undertaking
-          internal research for technological development and demonstration.
-          This is not considered to be &quot;selling&quot; of your personal information.
-          We have not disclosed, sold, or shared any personal information to
-          third parties for a business or commercial purpose in the preceding
-          twelve (12) months. We will not sell or share personal information in
-          the future belonging to website visitors, users, and other consumers.
-          Your Rights You have rights under certain US state data protection
-          laws. However, these rights are not absolute, and in certain cases, we
-          may decline your request as permitted by law. These rights include:
-          Right to know whether or not we are processing your personal data
-          Right to access your personal data Right to correct inaccuracies in
-          your personal data Right to request the deletion of your personal data
-          Right to obtain a copy of the personal data you previously shared with
-          us Right to non-discrimination for exercising your rights Right to opt
-          out of the processing of your personal data if it is used for targeted
+          information we collect in &quot;WHAT INFORMATION DO WE COLLECT?&quot;
+          How We Use and Share Personal Information Learn about how we use your
+          personal information in the section, &quot;HOW DO WE PROCESS YOUR
+          INFORMATION?&quot; Will your information be shared with anyone else?
+          We may disclose your personal information with our service providers
+          pursuant to a written contract between us and each service provider.
+          Learn more about how we disclose personal information to in the
+          section, &quot;WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL
+          INFORMATION?&quot; We may use your personal information for our own
+          business purposes, such as for undertaking internal research for
+          technological development and demonstration. This is not considered to
+          be &quot;selling&quot; of your personal information. We have not
+          disclosed, sold, or shared any personal information to third parties
+          for a business or commercial purpose in the preceding twelve (12)
+          months. We will not sell or share personal information in the future
+          belonging to website visitors, users, and other consumers. Your Rights
+          You have rights under certain US state data protection laws. However,
+          these rights are not absolute, and in certain cases, we may decline
+          your request as permitted by law. These rights include: Right to know
+          whether or not we are processing your personal data Right to access
+          your personal data Right to correct inaccuracies in your personal data
+          Right to request the deletion of your personal data Right to obtain a
+          copy of the personal data you previously shared with us Right to
+          non-discrimination for exercising your rights Right to opt out of the
+          processing of your personal data if it is used for targeted
           advertising (or sharing as defined under California’s privacy law),
           the sale of personal data, or profiling in furtherance of decisions
-          that produce legal or similarly significant effects (&quot;profiling&quot;)
-          Depending upon the state where you live, you may also have the
-          following rights: Right to obtain a list of the categories of third
+          that produce legal or similarly significant effects
+          (&quot;profiling&quot;) Depending upon the state where you live, you
+          may also have the following rights: Right to obtain a list of the
+          categories of third parties to which we have disclosed personal data
+          (as permitted by applicable law, including California&apos;s and
+          Delaware&apos;s privacy law) Right to obtain a list of specific third
           parties to which we have disclosed personal data (as permitted by
-          applicable law, including California&apos;s and Delaware&apos;s privacy law)
-          Right to obtain a list of specific third parties to which we have
-          disclosed personal data (as permitted by applicable law, including
-          Oregon’s privacy law) Right to limit use and disclosure of sensitive
-          personal data (as permitted by applicable law, including California’s
-          privacy law) Right to opt out of the collection of sensitive data and
-          personal data collected through the operation of a voice or facial
-          recognition feature (as permitted by applicable law, including
-          Florida’s privacy law) How to Exercise Your Rights To exercise these
-          rights, you can contact us by submitting a data subject access
-          request, by emailing us at info@relaydigital.agency, by visiting
-          https://relaydigital.agency/contact, or by referring to the contact
-          details at the bottom of this document. Under certain US state data
-          protection laws, you can designate an authorized agent to make a
+          applicable law, including Oregon’s privacy law) Right to limit use and
+          disclosure of sensitive personal data (as permitted by applicable law,
+          including California’s privacy law) Right to opt out of the collection
+          of sensitive data and personal data collected through the operation of
+          a voice or facial recognition feature (as permitted by applicable law,
+          including Florida’s privacy law) How to Exercise Your Rights To
+          exercise these rights, you can contact us by submitting a data subject
+          access request, by emailing us at info@relaydigital.agency, by
+          visiting https://relaydigital.agency/contact, or by referring to the
+          contact details at the bottom of this document. Under certain US state
+          data protection laws, you can designate an authorized agent to make a
           request on your behalf. We may deny a request from an authorized agent
           that does not submit proof that they have been validly authorized to
           act on your behalf in accordance with applicable laws. Request
@@ -500,73 +502,74 @@ const pricing = () => {
           action taken or not taken in response to the appeal, including a
           written explanation of the reasons for the decisions. If your appeal
           is denied, you may submit a complaint to your state attorney general.
-          California &quot;Shine The Light&quot; Law California Civil Code Section
-          1798.83, also known as the &quot;Shine The Light&quot; law, permits our users
-          who are California residents to request and obtain from us, once a
-          year and free of charge, information about categories of personal
-          information (if any) we disclosed to third parties for direct
-          marketing purposes and the names and addresses of all third parties
-          with which we shared personal information in the immediately preceding
-          calendar year. If you are a California resident and would like to make
-          such a request, please submit your request in writing to us by using
-          the contact details provided in the section &quot;HOW CAN YOU CONTACT US
-          ABOUT THIS NOTICE?&quot; 12. DO OTHER REGIONS HAVE SPECIFIC PRIVACY RIGHTS?
-          In Short: You may have additional rights based on the country you
-          reside in. Australia and New Zealand We collect and process your
-          personal information under the obligations and conditions set by
-          Australia&apos;s Privacy Act 1988 and New Zealand&apos;s Privacy Act 2020
-          (Privacy Act). This privacy notice satisfies the notice requirements
-          defined in both Privacy Acts, in particular: what personal information
-          we collect from you, from which sources, for which purposes, and other
-          recipients of your personal information. If you do not wish to provide
-          the personal information necessary to fulfill their applicable
-          purpose, it may affect our ability to provide our services, in
-          particular: offer you the products or services that you want respond
-          to or help with your requests At any time, you have the right to
-          request access to or correction of your personal information. You can
-          make such a request by contacting us by using the contact details
-          provided in the section &quot;HOW CAN YOU REVIEW, UPDATE, OR DELETE THE
-          DATA WE COLLECT FROM YOU?&quot; If you believe we are unlawfully processing
-          your personal information, you have the right to submit a complaint
-          about a breach of the Australian Privacy Principles to the Office of
-          the Australian Information Commissioner and a breach of New Zealand&apos;s
-          Privacy Principles to the Office of New Zealand Privacy Commissioner.
-          Republic of South Africa At any time, you have the right to request
-          access to or correction of your personal information. You can make
-          such a request by contacting us by using the contact details provided
-          in the section &quot;HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE
-          COLLECT FROM YOU?&quot; If you are unsatisfied with the manner in which we
-          address any complaint with regard to our processing of personal
-          information, you can contact the office of the regulator, the details
-          of which are: The Information Regulator (South Africa) General
-          enquiries: enquiries@inforegulator.org.za Complaints (complete
-          POPIA/PAIA form 5): PAIAComplaints@inforegulator.org.za &
+          California &quot;Shine The Light&quot; Law California Civil Code
+          Section 1798.83, also known as the &quot;Shine The Light&quot; law,
+          permits our users who are California residents to request and obtain
+          from us, once a year and free of charge, information about categories
+          of personal information (if any) we disclosed to third parties for
+          direct marketing purposes and the names and addresses of all third
+          parties with which we shared personal information in the immediately
+          preceding calendar year. If you are a California resident and would
+          like to make such a request, please submit your request in writing to
+          us by using the contact details provided in the section &quot;HOW CAN
+          YOU CONTACT US ABOUT THIS NOTICE?&quot; 12. DO OTHER REGIONS HAVE
+          SPECIFIC PRIVACY RIGHTS? In Short: You may have additional rights
+          based on the country you reside in. Australia and New Zealand We
+          collect and process your personal information under the obligations
+          and conditions set by Australia&apos;s Privacy Act 1988 and New
+          Zealand&apos;s Privacy Act 2020 (Privacy Act). This privacy notice
+          satisfies the notice requirements defined in both Privacy Acts, in
+          particular: what personal information we collect from you, from which
+          sources, for which purposes, and other recipients of your personal
+          information. If you do not wish to provide the personal information
+          necessary to fulfill their applicable purpose, it may affect our
+          ability to provide our services, in particular: offer you the products
+          or services that you want respond to or help with your requests At any
+          time, you have the right to request access to or correction of your
+          personal information. You can make such a request by contacting us by
+          using the contact details provided in the section &quot;HOW CAN YOU
+          REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?&quot; If you
+          believe we are unlawfully processing your personal information, you
+          have the right to submit a complaint about a breach of the Australian
+          Privacy Principles to the Office of the Australian Information
+          Commissioner and a breach of New Zealand&apos;s Privacy Principles to
+          the Office of New Zealand Privacy Commissioner. Republic of South
+          Africa At any time, you have the right to request access to or
+          correction of your personal information. You can make such a request
+          by contacting us by using the contact details provided in the section
+          &quot;HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM
+          YOU?&quot; If you are unsatisfied with the manner in which we address
+          any complaint with regard to our processing of personal information,
+          you can contact the office of the regulator, the details of which are:
+          The Information Regulator (South Africa) General enquiries:
+          enquiries@inforegulator.org.za Complaints (complete POPIA/PAIA form
+          5): PAIAComplaints@inforegulator.org.za &
           POPIAComplaints@inforegulator.org.za 13. DO WE MAKE UPDATES TO THIS
           NOTICE? In Short: Yes, we will update this notice as necessary to stay
           compliant with relevant laws. We may update this privacy notice from
           time to time. The updated version will be indicated by an updated
-          &quot;Revised&quot; date at the top of this privacy notice. If we make material
-          changes to this privacy notice, we may notify you either by
+          &quot;Revised&quot; date at the top of this privacy notice. If we make
+          material changes to this privacy notice, we may notify you either by
           prominently posting a notice of such changes or by directly sending
           you a notification. We encourage you to review this privacy notice
           frequently to be informed of how we are protecting your information.
           14. HOW CAN YOU CONTACT US ABOUT THIS NOTICE? If you have questions or
           comments about this notice, you may email us at
           info@relaydigital.agency or contact us by post at: Relay Digital
-          Marketing Inc., Alberta Canada 15. HOW CAN YOU
-          REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU? Based on the
-          applicable laws of your country or state of residence in the US, you
-          may have the right to request access to the personal information we
-          collect from you, details about how we have processed it, correct
-          inaccuracies, or delete your personal information. You may also have
-          the right to withdraw your consent to our processing of your personal
-          information. These rights may be limited in some circumstances by
-          applicable law. To request to review, update, or delete your personal
-          information, please fill out and submit a data subject access request.
+          Marketing Inc., Alberta Canada 15. HOW CAN YOU REVIEW, UPDATE, OR
+          DELETE THE DATA WE COLLECT FROM YOU? Based on the applicable laws of
+          your country or state of residence in the US, you may have the right
+          to request access to the personal information we collect from you,
+          details about how we have processed it, correct inaccuracies, or
+          delete your personal information. You may also have the right to
+          withdraw your consent to our processing of your personal information.
+          These rights may be limited in some circumstances by applicable law.
+          To request to review, update, or delete your personal information,
+          please fill out and submit a data subject access request.
         </p>
       </div>
     </>
   );
 };
 
-export default pricing;
+export default privacyPolicy;

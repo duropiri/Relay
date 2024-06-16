@@ -1,6 +1,6 @@
 "use client";
 import { useEffect } from "react";
-import { useGlobalState } from "./GlobalStateContext";
+import { useGlobalState } from "../../../GlobalStateContext";
 
 const MobileMenu = () => {
   const { mobileMenuOpen, setMobileMenuOpen } = useGlobalState();

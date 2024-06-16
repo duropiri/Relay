@@ -46,7 +46,7 @@ const PricingSection = () => {
               >
                 <button className="relative rounded-full text-center transition-all duration-500 transform overflow-hidden   w-full px-5 py-2.5 border border-blue-500 text-neutral-50 bg-neutral-950 button group text-lg uppercase">
                   <div className="calendly group relative z-10 w-full">
-                    Book a call
+                    Get a Price
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="32"
@@ -61,13 +61,13 @@ const PricingSection = () => {
                 </button>
               </a>
             </div>
-            <p className="flex items-baseline justify-center gap-x-2 mt-3">
+            {/* <p className="flex items-baseline justify-center gap-x-2 mt-3">
               <a href="https://buy.stripe.com/3cs6oA10H1EJ1X24gm">
                 <span className="text-sm font-semibold leading-6 tracking-wide text-neutral-400 hover:text-neutral-300 underline duration-300">
-                  Get a price
+                  Pricing
                 </span>
               </a>
-            </p>
+            </p> */}
             <ul
               role="list"
               className="mt-8 space-y-3 text-sm leading-6 text-neutral-300 xl:mt-10"
@@ -271,7 +271,7 @@ const PricingSection = () => {
               >
                 <button className="relative rounded-full text-center transition-all duration-500 transform overflow-hidden   w-full px-5 py-2.5 bg-blue-500 text-neutral-950 border border-blue-500 button hover:text-neutral-50 group uppercase leading-tight tracking-tight md:text-lg">
                   <div className="calendly group relative z-10 w-full">
-                    Book a call
+                    Get a Price
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="32"
@@ -286,13 +286,13 @@ const PricingSection = () => {
                 </button>
               </a>
             </div>
-            <p className="flex items-baseline justify-center gap-x-2 mt-3">
+            {/* <p className="flex items-baseline justify-center gap-x-2 mt-3">
               <a href="https://buy.stripe.com/6oEfZabFl0AFbxCeUY">
                 <span className="text-sm font-semibold leading-6 tracking-wide text-neutral-400 hover:text-neutral-300 underline duration-300">
-                  Get a price
+                  Pricing
                 </span>
               </a>
-            </p>
+            </p> */}
             <ul
               role="list"
               className="mt-8 space-y-3 text-sm leading-6 text-neutral-300 xl:mt-10"
@@ -516,7 +516,7 @@ const PricingSection = () => {
               >
                 <button className="relative rounded-full text-center transition-all duration-500 transform overflow-hidden   w-full px-5 py-2.5 border border-blue-500 text-neutral-50 bg-neutral-950 button group text-lg uppercase">
                   <div className="calendly group relative z-10 w-full">
-                    Book a call
+                    Get a Price
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="32"
@@ -531,13 +531,13 @@ const PricingSection = () => {
                 </button>
               </a>
             </div>
-            <p className="flex items-baseline justify-center gap-x-2 mt-3">
+            {/* <p className="flex items-baseline justify-center gap-x-2 mt-3">
               <a href="https://buy.stripe.com/eVa8wI6l1bfjdFKeUZ">
                 <span className="text-sm font-semibold leading-6 tracking-wide text-neutral-400 hover:text-neutral-300 underline duration-300">
-                  Get a price
+                  Pricing
                 </span>
               </a>
-            </p>
+            </p> */}
             <ul
               role="list"
               className="mt-8 space-y-3 text-sm leading-6 text-neutral-300 xl:mt-10"

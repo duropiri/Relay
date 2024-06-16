@@ -6,35 +6,47 @@ const GlobalStateContext = createContext();
 
 // Step 2: Create a provider component
 export const GlobalStateProvider = ({ children }) => {
-  // Existing global states
-  const [isLoading, setIsLoading] = useState(false);
-  const [user, setUser] = useState(null);
-
-  // New global states
-  const [whyContent, setWhyContent] = useState(null);
-  const [ctaBannerContent, setCtaBannerContent] = useState(null);
-  const [heroContent, setHeroContent] = useState(null);
-  const [marqueeContent, setMarqueeContent] = useState(null);
+  // New global states for popups
+  const [isHeroPopupOpen, setIsHeroPopupOpen] = useState(false);
+  const [isExitIntentPopupOpen, setIsExitIntentPopupOpen] = useState(false);
+  const [website, setWebsite] = useState('');
 
   // Mobile states
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+  const openHeroPopup = (website) => {
+    setWebsite(website);
+    setIsHeroPopupOpen(true);
+    setIsExitIntentPopupOpen(false);
+  };
+
+  const closeHeroPopup = () => {
+    setIsHeroPopupOpen(false);
+  };
+
+  const openExitIntentPopup = () => {
+    setIsHeroPopupOpen(false);
+    setIsExitIntentPopupOpen(true);
+  };
+
+  const closeExitIntentPopup = () => {
+    setIsExitIntentPopupOpen(false);
+  };
+
   // Combine all global states and their update functions into a single object
   const globalState = {
-    isLoading,
-    setIsLoading, // Directly use the setter functions provided by useState
-    user,
-    setUser, // Directly use the setter functions provided by useState
-    whyContent,
-    setWhyContent,
-    ctaBannerContent,
-    setCtaBannerContent,
-    heroContent,
-    setHeroContent,
-    marqueeContent,
-    setMarqueeContent,
     mobileMenuOpen,
     setMobileMenuOpen,
+    isHeroPopupOpen,
+    setIsHeroPopupOpen,
+    isExitIntentPopupOpen,
+    setIsExitIntentPopupOpen,
+    website,
+    setWebsite,
+    openHeroPopup,
+    closeHeroPopup,
+    openExitIntentPopup,
+    closeExitIntentPopup,
   };
 
   return (

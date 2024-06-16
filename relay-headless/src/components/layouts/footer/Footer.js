@@ -138,7 +138,6 @@ const Footer = () => {
                   className="text-muted dark:text-neutral-400 hover:bg-neutral-100 dark:hover:bg-neutral-700 focus:outline-none focus:ring-4 focus:ring-neutral-200 dark:focus:ring-neutral-700 rounded-lg text-sm p-2.5 inline-flex items-center"
                   aria-label="Instagram"
                   href="https://www.instagram.com/relaydigitalmktg/"
-                  previewlistener="true"
                 >
                   <svg
                     width="1em"
@@ -168,7 +167,6 @@ const Footer = () => {
                   className="text-muted dark:text-neutral-400 hover:bg-neutral-100 dark:hover:bg-neutral-700 focus:outline-none focus:ring-4 focus:ring-neutral-200 dark:focus:ring-neutral-700 rounded-lg text-sm p-2.5 inline-flex items-center"
                   aria-label="LinkedIn"
                   href="https://www.linkedin.com/company/relaydigitalagency"
-                  previewlistener="true"
                 >
                   <svg
                     width="1em"
@@ -198,7 +196,6 @@ const Footer = () => {
                   className="text-muted dark:text-neutral-400 hover:bg-neutral-100 dark:hover:bg-neutral-700 focus:outline-none focus:ring-4 focus:ring-neutral-200 dark:focus:ring-neutral-700 rounded-lg text-sm p-2.5 inline-flex items-center"
                   aria-label="Github"
                   href="https://github.com/RelayDigital"
-                  previewlistener="true"
                 >
                   <svg
                     width="1em"
