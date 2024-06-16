@@ -15,16 +15,24 @@ import Cfunnel from "./sections/Cfunnel";
 import Leaking from "./sections/Leaking";
 import Help from "./sections/Help";
 import ExitIntentPopup from "../../ExitIntentPopup";
+import { useGlobalState } from "../../../contexts/GlobalStateContext";
 
 const Home = () => {
-  const [showPopup, setShowPopup] = useState(false);
-  const [hasShownPopup, setHasShownPopup] = useState(false);
+  const {
+    isHeroPopupOpen,
+    closeHeroPopup,
+    website,
+    isExitIntentPopupOpen,
+    openExitIntentPopup,
+    closeExitIntentPopup,
+  } = useGlobalState();
+  const [hasShownExitIntentPopup, setHasShownExitIntentPopup] = useState(false);
 
   useEffect(() => {
     const handleMouseLeave = (event) => {
-      if (!hasShownPopup && event.clientY <= 0) {
-        setShowPopup(true);
-        setHasShownPopup(true);
+      if (!hasShownExitIntentPopup && event.clientY <= 0) {
+        openExitIntentPopup();
+        setHasShownExitIntentPopup(true);
       }
     };
 
@@ -32,11 +40,11 @@ const Home = () => {
     return () => {
       document.removeEventListener("mouseleave", handleMouseLeave);
     };
-  }, [hasShownPopup]);
+  }, [hasShownExitIntentPopup, openExitIntentPopup]);
 
   return (
     <div className="flex flex-col gap-10 bg-grid-white/[0.05]">
-      {showPopup && <ExitIntentPopup onClose={() => setShowPopup(false)} />}
+      {isExitIntentPopupOpen && <ExitIntentPopup />}
       <Hero />
       <Why />
       <CallToAction

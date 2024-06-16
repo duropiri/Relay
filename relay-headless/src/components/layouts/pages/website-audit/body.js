@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useGlobalState } from "../../../../contexts/GlobalStateContext";
 
 import Hero from "./Hero";
-import ExitIntentPopup from "./ExitIntentPopup";
+import ExitIntentPopup from "../../../ExitIntentPopup";
 import FormPopup from "./formPopup";
 
 const Body = () => {
