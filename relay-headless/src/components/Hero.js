@@ -63,7 +63,7 @@ const Hero = () => {
           <div className="col-span-2 lg:mt-6 lg:mr-4">
             <div className="-z-10 max-w-4xl text-center text-neutral-200 text-3xl sm:text-5xl lg:text-start lg:text-7xl">
               <h1
-                className="bg-gradient-to-br from-neutral-100 from-55% to-neutral-500 bg-clip-text font-medium tracking-tight text-transparent lg:min-h-[20rem]"
+                className="md:bg-gradient-to-br md:from-neutral-100 md:from-55% md:to-neutral-500 md:bg-clip-text font-medium tracking-tight md:text-transparent text-neutral-100 lg:min-h-[20rem]"
                 data-speed="0.5"
               >
                 Get <span className="text-blue-500">2.7x</span> More Out Of Your
@@ -111,7 +111,7 @@ const Hero = () => {
           </div>
         </div>
         <div
-          className="absolute left-1/2 top-1/2 -z-10 -translate-x-1/2 -translate-y-1/2 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] w-max pointer-events-none"
+          className="absolute hidden md:block left-1/2 top-1/2 -z-10 -translate-x-1/2 -translate-y-1/2 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] w-max pointer-events-none"
           data-speed="0.6"
         >
           {" "}

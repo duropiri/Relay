@@ -1,3 +1,6 @@
+"use client";
+import { useEffect, useState } from "react";
+
 import CallToAction from "../components/CallToAction";
 import Contact from "../components/Contact";
 import CalendlyEmbed from "../components/CalendlyEmbed";
@@ -11,12 +14,29 @@ import CustomerJourney from "../components/CustomerJourney";
 import Cfunnel from "../components/Cfunnel";
 import Leaking from "../components/Leaking";
 import Help from "../components/Help";
-
-
+import ExitIntentPopup from "../components/ExitIntentPopup";
 
 const Home = () => {
+  const [showPopup, setShowPopup] = useState(false);
+  const [hasShownPopup, setHasShownPopup] = useState(false);
+
+  useEffect(() => {
+    const handleMouseLeave = (event) => {
+      if (!hasShownPopup && event.clientY <= 0) {
+        setShowPopup(true);
+        setHasShownPopup(true);
+      }
+    };
+
+    document.addEventListener("mouseleave", handleMouseLeave);
+    return () => {
+      document.removeEventListener("mouseleave", handleMouseLeave);
+    };
+  }, [hasShownPopup]);
+
   return (
     <div className="flex flex-col gap-10 bg-grid-white/[0.05]">
+      {showPopup && <ExitIntentPopup onClose={() => setShowPopup(false)} />}
       <Hero />
       <Why />
       <CallToAction
