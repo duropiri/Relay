@@ -85,7 +85,7 @@ const FormPopup = () => {
             className="flex flex-row justify-start items-start gap-14 mr-14 w-full text-start text-3xl md:bg-gradient-to-br md:from-neutral-100 md:from-55% md:to-neutral-500 md:bg-clip-text font-medium tracking-tight md:text-transparent text-neutral-100"
             data-speed="0.5"
           >
-            Relay Digital's
+            Relay Digital&apos;s
             <br />
             Free
             <span className="text-blue-500">
