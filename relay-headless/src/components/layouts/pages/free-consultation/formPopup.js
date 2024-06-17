@@ -94,12 +94,9 @@ const FormPopup = () => {
               Consultation
             </span>
           </h1>
-          <button onClick={closeHeroPopup} className="text-gray-500">
-            &times;
-          </button>
         </div>
         <form ref={formRef} onSubmit={handleSubmit} className="space-y-4">
-          <div className="flex flex-row gap-2 w-full rounded-md border border-neutral-700 bg-neutral-900 px-4 py-3 outline-none placeholder:text-neutral-400 focus:border-neutral-400 focus:ring-0 text-neutral-50">
+          <div className="flex flex-row gap-2 w-full rounded-md border border-neutral-700 bg-neutral-900 px-4 py-3 outline-none placeholder:text-neutral-400 focus:border-neutral-400 focus:ring-0 text-neutral-50 min-h-[50px]">
             <svg
               width="2em"
               height="2em"
@@ -203,7 +200,7 @@ const FormPopup = () => {
               placeholder="What's your name"
               name="name"
               required
-              className="w-full rounded-md border border-neutral-700 bg-neutral-900 px-4 py-3 outline-none placeholder:text-neutral-400 focus:border-neutral-400 focus:ring-0 text-neutral-50"
+              className="w-full rounded-md border border-neutral-700 bg-neutral-900 px-4 py-3 outline-none placeholder:text-neutral-400 focus:border-neutral-400 focus:ring-0 text-neutral-50 min-h-[50px]"
             />
             <input
               id="email"
@@ -211,10 +208,10 @@ const FormPopup = () => {
               placeholder="What's your email"
               name="email"
               required
-              className="w-full rounded-md border border-neutral-700 bg-neutral-900 px-4 py-3 outline-none placeholder:text-neutral-400 focus:border-neutral-400 focus:ring-0 text-neutral-50"
+              className="w-full rounded-md border border-neutral-700 bg-neutral-900 px-4 py-3 outline-none placeholder:text-neutral-400 focus:border-neutral-400 focus:ring-0 text-neutral-50 min-h-[50px]"
             />
           </div>
-          <div className="flex flex-row gap-2 w-full rounded-md border border-neutral-700 bg-neutral-900 px-2 py-2 outline-none placeholder:text-neutral-400 focus:border-neutral-400 focus:ring-0 text-neutral-50">
+          <div className="flex flex-row gap-2 w-full rounded-md border border-neutral-700 bg-neutral-900 px-2 py-2 outline-none placeholder:text-neutral-400 focus:border-neutral-400 focus:ring-0 text-neutral-50 min-h-[50px]">
             <select
               id="social"
               name="social"
@@ -241,7 +238,7 @@ const FormPopup = () => {
               id="monthly_visits"
               name="monthly_visits"
               required
-              className="w-full rounded-md border border-neutral-700 bg-neutral-900 px-4 py-3 outline-none placeholder:text-neutral-400 focus:border-neutral-400 focus:ring-0 text-neutral-50"
+              className="w-full rounded-md border border-neutral-700 bg-neutral-900 px-4 py-3 outline-none placeholder:text-neutral-400 focus:border-neutral-400 focus:ring-0 text-neutral-50 min-h-[50px]"
             >
               <option value="">How many monthly visits?</option>
               <option value="0-10k">0-10K</option>
@@ -256,7 +253,7 @@ const FormPopup = () => {
               id="referral_source"
               name="referral_source"
               required
-              className="w-full rounded-md border border-neutral-700 bg-neutral-900 px-4 py-3 outline-none placeholder:text-neutral-400 focus:border-neutral-400 focus:ring-0 text-neutral-50"
+              className="w-full rounded-md border border-neutral-700 bg-neutral-900 px-4 py-3 outline-none placeholder:text-neutral-400 focus:border-neutral-400 focus:ring-0 text-neutral-50 min-h-[50px]"
             >
               <option value="">How did you hear about us?</option>
               <option value="twitter">Twitter</option>
@@ -284,6 +281,12 @@ const FormPopup = () => {
         <div id="result" className="mt-3 text-center text-gray-600">
           {result}
         </div>
+        <button
+          onClick={closeHeroPopup}
+          className="mt-4 px-4 py-2 text-gray-500"
+        >
+          Close
+        </button>
       </div>
     </div>
   );
