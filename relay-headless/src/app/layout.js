@@ -49,7 +49,7 @@ const RootLayout = ({ children }) => {
           href="/img/favicon.webp"
         />
 
-        <link
+        {/* <link
           rel="preload"
           href="/font/Proxima Nova Regular.otf"
           as="font"
@@ -76,7 +76,7 @@ const RootLayout = ({ children }) => {
           as="font"
           type="font/ttf"
           crossOrigin="anonymous"
-        />
+        /> */}
 
         <meta property="og:type" content="website" />
         <meta property="og:url" content={metadata.url} />
