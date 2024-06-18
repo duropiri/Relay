@@ -89,11 +89,12 @@ const RootLayout = ({ children }) => {
         <meta name="twitter:description" content={metadata.description} />
         <meta name="twitter:image" content={metadata.image} />
 
-        <Script
+        {/* <Script
           id="google-tag-ads"
           async
           src="https://www.googletagmanager.com/gtag/js?id=AW-16609057729"
         ></Script>
+
         <Script
           id="google-ads"
           async
@@ -106,9 +107,11 @@ const RootLayout = ({ children }) => {
             gtag('config', 'AW-16609057729');`,
           }}
         ></Script>
+
         <Script id="calendly-event-snippet" async strategy="afterInteractive">
           {`gtag('event', 'conversion', {'send_to': 'AW-16609057729/AZ3KCLynjboZEMG36O89'});`}
         </Script>
+
         <Script
           id="calendly-inline-widget"
           async
@@ -128,11 +131,13 @@ const RootLayout = ({ children }) => {
           }`,
           }}
         ></Script>
+
         <Script
           id="google-tag"
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-NQH0Z2981Z"
         ></Script>
+
         <Script
           id="google-analytics"
           async
@@ -145,7 +150,9 @@ const RootLayout = ({ children }) => {
             gtag('config', 'G-NQH0Z2981Z');`,
           }}
         ></Script>
+
         <GoogleAnalytics gaId="G-NQH0Z2981Z" />
+
         <Script
           id="gtm"
           async
@@ -157,6 +164,7 @@ const RootLayout = ({ children }) => {
             })(window,document,'script','dataLayer','GTM-PXXTT7FJ');`,
           }}
         ></Script>
+
         <GoogleTagManager gtmId="GTM-PXXTT7FJ" />
 
         <Script
@@ -184,7 +192,7 @@ const RootLayout = ({ children }) => {
             a.appendChild(r);
             })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');`,
           }}
-        ></Script>
+        ></Script> */}
       </head>
       <body
       // className={inter.className}
