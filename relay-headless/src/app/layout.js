@@ -89,7 +89,7 @@ const RootLayout = ({ children }) => {
         <meta name="twitter:description" content={metadata.description} />
         <meta name="twitter:image" content={metadata.image} />
 
-        {/* <Script
+        <Script
           id="google-tag-ads"
           async
           src="https://www.googletagmanager.com/gtag/js?id=AW-16609057729"
@@ -192,7 +192,7 @@ const RootLayout = ({ children }) => {
             a.appendChild(r);
             })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');`,
           }}
-        ></Script> */}
+        ></Script>
       </head>
       <body
       // className={inter.className}
