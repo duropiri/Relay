@@ -43,7 +43,7 @@ export async function POST(request) {
         <div style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 16px; color: #333;">
           <h1>Thank you for requesting our ebook!</h1>
           <p>Please find the download link below:</p>
-          <p><a href="https://drive.google.com/uc?export=download&id=1cC_WfghdvfdB47ewOOXdu3QGQwTiGqbR">Download your ebook</a></p>
+          <p><a href="https://drive.google.com/uc?export=download&id=1ejqyBmSynDZcevGNv3aiKaROETa2JAmV">Download your ebook</a></p>
           <p>Best regards,</p>
           <p>Relay Digital</p>
         </div>
