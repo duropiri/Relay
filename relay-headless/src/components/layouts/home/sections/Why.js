@@ -51,7 +51,7 @@ const Why = () => {
       <div className="mx-auto max-w-7xl px-5">
         <div className="relative flex min-h-[30vh] flex-col items-center justify-center overflow-hidden w-full rounded-md z-0">
           <div className="relative z-50 flex  flex-col items-center px-5">
-            <h2 className="mt-2 text-3xl font-medium tracking-tight text-white sm:text-6xl text-center">
+            <h2 className="mt-2 text-3xl font-medium tracking-tight text-white sm:text-6xl text-center capitalize">
               <span className="bg-gradient-to-b from-neutral-50 from-60% to-neutral-400 bg-clip-text text-transparent lg:to-neutral-600">
                 Why Should You Use Our Marketing Funnels?
               </span>

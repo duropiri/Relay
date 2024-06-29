@@ -6,7 +6,7 @@ const CalendlyEmbed = () => {
   return (
     <div id="free-consultation" className="relative mx-auto w-full max-w-7xl px-5 z-10">
       <div className="relative pt-20 lg:pt-24">
-        <h2 className="mt-2 text-3xl font-medium tracking-tight text-white sm:text-6xl text-center">
+        <h2 className="mt-2 text-3xl font-medium tracking-tight text-white sm:text-6xl text-center capitalize">
           <span className="bg-gradient-to-b from-neutral-50 from-60% to-neutral-400 bg-clip-text text-transparent lg:to-neutral-600">
             Free{" "}
             <span className="bg-gradient-to-b from-blue-500 from-60% to-blue-400 bg-clip-text text-transparent lg:to-blue-600 underline">
