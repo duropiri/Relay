@@ -48,57 +48,45 @@ const Home = () => {
       {isExitIntentPopupOpen && <ExitIntentPopup />}
       <Hero />
       <Suspense fallback={<div>Loading...</div>}>
+        <Leaking />
+        
         <Why />
-      </Suspense>
-      <Suspense fallback={<div>Loading...</div>}>
+
         <CallToAction
           header="Ready to Boost Your Conversion Rate?"
           description="Discover how our expertly crafted marketing funnels can increase your business leads and distinguish you from the competition."
           cta="Yes, Boost my Conversions"
           href="/contact"
         />
-      </Suspense>
-      <Suspense fallback={<div>Loading...</div>}>
+
         <CustomerJourney />
-      </Suspense>
-      <Suspense fallback={<div>Loading...</div>}>
+
         <Services />
-      </Suspense>
-      <Suspense fallback={<div>Loading...</div>}>
+
         <Panel />
-      </Suspense>
-      <Suspense fallback={<div>Loading...</div>}>
+
         <CallToAction
           header="Get Started Today, Make Your Landing Pages Work As A 24/7 Salesman."
           description=""
           cta="Get Started Now"
           href="https://calendly.com/relaydigitalyyc/discovery"
         />
-      </Suspense>
-      <Suspense fallback={<div>Loading...</div>}>
+
         <Cfunnel />
-      </Suspense>
-      <Suspense fallback={<div>Loading...</div>}>
-        <Leaking />
-      </Suspense>
-      <Suspense fallback={<div>Loading...</div>}>
+
         <CallToAction
           header="Unlock more revenue with elite funnels & landing pages."
           description="Same ad spend, more revenue. Live within 20 days. Conversion-driven, beyond just aesthetics."
           cta="Get A Price"
           href="https://calendly.com/relaydigitalyyc/discovery"
         />
-      </Suspense>
-      <Suspense fallback={<div>Loading...</div>}>
+
         <Help />
-      </Suspense>
-      <Suspense fallback={<div>Loading...</div>}>
+
         <PricingSection />
-      </Suspense>
-      <Suspense fallback={<div>Loading...</div>}>
+
         <CalendlyEmbed />
-      </Suspense>
-      <Suspense fallback={<div>Loading...</div>}>
+
         <Contact />
       </Suspense>
     </div>
