@@ -15,6 +15,8 @@ const Cfunnel = lazy(() => import("./sections/Cfunnel"));
 const Leaking = lazy(() => import("./sections/Leaking"));
 const Help = lazy(() => import("./sections/Help"));
 const ExitIntentPopup = lazy(() => import("../../ExitIntentPopup"));
+const Team = lazy(() => import("./sections/Team"));
+
 
 import { useGlobalState } from "../../../contexts/GlobalStateContext";
 
@@ -48,8 +50,10 @@ const Home = () => {
       {isExitIntentPopupOpen && <ExitIntentPopup />}
       <Hero />
       <Suspense fallback={<div>Loading...</div>}>
+        {/* <Team /> */}
+
         <Leaking />
-        
+
         <Why />
 
         <CallToAction

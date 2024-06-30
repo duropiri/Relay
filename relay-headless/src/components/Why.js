@@ -138,7 +138,7 @@ const Why = () => {
               //     />
               //   </>
               // )
-              <img
+              <Image
               src="/img/increase-cr.webp"
               alt="Product screenshot"
               className="right h-auto w-[24rem] max-w-none rounded-xl shadow-xl sm:w-[36rem] md:-ml-4 lg:-ml-0"
@@ -222,7 +222,7 @@ const Why = () => {
                 //     />
                 //   </>
                 // )
-                <img
+                <Image
                   src="/img/design.webp"
                   alt="Product screenshot"
                   className="left h-auto w-[28rem] max-w-none rounded-xl shadow-xl sm:w-[50rem] md:-ml-4 lg:-ml-0"
