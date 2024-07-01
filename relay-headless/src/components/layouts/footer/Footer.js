@@ -59,7 +59,7 @@ const Footer = () => {
     //       </div>
     //       <div className="pb-6">
     //         <a
-    //           href="/pricing"
+    //           href="/#pricing"
     //           className="text-sm leading-6 text-neutral-300 hover:text-neutral-100"
     //         >
     //           Pricing
@@ -115,7 +115,7 @@ const Footer = () => {
                 <li className="mb-2">
                   <a
                     className="text-muted hover:text-neutral-700 hover:underline dark:text-neutral-400 transition duration-150 ease-in-out"
-                    href="/pricing"
+                    href="/#pricing"
                   >
                     Pricing
                   </a>

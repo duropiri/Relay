@@ -17,7 +17,6 @@ const Help = lazy(() => import("./sections/Help"));
 const ExitIntentPopup = lazy(() => import("../../ExitIntentPopup"));
 const Team = lazy(() => import("./sections/Team"));
 
-
 import { useGlobalState } from "../../../contexts/GlobalStateContext";
 
 const Home = () => {
@@ -49,50 +48,50 @@ const Home = () => {
     <div className="relative flex flex-col gap-10 bg-grid-white/[0.05]">
       {isExitIntentPopupOpen && <ExitIntentPopup />}
       <Hero />
-      <Suspense fallback={<div>Loading...</div>}>
-        {/* <Team /> */}
+      {/* <Suspense fallback={<div>Loading...</div>}> */}
+      {/* <Team /> */}
 
-        <Leaking />
+      <Leaking />
 
-        <Why />
+      <Why />
 
-        <CallToAction
-          header="Ready to Boost Your Conversion Rate?"
-          description="Discover how our expertly crafted marketing funnels can increase your business leads and distinguish you from the competition."
-          cta="Yes, Boost my Conversions"
-          href="/contact"
-        />
+      <CallToAction
+        header="Ready to Boost Your Conversion Rate?"
+        description="Discover how our expertly crafted marketing funnels can increase your business leads and distinguish you from the competition."
+        cta="Yes, Boost my Conversions"
+        href="/contact"
+      />
 
-        <CustomerJourney />
+      <CustomerJourney />
 
-        <Services />
+      <Services />
 
-        <Panel />
+      <Panel />
 
-        <CallToAction
-          header="Get Started Today, Make Your Landing Pages Work As A 24/7 Salesman."
-          description=""
-          cta="Get Started Now"
-          href="https://calendly.com/relaydigitalyyc/discovery"
-        />
+      <CallToAction
+        header="Get Started Today, Make Your Landing Pages Work As A 24/7 Salesman."
+        description=""
+        cta="Get Started Now"
+        href="https://calendly.com/relaydigitalyyc/discovery"
+      />
 
-        <Cfunnel />
+      <Cfunnel />
 
-        <CallToAction
-          header="Unlock more revenue with elite funnels & landing pages."
-          description="Same ad spend, more revenue. Live within 20 days. Conversion-driven, beyond just aesthetics."
-          cta="Get A Price"
-          href="https://calendly.com/relaydigitalyyc/discovery"
-        />
+      <CallToAction
+        header="Unlock more revenue with elite funnels & landing pages."
+        description="Same ad spend, more revenue. Live within 20 days. Conversion-driven, beyond just aesthetics."
+        cta="Get A Price"
+        href="https://calendly.com/relaydigitalyyc/discovery"
+      />
 
-        <Help />
+      <Help />
 
-        <PricingSection />
+      <PricingSection />
 
-        <CalendlyEmbed />
+      <CalendlyEmbed />
 
-        <Contact />
-      </Suspense>
+      <Contact />
+      {/* </Suspense> */}
     </div>
   );
 };

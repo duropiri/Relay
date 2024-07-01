@@ -43,7 +43,7 @@ const MobileMenu = () => {
           Portfolio
         </a>
         <a
-          href="/pricing"
+          href="/#pricing"
           className="cursor-pointer text-neutral-50 text-5xl font-normal md:text-base"
         >
           Pricing

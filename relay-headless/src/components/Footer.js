@@ -18,7 +18,7 @@ const Footer = () => {
           </div>
           <div className="pb-6">
             <a
-              href="/pricing"
+              href="/#pricing"
               className="text-sm leading-6 text-neutral-300 hover:text-neutral-100"
             >
               Pricing{" "}
