@@ -259,6 +259,7 @@ const FormPopup = () => {
               <option value="twitter">Twitter</option>
               <option value="instagram">Instagram</option>
               <option value="google">Google</option>
+              <option value="facebook">Facebook</option>
               <option value="referall">Referral</option>
             </select>
           </div>
