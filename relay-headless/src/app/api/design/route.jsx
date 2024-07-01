@@ -23,10 +23,10 @@ export async function POST(request) {
       from: `"Relay Digital" <info@relaydigital.agency>`, // Alias
       to: myEmail,
       replyTo: email,
-      subject: `Free consultation request from ${email}`,
+      subject: `Free design request from ${email}`,
       html: `
           <div style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 16px; color: #333;">
-            <h1>Website Consultation Request</h1>
+            <h1>Website Design Request</h1>
             <p><strong>Name:</strong> ${name}</p>
             <p><strong>Email:</strong> <a href="mailto:${email}">${email}</a></p>
             <p><strong>Website:</strong> ${website}</p>
@@ -41,18 +41,18 @@ export async function POST(request) {
     await transporter.sendMail({
       from: `"Relay Digital" <info@relaydigital.agency>`, // Alias
       to: email, // Note this change to send to the submitter
-      subject: `Confirmation of Your Website Consultation Request`,
+      subject: `Confirmation of Your Website Design Request`,
       html: `
           <div style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 16px; color: #333;">
-            <h1>Thank You for Your Website Consultation Request</h1>
+            <h1>Thank You for Your Website Design Request</h1>
             <p>Hello ${name},</p>
-            <p>Thank you for requesting a free consultation. We have received your request and will get back to you as soon as possible. Here is a copy of your submission:</p>
+            <p>Thank you for requesting a free design. We have received your request and will get back to you as soon as possible. Here is a copy of your submission:</p>
             <p><strong>Website:</strong> ${website}</p>
             <p><strong>Social:</strong> ${social} @${socialUsername}</p>
             <p><strong>Monthly Visits:</strong> ${monthly_visits}</p>
             <p><strong>Referral Source:</strong> ${referral_source}</p>
-            <p>You can schedule your free consultation using the following link:</p>
-            <p><a href="https://calendly.com/relaydigitalyyc/discovery">Book your consultation</a></p>
+            <p>You can schedule your free design review using the following link:</p>
+            <p><a href="https://calendly.com/relaydigitalyyc/free-design">Book your design review</a></p>
             <p>Best regards,</p>
             <p>Relay Digital</p>
           </div>
