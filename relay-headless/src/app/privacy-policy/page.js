@@ -311,7 +311,7 @@ const privacyPolicy = () => {
           been collected, we will deactivate the account and take reasonable
           measures to promptly delete such data from our records. If you become
           aware of any data we may have collected from children under age 18,
-          please contact us at info@relaydigital.agency. 9. WHAT ARE YOUR
+          please contact us at relaydigitalyyc@gmail.com. 9. WHAT ARE YOUR
           PRIVACY RIGHTS? In Short: Depending on your state of residence in the
           US or in some regions, such as the European Economic Area (EEA),
           United Kingdom (UK), Switzerland, and Canada, you have rights that
@@ -477,7 +477,7 @@ const privacyPolicy = () => {
           a voice or facial recognition feature (as permitted by applicable law,
           including Florida’s privacy law) How to Exercise Your Rights To
           exercise these rights, you can contact us by submitting a data subject
-          access request, by emailing us at info@relaydigital.agency, by
+          access request, by emailing us at relaydigitalyyc@gmail.com, by
           visiting https://relaydigital.agency/contact, or by referring to the
           contact details at the bottom of this document. Under certain US state
           data protection laws, you can designate an authorized agent to make a
@@ -555,7 +555,7 @@ const privacyPolicy = () => {
           frequently to be informed of how we are protecting your information.
           14. HOW CAN YOU CONTACT US ABOUT THIS NOTICE? If you have questions or
           comments about this notice, you may email us at
-          info@relaydigital.agency or contact us by post at: Relay Digital
+          relaydigitalyyc@gmail.com or contact us by post at: Relay Digital
           Marketing Inc., Alberta Canada 15. HOW CAN YOU REVIEW, UPDATE, OR
           DELETE THE DATA WE COLLECT FROM YOU? Based on the applicable laws of
           your country or state of residence in the US, you may have the right

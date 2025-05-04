@@ -3,9 +3,9 @@ const nodemailer = require("nodemailer");
 
 // Handles POST requests to /api
 export async function POST(request) {
-  const username = process.env.NEXT_PUBLIC_EMAIL_USERNAME_2;
-  const password = process.env.NEXT_PUBLIC_EMAIL_PASSWORD_2;
-  const myEmail = process.env.NEXT_PUBLIC_PERSONAL_EMAIL_2;
+  const username = process.env.NEXT_PUBLIC_EMAIL_USERNAME;
+  const password = process.env.NEXT_PUBLIC_EMAIL_PASSWORD;
+  const myEmail = process.env.NEXT_PUBLIC_PERSONAL_EMAIL;
 
   const formData = await request.formData();
   const name = formData.get("name");
@@ -32,7 +32,7 @@ export async function POST(request) {
   try {
     // Send email to site owner
     await transporter.sendMail({
-      from: `"Relay Digital" <info@relaydigital.agency>`, // Alias
+      from: `"Relay Digital" <relaydigitalyyc@gmail.com>`, // Alias
       to: myEmail,
       replyTo: email,
       subject: `Website activity from ${email}`,
@@ -51,7 +51,7 @@ export async function POST(request) {
 
     // Send confirmation email to the submitter
     await transporter.sendMail({
-      from: `"Relay Digital" <info@relaydigital.agency>`, // Alias
+      from: `"Relay Digital" <relaydigitalyyc@gmail.com>`, // Alias
       to: email, // Note this change to send to the submitter
       subject: `Confirmation of Your Contact Request`,
       html: `
